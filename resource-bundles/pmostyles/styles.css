@@ -1,0 +1,243 @@
+html, body
+{
+	height: 100%;
+	overflow: hidden;
+	min-width: 400px;
+	min-height: 400px;
+}
+
+td { margin: 0; padding: 0; vertical-align: top; }
+
+table { margin: 0; padding: 0; }
+
+table#bg 
+{
+	background-color: #D1DAE3;
+	overflow: hidden;            	
+	margin-bottom: 15px;
+	width:100%;
+	height:100%;
+}
+
+table#bg table 
+{
+	width:100%;
+	height:100%;
+}
+
+tr.bgLine
+{
+	height: 3px;
+	overflow: hidden;
+}            
+            
+td.bgTopLeft 
+{
+	width: 3px;
+	background-image: url(./images/bgBorderLeftTop.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+td.bgTop 
+{
+	background-image: url(./images/bgBorderTop.gif);
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+td.bgTopRight 
+{
+	width: 3px;
+	background-image: url(./images/bgBorderRightTop.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+td.bgBottomLeft 
+{
+	background-image: url(./images/bgBorderLeftBottom.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+td.bgBottom
+{
+	background-image: url(./images/bgBorderBottom.gif);
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+td.bgBottomRight 
+{
+	background-image: url(./images/bgBorderRightBottom.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+td.bgLeft
+{
+	background-image: url(./images/bgBorderLeft.gif);
+	background-repeat: repeat-y;
+	overflow: hidden;
+}
+
+td.bgRight
+{
+	background-image: url(./images/bgBorderRight.gif);
+	background-repeat: repeat-y;
+	overflow: hidden;
+}
+
+td.bgBottomLeft
+{
+	background-image: url(./images/bgBorderLeftBottom.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+td.bgContent 
+{
+	
+}
+
+tr.header, td.header, table.header 
+{
+    height: 30px;                
+}
+
+tr.headerBgTopLine 
+{
+	height: 3px;
+}
+
+td.headerBgTop 
+{
+	background-image: url(./images/headerBorderTop.gif);
+	background-repeat: repeat-x;            	
+}
+
+td.headerBgLeft 
+{
+	width: 4px;
+	background-image: url(./images/headerBorderLeft.gif);
+	background-repeat: repeat-y;
+}
+
+td.headerBgRight 
+{
+	width: 4px;
+	background-image: url(./images/headerBorderRight.gif);
+	background-repeat: repeat-y;
+}
+
+tr.headerBgBottomLine 
+{
+	height: 4px;
+}
+                        
+td.headerBgBottomLeft
+{
+	width: 4px;
+	background-image: url(./images/headerBorderLeftBottom.gif);
+	background-repeat: no-repeat;
+}
+
+td.headerBgBottom
+{
+	background-image: url(./images/headerBorderBottom.gif);
+	background-repeat: repeat-x;
+}
+
+td.headerBgBottomRight
+{
+	width: 4px;
+	background-image: url(./images/headerBorderRightBottom.gif);
+	background-repeat: no-repeat;
+}                      
+
+table.headerContent 
+{
+}
+
+tr.headerLogo td
+{
+	height: 86px;
+	background-image: url(./images/logoBg.gif);
+	background-repeat: repeat-x;
+}
+
+tr.headerLogo td p
+{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(./images/logo.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+td.headerBtns 
+{
+	background-color: #E8E8E8;
+	height: 100%;            	            	
+}
+
+td.headerBtns div { width: auto; }
+td.headerBtns table { width: auto; }
+            
+
+td.headerBtnsSeparator 
+{
+	background-image: url(./images/headerBtnsSeparatorBg.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 20px;
+	min-width: 20px;
+	max-width: 20px;
+}
+
+table.mainContent 
+{
+	height: 100%;
+}
+
+
+
+
+            
+            .expandAll 
+            {
+                background-image: url(./images/expand_all.png) !important;
+            }
+            
+            .collapseAll 
+            {
+                background-image: url(./images/collapse_all.png) !important;
+            }
+            
+            .zoomIn 
+            {
+                background-image: url(./images/zoom_in.png) !important;
+            }
+            
+            .zoomOut 
+            {
+                background-image: url(./images/zoom_out.png) !important;
+            }
+            
+            .fitAll 
+            {
+                background-image: url(./images/fit_all.png) !important;
+            }
+            
+            .print
+            {
+                background-image: url(./images/print.png) !important;
+            }
+            
+            .save
+            {
+                background-image: url(./images/save_as_image.png) !important;
+            }

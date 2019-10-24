@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>AT&amp;T Control Center Cisco Jasper API REST web services provides a set of REST APIs that allow you to perform essential device lifecycle and SMS functions.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>API_Key__c</fullName>
+        <description>Jasper Control Center API Key</description>
+        <externalId>false</externalId>
+        <label>API Key</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_URL__c</fullName>
+        <description>The Control Center REST API is securely available over HTTPS. You can use the following base URL for all API calls.</description>
+        <externalId>false</externalId>
+        <label>Base URL</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enterprise_Account_Id__c</fullName>
+        <description>Unique identifier for the account that owns the devices you&apos;re searching for.</description>
+        <externalId>false</externalId>
+        <label>Enterprise Account Id</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Name__c</fullName>
+        <description>Jasper Control Center User Name.</description>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>ATT_Jasper_API_REST_Services_Config</label>
+    <visibility>Protected</visibility>
+</CustomObject>

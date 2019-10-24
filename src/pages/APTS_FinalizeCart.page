@@ -1,0 +1,6 @@
+<apex:page showHeader="true" sidebar="true" Controller="APTS_FinalizeCart" action="{!finalizeCart}">
+    <apex:pageMessages id="errorMessage"></apex:pageMessages>
+    <apex:form >
+        <apex:commandButton title="Return" action="{!ReturntoCart}" value="cancel"/>
+    </apex:form>
+</apex:page>

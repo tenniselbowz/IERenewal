@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Tracking hours spent on feature development / bug fix</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Bill__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Bill</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Time Logs</relationshipLabel>
+        <relationshipName>Time_Logs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billable__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Project_Member__r.Billable__c   = false , &apos;Non-Billable&apos; , &apos;Billable&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Billed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contractor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Contractor Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contractor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contractor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Time Logs</relationshipLabel>
+        <relationshipName>Time_Material_Logs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Estimated_Profit_Rounded__c</fullName>
+        <externalId>false</externalId>
+        <formula>ABS(Estimated_Profit__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Profit (Rounded)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Profit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project_Member__r.Profit__c * Week_total_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Profit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expenditure__c</fullName>
+        <externalId>false</externalId>
+        <label>Expenditure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId__c</fullName>
+        <externalId>false</externalId>
+        <label>ExternalId</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Friday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Friday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Time Logs (Invoice)</relationshipLabel>
+        <relationshipName>Time_Logs1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Monday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Monday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Billable__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Tasks__r.Non_Billable__c  = true , &apos;Non-Billable&apos; , &apos;Billable&apos;)</formula>
+        <inlineHelpText>Tells you if this Timecard is Billable or Non-Billable based on the Parent Task.</inlineHelpText>
+        <label>Non - Billable ?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipName>Time_Material_Logs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Member__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Team Member</label>
+        <referenceTo>Project_Member__c</referenceTo>
+        <relationshipLabel>Time Logs</relationshipLabel>
+        <relationshipName>Time_Logs</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Project_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Time Log</relationshipLabel>
+        <relationshipName>Time_Log</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RowTotalForVF__c</fullName>
+        <externalId>false</externalId>
+        <label>RowTotalForVF</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RowTotal__c</fullName>
+        <externalId>false</externalId>
+        <label>RowTotal</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Saturday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Saturday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Description</label>
+        <length>100</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sunday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Sunday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tasks__c</fullName>
+        <externalId>false</externalId>
+        <label>Tasks</label>
+        <referenceTo>Project_Task__c</referenceTo>
+        <relationshipLabel>Time Logs</relationshipLabel>
+        <relationshipName>Time_Logs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Team_Member_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project_Member__r.Contact_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Team Member Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Thursday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Thursday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Billable_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project_Member__r.Hourly_Bill_Rate__c  *  Week_total_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Billable Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cost_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Week_total_Hours__c  *  Project_Member__r.Hourly_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cost Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tuesday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Tuesday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wednesday_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Wednesday Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Week Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Week_total_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sunday_Hours__c +
+ Monday_Hours__c +
+ Tuesday_Hours__c +
+ Wednesday_Hours__c +
+ Thursday_Hours__c +
+ Friday_Hours__c +
+ Saturday_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week total Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Date__c</fullName>
+        <description>Work Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Work Date</inlineHelpText>
+        <label>Work Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Work_Time__c</fullName>
+        <description>Hours worked on feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hours worked on feature</inlineHelpText>
+        <label>Work Time</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requirements Review</fullName>
+                    <default>false</default>
+                    <label>Requirements Review</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Permitting</fullName>
+                    <default>false</default>
+                    <label>Permitting</label>
+                </value>
+                <value>
+                    <fullName>Land Acquistion</fullName>
+                    <default>false</default>
+                    <label>Land Acquistion</label>
+                </value>
+                <value>
+                    <fullName>Surveying</fullName>
+                    <default>false</default>
+                    <label>Surveying</label>
+                </value>
+                <value>
+                    <fullName>Grading</fullName>
+                    <default>false</default>
+                    <label>Grading</label>
+                </value>
+                <value>
+                    <fullName>Utility Install</fullName>
+                    <default>false</default>
+                    <label>Utility Install</label>
+                </value>
+                <value>
+                    <fullName>Paving</fullName>
+                    <default>false</default>
+                    <label>Paving</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Time Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Project__c</columns>
+        <columns>Short_Description__c</columns>
+        <columns>Week_total_Hours__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Week_Start_Date__c</columns>
+        <columns>Work_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Feature_Filter</fullName>
+        <columns>NAME</columns>
+        <columns>Work_Date__c</columns>
+        <columns>Short_Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Week_total_Hours__c</columns>
+        <columns>Project_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Feature Filter</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Timecards</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Week_Start_Date__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>Tasks__c</columns>
+        <columns>Project__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Short_Description__c</columns>
+        <columns>Week_total_Hours__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Submitted</value>
+        </filters>
+        <label>New Timecards</label>
+    </listViews>
+    <listViews>
+        <fullName>Time_Log_Details</fullName>
+        <columns>NAME</columns>
+        <columns>Work_Date__c</columns>
+        <columns>Work_Type__c</columns>
+        <columns>Work_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Time Log Details</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TL{00000}</displayFormat>
+        <label>Time Log Code</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Time Logs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>TimeLogNew</fullName>
+        <active>true</active>
+        <label>Time Log New</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Work_Type__c</picklist>
+            <values>
+                <fullName>Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Land Acquistion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requirements Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Install</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Time_Log_Submitted</fullName>
+        <active>true</active>
+        <label>Time Log Submitted</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Work_Type__c</picklist>
+            <values>
+                <fullName>Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Land Acquistion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requirements Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Install</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Week_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Project_Member__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Team_Member_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Project_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Tasks__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Week_total_Hours__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Work_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Work_Time__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Work_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Work_Time__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Work_Date__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>ValidateDate_Wed</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c+2 &gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c +2&lt;= Tasks__r.Due_Date__c )), not(ISNULL( Wednesday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on Wednesday</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>datevalidate_fri</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c+4&gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c +4&lt;= Tasks__r.Due_Date__c )), not(ISNULL( Friday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on Friday</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>datevalidate_mon</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c &gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c &lt;= Tasks__r.Due_Date__c )), not(ISNULL( Monday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on monday</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>datevalidate_sat</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c+5&gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c +5&lt;= Tasks__r.Due_Date__c )), not(ISNULL( Saturday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on Saturday</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>datevalidate_thurs</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c+3 &gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c +3&lt;= Tasks__r.Due_Date__c )), not(ISNULL( Thursday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on thursday</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>reqDesc</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(OR(ISBLANK(Short_Description__c) , ISNULL(Short_Description__c) ), true, false)</errorConditionFormula>
+        <errorMessage>Description Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>validatedate_tues</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Not(AND(Week_Start_Date__c+1&gt;= Tasks__r.Start_Date__c ,Week_Start_Date__c +1&lt;= Tasks__r.Due_Date__c )), not(ISNULL( Tuesday_Hours__c ) ))</errorConditionFormula>
+        <errorMessage>Task expired on Tuesday</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

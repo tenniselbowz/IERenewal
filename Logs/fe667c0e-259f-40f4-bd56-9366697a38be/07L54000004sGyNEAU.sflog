@@ -1,0 +1,1260 @@
+39.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+00:22:19.0 (851142)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+00:22:19.0 (1020307)|EXECUTION_STARTED
+00:22:19.0 (1027463)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000Ezof|IE_UnitResetCompletedService_Test.testPutOperation_ExceptionThrown
+00:22:19.0 (2016504)|DML_BEGIN|[43]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+00:22:19.21 (21139139)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:19.21 (22915590)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:19.21 (23811532)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+00:22:19.21 (31289590)|SOQL_EXECUTE_END|[58]|Rows:0
+00:22:19.31 (31576259)|CUMULATIVE_LIMIT_USAGE
+00:22:19.31 (31576259)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:19.31 (31576259)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:19.31 (31576259)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:19.0 (101852246)|DML_END|[43]
+00:22:19.0 (112681379)|SYSTEM_MODE_ENTER|false
+00:22:19.0 (112811289)|SYSTEM_MODE_EXIT|false
+00:22:19.0 (133420383)|SYSTEM_MODE_ENTER|false
+00:22:19.0 (164202785)|SYSTEM_MODE_ENTER|true
+00:22:19.0 (164242788)|SYSTEM_MODE_EXIT|true
+00:22:19.0 (165555874)|USER_DEBUG|[138]|ERROR|IE_UnitResetCompletedService Exception: System.NullPointerException: Attempt to de-reference a null object &#124; getTypeName = System.NullPointerException
+00:22:19.0 (166305901)|USER_DEBUG|[170]|ERROR|IE_UnitResetCompletedService integrationErrorList: (Integration_Error__c:{Direction__c=, Error_Description__c=General Exception from IE_UnitResetCompletedService, Integration_Object__c=Unknown, Integration_Point__c=IE, Request_Data__c=Attempt to de-reference a null object})
+00:22:19.0 (166397360)|DML_BEGIN|[171]|Op:Insert|Type:Integration_Error__c|Rows:1
+00:22:19.0 (233009827)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u58O
+00:22:19.0 (247192169)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:19.0 (247233779)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUU]|Integration Error Creation|01QC0000000Ityi|ON_CREATE_ONLY|0
+00:22:19.0 (247362211)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]TRUE|Values:
+00:22:19.0 (247375627)|WF_CRITERIA_END|true
+00:22:19.0 (248412075)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUU]|Intel Notification|01QC0000000DL5s|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:19.0 (250418250)|WF_RULE_FILTER|[Integration Error : Integration Point equals Intel TAS] 
+AND [Integration Error : Error Description contains Above model name and revision number combination was not found in Intel.]
+00:22:19.0 (250453132)|WF_RULE_EVAL_VALUE|1
+00:22:19.0 (250461021)|WF_CRITERIA_END|false
+00:22:19.0 (250479351)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:19.0 (250543872)|WF_RULE_INVOCATION|[Integration Error: EA-00112863 a0054000001NyUU]
+00:22:19.0 (250559543)|WF_EMAIL_ALERT|Id=01WC0000000HGrZ|CurrentRule:Integration Error Creation (Id=01QC0000000Ityi)
+00:22:19.0 (313094835)|WF_EMAIL_SENT|Template:00XC0000001Ktvt|Recipients:mark.lockwood@daikinapplied.com kevin.mcalpine=daikinapplied.com@example.com |CcEmails:
+00:22:19.0 (313143381)|WF_ACTION| Email Alert: 1;
+00:22:19.0 (313150826)|WF_RULE_EVAL_END
+00:22:19.0 (313281145)|WF_ACTIONS_END| Email Alert: 1;
+00:22:19.0 (313297720)|CODE_UNIT_FINISHED|Workflow:01IC0000000u58O
+00:22:19.0 (315120776)|DML_END|[171]
+00:22:19.0 (315513795)|USER_DEBUG|[177]|ERROR|IE_UnitResetCompletedService Response object = IE_UnitResetCompletedResponse:[errors=(IE_Error:[ErrorCode=UNIT_RESET_EXCEPTION, ErrorMessage=IE_UnitResetCompletedService Exception: System.NullPointerException: Attempt to de-reference a null object &#124; Type Name = System.NullPointerException]), unit=null]
+00:22:19.0 (315544726)|SYSTEM_MODE_EXIT|false
+00:22:19.316 (316029020)|CUMULATIVE_LIMIT_USAGE
+00:22:19.316 (316029020)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:19.316 (316029020)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:19.316 (316029020)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:19.0 (316106865)|CODE_UNIT_FINISHED|IE_UnitResetCompletedService_Test.testPutOperation_ExceptionThrown
+00:22:19.0 (317790461)|EXECUTION_FINISHED
+00:22:22.155 (3155280711)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+00:22:22.155 (3155313038)|EXECUTION_STARTED
+00:22:22.155 (3155318928)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000Ezof|IE_UnitResetCompletedService_Test.testPutOperation_GWNotExist
+00:22:22.155 (3156147006)|DML_BEGIN|[12]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+00:22:22.159 (3159511933)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:22.159 (3160131433)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:22.159 (3160934526)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+00:22:22.159 (3165999200)|SOQL_EXECUTE_END|[58]|Rows:0
+00:22:22.166 (3166141126)|CUMULATIVE_LIMIT_USAGE
+00:22:22.166 (3166141126)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.166 (3166141126)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.166 (3166141126)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:22.155 (3185250675)|DML_END|[12]
+00:22:22.155 (3186044961)|SYSTEM_MODE_ENTER|false
+00:22:22.155 (3186058295)|SYSTEM_MODE_EXIT|false
+00:22:22.155 (3186103895)|SYSTEM_MODE_ENTER|false
+00:22:22.155 (3186131746)|SYSTEM_MODE_ENTER|true
+00:22:22.155 (3186159699)|SYSTEM_MODE_EXIT|true
+00:22:22.155 (3186516660)|USER_DEBUG|[28]|ERROR|IE_UnitResetCompletedService.doPut(): Unit SN = xxx123, MAC Address = 000000000000
+00:22:22.155 (3187881343)|SOQL_EXECUTE_BEGIN|[41]|Aggregations:2|SELECT Id, SerialNumber, Parent_Asset__c, SIM_Card_Active__c, SIM_Card_ICCID__c, MAC_Address__c, Status, GWotGo__c, Commissioned__c, Device_ID__c, ResetSuccessful__c, (SELECT Id, Type__c, Name, Serial_Number__c, GWotGoAsset__c, Renewal_Counter__c, Connectivity_Type__c, Term_Years__c, Start_Date__c, End_Date__c, Buyer_ID__c, IE_ID__c, Active__c, LastModifiedDate, Asset__c FROM Subscriptions1__r), (SELECT Id, Name, Role__c, Contact__r.Name, Contact__r.Email, Contact__r.Id, Contact__r.AccountId, GWotGoAsset__c, GWotGoPermAssoc__c FROM Contact_Subscriptions1__r) FROM Asset WHERE (Name = 'Intelligent Equipment Gateway' AND Status != 'Obsolete' AND MAC_Address__c = :tmpVar1)
+00:22:22.155 (3197124803)|SOQL_EXECUTE_END|[41]|Rows:0
+00:22:22.155 (3197336568)|USER_DEBUG|[126]|ERROR|Gateway asset not found for MAC Address = 000000000000, or the status is Obsolete
+00:22:22.155 (3197778189)|USER_DEBUG|[170]|ERROR|IE_UnitResetCompletedService integrationErrorList: (Integration_Error__c:{Direction__c=, Error_Description__c=Gateway asset not found for MAC Address = 000000000000, or the status is Obsolete, Integration_Object__c=Asset, Integration_Point__c=IE, Request_Data__c=IE_UnitResetCompletedService.doPut(): Unit SN = xxx123, MAC Address = 000000000000})
+00:22:22.155 (3197844244)|DML_BEGIN|[171]|Op:Insert|Type:Integration_Error__c|Rows:1
+00:22:22.155 (3216824878)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u58O
+00:22:22.155 (3224278370)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:22.155 (3224316693)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUV]|Integration Error Creation|01QC0000000Ityi|ON_CREATE_ONLY|0
+00:22:22.155 (3224366254)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]TRUE|Values:
+00:22:22.155 (3224377720)|WF_CRITERIA_END|true
+00:22:22.155 (3224402701)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUV]|Intel Notification|01QC0000000DL5s|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:22.155 (3224478839)|WF_RULE_FILTER|[Integration Error : Integration Point equals Intel TAS] 
+AND [Integration Error : Error Description contains Above model name and revision number combination was not found in Intel.]
+00:22:22.155 (3224507582)|WF_RULE_EVAL_VALUE|1
+00:22:22.155 (3224514839)|WF_CRITERIA_END|false
+00:22:22.155 (3224527931)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:22.155 (3224554092)|WF_RULE_INVOCATION|[Integration Error: EA-00112863 a0054000001NyUV]
+00:22:22.155 (3224568225)|WF_EMAIL_ALERT|Id=01WC0000000HGrZ|CurrentRule:Integration Error Creation (Id=01QC0000000Ityi)
+00:22:22.155 (3260605253)|WF_EMAIL_SENT|Template:00XC0000001Ktvt|Recipients:mark.lockwood@daikinapplied.com kevin.mcalpine=daikinapplied.com@example.com |CcEmails:
+00:22:22.155 (3260652641)|WF_ACTION| Email Alert: 1;
+00:22:22.155 (3260660399)|WF_RULE_EVAL_END
+00:22:22.155 (3260771769)|WF_ACTIONS_END| Email Alert: 1;
+00:22:22.155 (3260788126)|CODE_UNIT_FINISHED|Workflow:01IC0000000u58O
+00:22:22.155 (3261903373)|DML_END|[171]
+00:22:22.155 (3262231991)|USER_DEBUG|[177]|ERROR|IE_UnitResetCompletedService Response object = IE_UnitResetCompletedResponse:[errors=(IE_Error:[ErrorCode=GWASSET_NOT_FOUND, ErrorMessage=Gateway Asset with MAC Address 000000000000 not found in Salesforce or the status is Obsolete]), unit=IE_UnitResetCompleted:[MACAddress=000000000000, UnitSerialNumber=xxx123, errors=()]]
+00:22:22.155 (3262258124)|SYSTEM_MODE_EXIT|false
+00:22:22.262 (3262543142)|CUMULATIVE_LIMIT_USAGE
+00:22:22.262 (3262543142)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.262 (3262543142)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.262 (3262543142)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:22.155 (3262620583)|CODE_UNIT_FINISHED|IE_UnitResetCompletedService_Test.testPutOperation_GWNotExist
+00:22:22.155 (3264193255)|EXECUTION_FINISHED
+00:22:22.590 (3590219922)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+00:22:22.590 (3590256876)|EXECUTION_STARTED
+00:22:22.590 (3590262270)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000Ezof|IE_UnitResetCompletedService_Test.testPutOperation_UnitResetFail
+00:22:22.590 (3591372412)|DML_BEGIN|[99]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+00:22:22.594 (3594825763)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:22.594 (3595460041)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:22.594 (3596381029)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+00:22:22.594 (3601188387)|SOQL_EXECUTE_END|[58]|Rows:0
+00:22:22.601 (3601331110)|CUMULATIVE_LIMIT_USAGE
+00:22:22.601 (3601331110)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.601 (3601331110)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:22.601 (3601331110)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:22.590 (3619491275)|DML_END|[99]
+00:22:22.590 (3619791721)|DML_BEGIN|[113]|Op:Insert|Type:Address__c|Rows:1
+00:22:22.590 (4074793652)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeInsert for [new]
+00:22:23.107 (4107038812)|CUMULATIVE_LIMIT_USAGE
+00:22:23.107 (4107038812)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.107 (4107038812)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.107 (4107038812)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:22.590 (4108271302)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeInsert for [new]
+00:22:22.590 (4154965077)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Address:new
+00:22:22.590 (4155016586)|VALIDATION_RULE|03dC0000000FEVu|Partial_Address_Validation
+00:22:22.590 (4214813117)|VALIDATION_FORMULA|$Profile.Id != "00eC0000001GSlm" &&  $Profile.Id != "00eC0000001GSlh"
+
+&&
+if( ISBLANK( Address_Line_1__c ) && ISBLANK( City__c ) && ISBLANK( TEXT(Country__c) ) &&  
+(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of", TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,
+
+if( !ISBLANK( Address_Line_1__c ) && !ISBLANK( City__c ) && !ISBLANK( TEXT(Country__c) ) &&  
+!(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of",  TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,TRUE))|Country__c=United States , $Profile.Id=00e80000000p6lF , Address_Line_1__c=Test Address Line 1 , City__c=Minneapolis , State_Province__c=Minnesota
+00:22:22.590 (4214883615)|VALIDATION_PASS
+00:22:22.590 (4214923385)|CODE_UNIT_FINISHED|Validation:Address:new
+00:22:22.590 (4267478796)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u1Qd
+00:22:22.590 (4343506373)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:22.590 (4343550569)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for Country selected_1|01QC0000000ImN6|ON_ALL_CHANGES|0
+00:22:22.590 (4345655586)|WF_RULE_FILTER|[Address : Country starts with A, B, C, D, E, F, G, H, I, J, K, L, M, N, O] AND
+ [Address : Country not equal to ]
+00:22:22.590 (4346224432)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4346237715)|WF_CRITERIA_END|false
+00:22:22.590 (4346257499)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for Country selected_2|01QC0000000ImNV|ON_ALL_CHANGES|0
+00:22:22.590 (4346324338)|WF_RULE_FILTER|[Address : Country starts with P, Q, R, S, T, U, V, W, X, Y, Z] 
+AND [Address : Country not equal to ]
+00:22:22.590 (4346351756)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4346361388)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4346367804)|WF_CRITERIA_END|true
+00:22:22.590 (4376100175)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for State/Province _4|01QC0000000IqfJ|ON_ALL_CHANGES|0
+00:22:22.590 (4376196763)|WF_RULE_FILTER|[Address : Country equals Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras]
+00:22:22.590 (4376232064)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4376239990)|WF_CRITERIA_END|false
+00:22:22.590 (4376272538)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for State/Province _3|01QC0000000Iqea|ON_ALL_CHANGES|0
+00:22:22.590 (4376353508)|WF_RULE_FILTER|[Address : Country equals Peru, Antigua and Barbuda, Argentina, Bahamas, Barbados, Belize, Bolivia, Plurinational State of, Bonaire, Sint Eustatius and Saba]
+00:22:22.590 (4376392157)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4376402297)|WF_CRITERIA_END|false
+00:22:22.590 (4376424779)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for State/Province _5|01QC0000000IqgR|ON_ALL_CHANGES|0
+00:22:22.590 (4376529290)|WF_RULE_FILTER|[Address : Country equals Jamaica, Nicaragua, Paraguay, Uruguay, Venezuela, Bolivarian Republic of, Saint Kitts and Nevis, Suriname, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago]
+00:22:22.590 (4376562322)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4376569520)|WF_CRITERIA_END|false
+00:22:22.590 (4376586053)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for State/Province|01QC0000000ImRc|ON_ALL_CHANGES|0
+00:22:22.590 (4376633900)|WF_RULE_FILTER|[Address : Country equals United States, Australia, Brazil, Canada, Ireland]
+00:22:22.590 (4376655894)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4376662554)|WF_CRITERIA_END|true
+00:22:22.590 (4376681941)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|ISO Code for State/Province _2|01QC0000000ImS6|ON_ALL_CHANGES|0
+00:22:22.590 (4376728525)|WF_RULE_FILTER|[Address : Country equals China, India, Mexico, Colombia, Chile, Costa Rica, Panama]
+00:22:22.590 (4376753498)|WF_RULE_EVAL_VALUE|122
+00:22:22.590 (4376759845)|WF_CRITERIA_END|false
+00:22:22.590 (4376775997)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001ABqe]|NA set Address StateCode to blank when State is blank|01QC0000000IuN9|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:22.590 (4376826285)|WF_RULE_FILTER|[Address : State/Province equals ] 
+AND [Address : State/Province ISO Code not equal to ]
+00:22:22.590 (4380337360)|WF_RULE_EVAL_VALUE|100
+00:22:22.590 (4380349751)|WF_CRITERIA_END|false
+00:22:22.590 (4380369036)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:22.590 (4440986525)|WF_FIELD_UPDATE|[Address: 1485065 a0254000001ABqe]|Field:Address: Country ISO Code|Value:USA|Id=04YC0000000H8oq|CurrentRule:ISO Code for Country selected_2 (Id=01QC0000000ImNV)
+00:22:22.590 (4441093824)|WF_FIELD_UPDATE|[Address: 1485065 a0254000001ABqe]|Field:Address: State/Province ISO Code|Value:MN|Id=04YC0000000H8uF|CurrentRule:ISO Code for State/Province (Id=01QC0000000ImRc)
+00:22:22.590 (4441129344)|WF_ACTION| Field Update: 2;
+00:22:22.590 (4441136354)|WF_RULE_EVAL_END
+00:22:22.590 (4443322272)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeUpdate for [a0254000001ABqe]
+00:22:22.590 (4444876551)|SOQL_EXECUTE_BEGIN|[242]|Aggregations:0|SELECT Address__c FROM Account_Address__c 
+00:22:22.590 (4461375046)|SOQL_EXECUTE_END|[242]|Rows:0
+00:22:22.590 (4462101457)|SOQL_EXECUTE_BEGIN|[256]|Aggregations:0|SELECT Asset_Address__c FROM Asset 
+00:22:22.590 (4467485605)|SOQL_EXECUTE_END|[256]|Rows:0
+00:22:22.590 (4467984493)|SOQL_EXECUTE_BEGIN|[270]|Aggregations:0|SELECT Address__c FROM Contact_Address__c 
+00:22:22.590 (4474538437)|SOQL_EXECUTE_END|[270]|Rows:0
+00:22:22.590 (4499350393)|SOQL_EXECUTE_BEGIN|[196]|Aggregations:0|SELECT Contact__r.IE_Sync_Status__c FROM Contact_Address__c 
+00:22:22.590 (4519740380)|SOQL_EXECUTE_END|[196]|Rows:0
+00:22:22.590 (4520324413)|SOQL_EXECUTE_BEGIN|[206]|Aggregations:0|SELECT Account__r.IE_Sync_Status__c FROM Account_Address__c 
+00:22:22.590 (4548591868)|SOQL_EXECUTE_END|[206]|Rows:0
+00:22:22.590 (4549191827)|SOQL_EXECUTE_BEGIN|[216]|Aggregations:0|SELECT Asset__r.IE_Sync_Status__c FROM Asset_Address__c 
+00:22:22.590 (4558798678)|SOQL_EXECUTE_END|[216]|Rows:0
+00:22:23.559 (4559024932)|CUMULATIVE_LIMIT_USAGE
+00:22:23.559 (4559024932)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.559 (4559024932)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.559 (4559024932)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:22.590 (4560196263)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeUpdate for [a0254000001ABqe]
+00:22:22.590 (4576160727)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event AfterUpdate for [a0254000001ABqe]
+00:22:22.590 (4578345219)|SOQL_EXECUTE_BEGIN|[77]|Aggregations:2|SELECT (SELECT Primary_Ship_To__c, Physical__c, Account__r.BillingStreet, Account__r.BillingCountry, Account__r.BillingCity, Account__r.BillingPostalCode, Account__r.BillingState, Account__r.ShippingStreet, Account__r.ShippingCountry, Account__r.ShippingCity, Account__r.ShippingPostalCode, Account__r.ShippingState FROM Account_Addresses__r), (SELECT Primary_Mail_To__c, Physical__c, Contact__r.MailingStreet, Contact__r.MailingCountry, Contact__r.MailingCity, Contact__r.MailingPostalCode, Contact__r.MailingState, Contact__r.OtherStreet, Contact__r.OtherCountry, Contact__r.OtherCity, Contact__r.OtherPostalCode, Contact__r.OtherState FROM Contact_Addresses__r) FROM Address__c 
+00:22:23.596 (4596933185)|SOQL_EXECUTE_END|[77]|Rows:0
+00:22:23.597 (4597161791)|CUMULATIVE_LIMIT_USAGE
+00:22:23.597 (4597161791)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.597 (4597161791)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:23.597 (4597161791)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:23.596 (4598266232)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event AfterUpdate for [a0254000001ABqe]
+00:22:23.596 (4601238085)|WF_ACTIONS_END| Field Update: 2;
+00:22:23.596 (4601252218)|CODE_UNIT_FINISHED|Workflow:01IC0000000u1Qd
+00:22:23.596 (4601357923)|DML_END|[113]
+00:22:23.596 (4601673654)|DML_BEGIN|[120]|Op:Insert|Type:Account|Rows:1
+00:22:24.23 (5023436606)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:24.23 (5023690334)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:24.23 (5025767943)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+00:22:24.23 (5076835004)|SOQL_EXECUTE_END|[58]|Rows:1
+00:22:24.77 (5077763807)|CUMULATIVE_LIMIT_USAGE
+00:22:24.77 (5077763807)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:24.77 (5077763807)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:24.77 (5077763807)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:23.596 (5331121928)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event BeforeInsert for [new]
+00:22:24.354 (5354997246)|CUMULATIVE_LIMIT_USAGE
+00:22:24.354 (5354997246)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 70 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:24.354 (5354997246)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:24.354 (5354997246)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:23.596 (5356340502)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeInsert for [new]
+00:22:24.596 (5596431072)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+00:22:24.596 (5596483546)|VALIDATION_RULE|03dC0000000LIXL|Future_Asset_Owner_Account_Validation
+00:22:24.596 (5597001432)|VALIDATION_FORMULA|$Profile.Id <> "00e80000000p6lF" && 
+$Profile.Id <> "00eC0000001GSlm" && 
+$Profile.Id <> "00eC0000001GSlh" &&
+Id = "001C0000019yujW"
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|From_Lead_Conversion__c=0 , $Profile.Name=System Administrator , Bypass__c=0 , $Profile.Id=00e80000000p6lF , CreatedDate=null , Id=null
+00:22:24.596 (5597027664)|VALIDATION_PASS
+00:22:24.596 (5597077276)|CODE_UNIT_FINISHED|Validation:Account:new
+00:22:24.596 (6432902268)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event AfterInsert for [0015400000ClYur]
+00:22:24.596 (6433575881)|USER_DEBUG|[77]|DEBUG|:::::createAccountAddress :::::::
+00:22:24.596 (6433899647)|USER_DEBUG|[103]|DEBUG|:::::billingAddressMap :::::::{}
+00:22:24.596 (6434244266)|USER_DEBUG|[126]|DEBUG|:::::accountAddresses :::::::()
+00:22:25.434 (6434277499)|CUMULATIVE_LIMIT_USAGE
+00:22:25.434 (6434277499)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 70 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.434 (6434277499)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.434 (6434277499)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:24.596 (6435414217)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterInsert for [0015400000ClYur]
+00:22:24.596 (6438183744)|DML_END|[120]
+00:22:24.596 (6438525572)|DML_BEGIN|[127]|Op:Insert|Type:Account_Address__c|Rows:1
+00:22:25.677 (6677516891)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7v|Account_Address_Trigger on Account_Address trigger event BeforeInsert for [new]
+00:22:25.677 (6738109046)|SOQL_EXECUTE_BEGIN|[331]|Aggregations:0|SELECT Id, Account__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Primary_Mail_To__c FROM Account_Address__c 
+00:22:25.677 (6745615861)|SOQL_EXECUTE_END|[331]|Rows:0
+00:22:25.746 (6746286392)|CUMULATIVE_LIMIT_USAGE
+00:22:25.746 (6746286392)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 88 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.746 (6746286392)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.746 (6746286392)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:25.677 (6747622282)|CODE_UNIT_FINISHED|Account_Address_Trigger on Account_Address trigger event BeforeInsert for [new]
+00:22:25.677 (6819226673)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7v|Account_Address_Trigger on Account_Address trigger event AfterInsert for [a0154000000n2Oe]
+00:22:25.677 (6820530068)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Account__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Primary_Mail_To__c FROM Account_Address__c 
+00:22:25.677 (6837333890)|SOQL_EXECUTE_END|[58]|Rows:1
+00:22:25.677 (6839281057)|SOQL_EXECUTE_BEGIN|[109]|Aggregations:1|SELECT Id, Primary_Billing_Address__c, Primary_Mailing_Address__c, Primary_Shipping_Address__c, Physical_Address__c, IE_Account__c, IE_Sync_Status__c, (SELECT Address__c, Primary_Mail_To__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Address__r.Address_Line_1__c, Address__r.Address_Line_2__c, Address__r.Address_Line_3__c, Address__r.Address_Line_4__c, Address__r.City__c, Address__r.Country__c, Address__r.Country_ISO_Code__c, Address__r.State_Province__c, Address__r.State_Province_ISO_Code__c, Address__r.Postal_Code__c FROM Account_Addresses__r WHERE (Active__c = TRUE AND (Primary_Mail_To__c = TRUE OR Primary_Ship_To__c = TRUE OR Primary_Bill_To__c = TRUE OR Physical__c = TRUE))) FROM Account 
+00:22:25.677 (6886327632)|SOQL_EXECUTE_END|[109]|Rows:1
+00:22:25.677 (6888585174)|DML_BEGIN|[142]|Op:Update|Type:Account|Rows:1
+00:22:25.898 (6898461534)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:25.898 (6898558484)|ENTERING_MANAGED_PKG|AVA_SFCORE
+00:22:25.898 (6900282688)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+00:22:25.898 (6907439991)|SOQL_EXECUTE_END|[58]|Rows:1
+00:22:25.898 (6910236262)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT ObjectId__c FROM UDL__c
+00:22:25.898 (6952498940)|SOQL_EXECUTE_END|[23]|Rows:0
+00:22:25.954 (6954608184)|CUMULATIVE_LIMIT_USAGE
+00:22:25.954 (6954608184)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 88 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.954 (6954608184)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.954 (6954608184)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:25.677 (6957203411)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event BeforeUpdate for [0015400000ClYur]
+00:22:25.957 (6957336901)|CUMULATIVE_LIMIT_USAGE
+00:22:25.957 (6957336901)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 88 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.957 (6957336901)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:25.957 (6957336901)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:25.677 (6958491429)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeUpdate for [0015400000ClYur]
+00:22:25.677 (6965435810)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:0015400000ClYur
+00:22:25.677 (6965456736)|VALIDATION_RULE|03dC0000000LIXL|Future_Asset_Owner_Account_Validation
+00:22:25.677 (6965994865)|VALIDATION_FORMULA|$Profile.Id <> "00e80000000p6lF" && 
+$Profile.Id <> "00eC0000001GSlm" && 
+$Profile.Id <> "00eC0000001GSlh" &&
+Id = "001C0000019yujW"
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|From_Lead_Conversion__c=0 , $Profile.Name=System Administrator , Bypass__c=0 , $Profile.Id=00e80000000p6lF , CreatedDate=2017-12-04 06:22:25 , Id=0015400000ClYur
+00:22:25.677 (6966022283)|VALIDATION_PASS
+00:22:25.677 (6966055902)|CODE_UNIT_FINISHED|Validation:Account:0015400000ClYur
+00:22:25.677 (7014686317)|DML_END|[142]
+00:22:26.14 (7014807640)|CUMULATIVE_LIMIT_USAGE
+00:22:26.14 (7014807640)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 88 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:26.14 (7014807640)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:26.14 (7014807640)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:25.677 (7015890654)|CODE_UNIT_FINISHED|Account_Address_Trigger on Account_Address trigger event AfterInsert for [a0154000000n2Oe]
+00:22:25.677 (7018760778)|DML_END|[127]
+00:22:25.677 (7019185270)|DML_BEGIN|[137]|Op:Insert|Type:Order__c|Rows:1
+00:22:25.677 (7216586187)|DML_END|[137]
+00:22:25.677 (7217124050)|DML_BEGIN|[149]|Op:Insert|Type:Product2|Rows:1
+00:22:25.677 (7600315551)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Product2
+00:22:25.677 (7643351789)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:25.677 (7643421353)|WF_CRITERIA_BEGIN|[Product: Test Prod1 01t540000029rko]|Product Creation E-Mail Alert|01QC0000000DMLm|ON_CREATE_ONLY|0
+00:22:25.677 (7644109922)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]And({!ID:CreatedBy.Username} = "DT Interface" ,{!ID:Name} = {!ID:ProductCode})|Values:CreatedBy.Username=kent.roessler@daikinapplied.com.ierenewal, ProductCode=DPS015A, Name=Test Prod1
+00:22:25.677 (7644126668)|WF_CRITERIA_END|false
+00:22:25.677 (7644143020)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:25.677 (7644155735)|WF_ACTION| None
+00:22:25.677 (7644162101)|WF_RULE_EVAL_END
+00:22:25.677 (7644223196)|WF_ACTIONS_END| None
+00:22:25.677 (7644237849)|CODE_UNIT_FINISHED|Workflow:Product2
+00:22:25.677 (7644411060)|DML_END|[149]
+00:22:25.677 (7644799163)|DML_BEGIN|[160]|Op:Insert|Type:Product2|Rows:1
+00:22:25.677 (7662645504)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Product2
+00:22:25.677 (7667609527)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:25.677 (7667640972)|WF_CRITERIA_BEGIN|[Product: Intelligent Equipment Gateway 01t540000029rkp]|Product Creation E-Mail Alert|01QC0000000DMLm|ON_CREATE_ONLY|0
+00:22:25.677 (7667806131)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]And({!ID:CreatedBy.Username} = "DT Interface" ,{!ID:Name} = {!ID:ProductCode})|Values:CreatedBy.Username=kent.roessler@daikinapplied.com.ierenewal, ProductCode=null, Name=Intelligent Equipment Gateway
+00:22:25.677 (7667819885)|WF_CRITERIA_END|false
+00:22:25.677 (7667832911)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:25.677 (7667841157)|WF_ACTION| None
+00:22:25.677 (7667845811)|WF_RULE_EVAL_END
+00:22:25.677 (7667883774)|WF_ACTIONS_END| None
+00:22:25.677 (7667893816)|CODE_UNIT_FINISHED|Workflow:Product2
+00:22:25.677 (7667972899)|DML_END|[160]
+00:22:25.677 (7668157812)|DML_BEGIN|[171]|Op:Insert|Type:Product2|Rows:1
+00:22:26.680 (7680129598)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Product2
+00:22:26.680 (7684736370)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:26.680 (7684767473)|WF_CRITERIA_BEGIN|[Product: Intelligent Equipment Energy Management Module 01t540000029rkq]|Product Creation E-Mail Alert|01QC0000000DMLm|ON_CREATE_ONLY|0
+00:22:26.680 (7684988685)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]And({!ID:CreatedBy.Username} = "DT Interface" ,{!ID:Name} = {!ID:ProductCode})|Values:CreatedBy.Username=kent.roessler@daikinapplied.com.ierenewal, ProductCode=null, Name=Intelligent Equipment Energy Management Module
+00:22:26.680 (7685009743)|WF_CRITERIA_END|false
+00:22:26.680 (7685033484)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:26.680 (7685050486)|WF_ACTION| None
+00:22:26.680 (7685060620)|WF_RULE_EVAL_END
+00:22:26.680 (7685108365)|WF_ACTIONS_END| None
+00:22:26.680 (7685119526)|CODE_UNIT_FINISHED|Workflow:Product2
+00:22:26.680 (7685199267)|DML_END|[171]
+00:22:26.680 (7685640871)|DML_BEGIN|[181]|Op:Insert|Type:Asset|Rows:1
+00:22:26.680 (7806983273)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeInsert for [new]
+00:22:26.680 (7836949282)|SOQL_EXECUTE_BEGIN|[61]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+00:22:26.680 (7868217487)|SOQL_EXECUTE_END|[61]|Rows:1
+00:22:26.868 (7868910033)|CUMULATIVE_LIMIT_USAGE
+00:22:26.868 (7868910033)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 11 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 146 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:26.868 (7868910033)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:26.868 (7868910033)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:26.680 (7888546946)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeInsert for [new]
+00:22:26.680 (7909712548)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Asset:new
+00:22:26.680 (7909734747)|VALIDATION_RULE|03dC0000000LEi2|Install_Date_Validation_Rule
+00:22:26.680 (7910116160)|VALIDATION_FORMULA|ISPICKVAL(Status, "Installed") &&  TEXT(InstallDate) = ""|Status=null , InstallDate=null
+00:22:26.680 (7910131563)|VALIDATION_PASS
+00:22:26.680 (7910135171)|VALIDATION_RULE|03dC0000000LEi3|Install_Location_Validation
+00:22:26.680 (7910327475)|VALIDATION_FORMULA|ISPICKVAL(Status,"Installed") && TEXT(Install_Country__c) = ""|Status=null , Install_Country__c=null
+00:22:26.680 (7910341417)|VALIDATION_PASS
+00:22:26.680 (7910344553)|VALIDATION_RULE|03dC0000000LEi4|Purchase_Date_Validation
+00:22:26.680 (7910638510)|VALIDATION_FORMULA|ISPICKVAL(Status, "Purchased") &&  TEXT(PurchaseDate) = ""|Status=null , PurchaseDate=null
+00:22:26.680 (7910656773)|VALIDATION_PASS
+00:22:26.680 (7910698696)|CODE_UNIT_FINISHED|Validation:Asset:new
+00:22:26.680 (8340575421)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterInsert for [02i54000002Z06H]
+00:22:26.680 (8358189839)|USER_DEBUG|[100]|DEBUG|:::::::processGatewayAsset::::::{02i54000002Z06HAAS=Asset:{Id=02i54000002Z06HAAS, ContactId=null, AccountId=0015400000ClYurAAF, Product2Id=01t540000029rkoAAA, IsCompetitorProduct=false, CreatedDate=2017-12-04 06:22:27, CreatedById=005C000000615ihIAA, LastModifiedDate=2017-12-04 06:22:27, LastModifiedById=005C000000615ihIAA, SystemModstamp=2017-12-04 06:22:27, IsDeleted=false, Name=Asset Test1, SerialNumber=SN123Test1, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=null, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06406501, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Test Vendor1, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=[{"code_sequence":"1","code_value":"MPS","code_description":"UNIT TYPE; Unit Type"},{"code_sequence":"2","code_value":"003B","code_description":"UNIT SIZE; 3 ton, R410A"},{"code_sequence":"3","code_value":"Y","code_description":"HEAT; None"},{"code_sequence":"4","code_value":"D","code_description":"VOLTAGE/POWER CONNECTION; 460 V power"},{"code_sequence":"5","code_value":"M","code_description":"DRIVE PACKAGE; Belt drive - high static"},{"code_sequence":"6","code_value":"00D","code_description":"HEATING CAPACITY/CONTROLS; DDC controls"},{"code_sequence":"7","code_value":"CZ","code_description":"OPTIONS; HP,LP,LowAmb/Comfort Aler,FldPower GFI, Hail Guard"},{"code_sequence":"8","code_value":"D","code_description":"ECONOMIZER; Field Mounted 0-30% Outside air hood"}], Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=a095400000XJ4zFAAT, Asset_Address__c=a0254000001ABqeAAG, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=Order Tag 1, Asset_Address_Line_1__c=Test Address Line 1, Asset_Address_Line_2__c=null, Asset_City__c=Minneapolis, Asset_State_Province__c=Minnesota, Asset_Postal_Code__c=55421, Asset_Country__c=United States, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=SO #999, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=Test Order Job Name 1, IE_Asset__c=true, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=Pending, IE_Updated_Date__c=null, MAC_Address__c=null, Parent_Asset__c=null, SIM_Card_ICCID__c=null, Current_Code_String_Breakdown__c=null, Device_ID__c=null, Record_Usage__c=IE, Serial_Number_ID__c=null, Asset_Country_ISO_Code__c=USA, Asset_State_ISO_Code__c=MN, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c=Test Address Line 1 Minneapolis, Minnesota 55421 United States, Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=Test DW PCL Description1, Product_Description__c=Test Description1, SIM_Card_Active__c=false, Bypass__c=false, GWotGo__c=false, ResetSuccessful__c=None}}
+00:22:26.680 (8359117358)|SOQL_EXECUTE_BEGIN|[118]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:26.680 (8402492865)|SOQL_EXECUTE_END|[118]|Rows:0
+00:22:26.680 (8403200820)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:26.680 (8430086999)|SOQL_EXECUTE_END|[148]|Rows:0
+00:22:27.430 (8430321479)|CUMULATIVE_LIMIT_USAGE
+00:22:27.430 (8430321479)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 13 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 146 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.430 (8430321479)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.430 (8430321479)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:26.680 (8431507513)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterInsert for [02i54000002Z06H]
+00:22:26.680 (8431984385)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Asset
+00:22:26.680 (8449372102)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:26.680 (8449424745)|WF_CRITERIA_BEGIN|[Asset: Asset Test1 02i54000002Z06H]|Asset Serial Number ID Update|01QC0000000InsP|ON_ALL_CHANGES|0
+00:22:26.680 (8455492897)|WF_RULE_FILTER|[Asset : Serial Number not equal to ] AND
+ [Asset : Serial Number not equal to Unknown, UNKNOWN]
+00:22:26.680 (8455537199)|WF_RULE_EVAL_VALUE|SN123Test1
+00:22:26.680 (8455549260)|WF_RULE_EVAL_VALUE|SN123Test1
+00:22:26.680 (8455568954)|WF_CRITERIA_END|true
+00:22:26.680 (8470002146)|WF_CRITERIA_BEGIN|[Asset: Asset Test1 02i54000002Z06H]|Gateway Commissioned|01QC0000000Is0N|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:26.680 (8470101731)|WF_RULE_FILTER|[Asset : Gateway Commissioned equals true]
+00:22:26.680 (8470125141)|WF_RULE_EVAL_VALUE|0
+00:22:26.680 (8470132380)|WF_CRITERIA_END|false
+00:22:26.680 (8470147704)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:26.680 (8470554944)|WF_FIELD_UPDATE|[Asset: Asset Test1 02i54000002Z06H]|Field:Asset: Serial Number ID|Value:SN123Test1|Id=04YC0000000HAfA|CurrentRule:Asset Serial Number ID Update (Id=01QC0000000InsP)
+00:22:26.680 (8470587968)|WF_ACTION| Field Update: 1;
+00:22:26.680 (8470594653)|WF_RULE_EVAL_END
+00:22:26.680 (8472744323)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06H]
+00:22:26.680 (8473699849)|SOQL_EXECUTE_BEGIN|[61]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+00:22:26.680 (8478887204)|SOQL_EXECUTE_END|[61]|Rows:1
+00:22:27.479 (8479399480)|CUMULATIVE_LIMIT_USAGE
+00:22:27.479 (8479399480)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 14 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.479 (8479399480)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.479 (8479399480)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:26.680 (8480539312)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06H]
+00:22:26.680 (8510238818)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06H]
+00:22:26.680 (8513776248)|USER_DEBUG|[100]|DEBUG|:::::::processGatewayAsset::::::{02i54000002Z06HAAS=Asset:{Id=02i54000002Z06HAAS, ContactId=null, AccountId=0015400000ClYurAAF, Product2Id=01t540000029rkoAAA, IsCompetitorProduct=false, CreatedDate=2017-12-04 06:22:27, CreatedById=005C000000615ihIAA, LastModifiedDate=2017-12-04 06:22:28, LastModifiedById=005C000000615ihIAA, SystemModstamp=2017-12-04 06:22:28, IsDeleted=false, Name=Asset Test1, SerialNumber=SN123Test1, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=null, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06406501, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Test Vendor1, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=[{"code_sequence":"1","code_value":"MPS","code_description":"UNIT TYPE; Unit Type"},{"code_sequence":"2","code_value":"003B","code_description":"UNIT SIZE; 3 ton, R410A"},{"code_sequence":"3","code_value":"Y","code_description":"HEAT; None"},{"code_sequence":"4","code_value":"D","code_description":"VOLTAGE/POWER CONNECTION; 460 V power"},{"code_sequence":"5","code_value":"M","code_description":"DRIVE PACKAGE; Belt drive - high static"},{"code_sequence":"6","code_value":"00D","code_description":"HEATING CAPACITY/CONTROLS; DDC controls"},{"code_sequence":"7","code_value":"CZ","code_description":"OPTIONS; HP,LP,LowAmb/Comfort Aler,FldPower GFI, Hail Guard"},{"code_sequence":"8","code_value":"D","code_description":"ECONOMIZER; Field Mounted 0-30% Outside air hood"}], Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=a095400000XJ4zFAAT, Asset_Address__c=a0254000001ABqeAAG, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=Order Tag 1, Asset_Address_Line_1__c=Test Address Line 1, Asset_Address_Line_2__c=null, Asset_City__c=Minneapolis, Asset_State_Province__c=Minnesota, Asset_Postal_Code__c=55421, Asset_Country__c=United States, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=SO #999, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=Test Order Job Name 1, IE_Asset__c=true, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=Pending, IE_Updated_Date__c=null, MAC_Address__c=null, Parent_Asset__c=null, SIM_Card_ICCID__c=null, Current_Code_String_Breakdown__c=null, Device_ID__c=null, Record_Usage__c=IE, Serial_Number_ID__c=SN123Test1, Asset_Country_ISO_Code__c=USA, Asset_State_ISO_Code__c=MN, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c=Test Address Line 1 Minneapolis, Minnesota 55421 United States, Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=Test DW PCL Description1, Product_Description__c=Test Description1, SIM_Card_Active__c=false, Bypass__c=false, GWotGo__c=false, ResetSuccessful__c=None}}
+00:22:26.680 (8514377794)|SOQL_EXECUTE_BEGIN|[118]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:26.680 (8520511397)|SOQL_EXECUTE_END|[118]|Rows:0
+00:22:26.680 (8521007430)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:26.680 (8526560322)|SOQL_EXECUTE_END|[148]|Rows:0
+00:22:27.526 (8526733522)|CUMULATIVE_LIMIT_USAGE
+00:22:27.526 (8526733522)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 16 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.526 (8526733522)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.526 (8526733522)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:26.680 (8527791508)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06H]
+00:22:26.680 (8528480310)|WF_ACTIONS_END| Field Update: 1;
+00:22:26.680 (8528494530)|CODE_UNIT_FINISHED|Workflow:Asset
+00:22:26.680 (8528585923)|DML_END|[181]
+00:22:26.680 (8528912274)|DML_BEGIN|[187]|Op:Insert|Type:Asset_Address__c|Rows:1
+00:22:26.680 (8624293832)|DML_END|[187]
+00:22:26.680 (8624807120)|DML_BEGIN|[198]|Op:Insert|Type:Asset|Rows:1
+00:22:26.680 (8629041970)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeInsert for [new]
+00:22:26.680 (8629840343)|SOQL_EXECUTE_BEGIN|[61]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+00:22:26.680 (8634812211)|SOQL_EXECUTE_END|[61]|Rows:1
+00:22:27.635 (8635210548)|CUMULATIVE_LIMIT_USAGE
+00:22:27.635 (8635210548)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 17 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.635 (8635210548)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.635 (8635210548)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:26.680 (8636409096)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeInsert for [new]
+00:22:26.680 (8640270133)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Asset:new
+00:22:26.680 (8640288984)|VALIDATION_RULE|03dC0000000LEi2|Install_Date_Validation_Rule
+00:22:26.680 (8640528864)|VALIDATION_FORMULA|ISPICKVAL(Status, "Installed") &&  TEXT(InstallDate) = ""|Status=null , InstallDate=null
+00:22:26.680 (8640543626)|VALIDATION_PASS
+00:22:26.680 (8640547116)|VALIDATION_RULE|03dC0000000LEi3|Install_Location_Validation
+00:22:26.680 (8640754255)|VALIDATION_FORMULA|ISPICKVAL(Status,"Installed") && TEXT(Install_Country__c) = ""|Status=null , Install_Country__c=null
+00:22:26.680 (8640768003)|VALIDATION_PASS
+00:22:26.680 (8640771276)|VALIDATION_RULE|03dC0000000LEi4|Purchase_Date_Validation
+00:22:26.680 (8640937816)|VALIDATION_FORMULA|ISPICKVAL(Status, "Purchased") &&  TEXT(PurchaseDate) = ""|Status=null , PurchaseDate=null
+00:22:26.680 (8640950835)|VALIDATION_PASS
+00:22:26.680 (8640983881)|CODE_UNIT_FINISHED|Validation:Asset:new
+00:22:26.680 (8661704310)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterInsert for [02i54000002Z06I]
+00:22:26.680 (8665288539)|USER_DEBUG|[100]|DEBUG|:::::::processGatewayAsset::::::{02i54000002Z06IAAS=Asset:{Id=02i54000002Z06IAAS, ContactId=null, AccountId=0015400000ClYurAAF, Product2Id=01t540000029rkpAAA, IsCompetitorProduct=false, CreatedDate=2017-12-04 06:22:28, CreatedById=005C000000615ihIAA, LastModifiedDate=2017-12-04 06:22:28, LastModifiedById=005C000000615ihIAA, SystemModstamp=2017-12-04 06:22:28, IsDeleted=false, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-2-075, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=null, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06406502, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Test Vendor3, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=true, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=000000000000, Parent_Asset__c=02i54000002Z06HAAS, SIM_Card_ICCID__c=89011704258018735310, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-000000FF-FF000000, Record_Usage__c=null, Serial_Number_ID__c=null, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=Test DW PCL Description3, Product_Description__c=Test Description3, SIM_Card_Active__c=true, Bypass__c=false, GWotGo__c=true, ResetSuccessful__c=None}}
+00:22:26.680 (8665884190)|SOQL_EXECUTE_BEGIN|[118]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:27.691 (8691671216)|SOQL_EXECUTE_END|[118]|Rows:0
+00:22:27.691 (8692544325)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:27.691 (8697867907)|SOQL_EXECUTE_END|[148]|Rows:0
+00:22:27.698 (8698055402)|CUMULATIVE_LIMIT_USAGE
+00:22:27.698 (8698055402)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 19 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.698 (8698055402)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.698 (8698055402)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8699193014)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterInsert for [02i54000002Z06I]
+00:22:27.691 (8699634110)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Asset
+00:22:27.691 (8711664336)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:27.691 (8711716835)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Asset Serial Number ID Update|01QC0000000InsP|ON_ALL_CHANGES|0
+00:22:27.691 (8711827627)|WF_RULE_FILTER|[Asset : Serial Number not equal to ] AND
+ [Asset : Serial Number not equal to Unknown, UNKNOWN]
+00:22:27.691 (8711873160)|WF_RULE_EVAL_VALUE|PO112711-2-075
+00:22:27.691 (8711886144)|WF_RULE_EVAL_VALUE|PO112711-2-075
+00:22:27.691 (8711893905)|WF_CRITERIA_END|true
+00:22:27.691 (8711927375)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Gateway Commissioned|01QC0000000Is0N|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:27.691 (8711984136)|WF_RULE_FILTER|[Asset : Gateway Commissioned equals true]
+00:22:27.691 (8712004681)|WF_RULE_EVAL_VALUE|1
+00:22:27.691 (8712012041)|WF_CRITERIA_END|true
+00:22:27.691 (8712030537)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:27.691 (8712354405)|WF_FIELD_UPDATE|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Field:Asset: Serial Number ID|Value:PO112711-2-075|Id=04YC0000000HAfA|CurrentRule:Asset Serial Number ID Update (Id=01QC0000000InsP)
+00:22:27.691 (8712464178)|WF_FIELD_UPDATE|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Field:Asset: Gateway Commissioned Date|Value:Mon Dec 04 00:00:00 GMT 2017|Id=04YC0000000HGmY|CurrentRule:Gateway Commissioned (Id=01QC0000000Is0N)
+00:22:27.691 (8712500738)|WF_ACTION| Field Update: 2;
+00:22:27.691 (8712507740)|WF_RULE_EVAL_END
+00:22:27.691 (8714495077)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06I]
+00:22:27.691 (8715152851)|SOQL_EXECUTE_BEGIN|[61]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+00:22:27.691 (8719378978)|SOQL_EXECUTE_END|[61]|Rows:1
+00:22:27.719 (8719758717)|CUMULATIVE_LIMIT_USAGE
+00:22:27.719 (8719758717)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 20 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.719 (8719758717)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.719 (8719758717)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8720792471)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06I]
+00:22:27.691 (8734306990)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06I]
+00:22:27.691 (8737545411)|USER_DEBUG|[100]|DEBUG|:::::::processGatewayAsset::::::{02i54000002Z06IAAS=Asset:{Id=02i54000002Z06IAAS, ContactId=null, AccountId=0015400000ClYurAAF, Product2Id=01t540000029rkpAAA, IsCompetitorProduct=false, CreatedDate=2017-12-04 06:22:28, CreatedById=005C000000615ihIAA, LastModifiedDate=2017-12-04 06:22:28, LastModifiedById=005C000000615ihIAA, SystemModstamp=2017-12-04 06:22:28, IsDeleted=false, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-2-075, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=null, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06406502, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Test Vendor3, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=true, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=000000000000, Parent_Asset__c=02i54000002Z06HAAS, SIM_Card_ICCID__c=89011704258018735310, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-000000FF-FF000000, Record_Usage__c=null, Serial_Number_ID__c=PO112711-2-075, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=2017-12-04 00:00:00, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=Test DW PCL Description3, Product_Description__c=Test Description3, SIM_Card_Active__c=true, Bypass__c=false, GWotGo__c=true, ResetSuccessful__c=None}}
+00:22:27.691 (8738124616)|SOQL_EXECUTE_BEGIN|[118]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:27.691 (8743728197)|SOQL_EXECUTE_END|[118]|Rows:0
+00:22:27.691 (8744222621)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+00:22:27.691 (8749189100)|SOQL_EXECUTE_END|[148]|Rows:0
+00:22:27.749 (8749373093)|CUMULATIVE_LIMIT_USAGE
+00:22:27.749 (8749373093)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 189 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.749 (8749373093)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.749 (8749373093)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8750433269)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06I]
+00:22:27.691 (8750953259)|WF_ACTIONS_END| Field Update: 2;
+00:22:27.691 (8750966502)|CODE_UNIT_FINISHED|Workflow:Asset
+00:22:27.691 (8751051882)|DML_END|[198]
+00:22:27.691 (8752387381)|SYSTEM_MODE_ENTER|false
+00:22:27.691 (8752402098)|SYSTEM_MODE_EXIT|false
+00:22:27.691 (8752446013)|SYSTEM_MODE_ENTER|false
+00:22:27.691 (8752803623)|USER_DEBUG|[28]|ERROR|IE_UnitResetCompletedService.doPut(): Unit SN = SN123Test1, MAC Address = 000000000000
+00:22:27.691 (8752929807)|USER_DEBUG|[35]|ERROR|IE_UnitResetCompletedService.doPut() Error: ErrorCode = Error_Code, ErrorMessage = Error Message
+00:22:27.691 (8754042568)|SOQL_EXECUTE_BEGIN|[41]|Aggregations:2|SELECT Id, SerialNumber, Parent_Asset__c, SIM_Card_Active__c, SIM_Card_ICCID__c, MAC_Address__c, Status, GWotGo__c, Commissioned__c, Device_ID__c, ResetSuccessful__c, (SELECT Id, Type__c, Name, Serial_Number__c, GWotGoAsset__c, Renewal_Counter__c, Connectivity_Type__c, Term_Years__c, Start_Date__c, End_Date__c, Buyer_ID__c, IE_ID__c, Active__c, LastModifiedDate, Asset__c FROM Subscriptions1__r), (SELECT Id, Name, Role__c, Contact__r.Name, Contact__r.Email, Contact__r.Id, Contact__r.AccountId, GWotGoAsset__c, GWotGoPermAssoc__c FROM Contact_Subscriptions1__r) FROM Asset WHERE (Name = 'Intelligent Equipment Gateway' AND Status != 'Obsolete' AND MAC_Address__c = :tmpVar1)
+00:22:27.691 (8790533681)|SOQL_EXECUTE_END|[41]|Rows:1
+00:22:27.691 (8790864744)|USER_DEBUG|[112]|ERROR|Unit Reset failed on IE side
+00:22:27.691 (8791287457)|DML_BEGIN|[167]|Op:Update|Type:Asset|Rows:1
+00:22:27.691 (8826091902)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06I]
+00:22:27.691 (8826868049)|SOQL_EXECUTE_BEGIN|[61]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+00:22:27.691 (8831362932)|SOQL_EXECUTE_END|[61]|Rows:1
+00:22:27.831 (8831693700)|CUMULATIVE_LIMIT_USAGE
+00:22:27.831 (8831693700)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 24 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 13 out of 150
+  Number of DML rows: 13 out of 10000
+  Maximum CPU time: 243 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.831 (8831693700)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.831 (8831693700)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8832762972)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeUpdate for [02i54000002Z06I]
+00:22:27.691 (8834595743)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Asset:02i54000002Z06I
+00:22:27.691 (8834614602)|VALIDATION_RULE|03dC0000000LEi2|Install_Date_Validation_Rule
+00:22:27.691 (8834832451)|VALIDATION_FORMULA|ISPICKVAL(Status, "Installed") &&  TEXT(InstallDate) = ""|Status=null , InstallDate=null
+00:22:27.691 (8834846255)|VALIDATION_PASS
+00:22:27.691 (8834849680)|VALIDATION_RULE|03dC0000000LEi3|Install_Location_Validation
+00:22:27.691 (8835028090)|VALIDATION_FORMULA|ISPICKVAL(Status,"Installed") && TEXT(Install_Country__c) = ""|Status=null , Install_Country__c=null
+00:22:27.691 (8835045429)|VALIDATION_PASS
+00:22:27.691 (8835048548)|VALIDATION_RULE|03dC0000000LEi4|Purchase_Date_Validation
+00:22:27.691 (8835195788)|VALIDATION_FORMULA|ISPICKVAL(Status, "Purchased") &&  TEXT(PurchaseDate) = ""|Status=null , PurchaseDate=null
+00:22:27.691 (8835207784)|VALIDATION_PASS
+00:22:27.691 (8835239857)|CODE_UNIT_FINISHED|Validation:Asset:02i54000002Z06I
+00:22:27.691 (8847152475)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06I]
+00:22:27.691 (8850361329)|USER_DEBUG|[100]|DEBUG|:::::::processGatewayAsset::::::{02i54000002Z06IAAS=Asset:{Id=02i54000002Z06IAAS, ContactId=null, AccountId=0015400000ClYurAAF, Product2Id=01t540000029rkpAAA, IsCompetitorProduct=false, CreatedDate=2017-12-04 06:22:28, CreatedById=005C000000615ihIAA, LastModifiedDate=2017-12-04 06:22:28, LastModifiedById=005C000000615ihIAA, SystemModstamp=2017-12-04 06:22:28, IsDeleted=false, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-2-075, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=null, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06406502, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Test Vendor3, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=true, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=000000000000, Parent_Asset__c=02i54000002Z06HAAS, SIM_Card_ICCID__c=89011704258018735310, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-000000FF-FF000000, Record_Usage__c=null, Serial_Number_ID__c=PO112711-2-075, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=2017-12-04 00:00:00, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=Test DW PCL Description3, Product_Description__c=Test Description3, SIM_Card_Active__c=true, Bypass__c=false, GWotGo__c=true, ResetSuccessful__c=False}}
+00:22:27.850 (8850433488)|CUMULATIVE_LIMIT_USAGE
+00:22:27.850 (8850433488)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 24 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 13 out of 150
+  Number of DML rows: 13 out of 10000
+  Maximum CPU time: 243 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.850 (8850433488)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.850 (8850433488)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8851493166)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterUpdate for [02i54000002Z06I]
+00:22:27.691 (8852512738)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Asset
+00:22:27.691 (8864189482)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:27.691 (8864241426)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Asset Serial Number ID Update|01QC0000000InsP|ON_ALL_CHANGES|0
+00:22:27.691 (8864349776)|WF_RULE_FILTER|[Asset : Serial Number not equal to ] AND
+ [Asset : Serial Number not equal to Unknown, UNKNOWN]
+00:22:27.691 (8864386098)|WF_RULE_EVAL_VALUE|PO112711-2-075
+00:22:27.691 (8864401204)|WF_RULE_EVAL_VALUE|PO112711-2-075
+00:22:27.691 (8864408243)|WF_CRITERIA_END|true
+00:22:27.691 (8864442031)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i54000002Z06I]|Gateway Commissioned|01QC0000000Is0N|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:27.691 (8864476180)|WF_RULE_NOT_EVALUATED
+00:22:27.691 (8864490268)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:27.691 (8864668072)|WF_ACTION| Field Update: 1;
+00:22:27.691 (8864678208)|WF_RULE_EVAL_END
+00:22:27.691 (8864738054)|WF_ACTIONS_END| Field Update: 1;
+00:22:27.691 (8864749709)|CODE_UNIT_FINISHED|Workflow:Asset
+00:22:27.691 (8865398344)|DML_END|[167]
+00:22:27.691 (8865570099)|USER_DEBUG|[170]|ERROR|IE_UnitResetCompletedService integrationErrorList: (Integration_Error__c:{Direction__c=, Error_Description__c=Unit Reset failed on IE side with errors: IE_UnitResetCompletedService.doPut() Errors:  ErrorCode = Error_Code, ErrorMessage = Error Message; , Integration_Object__c=Asset, Integration_Point__c=IE, Request_Data__c=IE_UnitResetCompletedService.doPut(): Unit SN = SN123Test1, MAC Address = 000000000000})
+00:22:27.691 (8865647740)|DML_BEGIN|[171]|Op:Insert|Type:Integration_Error__c|Rows:1
+00:22:27.691 (8887625582)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u58O
+00:22:27.691 (8892991540)|WF_RULE_EVAL_BEGIN|Workflow
+00:22:27.691 (8893019715)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUW]|Integration Error Creation|01QC0000000Ityi|ON_CREATE_ONLY|0
+00:22:27.691 (8893064279)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]TRUE|Values:
+00:22:27.691 (8893075794)|WF_CRITERIA_END|true
+00:22:27.691 (8893097042)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyUW]|Intel Notification|01QC0000000DL5s|ON_CREATE_OR_TRIGGERING_UPDATE|0
+00:22:27.691 (8893154406)|WF_RULE_FILTER|[Integration Error : Integration Point equals Intel TAS] 
+AND [Integration Error : Error Description contains Above model name and revision number combination was not found in Intel.]
+00:22:27.691 (8893176968)|WF_RULE_EVAL_VALUE|1
+00:22:27.691 (8893184139)|WF_CRITERIA_END|false
+00:22:27.691 (8893194825)|WF_SPOOL_ACTION_BEGIN|Workflow
+00:22:27.691 (8893217523)|WF_RULE_INVOCATION|[Integration Error: EA-00112863 a0054000001NyUW]
+00:22:27.691 (8893231478)|WF_EMAIL_ALERT|Id=01WC0000000HGrZ|CurrentRule:Integration Error Creation (Id=01QC0000000Ityi)
+00:22:27.691 (8925225457)|WF_EMAIL_SENT|Template:00XC0000001Ktvt|Recipients:mark.lockwood@daikinapplied.com kevin.mcalpine=daikinapplied.com@example.com |CcEmails:
+00:22:27.691 (8925261186)|WF_ACTION| Email Alert: 1;
+00:22:27.691 (8925269389)|WF_RULE_EVAL_END
+00:22:27.691 (8925370991)|WF_ACTIONS_END| Email Alert: 1;
+00:22:27.691 (8925386722)|CODE_UNIT_FINISHED|Workflow:01IC0000000u58O
+00:22:27.691 (8926547928)|DML_END|[171]
+00:22:27.691 (8926782449)|USER_DEBUG|[177]|ERROR|IE_UnitResetCompletedService Response object = IE_UnitResetCompletedResponse:[errors=(IE_Error:[ErrorCode=UNIT_RESET_ERRORS, ErrorMessage=Unit Reset failed on IE side with errors: IE_UnitResetCompletedService.doPut() Errors:  ErrorCode = Error_Code, ErrorMessage = Error Message; ]), unit=IE_UnitResetCompleted:[MACAddress=000000000000, UnitSerialNumber=SN123Test1, errors=(IE_Error:[ErrorCode=Error_Code, ErrorMessage=Error Message])]]
+00:22:27.691 (8926809176)|SYSTEM_MODE_EXIT|false
+00:22:27.927 (8927088051)|CUMULATIVE_LIMIT_USAGE
+00:22:27.927 (8927088051)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 24 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 14 out of 150
+  Number of DML rows: 14 out of 10000
+  Maximum CPU time: 243 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.927 (8927088051)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:22:27.927 (8927088051)|CUMULATIVE_LIMIT_USAGE_END
+
+00:22:27.691 (8927161001)|CODE_UNIT_FINISHED|IE_UnitResetCompletedService_Test.testPutOperation_UnitResetFail
+00:22:27.691 (8928779783)|EXECUTION_FINISHED

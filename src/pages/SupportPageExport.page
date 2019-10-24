@@ -1,0 +1,11 @@
+<apex:page controller="SupportPageCont" contentType="application/vnd.ms-excel#SupportPage.xls" sidebar="false" standardStylesheets="false" showHeader="false">
+    <apex:dataTable value="{!currentQueriedRecords.wrappers}" var="wrapper">      
+         <apex:facet name="header">Search Results</apex:facet>         
+        <apex:repeat value="{!currentExportFields}" var="field">
+           <apex:column >
+               <apex:facet name="header" > {!field.label}</apex:facet>
+               <apex:outputText value="{!wrapper.obj[field.fieldpath]}" />
+           </apex:column>
+        </apex:repeat>
+    </apex:datatable>
+</apex:page>

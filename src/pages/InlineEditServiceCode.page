@@ -1,0 +1,101 @@
+<apex:page standardController="Case" extensions="InlineEditServiceCodeExt">
+<apex:pageMessages />
+<script>
+    function redirectTop(param){
+        window.top.location = param;
+    }
+    function setFocusOnLoad() {
+        //document.getElementById('units').focus();
+    }
+    window.onload=setFocusOnLoad;
+    
+</script>
+
+<apex:form >
+    <apex:pageBlock title="Service Codes" > 
+
+        <apex:pageBlockButtons > 
+           <apex:commandButton id="saveButton" value="Save" action="{!save}"/> 
+           <apex:commandButton id="newButton" 
+                value="New" 
+                action="{!handleNew}"
+                oncomplete="redirectTop('{!newCodeURL}');"/> 
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!serviceCodes}" var="csmodel" id="serviceCodeTable">
+             <apex:column >
+                <apex:commandButton value="Clone" action="{!handleClone}" reRender="serviceCodeTable">
+                    <apex:param name="cloneCodeId" value="{!csmodel.caseServiceCode.id}" assignTo="{!cloneCodeId}" />
+                </apex:commandButton>
+            </apex:column>
+              <apex:column >
+                <apex:commandButton value="Delete" action="{!handleDelete}" reRender="serviceCodeTable">
+                    <apex:param name="deletedCodeId" value="{!csmodel.caseServiceCode.id}" assignTo="{!deletedCodeId}" />
+                </apex:commandButton>
+            </apex:column>
+           <apex:column headerValue="Name">
+                <apex:outputLink target="_parent" value="{!URLFOR($Action.Case_Service_Code__c.View, csmodel.caseServiceCode.id)}">
+                    {!csmodel.caseServiceCode.Name}
+                </apex:outputLink>
+            </apex:column>
+            <apex:column headerValue="Unit" id="units">
+                    <apex:selectList value="{!csmodel.caseServiceCode.UnitCode__c}" size="1">
+                        <apex:selectOptions value="{!csmodel.unitOptions}" />
+                        <apex:actionSupport event="onchange" />
+                    </apex:selectList>
+            </apex:column>
+            
+           <apex:column headerValue="Modes" id="modes">
+                    <apex:selectList value="{!csmodel.caseServiceCode.ModeCode__c}" size="1">
+                        <apex:selectOptions value="{!csmodel.modeOptions}" />
+                        <apex:actionSupport event="onchange" />
+                    </apex:selectList>
+            </apex:column>
+
+
+            <apex:column headerValue="Type" id="types">
+                <apex:selectList value="{!csmodel.caseServiceCode.TypeCode__c}" size="1">
+                    <apex:selectOptions value="{!csmodel.typeOptions}" />
+                    <apex:actionSupport event="onchange" />
+                </apex:selectList>
+            </apex:column>
+
+           <apex:column headerValue="Major" id="majors">
+                <apex:selectList value="{!csmodel.caseServiceCode.MajorCode__c}" size="1">
+                    <apex:selectOptions value="{!csmodel.majorOptions}" />
+                    <apex:actionSupport event="onchange" />
+                </apex:selectList>
+            </apex:column>
+
+            
+            <apex:column headerValue="Specific" id="specifics" >
+                <apex:actionRegion >
+                    <apex:selectList value="{!csmodel.caseServiceCode.SpecificCode__c}" size="1">
+                        <apex:selectOptions value="{!csmodel.specificOptions}" />
+                        <apex:actionSupport event="onchange" />
+                    </apex:selectList>
+                </apex:actionRegion>
+            </apex:column> 
+
+            <apex:column headerValue="Warranty Class" id="classifications" >
+                <apex:selectList value="{!csmodel.caseServiceCode.WarrantyClassCode__c}" size="1">
+                    <apex:selectOptions value="{!csmodel.warrantyOptions}" />
+                    <apex:actionSupport event="onchange" />
+                </apex:selectList>
+            </apex:column>
+
+            <apex:column headerValue="Responsibility" id="responsibilities" >
+                <apex:selectList value="{!csmodel.caseServiceCode.Responsibility__c}" size="1">
+                    <apex:selectOptions value="{!csmodel.respOptions}" />
+                    <apex:actionSupport event="onchange" />
+                </apex:selectList>
+            </apex:column>
+
+            <apex:repeat value="{!$ObjectType.Case_Service_Code__c.FieldSets.In_Line_Edit}" var="f">
+                <apex:column id="rest" headerValue="{!f.Label}">
+                    <apex:inputField value="{!csmodel.caseServiceCode[f]}" />
+                </apex:column>
+            </apex:repeat>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

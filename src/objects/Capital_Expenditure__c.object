@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object for maintaining CAPEX information for our Admin team in Salesforce</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Information</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Employee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Employee</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Capital_Expenditures</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Fiscal Year</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>FY14</fullName>
+                    <default>false</default>
+                    <label>FY14</label>
+                </value>
+                <value>
+                    <fullName>FY15</fullName>
+                    <default>false</default>
+                    <label>FY15</label>
+                </value>
+                <value>
+                    <fullName>FY16</fullName>
+                    <default>false</default>
+                    <label>FY16</label>
+                </value>
+                <value>
+                    <fullName>FY17</fullName>
+                    <default>false</default>
+                    <label>FY17</label>
+                </value>
+                <value>
+                    <fullName>FY18</fullName>
+                    <default>false</default>
+                    <label>FY18</label>
+                </value>
+                <value>
+                    <fullName>FY19</fullName>
+                    <default>false</default>
+                    <label>FY19</label>
+                </value>
+                <value>
+                    <fullName>FY20</fullName>
+                    <default>false</default>
+                    <label>FY20</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Hours spent on item.</inlineHelpText>
+        <label>Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Month</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name/description of the actual task.</inlineHelpText>
+        <label>Project/Item Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Item_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Project/Item Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Apttus Implementation</fullName>
+                    <default>false</default>
+                    <label>Apttus Implementation</label>
+                </value>
+                <value>
+                    <fullName>Custom Address Implementation</fullName>
+                    <default>false</default>
+                    <label>Custom Address Implementation</label>
+                </value>
+                <value>
+                    <fullName>Daikin Tools Integration</fullName>
+                    <default>false</default>
+                    <label>Daikin Tools Integration</label>
+                </value>
+                <value>
+                    <fullName>IE Implementation</fullName>
+                    <default>false</default>
+                    <label>IE Implementation</label>
+                </value>
+                <value>
+                    <fullName>Latin America ERP Implementation</fullName>
+                    <default>false</default>
+                    <label>Latin America ERP Implementation</label>
+                </value>
+                <value>
+                    <fullName>Misc. Case</fullName>
+                    <default>false</default>
+                    <label>Misc. Case</label>
+                </value>
+                <value>
+                    <fullName>Misc. Change Request</fullName>
+                    <default>false</default>
+                    <label>Misc. Change Request</label>
+                </value>
+                <value>
+                    <fullName>PAR/Pipeline Implementation</fullName>
+                    <default>false</default>
+                    <label>PAR/Pipeline Implementation</label>
+                </value>
+                <value>
+                    <fullName>TRC Console Page Implementation</fullName>
+                    <default>false</default>
+                    <label>TRC Console Page Implementation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Related_Case__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Capital Expenditures</relationshipLabel>
+        <relationshipName>Capital_Expenditures</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Change_Request__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Change Request</label>
+        <referenceTo>Change_Request__c</referenceTo>
+        <relationshipLabel>Capital Expenditures</relationshipLabel>
+        <relationshipName>Capital_Expenditures</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Capital Expenditure</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CE-{0000000}</displayFormat>
+        <label>Capital Expenditure Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Capital Expenditures</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Change_Request_Case_Lookup_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>(Text(Project_Item_Name__c) = &quot;Misc. Case&quot; &amp;&amp;  ISBLANK( Related_Case__c)) || (Text(Project_Item_Name__c) = &quot;Misc. Change Request&quot; &amp;&amp;  ISBLANK(Related_Change_Request__c))</errorConditionFormula>
+        <errorMessage>You must provide Project Description details for items of type Misc. Case &amp; Misc. Change Request.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

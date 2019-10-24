@@ -1,0 +1,59 @@
+<!--
+@Name: APTS_AddModels.page
+@Author: Hardik Shah
+@CreateDate: 18/01/2016
+@Description: VF Page - This Page allows user to enter model details.
+@UsedBy: Custom-Button - AddModels on Cart Page
+@ModifiedBy: NA
+@ModifiedDate: NA
+@ChangeDescription: 
+PS: @ModifiedBy and @ChangeDescription can be repeated multiple time, based on number of changes made to the original process.
+***************************************************************** -->
+
+<apex:page controller="APTS_AddModelController" showHeader="True" sidebar="True">
+<apex:form >
+    <apex:pageBlock >
+        <apex:sectionHeader title="Please provide model information" id="section1" />
+            <apex:pageMessages id="errorMessage"></apex:pageMessages>
+                <apex:pageBlockTable value="{!MAModelsList}" var="model" id="modelList">
+                    <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Equipment_Type__c.Label}" >
+                        <apex:inputfield value="{!model.Equipment_Type__c}" style="width:90px" />
+                    </apex:column>
+                     <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Equipment_Group__c.Label}" >
+                        <apex:inputfield value="{!model.Equipment_Group__c}" style="width:90px" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Model__c.Label}" >
+                        <apex:inputfield value="{!model.Model__c}"/>
+                    </apex:column> 
+                    
+                     <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Serial__c.Label}" >
+                        <apex:inputfield value="{!model.Serial__c}"/>
+                    </apex:column> 
+                    <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Manufacturer__c.Label}" >
+                        <apex:inputfield value="{!model.Manufacturer__c}"/>
+                    </apex:column>
+                   
+                    <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Other_Manufacturer__c.Label}" >
+                        <apex:inputfield value="{!model.Other_Manufacturer__c}"/>
+                    </apex:column>
+                   
+                    <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Special_Instructions__c.Label}" >
+                        <apex:inputfield value="{!model.Special_Instructions__c}"/>
+                    </apex:column> 
+                    <apex:column >
+                        <apex:commandButton value="Add" action="{!AddRow}" reRender="modelList,errorMessage"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:commandLink value="Del" action="{!removeRow}"  styleClass="btn" style="color:black;text-decoration:none" reRender="modelList,errorMessage">
+                        <apex:param name="testModel" value="{!model.UniqueNumber__c}" assignTo="{!sUniqueNumber}" />
+                        </apex:commandLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+            <div align="center" draggable="false" >
+                <br></br>
+                <apex:commandButton value="Add Row" action="{!AddRow}" reRender="modelList"/>
+                <apex:commandButton value="Save and Return to Cart" action="{!saveMAModles}" reRender="errorMessage"/>   
+            </div>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

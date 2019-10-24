@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>About_Daikin</fullName>
+        <field>About_Daikin__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>About Daikin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>About_Daikin_MA</fullName>
+        <field>About_Daikin__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>About Daikin MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>About_Daikin_s_r</fullName>
+        <field>About_Daikin__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>About Daikin s&amp;r</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>About_Daikin_tk_under_25k</fullName>
+        <field>About_Daikin__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>About Daikin tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Appendix</fullName>
+        <field>Appendix__c</field>
+        <formula>&quot;9&quot;</formula>
+        <name>Appendix</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Appendix_tk</fullName>
+        <field>Appendix__c</field>
+        <formula>&quot;17&quot;</formula>
+        <name>Appendix tk</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Appendix_under_25k</fullName>
+        <field>Appendix__c</field>
+        <formula>&quot;8&quot;</formula>
+        <name>Appendix under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Orders</fullName>
+        <field>Change_Orders__c</field>
+        <formula>&quot;15&quot;</formula>
+        <name>Change Orders</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Orders_tk_under_25k</fullName>
+        <field>Change_Orders__c</field>
+        <formula>&quot;14&quot;</formula>
+        <name>Change Orders tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clarifications_exceptions_exclusions</fullName>
+        <field>Clarifications_Exceptions_Exclusions__c</field>
+        <formula>&quot;11&quot;</formula>
+        <name>Clarifications, exceptions, exclusions</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clarifications_exceptions_tk_under_25k</fullName>
+        <field>Clarifications_Exceptions_Exclusions__c</field>
+        <formula>&quot;10&quot;</formula>
+        <name>Clarifications, exceptions tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Confidentiality</fullName>
+        <field>Confidentiality__c</field>
+        <formula>&quot;12&quot;</formula>
+        <name>Confidentiality</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Confidentiality_tk_under_25k</fullName>
+        <field>Confidentiality__c</field>
+        <formula>&quot;11&quot;</formula>
+        <name>Confidentiality tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contractor_Agreement</fullName>
+        <field>Contractor_Agreement__c</field>
+        <formula>&quot;16&quot;</formula>
+        <name>Contractor Agreement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contractor_Agreement_tk_under_25k</fullName>
+        <field>Contractor_Agreement__c</field>
+        <formula>&quot;15&quot;</formula>
+        <name>Contractor Agreement tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cover_Page</fullName>
+        <field>Cover_Page__c</field>
+        <formula>&quot;1&quot;</formula>
+        <name>Cover Page</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_MA</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Executive Summary MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_S_R</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>Executive Summary S&amp;R</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_TK</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Executive Summary TK</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_TK_under_25k</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;0&quot;</formula>
+        <name>Executive Summary TK under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_under_25k</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;0&quot;</formula>
+        <name>Executive Summary under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Executive_Summary_under_25k_SR</fullName>
+        <field>Executive_Summary__c</field>
+        <formula>&quot;0&quot;</formula>
+        <name>Executive Summary under 25k SR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MA_T_C</fullName>
+        <field>Maintenance_Agreements_Terms_Condition__c</field>
+        <formula>&quot;8&quot;</formula>
+        <name>MA T&amp;C</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MA_Terms_and_Conditions_under_25k</fullName>
+        <field>Maintenance_Agreements_Terms_Condition__c</field>
+        <formula>&quot;7&quot;</formula>
+        <name>MA Terms and Conditions under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing</fullName>
+        <field>Pricing__c</field>
+        <formula>&quot;13&quot;</formula>
+        <name>Pricing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_and_Acceptance</fullName>
+        <field>Pricing_and_Acceptance__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Pricing and Acceptance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_and_Acceptance_MA</fullName>
+        <field>Pricing_and_Acceptance__c</field>
+        <formula>&quot;7&quot;</formula>
+        <name>Pricing and Acceptance MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_and_Acceptance_SR_under_25k</fullName>
+        <field>Pricing_and_Acceptance__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Pricing and Acceptance SR under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_and_Acceptance_under_25k</fullName>
+        <field>Pricing_and_Acceptance__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Pricing and Acceptance under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_tk_under_25k</fullName>
+        <field>Pricing__c</field>
+        <formula>&quot;12&quot;</formula>
+        <name>Pricing tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Background</fullName>
+        <field>Project_Background_Info_General_Info__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Project Background</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Communication</fullName>
+        <field>Project_Communication__c</field>
+        <formula>&quot;8&quot;</formula>
+        <name>Project Communication</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Communication_under_25k</fullName>
+        <field>Project_Communication__c</field>
+        <formula>&quot;7&quot;</formula>
+        <name>Project Communication under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Documentation</fullName>
+        <field>Project_Documentation__c</field>
+        <formula>&quot;9&quot;</formula>
+        <name>Project Documentation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Documentation_under_25k</fullName>
+        <field>Project_Documentation__c</field>
+        <formula>&quot;8&quot;</formula>
+        <name>Project Documentation under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Management_Approach</fullName>
+        <field>Project_Management_Approach__c</field>
+        <formula>&quot;7&quot;</formula>
+        <name>Project Management Approach</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Management_Approach_under_25k</fullName>
+        <field>Project_Management_Approach__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Project Management Approach under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Team_Diagram</fullName>
+        <field>Project_Team_Diagram__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Project Team Diagram</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_Team_Diagram_under_25k</fullName>
+        <field>Project_Team_Diagram__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Project Team Diagram under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Project_background_tk_under_25k</fullName>
+        <field>Project_Background_Info_General_Info__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Project background tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Recommended_Owner_s_contingency</fullName>
+        <field>Recommended_Owner_s_Contingency__c</field>
+        <formula>&quot;14&quot;</formula>
+        <name>Recommended Owner&apos;s contingency</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Recommended_Owner_s_contingency_tk_25k</fullName>
+        <field>Recommended_Owner_s_Contingency__c</field>
+        <formula>&quot;13&quot;</formula>
+        <name>Recommended Owner&apos;s contingency tk 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;10&quot;</formula>
+        <name>Scope of Services</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services_MA</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Scope of Services MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services_SR_Under_25k</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Scope of Services SR Under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services_S_R</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Scope of Services S&amp;R</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services_tk_under_25k</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;9&quot;</formula>
+        <name>Scope of Services tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Scope_of_Services_under_25k</fullName>
+        <field>Scope_of_Services__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Scope of Services under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Capabilities_MA</fullName>
+        <field>Service_Capabilities__c</field>
+        <formula>&quot;5&quot;</formula>
+        <name>Service Capabilities MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Capabilities_S_R</fullName>
+        <field>Service_Capabilities__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Service Capabilities S&amp;R</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Capabilities_under_25k</fullName>
+        <field>Service_Capabilities__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Service Capabilities under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Capabilities_under_25k_SR</fullName>
+        <field>Service_Capabilities__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>Service Capabilities under 25k SR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Repair_T_C</fullName>
+        <field>Service_and_Repair_Terms_and_Conditions__c</field>
+        <formula>&quot;7&quot;</formula>
+        <name>Service &amp; Repair T&amp;C</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_and_Repair_Terms_and_Conditions</fullName>
+        <field>Service_and_Repair_Terms_and_Conditions__c</field>
+        <formula>&quot;6&quot;</formula>
+        <name>Service and Repair Terms and Conditions</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Table_of_Contents</fullName>
+        <field>Table_of_Contents__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>Table of Contents</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Table_of_Contents_MA</fullName>
+        <field>Table_of_Contents__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>Table of Contents MA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Table_of_Contents_MA_under_25k</fullName>
+        <field>Table_of_Contents__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>Table of Contents MA under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Table_of_Contents_TK_under_25k</fullName>
+        <field>Table_of_Contents__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>Table of Contents TK under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Use_Conditional_Clauses</fullName>
+        <field>Use_Conditional_Clauses__c</field>
+        <literalValue>1</literalValue>
+        <name>Use Conditional Clauses</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>appendix_tk_under_25k</fullName>
+        <field>Appendix__c</field>
+        <formula>&quot;16&quot;</formula>
+        <name>appendix tk under 25k</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>About Daikin MA</fullName>
+        <actions>
+            <name>About_Daikin_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.About_Daikin__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>About Daikin S%26R</fullName>
+        <actions>
+            <name>About_Daikin_s_r</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.About_Daikin__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bottom 4 MA</fullName>
+        <actions>
+            <name>Appendix</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>MA_T_C</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pricing_and_Acceptance_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Table_of_Contents_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bottom 4 MA Under 25k</fullName>
+        <actions>
+            <name>Appendix_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>MA_Terms_and_Conditions_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pricing_and_Acceptance_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Table_of_Contents_MA_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bottom Three S%26R</fullName>
+        <actions>
+            <name>Pricing_and_Acceptance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services_S_R</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Service_Repair_T_C</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bottom Three S%26R Under 25k</fullName>
+        <actions>
+            <name>Pricing_and_Acceptance_SR_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services_SR_Under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Service_and_Repair_Terms_and_Conditions</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cover Page</fullName>
+        <actions>
+            <name>Cover_Page</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Cover_Page__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Executive Summary MA</fullName>
+        <actions>
+            <name>Executive_Summary_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Executive_Summary__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Executive Summary MA under 25k</fullName>
+        <actions>
+            <name>Executive_Summary_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Executive_Summary__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Executive Summary S%26R</fullName>
+        <actions>
+            <name>Executive_Summary_S_R</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Executive_Summary__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Executive Summary S%26R Under 25k</fullName>
+        <actions>
+            <name>Executive_Summary_under_25k_SR</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Executive_Summary__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Capabilities MA</fullName>
+        <actions>
+            <name>Service_Capabilities_MA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Service_Capabilities__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Capabilities MA under 25k</fullName>
+        <actions>
+            <name>Service_Capabilities_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Service_Capabilities__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Maintenance Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Capabilities S%26R</fullName>
+        <actions>
+            <name>Service_Capabilities_S_R</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Service_Capabilities__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Capabilities S%26R Under 25k</fullName>
+        <actions>
+            <name>Service_Capabilities_under_25k_SR</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Service_Capabilities__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service &amp; Repair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>TK fields</fullName>
+        <actions>
+            <name>About_Daikin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clarifications_exceptions_exclusions</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Executive_Summary_TK</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Background</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Communication</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Documentation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Management_Approach</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Team_Diagram</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Table_of_Contents</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Turnkey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>TK fields 2</fullName>
+        <actions>
+            <name>Appendix_tk</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Change_Orders</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Confidentiality</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Contractor_Agreement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pricing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Recommended_Owner_s_contingency</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Turnkey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>TK fields under 25k</fullName>
+        <actions>
+            <name>About_Daikin_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clarifications_exceptions_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Executive_Summary_TK_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Communication_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Documentation_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Management_Approach_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_Team_Diagram_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Project_background_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Scope_of_Services_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Table_of_Contents_TK_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Turnkey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>TK fields under 25k 2</fullName>
+        <actions>
+            <name>Change_Orders_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Confidentiality_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Contractor_Agreement_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pricing_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Recommended_Owner_s_contingency_tk_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>appendix_tk_under_25k</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Turnkey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Apttus_Proposal__Proposal__c.LA_Total_Net_Price_for_Contract__c</field>
+            <operation>lessThan</operation>
+            <value>&quot;USD 25,000&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Use Conditional Clauses</fullName>
+        <actions>
+            <name>Use_Conditional_Clauses</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Clause__c.Use_Conditional_Clauses__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

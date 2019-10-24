@@ -1,0 +1,103 @@
+39.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+20:26:59.1 (1122720)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+20:26:59.1 (1201702)|EXECUTION_STARTED
+20:26:59.1 (1208580)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000Ezof|IE_UnitResetCompletedService_Test.testPutOperation_ExceptionThrown
+20:26:59.1 (2138130)|DML_BEGIN|[43]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+20:26:59.18 (18327598)|ENTERING_MANAGED_PKG|AVA_SFCORE
+20:26:59.18 (22889599)|ENTERING_MANAGED_PKG|AVA_SFCORE
+20:26:59.18 (23840573)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+20:26:59.18 (29990272)|SOQL_EXECUTE_END|[58]|Rows:0
+20:26:59.30 (30231941)|CUMULATIVE_LIMIT_USAGE
+20:26:59.30 (30231941)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:26:59.30 (30231941)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:26:59.30 (30231941)|CUMULATIVE_LIMIT_USAGE_END
+
+20:26:59.1 (150137645)|DML_END|[43]
+20:26:59.1 (187986826)|SYSTEM_MODE_ENTER|false
+20:26:59.1 (188009429)|SYSTEM_MODE_EXIT|false
+20:26:59.1 (212886451)|SYSTEM_MODE_ENTER|false
+20:26:59.1 (247350641)|SYSTEM_MODE_ENTER|true
+20:26:59.1 (247395269)|SYSTEM_MODE_EXIT|true
+20:26:59.1 (248640012)|USER_DEBUG|[138]|ERROR|IE_UnitResetCompletedService Exception: System.NullPointerException: Attempt to de-reference a null object &#124; getTypeName = System.NullPointerException
+20:26:59.1 (249481468)|USER_DEBUG|[170]|ERROR|IE_UnitResetCompletedService integrationErrorList: (Integration_Error__c:{Direction__c=, Error_Description__c=General Exception from IE_UnitResetCompletedService, Integration_Object__c=Unknown, Integration_Point__c=IE, Request_Data__c=Attempt to de-reference a null object})
+20:26:59.1 (249561764)|DML_BEGIN|[171]|Op:Insert|Type:Integration_Error__c|Rows:1
+20:26:59.1 (379978810)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u58O
+20:26:59.1 (393187241)|WF_RULE_EVAL_BEGIN|Workflow
+20:26:59.1 (393229439)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyRz]|Integration Error Creation|01QC0000000Ityi|ON_CREATE_ONLY|0
+20:26:59.1 (393360414)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]TRUE|Values:
+20:26:59.1 (393377058)|WF_CRITERIA_END|true
+20:26:59.1 (394458946)|WF_CRITERIA_BEGIN|[Integration Error: EA-00112863 a0054000001NyRz]|Intel Notification|01QC0000000DL5s|ON_CREATE_OR_TRIGGERING_UPDATE|0
+20:26:59.1 (396527801)|WF_RULE_FILTER|[Integration Error : Integration Point equals Intel TAS] 
+AND [Integration Error : Error Description contains Above model name and revision number combination was not found in Intel.]
+20:26:59.1 (396562797)|WF_RULE_EVAL_VALUE|1
+20:26:59.1 (396570720)|WF_CRITERIA_END|false
+20:26:59.1 (396584080)|WF_SPOOL_ACTION_BEGIN|Workflow
+20:26:59.1 (396610992)|WF_RULE_INVOCATION|[Integration Error: EA-00112863 a0054000001NyRz]
+20:26:59.1 (396626164)|WF_EMAIL_ALERT|Id=01WC0000000HGrZ|CurrentRule:Integration Error Creation (Id=01QC0000000Ityi)
+20:26:59.1 (457609146)|WF_EMAIL_SENT|Template:00XC0000001Ktvt|Recipients:mark.lockwood@daikinapplied.com kevin.mcalpine=daikinapplied.com@example.com |CcEmails:
+20:26:59.1 (457657259)|WF_ACTION| Email Alert: 1;
+20:26:59.1 (457665726)|WF_RULE_EVAL_END
+20:26:59.1 (457793183)|WF_ACTIONS_END| Email Alert: 1;
+20:26:59.1 (457815037)|CODE_UNIT_FINISHED|Workflow:01IC0000000u58O
+20:26:59.1 (459598362)|DML_END|[171]
+20:26:59.1 (459987173)|USER_DEBUG|[177]|ERROR|IE_UnitResetCompletedService Response object = IE_UnitResetCompletedResponse:[errors=(IE_Error:[ErrorCode=UNIT_RESET_EXCEPTION, ErrorMessage=IE_UnitResetCompletedService Exception: System.NullPointerException: Attempt to de-reference a null object &#124; Type Name = System.NullPointerException]), unit=null]
+20:26:59.1 (460018294)|SYSTEM_MODE_EXIT|false
+20:26:59.460 (460437014)|CUMULATIVE_LIMIT_USAGE
+20:26:59.460 (460437014)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:26:59.460 (460437014)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:26:59.460 (460437014)|CUMULATIVE_LIMIT_USAGE_END
+
+20:26:59.1 (460517380)|CODE_UNIT_FINISHED|IE_UnitResetCompletedService_Test.testPutOperation_ExceptionThrown
+20:26:59.1 (462062120)|EXECUTION_FINISHED

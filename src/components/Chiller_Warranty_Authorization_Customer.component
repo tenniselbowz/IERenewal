@@ -1,0 +1,55 @@
+<apex:component Controller="ChillerWarrantyAuthorizationVFClass" access="global" >
+    <apex:attribute name="CaseIds" type="String" description="Id of tde account" assignTo="{!CaseIdvalue}" access="global"/>
+    <table border="1">
+        <tr >
+            <th><b>Unit Case Number</b></th>
+            <th><b>Serial Number</b></th>
+              <th>Case Service Code</th>
+              <th>Warranty Class</th>
+              <th>Asset PCL</th>
+            <th><b>Hours Approved</b></th>
+            <th><b>Labor Amount Approved</b></th>
+            <th><b>Daikin Parts Amount Approved</b></th>
+            <th><b>3rdParty Parts Amount Approved</b></th>
+            <th><B>Additional Materials Amount Approved</B></th>
+            <!--<th style="border: 1px solid black;"><b>Service Code Details</b></th>-->
+        </tr>
+            <apex:repeat value="{!casess}" var="match">
+                    <apex:repeat value="{!getservicecodes[match]}" var="a" >
+                        <tr>
+                        <td>{!match.CaseNumber}</td>
+                        <td>{!match.Serial_Number__c}</td>
+                        <td> {!a.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </td>
+                        <td> {!a.WarrantyClassCode__r.Name}&nbsp;{!a.WarrantyClassCode__r.Label__c} </td>
+                        <td>  {!a.Asset_PCL__c}</td>
+                       <!-- <td>{!a.Hours_Approved__c}</td> -->
+                        <td>
+                        <apex:outputText value="{0, number,##0.00}">
+                            <apex:param value="{!ABS(a.Hours_Approved__c)}" />
+                        </apex:outputText>
+                    </td> 
+                        <td> 
+                            $<apex:outputText value="{0, number, ###,###,###,##0.00}">
+                                <apex:param value="{!ABS(a.Labor_Amount_Approved__c)}" />
+                            </apex:outputText>
+                        </td>
+                        <td>
+                            $<apex:outputText value="{0, number, ###,###,###,##0.00}">
+                                <apex:param value="{!ABS(a.Daikin_Parts_Amount_Approved__c)}" />
+                            </apex:outputText>
+                        </td>
+                        <td>
+                            $<apex:outputText value="{0, number, ###,###,###,##0.00}">
+                                <apex:param value="{!ABS(a.X3rd_Party_Parts_Amount_Approved__c)}" />
+                            </apex:outputText>
+                        </td>
+                        <td>
+                            $<apex:outputText value="{0, number, ###,###,###,##0.00}">
+                                <apex:param value="{!ABS(a.Additional_Materials_Amount_Approved__c)}" />
+                            </apex:outputText>
+                        </td>
+                        </tr> 
+                    </apex:repeat>
+        </apex:repeat>
+    </table>
+</apex:component>

@@ -1,0 +1,201 @@
+<apex:page sidebar="false" showheader="false" standardController="Account" extensions="FindNearbyLeads">
+    <apex:outputText value="{!Account.BillingLatitude}" rendered="false"/>
+    <apex:outputText value="{!Account.BillingLongitude}" rendered="false"/>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdU2SKG3p2qbCrJRmbRyGKNV14H0LU-os"></script>        
+        
+    <!-- Setup the map to take up the whole window --> 
+    <style>
+        html, body { height: 100%; }
+        .page-map, .ui-content, #map-canvas { width: 100%; height:100%; padding: 0; }
+        #map-canvas { height: min-height: 100%; }
+    </style>
+    <!--  All content is rendered by the Google Maps code -->
+    <!--  This minimal HTML justs provide a target for GMaps to write to -->
+    <body style="font-family: Arial; border: 0 none;">
+         <p>
+            <table>
+                <tr>
+                    <td><img src="https://maps.google.com/mapfiles/ms/micons/red.png" />&nbsp;<font color="red">National Accounts</font></td>
+<!--                    <td><img src="https://maps.google.com/mapfiles/ms/micons/green.png" />&nbsp;<font color="green">My Accounts</font></td>-->
+                    <td><img src="https://maps.google.com/mapfiles/ms/micons/blue.png" />&nbsp;<font color="blue"></font>All Accounts</td>
+                </tr>
+            </table>
+         </p>
+         <div id="map-canvas"><p align="center" valign="center" width="*"><br /><br /><b>Loading ...</b></p></div>
+    </body>
+    
+    <script>
+        function initialize() {
+            var lat, lon;
+              
+             lat = '{!Account.BillingLatitude}';
+             lon = '{!Account.BillingLongitude}';     
+             // If we can, get the position of the user via device geolocation
+             if ((lat === '' || lon === '') && navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(function(position){
+                     lat = position.coords.latitude;
+                     lon = position.coords.longitude;                    
+                     //alert(lat);
+                     //alert(lon);
+                     // Use Visualforce JavaScript Remoting to query for nearby accounts
+                     Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.FindNearbyLeads.getNearbyAccounts}', lat, lon,
+                         function(result, event){
+                             if (event.status) {
+                                 console.log(result);
+                                 createMap(lat, lon, result);           
+                             } else if (event.type === 'exception') {
+                                 (event.message);
+                                 //exception case code          
+                             } else {
+                                            
+                             }
+                          }, 
+                          {escape: true}
+                      );
+                  });
+              } else if(lat === '' || lon === '') {
+                  // Set default values for map if the device doesn't have geolocation capabilities
+                    /** San Francisco **/
+                    lat = 37.77493;
+                    lon = -122.419416;
+                    
+                    var result = [];
+                    createMap(lat, lon, result);
+              } else {
+                 console.log(lat);
+                 console.log(lon);
+                 // Use Visualforce JavaScript Remoting to query for nearby accounts
+                 Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.FindNearbyLeads.getNearbyAccounts}', lat, lon,
+                     function(result, event){
+                         if (event.status) {
+                             console.log(result);
+                             createMap(lat, lon, result);           
+                         } else if (event.type === 'exception') {
+                             (event.message);
+                             //exception case code          
+                         } else {
+                                        
+                         }
+                      }, 
+                      {escape: true}
+                  );
+             }
+     }
+    
+         function createMap(lat, lon, accounts){
+            // Get the map div, and center the map at the proper geolocation
+            var currentPosition = new google.maps.LatLng(lat,lon);
+            var mapDiv = document.getElementById('map-canvas');
+            var map = new google.maps.Map(mapDiv, {
+                center: currentPosition, 
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            
+            // Set a marker for the current location
+            var positionMarker = new google.maps.Marker({
+                map: map,
+                position: currentPosition
+            });
+            
+                        
+            // Keep track of the map boundary that holds all markers
+            var mapBoundary = new google.maps.LatLngBounds();
+            mapBoundary.extend(currentPosition);
+            
+            // Set markers on the map from the @RemoteAction results
+            for(var i=0; i<accounts.length;i++){
+                //alert(accounts[i+1].Name);
+                console.log(accounts[i]);                
+                setupMarker(accounts[i]);
+            }
+            
+            // Resize map to neatly fit all of the markers
+            //map.fitBounds(mapBoundary);
+
+           function setupMarker(account){
+                var accountNavUrl;
+                
+                // Determine if we are in Salesforce1 and set navigation link appropriately
+                try{
+                    var isSF1=typeof sforce === 'undefined'?false:true;/*sforce.one*/
+                    if(isSF1){
+                        accountNavUrl = 'javascript:sforce.one.navigateToSObject(\'' + account.Id + '\')';
+                    } else {
+                        accountNavUrl = '/' + account.Id;
+                    }
+                } catch(err) {
+                    alert(err);
+                    console.log(err);
+                    accountNavUrl = '/' + account.Id;
+                }
+                var accountDetails = 
+                    'Name: <a href="' + accountNavUrl + '" target="_new">' + 
+                    account.Name + '</a><br/>Street: ' + 
+                    account.BillingStreet; 
+               
+               // Create the callout that will pop up on the marker     
+               var infowindow = new google.maps.InfoWindow({ 
+                   content: accountDetails
+               });
+               
+               // Place the marker on the map   
+               if(typeof(account.BillingLatitude) != "undefined" && typeof(account.BillingLongitude) != "undefined"){               
+                       var marker = new google.maps.Marker({
+                       map: map,
+                       icon: 'https://maps.google.com/mapfiles/ms/micons/blue.png', 
+                       position: new google.maps.LatLng( 
+                                       account.BillingLatitude, 
+                                       account.BillingLongitude)
+                   });                   
+                   if(account.National_Account__c=='Yes')
+                       marker.setIcon('https://maps.google.com/mapfiles/ms/micons/red.png');
+                       
+                   mapBoundary.extend(marker.getPosition());
+                   // Add the action to open up the panel when it's marker is clicked      
+                   google.maps.event.addListener(marker, 'click', function(){
+                       infowindow.open(map, marker);
+                   });
+                } else {    
+                    var address = account.BillingStreet;
+                    if(typeof(account.BillingCity) != "undefined")
+                        address += ' '+account.BillingCity;
+                    if(typeof(account.BillingState) != "undefined")
+                        address += ', '+account.BillingState;
+                    if(typeof(account.BillingPostalCode) != "undefined")
+                        address += ' '+account.BillingPostalCode;
+                    if(typeof(account.BillingCountry) != "undefined")
+                        address += ' '+account.BillingCountry;
+                        
+                    if(address.indexOf('undefined')<0){
+                        var geocoder = new google.maps.Geocoder();
+                        geocoder.geocode( { 'address': address}, function(results, status) {
+                          if (status == google.maps.GeocoderStatus.OK) {
+                            //In this case it creates a marker, but you can get the lat and lng from the location.LatLng
+                            var marker = new google.maps.Marker({
+                                map: map, 
+                                icon: 'https://maps.google.com/mapfiles/ms/micons/blue.png', 
+                                position: results[0].geometry.location
+                            });
+                                if(account.National_Account__c=='Yes')
+                                   marker.setIcon('https://maps.google.com/mapfiles/ms/micons/red.png');
+
+                               mapBoundary.extend(marker.getPosition());
+                               // Add the action to open up the panel when it's marker is clicked      
+                               google.maps.event.addListener(marker, 'click', function(){
+                                   infowindow.open(map, marker);
+                               });
+                          } else {
+                            //alert(address+ " was not successful for the following reason: " + status);
+                          }
+                        });               
+                    }
+                 }
+              }
+        }
+        // Fire the initialize function when the window loads
+        google.maps.event.addDomListener(window, 'load', initialize);
+        
+    </script>
+    
+</apex:page>

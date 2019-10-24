@@ -1,0 +1,4074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NewAccountPageWithAddress</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fieldSets>
+        <fullName>Account_Information</fullName>
+        <description>Use this Field Set to display fields in Account Information Page Block Section.</description>
+        <displayedFields>
+            <field>AccountSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone_2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Website</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Daikin_McQuay_Vendor_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>NumberOfEmployees</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Management_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AnnualRevenue</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Tax_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>National_Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Japanese_Company__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Market_Fund_CO_OP__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>High_Value__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Account Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Additional_Information</fullName>
+        <description>Use this Field Set to add fields to the Additional Information Page Block Section.</description>
+        <displayedFields>
+            <field>Additional_Information__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Additional Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>BMCServiceDesk__LinkRecords</fullName>
+        <availableFields>
+            <field>AccountNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__Active__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BillingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BillingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BillingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BillingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__FKSelfService_Theme__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__FKUrgency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>JigsawCompanyId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Ownership</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Rating</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__SLA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__ServiceProvider__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ShippingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ShippingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ShippingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ShippingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ShippingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Sic</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SicDesc</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TickerSymbol</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__Vendor__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Website</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__costCenter__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>BMCServiceDesk__inactive__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Specify the fields that are displayed in the lookup of this object.</description>
+        <displayedFields>
+            <field>Site</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Column Headers</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>EditableSupportAccountFields</fullName>
+        <description>This allows modification of the Support Page Visualforce page for creating Account records.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCountryCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStateCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>EditableSupportAccountFields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Rep_Information_DCW</fullName>
+        <description>Use this Field Set to add Fields to the Rep Information (DCW) Page Block Section.</description>
+        <displayedFields>
+            <field>Rep_Office_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Speed_Dial_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Rep_Office_Parent_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Location__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Active__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Mail_Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Regional_Office__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Continent__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Products__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Distribution_Notes__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Rep Information (DCW)</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Strategic_Account_Management</fullName>
+        <description>Use this Field Set to add fields to the Strategic Account Management Page Block Section.</description>
+        <displayedFields>
+            <field>Parent.LA_Strategic_Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Parent.Client_Profile__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Parent.Client_Business_Objectives_Initiatives__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Parent.Position_Strategy__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Parent.Attack_Strategy__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Strategic Account Management</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>System_Information</fullName>
+        <description>Use this Page Block Section to add Fields to System Information Page Block Section.</description>
+        <displayedFields>
+            <field>IE_Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Record_Usage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IE_Sync_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Review_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IE_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Last_Review_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IE_Updated_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Duplicate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Physical_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Source_System__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Bypass__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Warehouse_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>System Information</label>
+    </fieldSets>
+    <fields>
+        <fullName>AVA_SFCORE__Billing_County__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>County for Billing Address to be used in Avalara Tax Calculations if Billing Address selected as ship to address</inlineHelpText>
+        <label>Billing County</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Billing_Last_Validated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Billing Address was last validated.  Cannot Be Edited.</inlineHelpText>
+        <label>Last Validated</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__ExemptEntityType__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Entity/Use Code, if any, assocaited with this Account. Optional Field.</inlineHelpText>
+        <label>Entity/Use Code</label>
+        <referenceTo>AVA_SFCORE__EntityUse__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Shipping_County__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>County for Shipping Address to be used in Avalara Tax Calculations if Shipping Address selected as ship to address</inlineHelpText>
+        <label>Shipping County</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Shipping_Last_Validated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Shipping Address was last validated.  Cannot be Edited.</inlineHelpText>
+        <label>Last Validated</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <inlineHelpText>References record admin ownership only.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <inlineHelpText>The source of the account record. For example, Advertisement, Data.com, or Trade Show.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Management_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Management Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Growth</fullName>
+                    <default>false</default>
+                    <label>Growth</label>
+                </value>
+                <value>
+                    <fullName>House</fullName>
+                    <default>false</default>
+                    <label>House</label>
+                </value>
+                <value>
+                    <fullName>Maintained</fullName>
+                    <default>false</default>
+                    <label>Maintained</label>
+                </value>
+                <value>
+                    <fullName>Managed</fullName>
+                    <default>false</default>
+                    <label>Managed</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Strategic (Target)</fullName>
+                    <default>false</default>
+                    <label>Strategic (Target)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_Number__c</fullName>
+        <description>Oracle Assigned Account Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Oracle Number- 6 numeric digit
+Use last name for new accounts</inlineHelpText>
+        <label>Account Number (To Be Deleted)</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner Department (To Be Deleted)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.FirstName  &amp;  &quot; &quot;  &amp;  Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_User_Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Owner.User_Department__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner User Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_User_Division__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Owner.User_Division__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner User Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Owner Sales to identify Strategic, Growth &amp; New accounts for MAPS.</inlineHelpText>
+        <label>MAPS Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Growth</fullName>
+                    <default>false</default>
+                    <label>Growth</label>
+                </value>
+                <value>
+                    <fullName>Strategic</fullName>
+                    <default>false</default>
+                    <label>Strategic</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>dcw_DistChannels.dc_active_flag</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_active_flag</inlineHelpText>
+        <label>Active (DCW)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <description>This field captures all removed fields values</description>
+        <externalId>false</externalId>
+        <label>Additional Information</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <inlineHelpText>Estimated annual revenue of the account.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__BillingContactFilterCriteria__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Filter criteria to select billing contacts for the account or the comma separated list of email Ids to send billing statements.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Filter criteria to select billing contacts for the account or the comma separated list of email Ids to send billing statements.</inlineHelpText>
+        <label>Billing Contact Filter Criteria</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__BillingContactFormat__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies Billing Contact setup format for a given account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies Billing Contact setup format for a given account.</inlineHelpText>
+        <label>Billing Contact Format</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Comma Separated Values</fullName>
+                    <default>false</default>
+                    <label>Comma Separated Values</label>
+                </value>
+                <value>
+                    <fullName>Filter Criteria</fullName>
+                    <default>false</default>
+                    <label>Filter Criteria</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__BillingDayOfMonth__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The billing day of month for the account. Specific Day of Month, End of Month, etc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The billing day of month for the account. Specific Day of Month, End of Month, etc</inlineHelpText>
+        <label>Billing Day Of Month</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1st of the Month</fullName>
+                    <default>true</default>
+                    <label>1st of the Month</label>
+                </value>
+                <value>
+                    <fullName>2nd of the Month</fullName>
+                    <default>false</default>
+                    <label>2nd of the Month</label>
+                </value>
+                <value>
+                    <fullName>3rd of the Month</fullName>
+                    <default>false</default>
+                    <label>3rd of the Month</label>
+                </value>
+                <value>
+                    <fullName>4th of the Month</fullName>
+                    <default>false</default>
+                    <label>4th of the Month</label>
+                </value>
+                <value>
+                    <fullName>5th of the Month</fullName>
+                    <default>false</default>
+                    <label>5th of the Month</label>
+                </value>
+                <value>
+                    <fullName>6th of the Month</fullName>
+                    <default>false</default>
+                    <label>6th of the Month</label>
+                </value>
+                <value>
+                    <fullName>7th of the Month</fullName>
+                    <default>false</default>
+                    <label>7th of the Month</label>
+                </value>
+                <value>
+                    <fullName>8th of the Month</fullName>
+                    <default>false</default>
+                    <label>8th of the Month</label>
+                </value>
+                <value>
+                    <fullName>9th of the Month</fullName>
+                    <default>false</default>
+                    <label>9th of the Month</label>
+                </value>
+                <value>
+                    <fullName>10th of the Month</fullName>
+                    <default>false</default>
+                    <label>10th of the Month</label>
+                </value>
+                <value>
+                    <fullName>11th of the Month</fullName>
+                    <default>false</default>
+                    <label>11th of the Month</label>
+                </value>
+                <value>
+                    <fullName>12th of the Month</fullName>
+                    <default>false</default>
+                    <label>12th of the Month</label>
+                </value>
+                <value>
+                    <fullName>13th of the Month</fullName>
+                    <default>false</default>
+                    <label>13th of the Month</label>
+                </value>
+                <value>
+                    <fullName>14th of the Month</fullName>
+                    <default>false</default>
+                    <label>14th of the Month</label>
+                </value>
+                <value>
+                    <fullName>15th of the Month</fullName>
+                    <default>false</default>
+                    <label>15th of the Month</label>
+                </value>
+                <value>
+                    <fullName>16th of the Month</fullName>
+                    <default>false</default>
+                    <label>16th of the Month</label>
+                </value>
+                <value>
+                    <fullName>17th of the Month</fullName>
+                    <default>false</default>
+                    <label>17th of the Month</label>
+                </value>
+                <value>
+                    <fullName>18th of the Month</fullName>
+                    <default>false</default>
+                    <label>18th of the Month</label>
+                </value>
+                <value>
+                    <fullName>19th of the Month</fullName>
+                    <default>false</default>
+                    <label>19th of the Month</label>
+                </value>
+                <value>
+                    <fullName>20th of the Month</fullName>
+                    <default>false</default>
+                    <label>20th of the Month</label>
+                </value>
+                <value>
+                    <fullName>21st of the Month</fullName>
+                    <default>false</default>
+                    <label>21st of the Month</label>
+                </value>
+                <value>
+                    <fullName>22nd of the Month</fullName>
+                    <default>false</default>
+                    <label>22nd of the Month</label>
+                </value>
+                <value>
+                    <fullName>23rd of the Month</fullName>
+                    <default>false</default>
+                    <label>23rd of the Month</label>
+                </value>
+                <value>
+                    <fullName>24th of the Month</fullName>
+                    <default>false</default>
+                    <label>24th of the Month</label>
+                </value>
+                <value>
+                    <fullName>25th of the Month</fullName>
+                    <default>false</default>
+                    <label>25th of the Month</label>
+                </value>
+                <value>
+                    <fullName>26th of the Month</fullName>
+                    <default>false</default>
+                    <label>26th of the Month</label>
+                </value>
+                <value>
+                    <fullName>27th of the Month</fullName>
+                    <default>false</default>
+                    <label>27th of the Month</label>
+                </value>
+                <value>
+                    <fullName>28th of the Month</fullName>
+                    <default>false</default>
+                    <label>28th of the Month</label>
+                </value>
+                <value>
+                    <fullName>29th of the Month</fullName>
+                    <default>false</default>
+                    <label>29th of the Month</label>
+                </value>
+                <value>
+                    <fullName>30th of the Month</fullName>
+                    <default>false</default>
+                    <label>30th of the Month</label>
+                </value>
+                <value>
+                    <fullName>31st of the Month</fullName>
+                    <default>false</default>
+                    <label>31st of the Month</label>
+                </value>
+                <value>
+                    <fullName>End of Month</fullName>
+                    <default>false</default>
+                    <label>End of Month</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__BillingPreferenceId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the associated billing preference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the associated billing preference</inlineHelpText>
+        <label>Billing Preference</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Apttus_Config2__BillingPreference__c.Apttus_Config2__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Please select a billing preference</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Apttus_Config2__BillingPreference__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__CalendarCycleStart__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates which calendar month the billing cycle will align to for a given account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates which calendar month the billing cycle will align to for a given account.</inlineHelpText>
+        <label>Calendar Cycle Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__CertificateId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the associated tax certificate. Applicable only when tax exempt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the associated tax certificate. Applicable only when tax exempt.  This will exclude them from Sales Use Tax calculations on proposals.</inlineHelpText>
+        <label>Tax Certificate</label>
+        <referenceTo>Apttus_Config2__TaxCertificate__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__CreditMemoEmailTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the current selected Credit Memo Email Template of an account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the current selected Credit Memo Email Template of an account.</inlineHelpText>
+        <label>Credit Memo Email Template</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__DefaultCreditMemoTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the default Credit Memo template for generating Credit Memo documents</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the default Credit Memo template for generating Credit Memo documents</inlineHelpText>
+        <label>Default Credit Memo Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__DefaultInvoiceStatementTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the default template for generating invoice statements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the default template for generating invoice statements</inlineHelpText>
+        <label>Default Invoice Statement Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__DefaultInvoiceTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the default invoice template for generating invoices</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the default invoice template for generating invoices</inlineHelpText>
+        <label>Default Invoice Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__InvoiceEmailTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the current selected Invoice Email Template for a given account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the current selected Invoice Email Template for a given account.</inlineHelpText>
+        <label>Invoice Email Template</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__PaymentTermId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the default payment term associated with the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the default payment term associated with the account</inlineHelpText>
+        <label>Payment Term</label>
+        <referenceTo>Apttus_Config2__PaymentTerm__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__TaxExemptStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The tax exempt status. Applicable only when tax exempt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The tax exempt status. Applicable only when tax exempt.</inlineHelpText>
+        <label>Tax Exempt Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Apttus_Config2__TaxExempt__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                    <label>Processing</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Processing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Approved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Rejected</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__TaxExempt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The tax exempt indicator for the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The tax exempt indicator for the account</inlineHelpText>
+        <label>Tax Exempt ?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Attack_Strategy__c</fullName>
+        <description>Created for Strategic Accounts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Attack Strategy</inlineHelpText>
+        <label>Attack Strategy</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Frontal</fullName>
+                    <default>false</default>
+                    <label>Frontal</label>
+                </value>
+                <value>
+                    <fullName>Flanking</fullName>
+                    <default>false</default>
+                    <label>Flanking</label>
+                </value>
+                <value>
+                    <fullName>Fragment</fullName>
+                    <default>false</default>
+                    <label>Fragment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Auto_Account_Number__c</fullName>
+        <description>An auto-number field used to create a unique identifier for each account.</description>
+        <displayFormat>{00000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>An auto-number field used to create a unique identifier for each account.</inlineHelpText>
+        <label>Account Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__Business_Hour__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Support Hours</label>
+        <referenceTo>BusinessHours</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__CustomerPriority__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Customer Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__FKSelfService3_Theme__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field will be used to store branding theme set by admin for Self Service 3.0</description>
+        <externalId>false</externalId>
+        <label>Self Service 3.0 Theme</label>
+        <referenceTo>BMCServiceDesk__SelfService_Theme__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>AccountsThemeSS3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__FKSelfService_Theme__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field will be used to store branding theme set by admin for Self Service 2.0</description>
+        <externalId>false</externalId>
+        <label>SelfService Theme</label>
+        <referenceTo>BMCServiceDesk__SelfService_Theme__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__FKUrgency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FKUrgency</label>
+        <referenceTo>BMCServiceDesk__Urgency__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__NumberofLocations__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Locations</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__Remedyforce_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Remedyforce Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__SLAExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__SLASerialNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Serial Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__SLA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gold</fullName>
+                    <default>false</default>
+                    <label>Gold</label>
+                </value>
+                <value>
+                    <fullName>Silver</fullName>
+                    <default>false</default>
+                    <label>Silver</label>
+                </value>
+                <value>
+                    <fullName>Platinum</fullName>
+                    <default>false</default>
+                    <label>Platinum</label>
+                </value>
+                <value>
+                    <fullName>Bronze</fullName>
+                    <default>false</default>
+                    <label>Bronze</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__ServiceProvider__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ServiceProvider</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__UpsellOpportunity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Upsell Opportunity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Maybe</fullName>
+                    <default>false</default>
+                    <label>Maybe</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__Vendor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Vendor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__costCenter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMCServiceDesk__inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingCountry_ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Physical_Address__r.Country_ISO_Code__c</formula>
+        <label>Physical Country ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillingState_ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Physical_Address__r.State_Province_ISO_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Physical State ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to skip validation rules while uploading or updating records into Salesforce. After updating records please uncheck the field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Administrator use only. To know more please read field description.
+Do not use this field anywhere including reports.</inlineHelpText>
+        <label>Bypass</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Client_Business_Objectives_Initiatives__c</fullName>
+        <description>List the client’s stated goals or objectives as well as the projects initiated in response to the client’s value drivers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List the client’s stated goals or objectives as well as the projects initiated in response to the client’s value drivers.</inlineHelpText>
+        <label>Client Business Objectives &amp; Initiatives</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Profile__c</fullName>
+        <description>User input / defined. [Briefly describe the client’s business and mission statement]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Briefly describe the client’s business and mission statement</inlineHelpText>
+        <label>Client Profile</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Type (To Be Deleted)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                    <label>Architect</label>
+                </value>
+                <value>
+                    <fullName>Consulting Engineer</fullName>
+                    <default>false</default>
+                    <label>Consulting Engineer</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                    <label>Developer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Distributor-Contractor</fullName>
+                    <default>false</default>
+                    <label>Distributor-Contractor</label>
+                </value>
+                <value>
+                    <fullName>End User</fullName>
+                    <default>false</default>
+                    <label>End User</label>
+                </value>
+                <value>
+                    <fullName>General Contractor</fullName>
+                    <default>false</default>
+                    <label>General Contractor</label>
+                </value>
+                <value>
+                    <fullName>Installer</fullName>
+                    <default>false</default>
+                    <label>Installer</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Contractor</fullName>
+                    <default>false</default>
+                    <label>Mechanical Contractor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler</fullName>
+                    <default>false</default>
+                    <label>Wholesaler</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Continent__c</fullName>
+        <description>dcw_Continents.con_name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_Continents.con_name</inlineHelpText>
+        <label>Continent</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DCW_RGM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>DCW RGM</inlineHelpText>
+        <label>RGM</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DCW_Region__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>DCW Region Field</inlineHelpText>
+        <label>Region</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daikin_McQuay_Vendor_Number__c</fullName>
+        <description>Used to store Daikin Applied Vendor # for this entity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to store Daikin Applied Vendor # for this entity.</inlineHelpText>
+        <label>Vendor #</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <inlineHelpText>Text description of the account.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Distribution_Notes__c</fullName>
+        <description>dcw_DistChannels.dc_dist_notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_dist_notes</inlineHelpText>
+        <label>Distribution Notes</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if account appears to be a duplicate of another account.</inlineHelpText>
+        <label>Duplicate? (Do Not Use)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Originally added for to capture Customer Bill To information from the Data Warehouse (Installed Base) for TRC Integration.</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <inlineHelpText>Fax number for the account.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>From_Lead_Conversion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will be marked as TRUE only if this record is created by Lead conversion.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be marked as TRUE only if this record is created by Lead conversion.</inlineHelpText>
+        <label>From Lead Conversion</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>High_Value__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created for the DSO side of the business</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates this is a high value account. Only include the approximately 10-20% of accounts that produce approximately 80-90% of the results (or has the potential to do so).</inlineHelpText>
+        <label>High Value</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to indicate the record pertains to the IE integration. This is set on import of records from Daikin IE Back Office database or IE system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this account has purchased Intelligent Equipment subscription(s) or a contact at this company is an IE system user.</inlineHelpText>
+        <label>IE Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>IE ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IE_Sync_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>IE Sync Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IE_Updated_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>IE Updated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account has been inactivated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Account/Company no longer exists (closed doors, bankruptcy, etc.)</inlineHelpText>
+        <label>Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Japanese_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if the Account is a Japanese Company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the Account is a Japanese Company.</inlineHelpText>
+        <label>Japanese Company</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LA_Strategic_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Latin America Strategic Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latin America Strategic Account</inlineHelpText>
+        <label>LA Strategic Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Review_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date this account was last reviewed, augmented or cleaned.</inlineHelpText>
+        <label>Last Review Date (Do Not Use)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Won_Opp_Date__c</fullName>
+        <description>Displays the Close Date of the most recent closed won opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the Close Date of the most recent closed won opportunity.</inlineHelpText>
+        <label>Last Won Opp Date</label>
+        <summarizedField>Opportunity.CloseDate</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.IsWon</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Location_Active_DCW__c</fullName>
+        <externalId>false</externalId>
+        <formula>if (AND (Rep_Office_ID__c != null, Location__c != null), 
+(Location__c &amp; &quot; / &quot; &amp; if(Active__c = TRUE,&quot;ACTIVE&quot;,&quot;INACTIVE&quot;)), 
+if(AND (Rep_Office_ID__c != null, Active__c = TRUE),&quot;ACTIVE&quot;,
+if(AND (Rep_Office_ID__c != null, Active__c = FALSE),&quot;INACTIVE&quot;,&quot;&quot;)))</formula>
+        <label>Location / Active (DCW)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>dcw_DistChannels.dc_location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_location</inlineHelpText>
+        <label>Location (DCW)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mail_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_mail_qty</inlineHelpText>
+        <label>Mail Quantity</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Market_Fund_CO_OP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Market Fund CO-OP</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>McQuay_Gear__c</fullName>
+        <description>Does this account own any McQuay equipment?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does this account own or is the end-user of any McQuay equipment in their facilities?</inlineHelpText>
+        <label>McQuay Gear? (To Be Deleted)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>true</default>
+                    <label>NO</label>
+                </value>
+                <value>
+                    <fullName>YES</fullName>
+                    <default>false</default>
+                    <label>YES</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>National_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to identify a National Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies North America National Account when checked.</inlineHelpText>
+        <label>National Account</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label># of Opportunities</label>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Non_Standard_T_C__c</fullName>
+        <description>This will be used for the approval process so it skips legal approval.</description>
+        <externalId>false</externalId>
+        <label>Non-Standard T&amp;C</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_Activities__c</fullName>
+        <externalId>false</externalId>
+        <formula>Number_of_Open_Activities__c  +  Number_of_Closed_Activities__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Closed_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Closed Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Open_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Open Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Oracle__c</fullName>
+        <description>Oracle Account Number</description>
+        <externalId>false</externalId>
+        <label>Oracle #</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <inlineHelpText>Please select Parent Account for this account if any exists</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <inlineHelpText>Phone number for this account.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Phone_2__c</fullName>
+        <description>Originally added for to capture Customer Bill To information from the Data Warehouse (Installed Base) for TRC Integration.</description>
+        <externalId>false</externalId>
+        <label>Phone 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Physical_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Click to open and view/edit the Physical Address record for this Account.</inlineHelpText>
+        <label>Physical Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Accounts (Physical)</relationshipLabel>
+        <relationshipName>Accounts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Position_Strategy__c</fullName>
+        <description>Position Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Position Strategy</inlineHelpText>
+        <label>Position Strategy</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Defend</fullName>
+                    <default>false</default>
+                    <label>Defend</label>
+                </value>
+                <value>
+                    <fullName>Develop</fullName>
+                    <default>false</default>
+                    <label>Develop</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Billing_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Click to open and view/edit the Primary Billing Address record for this Account.</inlineHelpText>
+        <label>Primary Billing Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Accounts (Billing)</relationshipLabel>
+        <relationshipName>Accounts3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Mailing_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Click to open and view/edit the Primary Mailing Address record for this Account.</inlineHelpText>
+        <label>Primary Mailing Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Accounts (Mailing)</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Shipping_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Click to open and view/edit the Primary Ship To Address record for this Account.</inlineHelpText>
+        <label>Primary Shipping Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Accounts (Ship To)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Products__c</fullName>
+        <description>dcw_Products.pro_desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_Products.pro_desc</inlineHelpText>
+        <label>Products</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Applied Air Handling Systems</fullName>
+                    <default>false</default>
+                    <label>Applied Air Handling Systems</label>
+                </value>
+                <value>
+                    <fullName>Chiller Products</fullName>
+                    <default>false</default>
+                    <label>Chiller Products</label>
+                </value>
+                <value>
+                    <fullName>Fan Coils</fullName>
+                    <default>false</default>
+                    <label>Fan Coils</label>
+                </value>
+                <value>
+                    <fullName>Lt. Commercial / Mini-Splits</fullName>
+                    <default>false</default>
+                    <label>Lt. Commercial / Mini-Splits</label>
+                </value>
+                <value>
+                    <fullName>Packaged Terminal Systems</fullName>
+                    <default>false</default>
+                    <label>Packaged Terminal Systems</label>
+                </value>
+                <value>
+                    <fullName>Unit Ventilators</fullName>
+                    <default>false</default>
+                    <label>Unit Ventilators</label>
+                </value>
+                <value>
+                    <fullName>Water Source Heat Pump</fullName>
+                    <default>false</default>
+                    <label>Water Source Heat Pump</label>
+                </value>
+                <value>
+                    <fullName>Other Products</fullName>
+                    <default>false</default>
+                    <label>Other Products</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RGM_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RGM User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Record_Source__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Warehouse_ID__c &lt;&gt; &quot;&quot;, &quot;DW Order Bill To&quot;, 
+     IF ( Rep_Office_ID__c &lt;&gt; &quot;&quot;, &quot;DCW&quot;, &quot;SFDC&quot;))</formula>
+        <inlineHelpText>Source system for this record.
+DW = Data Warehouse
+DCW = Distribution Channel Warehouse
+SFDC = Salesforce.com</inlineHelpText>
+        <label>Record Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Record_Usage__c</fullName>
+        <description>Designed to show other systems that use the information in this record and for the purpose of preventing record deletion.</description>
+        <externalId>false</externalId>
+        <label>Record Usage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DCW</fullName>
+                    <default>false</default>
+                    <label>DCW</label>
+                </value>
+                <value>
+                    <fullName>DW</fullName>
+                    <default>false</default>
+                    <label>DW</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Regional_Office__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>dcw_DistChannels.dc_reg_office</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_reg_office</inlineHelpText>
+        <label>Regional Office</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Relationship__c</fullName>
+        <description>Created for the DSO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the general current relationship this account as a whole has with Daikin. This should be updated periodically as the relationship changes</inlineHelpText>
+        <label>Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Relationship</fullName>
+                    <default>false</default>
+                    <label>No Relationship</label>
+                </value>
+                <value>
+                    <fullName>Daikin Enemy</fullName>
+                    <default>false</default>
+                    <label>Daikin Enemy</label>
+                </value>
+                <value>
+                    <fullName>Non-Favorable</fullName>
+                    <default>false</default>
+                    <label>Non-Favorable</label>
+                </value>
+                <value>
+                    <fullName>Neutral</fullName>
+                    <default>false</default>
+                    <label>Neutral</label>
+                </value>
+                <value>
+                    <fullName>Favorable</fullName>
+                    <default>false</default>
+                    <label>Favorable</label>
+                </value>
+                <value>
+                    <fullName>Daikin Loyal</fullName>
+                    <default>false</default>
+                    <label>Daikin Loyal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rep_Office_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_id_no</inlineHelpText>
+        <label>Rep Office ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Rep_Office_Parent_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_parent_id_no</inlineHelpText>
+        <label>Rep Office Parent ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Review_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Open = Account is in process of review, augmentation or clean.
+Complete = Review, augmentation or clean is complete. (Not occurring)</inlineHelpText>
+        <label>Review Status (Do Not Use)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Source_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Source System</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speed_Dial_Number__c</fullName>
+        <description>dcw_DistChannels.dc_speed_no</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dcw_DistChannels.dc_speed_no</inlineHelpText>
+        <label>Speed Dial Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subcontractor_Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What type of a Subcontractor is this Company?</inlineHelpText>
+        <label>Subcontractor Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Chemical Treatment</fullName>
+                    <default>false</default>
+                    <label>Chemical Treatment</label>
+                </value>
+                <value>
+                    <fullName>Controls</fullName>
+                    <default>false</default>
+                    <label>Controls</label>
+                </value>
+                <value>
+                    <fullName>Cooling Towers</fullName>
+                    <default>false</default>
+                    <label>Cooling Towers</label>
+                </value>
+                <value>
+                    <fullName>Crane Services</fullName>
+                    <default>false</default>
+                    <label>Crane Services</label>
+                </value>
+                <value>
+                    <fullName>Eddy Current Analysis</fullName>
+                    <default>false</default>
+                    <label>Eddy Current Analysis</label>
+                </value>
+                <value>
+                    <fullName>Electrical</fullName>
+                    <default>false</default>
+                    <label>Electrical</label>
+                </value>
+                <value>
+                    <fullName>Millwrights</fullName>
+                    <default>false</default>
+                    <label>Millwrights</label>
+                </value>
+                <value>
+                    <fullName>Oil Analysis</fullName>
+                    <default>false</default>
+                    <label>Oil Analysis</label>
+                </value>
+                <value>
+                    <fullName>Painting</fullName>
+                    <default>false</default>
+                    <label>Painting</label>
+                </value>
+                <value>
+                    <fullName>Plumbing</fullName>
+                    <default>false</default>
+                    <label>Plumbing</label>
+                </value>
+                <value>
+                    <fullName>Sheet Metal</fullName>
+                    <default>false</default>
+                    <label>Sheet Metal</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Chemical Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Controls</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Cooling Towers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Crane Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Eddy Current Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Electrical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Millwrights</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Oil Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Painting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Plumbing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Subcontractor</controllingFieldValue>
+                <valueName>Sheet Metal</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TCPN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The Account is NIPA (formally known as TCPN)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Account is NIPA (formally known as TCPN)</inlineHelpText>
+        <label>NIPA</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Id__c</fullName>
+        <description>Please enter the Tax Id for the Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Tax Id for the Account.</inlineHelpText>
+        <label>Tax Id</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Opportunity_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Opportunity Amount</label>
+        <summarizedField>Opportunity.Amount</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Won, Closed Lost, Won, Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Warehouse_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Originally added to capture Unique Keys from the Data Warehouse (Installed Base, McQuaySales, OrderHistory) or the SFDCIntegration staging DBA for the TRC Integration.</description>
+        <externalId>true</externalId>
+        <label>Warehouse ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <inlineHelpText>The website of this account.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>All_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Account_Number__c</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>DAAL_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>Account_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>startsWith</operation>
+            <value>DAAL</value>
+        </filters>
+        <label>DAAL Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DAAL</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DAFL_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>startsWith</operation>
+            <value>DAFL</value>
+        </filters>
+        <label>DAFL Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>South_Florida</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DAGA_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>startsWith</operation>
+            <value>DAGA</value>
+        </filters>
+        <label>DAGA Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DAGA</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DALA_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT_SOURCE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>Account_Owner_User_Department__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>DALA,Daikin Latin America</value>
+        </filters>
+        <label>DALA Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>DALA</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DANY_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>startsWith</operation>
+            <value>DANY</value>
+        </filters>
+        <label>DANY Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DANY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DCW_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Active__c</columns>
+        <columns>Location__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Email__c</columns>
+        <columns>Rep_Office_ID__c</columns>
+        <columns>Regional_Office__c</columns>
+        <columns>Products__c</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Rep_Office_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>DCW Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+            <roleAndSubordinates>TRC_North_America</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>IE_Accounts</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Record_Usage__c</columns>
+        <columns>IE_Account__c</columns>
+        <columns>IE_ID__c</columns>
+        <columns>IE_Sync_Status__c</columns>
+        <columns>IE_Updated_Date__c</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Record_Usage__c</field>
+            <operation>includes</operation>
+            <value>IE</value>
+        </filters>
+        <filters>
+            <field>IE_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>IE Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Salesforce_Administration</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MCP_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.URL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>startsWith</operation>
+            <value>MCP</value>
+        </filters>
+        <label>MCP Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>MCP</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>National_Accounts</fullName>
+        <booleanFilter>3 and (1 OR 2)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Account_Owner_User_Department__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>National Accounts</value>
+        </filters>
+        <filters>
+            <field>National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>DO NOT USE</value>
+        </filters>
+        <label>National Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>National_Accounts</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Ontario_Subcontractors</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Subcontractor_Value__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.ADDRESS1_STATE</field>
+            <operation>equals</operation>
+            <value>Ontario</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Subcontractor</value>
+        </filters>
+        <label>Ontario Subcontractors</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>TorontoDistrict</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Owner_Sales_Service_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_User_Department__c</field>
+            <operation>equals</operation>
+            <value>Field Service</value>
+        </filters>
+        <label>Owner Sales - Service Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>Service</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TRC_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Record_Source__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Rep_Office_ID__c</columns>
+        <columns>Warehouse_ID__c</columns>
+        <columns>Source_System__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>012C0000000Hq9V</value>
+        </filters>
+        <label>TRC Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Daikin_Applied</fullName>
+        <active>true</active>
+        <description>All Accounts</description>
+        <label>Daikin Applied</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Us Web Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New equipment start-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Generated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tech Tip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Database</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Account_Management_Type__c</picklist>
+            <values>
+                <fullName>Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>House</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maintained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic %28Target%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Account_Type__c</picklist>
+            <values>
+                <fullName>Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Attack_Strategy__c</picklist>
+            <values>
+                <fullName>Flanking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fragment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frontal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Type__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IE_Sync_Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Airports %26 Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly%2C Arenas%2C and Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Centers And Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education K-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial %2F Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Life Sciences%2C Pharm%2C Biotech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lodging %2F Hotels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Facilities and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marine Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Nonresidential Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-family Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Religious Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stores and Restaurants %2F Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouses %28excl%2E Manufacturer Owned%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>McQuay_Gear__c</picklist>
+            <values>
+                <fullName>NO</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>YES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Position_Strategy__c</picklist>
+            <values>
+                <fullName>Defend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Develop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Products__c</picklist>
+            <values>
+                <fullName>Applied Air Handling Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fan Coils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lt%2E Commercial %2F Mini-Splits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaged Terminal Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Ventilators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water Source Heat Pump</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Record_Usage__c</picklist>
+            <values>
+                <fullName>DCW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relationship__c</picklist>
+            <values>
+                <fullName>Daikin Enemy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Loyal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Favorable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Favorable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Review_Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subcontractor_Value__c</picklist>
+            <values>
+                <fullName>Chemical Treatment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Towers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crane Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eddy Current Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Millwrights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oil Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Painting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sheet Metal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls Contractor%2FIntegrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Developer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor-Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Record_Source__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ACCOUNT_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>National_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STREET</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Rep_Office_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.ALIAS</customTabListAdditionalFields>
+        <listViewButtons>Follow</listViewButtons>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Record_Source__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>National_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STREET</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Rep_Office_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Location_Active_DCW__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Record_Source__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
+        <lookupFilterFields>National_Account__c</lookupFilterFields>
+        <lookupFilterFields>Active__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Phone_2__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Record_Source__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
+        <searchFilterFields>National_Account__c</searchFilterFields>
+        <searchFilterFields>Active__c</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Record_Source__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>National_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Rep_Office_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Location_Active_DCW__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_Source_Specify_New_Value</fullName>
+        <active>false</active>
+        <description>This rule enforces users to specify new value for all existing old Account Source values.</description>
+        <errorConditionFormula>!BEGINS( $Profile.Name , &quot;Latin&quot;) &amp;&amp; (CASE( TEXT( AccountSource ), 
+&quot;Advertisement&quot;, 1, 
+&quot;Contract renewal&quot;, 1, 
+&quot;Customer Referral&quot;, 1, 
+&quot;Customer Service Request&quot;, 1, 
+&quot;Daikin internal&quot;, 1, 
+&quot;Daikin shipment database&quot;, 1, 
+&quot;Direct marketing&quot;, 1, 
+&quot;GSA&quot;, 1, 
+&quot;Independent rep&quot;, 1, 
+&quot;Japanese Company Referral&quot;, 1, 
+&quot;National accounts&quot;, 1, 
+&quot;New equipment start-up&quot;, 1, 
+&quot;Owner sales/service&quot;, 1, 
+&quot;Partner Referral&quot;, 1, 
+&quot;Phone Inquiry&quot;, 1, 
+&quot;Purchased List&quot;, 1, 
+&quot;RFP/RFI/Bid&quot;, 1, 
+&quot;Self Generated&quot;, 1, 
+&quot;Seminar&quot;, 1, 
+&quot;Tech Tip&quot;, 1, 
+&quot;Web&quot;, 1, 
+&quot;Word of mouth&quot;, 1, 
+&quot;&quot;, 1,0)&lt;1)
+
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>AccountSource</errorDisplayField>
+        <errorMessage>The Specified Account Source value is no longer valid. Please select a new Account Source from the list of options.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Address_Complete_value</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(!ISBLANK(Physical_Address__c),
+      OR(ISBLANK(BillingStreet),
+         ISBLANK(BillingCountry),
+         ISBLANK(BillingCity))
+     )
+
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>Please populate the country, city and street for the physical address</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Country_Validation_Rule</fullName>
+        <active>false</active>
+        <description>Ensures a valid three character ISO country code is entered.</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; (LEN(BillingCountry) = 0 || LEN(BillingCountry) = 1 || LEN(BillingCountry) = 2 || LEN(BillingCountry) &gt;3 || NOT(CONTAINS(&quot;USA:ARG:BOL:BRA:BLZ:BMU:CHL:COL:CRI:CUB:DOM:ECU:SLV:GTM:GUY:HTI:HND:JAM:MEX:NIC:PAN:PRY:PER:PRI:SUR:URY:VEN:CYM:GRD:ATG:BHS:CUW:TCA:LCA:ABW:BRB:KNA:VCT:TTO:DMA:BES:MAF:SXM:AIA:VIR:ESP:ITA:BVI&quot;,BillingCountry)))
+ 
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>BillingCountry</errorDisplayField>
+        <errorMessage>Please enter a valid three-letter country code in the Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DCW_Accounts_cannot_be_modified</fullName>
+        <active>true</active>
+        <description>Accounts that are integrated from DCW cannot have their Account name updated</description>
+        <errorConditionFormula>AND (
+   Record_Source__c = &apos;DCW&apos;,            
+   ISCHANGED ( Name ) ,
+        NOT(OR( $Profile.Name = &apos;System Administrator Interface&apos; ,
+               $Profile.Name = &apos;System Administrator RemedyForce&apos;,
+               $Profile.Name = &apos;System Integration RemedyF&apos;,
+               $Profile.Name = &apos;System Administrator&apos;,
+               $Profile.Name = &apos;System Integration&apos;)))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>This Account was created in DCW, you cannot modify the Account Name.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Future_Asset_Owner_Account_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Id &lt;&gt; &quot;00e80000000p6lF&quot; &amp;&amp; 
+$Profile.Id &lt;&gt; &quot;00eC0000001GSlm&quot; &amp;&amp; 
+$Profile.Id &lt;&gt; &quot;00eC0000001GSlh&quot; &amp;&amp;
+Id = &quot;001C0000019yujW&quot;
+
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>You cannot edit the Account Details for this record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_Address_Complete_value</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(!ISBLANK( Primary_Shipping_Address__c ),
+      OR(ISBLANK(ShippingStreet),
+         ISBLANK(ShippingCountry),
+         ISBLANK(ShippingCity))
+     )
+
+&amp;&amp; 
+
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))</errorConditionFormula>
+        <errorMessage>Please populate the country, city and street for the shipping address</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_Country_Validation_Rule</fullName>
+        <active>false</active>
+        <description>Ensures a valid three character ISO country code is entered.</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; (LEN(ShippingCountry) = 0 || LEN(ShippingCountry) = 1 || LEN(ShippingCountry) = 2 || LEN(ShippingCountry) &gt;3 || NOT(CONTAINS(&quot;USA:ARG:BOL:BRA:BLZ: CHL:COL:CRI:CUB:DOM:ECU:SLV:GTM:GUY:HTI:HND:JAM:MEX:NIC:PAN:PRY:PER:PRI:SUR:URY:VEN:CYM:GRD:ATG:BHS:CUW:TCA:LCA:ABW:BRB:KNA:VCT:TTO:DMA:BES:MAF:SXM:AIA:VIR&quot;,ShippingCountry)))
+
+&amp;&amp;
+
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))
+
+&amp;&amp; 
+
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))</errorConditionFormula>
+        <errorDisplayField>ShippingCountry</errorDisplayField>
+        <errorMessage>Please enter a valid three-letter country code in the Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Vertical_Market_Required_for_Type</fullName>
+        <active>false</active>
+        <description>This rule requires Vertical Market when Account type is Owner or End User.</description>
+        <errorConditionFormula>!BEGINS($Profile.Name, &quot;Latin&quot;)  &amp;&amp; (ISPICKVAL(  Type , &quot;Owner&quot;) || ISPICKVAL( Type , &quot;End User&quot;))&amp;&amp; ISPICKVAL(Industry,&quot;&quot;)
+
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>Industry</errorDisplayField>
+        <errorMessage>Please choose Account Vertical Market for this Account Type value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Vertical_Market_Specify_New_Value</fullName>
+        <active>false</active>
+        <description>This rule enforces users to choose Vertical Market value from the new values as the specified Vertical Market values no longer valid.</description>
+        <errorConditionFormula>!BEGINS( $Profile.Name , &quot;Latin&quot;) &amp;&amp; (CASE( TEXT( Industry ), 
+&quot;Airports &amp; Transportation&quot;, 1,
+&quot;Assembly, Arenas, and Recreation&quot;, 1,
+&quot;Education K-12&quot;, 1,
+&quot;Financial / Office Space&quot;, 1,
+&quot;Government Buildings&quot;, 1,
+&quot;Healthcare&quot;, 1,
+&quot;Higher Education&quot;, 1,
+&quot;Life Sciences, Pharm, Biotech&quot;, 1,
+&quot;Lodging / Hotels&quot;, 1,
+&quot;Manufacturing Facilities and Warehouses&quot;, 1,
+&quot;Mining&quot;, 1,
+&quot;Miscellaneous Nonresidential Buildings&quot;, 1,
+&quot;Multi-family Residential&quot;, 1,
+&quot;Multi-Sector&quot;,1,
+&quot;Religious Buildings&quot;, 1,
+&quot;Stores and Restaurants / Retail&quot;, 1,
+&quot;Telecommunications and Data Centers&quot;, 1,
+&quot;Warehouses (excl. Manufacturer Owned)&quot;, 1,
+&quot;&quot;, 1,0)&lt;1)
+
+
+&amp;&amp; 
+
+NOT ((From_Lead_Conversion__c &amp;&amp; IsNew()) || 
+(From_Lead_Conversion__c &amp;&amp; (Now()-CreatedDate &lt;0.000694444)))
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>The specified Vertical Market value on the Account Record is no longer valid. Please select a new Vertical Market value from the list of options on the Account.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AVA_SFCORE__Billing</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Billing</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://www.genwatt.com/genwatt/billing.htm?actname={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AVA_SFCORE__Validate_Billing_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Billing Address</masterLabel>
+        <openType>sidebar</openType>
+        <page>AVA_SFCORE__Account_ValidateBillingAddress_Handler</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>AVA_SFCORE__Validate_Shipping_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Shipping Address</masterLabel>
+        <openType>sidebar</openType>
+        <page>AVA_SFCORE__Account_ValidateShippingAddress_Handler</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Apttus__ViewAgreementHierarchyforAccount</fullName>
+        <availability>online</availability>
+        <description>Link to view the Agreement hierarchy for the account</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>View Agreement Hierarchy for Account (Link)</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/Apttus__AgreementExplorerResults?contextId={!Account.Id}&amp;context=Agreement%20By%20Account(s)&amp;retUrl=/{!Apttus__APTS_Agreement__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Apttus__ViewAgreementHierarchyforAccount2</fullName>
+        <availability>online</availability>
+        <description>Displays the agreement hierarchy for the account</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>View Agreement Hierarchy for Account</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/Apttus__AgreementExplorerResults?contextId={!Account.Id}&amp;context=Agreement%20By%20Account(s)&amp;retUrl=/{!Apttus__APTS_Agreement__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Follow</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Follow</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/connection.js&quot;)} 
+
+//EDIT THE FOLLOWING LINE TO ALTER THE CODE FOR OTHER OBJECTS.  USE THE PICKLISTS ABOVE TO SELECT FIELD TYPE = $ObjectType AND THE OBJECT NAME THEN REPLACE &quot;$ObjectType.Account&quot; WITH YOUR NEW OBJECT NAME
+var records = {!GETRECORDIDS( $ObjectType.Account)};
+
+function LBox() {
+             var box = new parent.SimpleDialog(&quot;steve&quot;+Math.random(), true);
+             parent.box = box;
+        
+             box.setTitle(&quot;Follow Records&quot;);
+        
+             box.createDialog();
+             box.setWidth(220);
+             
+             box.setContentInnerHTML(&quot;&lt;img src=&apos;/img/loading32.gif&apos; alt=&apos;&apos; /&gt; Running&quot;);
+
+             box.setupDefaultButtons();
+             
+             box.show();
+}
+
+function CBox(){
+     box.setContentInnerHTML(&quot;You are now following &quot;+follow_count+&quot; records&lt;br /&gt;&lt;br /&gt;&lt;a href=\&quot;#\&quot; onclick=\&quot;box.hide();\&quot;&gt;Close&lt;/a&gt;&quot;);
+}
+
+
+
+if (records[0] == null) { 
+   alert(&quot;Please select at least one record.&quot;);
+} 
+else { 
+   var follow_count = 0;
+   
+   LBox();
+
+   for (var i = 0; i &lt; records.length; i++){ 
+        var fol=new sforce.SObject(&quot;EntitySubscription&quot;);
+        fol.ParentId = records[i];
+        fol.SubscriberId = &apos;{!User.Id}&apos;;
+        
+        try{
+           sforce.connection.create([fol]); 
+           follow_count++;
+         }
+        catch(e){
+             alert(e);
+         }
+   }
+   CBox();
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account.ShippingStreet}+{!Account.ShippingCity}+{!Account.ShippingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account.ShippingCountry}&amp;csz={!Account.ShippingCity}+{!Account.ShippingState}+{!Account.ShippingPostalCode}+&amp;addr={!Account.ShippingStreet}</url>
+    </webLinks>
+</CustomObject>

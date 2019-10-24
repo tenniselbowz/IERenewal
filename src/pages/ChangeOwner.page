@@ -1,0 +1,2 @@
+<apex:page Controller="ChangeOwner" action="{!sendEmailNotification}">
+</apex:page>

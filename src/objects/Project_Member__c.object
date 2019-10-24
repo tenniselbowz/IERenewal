@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Project Members are captured here</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Administrative_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Administrative Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Allocated_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Allocated Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Billable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Commission__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Company__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.FirstName  &amp; &apos; &apos; &amp;  Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Scrum_Members</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Expenses Billable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Costs__c</fullName>
+        <externalId>false</externalId>
+        <label>Expense Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Payable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Expense Payable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId__c</fullName>
+        <externalId>false</externalId>
+        <label>ExternalId</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hourly_Bill_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Hourly Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Hourly Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Hourly_Bill_Rate__c  - Commission__c - Hourly_Cost__c - Administrative_Cost__c - Expense_Costs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Profit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ProjectId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tasks__r.Project__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProjectName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tasks__r.Project__r.Name &amp;&apos; : &apos; &amp;Tasks__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ProjectName</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Team</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Field Ops</fullName>
+                    <default>false</default>
+                    <label>Field Ops</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                    <label>Engineering</label>
+                </value>
+                <value>
+                    <fullName>mechanical contractor</fullName>
+                    <default>false</default>
+                    <label>mechanical contractor</label>
+                </value>
+                <value>
+                    <fullName>Electrical Contractor</fullName>
+                    <default>false</default>
+                    <label>Electrical Contractor</label>
+                </value>
+                <value>
+                    <fullName>McQuay Engineer</fullName>
+                    <default>false</default>
+                    <label>McQuay Engineer</label>
+                </value>
+                <value>
+                    <fullName>Contract Engineer</fullName>
+                    <default>false</default>
+                    <label>Contract Engineer</label>
+                </value>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                    <label>Program Manager</label>
+                </value>
+                <value>
+                    <fullName>Team Member</fullName>
+                    <default>false</default>
+                    <label>Team Member</label>
+                </value>
+                <value>
+                    <fullName>Electrical Engineer</fullName>
+                    <default>false</default>
+                    <label>Electrical Engineer</label>
+                </value>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                    <label>Architect</label>
+                </value>
+                <value>
+                    <fullName>Real Estate Manager</fullName>
+                    <default>false</default>
+                    <label>Real Estate Manager</label>
+                </value>
+                <value>
+                    <fullName>Appraiser</fullName>
+                    <default>false</default>
+                    <label>Appraiser</label>
+                </value>
+                <value>
+                    <fullName>Surveyor</fullName>
+                    <default>false</default>
+                    <label>Surveyor</label>
+                </value>
+                <value>
+                    <fullName>Structural Engineer</fullName>
+                    <default>false</default>
+                    <label>Structural Engineer</label>
+                </value>
+                <value>
+                    <fullName>Grading &amp; Development Engineer</fullName>
+                    <default>false</default>
+                    <label>Grading &amp; Development Engineer</label>
+                </value>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+                <value>
+                    <fullName>Subcontractor</fullName>
+                    <default>false</default>
+                    <label>Subcontractor</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Sales Representative</fullName>
+                    <default>false</default>
+                    <label>Sales Representative</label>
+                </value>
+                <value>
+                    <fullName>Project Manager</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>Facilities</fullName>
+                    <default>false</default>
+                    <label>Facilities</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Project Team Members</relationshipLabel>
+        <relationshipName>Project_Team_Members</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Designation of the  member</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Designation of the member</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                    <label>Program Manager</label>
+                </value>
+                <value>
+                    <fullName>Team Member</fullName>
+                    <default>false</default>
+                    <label>Team Member</label>
+                </value>
+                <value>
+                    <fullName>Electrical Engineer</fullName>
+                    <default>false</default>
+                    <label>Electrical Engineer</label>
+                </value>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                    <label>Architect</label>
+                </value>
+                <value>
+                    <fullName>Real Estate Manager</fullName>
+                    <default>false</default>
+                    <label>Real Estate Manager</label>
+                </value>
+                <value>
+                    <fullName>Appraiser</fullName>
+                    <default>false</default>
+                    <label>Appraiser</label>
+                </value>
+                <value>
+                    <fullName>Surveyor</fullName>
+                    <default>false</default>
+                    <label>Surveyor</label>
+                </value>
+                <value>
+                    <fullName>Structural Engineer</fullName>
+                    <default>false</default>
+                    <label>Structural Engineer</label>
+                </value>
+                <value>
+                    <fullName>Grading &amp; Development Engineer</fullName>
+                    <default>false</default>
+                    <label>Grading &amp; Development Engineer</label>
+                </value>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+                <value>
+                    <fullName>Subcontractor</fullName>
+                    <default>false</default>
+                    <label>Subcontractor</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Sales Representative</fullName>
+                    <default>false</default>
+                    <label>Sales Representative</label>
+                </value>
+                <value>
+                    <fullName>Project Manager</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>National Accounts</fullName>
+                    <default>false</default>
+                    <label>National Accounts</label>
+                </value>
+                <value>
+                    <fullName>MQ Independent Sales Rep</fullName>
+                    <default>false</default>
+                    <label>MQ Independent Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>MQ Factory Service</fullName>
+                    <default>false</default>
+                    <label>MQ Factory Service</label>
+                </value>
+                <value>
+                    <fullName>MQ Safety</fullName>
+                    <default>false</default>
+                    <label>MQ Safety</label>
+                </value>
+                <value>
+                    <fullName>GSA Officer</fullName>
+                    <default>false</default>
+                    <label>GSA Officer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tasks__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tasks</label>
+        <referenceTo>Project_Task__c</referenceTo>
+        <relationshipLabel>Task Team Members</relationshipLabel>
+        <relationshipName>Project_Team_Members</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Scrum_Members</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Billing_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Billing Frequency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bi-Weekly</fullName>
+                    <default>false</default>
+                    <label>Bi-Weekly</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Immediate</fullName>
+                    <default>false</default>
+                    <label>Immediate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Payment_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Payment Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Project Team Member</label>
+    <nameField>
+        <displayFormat>PM{00000}</displayFormat>
+        <label>Project Member Code</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Project Team Members</pluralLabel>
+    <recordTypes>
+        <fullName>Project_Team_Member</fullName>
+        <active>true</active>
+        <label>Project Team Member</label>
+        <picklistValues>
+            <picklist>Project_Team__c</picklist>
+            <values>
+                <fullName>Appraiser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Ops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading %26 Development Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>McQuay Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>mechanical contractor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Appraiser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSA Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading %26 Development Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MQ Factory Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MQ Independent Sales Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MQ Safety</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Member</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immediate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Task_Team_Member</fullName>
+        <active>true</active>
+        <label>Task Team Member</label>
+        <picklistValues>
+            <picklist>Project_Team__c</picklist>
+            <values>
+                <fullName>Appraiser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Ops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading %26 Development Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>McQuay Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>mechanical contractor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Appraiser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grading %26 Development Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveyor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Member</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immediate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_ACTIVITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Company__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Email__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Project__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Team__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Role__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Company__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Email__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Project__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Role__c</searchFilterFields>
+        <searchFilterFields>LAST_ACTIVITY</searchFilterFields>
+        <searchFilterFields>Contact__c</searchFilterFields>
+        <searchFilterFields>Email__c</searchFilterFields>
+        <searchFilterFields>Phone__c</searchFilterFields>
+        <searchFilterFields>Project__c</searchFilterFields>
+        <searchFilterFields>Project_Team__c</searchFilterFields>
+        <searchFilterFields>Company__c</searchFilterFields>
+        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Validate_user_contact</fullName>
+        <active>false</active>
+        <description>validate both user and contact should not be selected simultaneously</description>
+        <errorConditionFormula>And(
+
+ not(isblank( Contact__c )),
+
+not(isblank( User__c ))  
+
+
+ )</errorConditionFormula>
+        <errorMessage>User and contact should not be selected simultaneously</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Project_Team_Member</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Project Team Member</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0a/e?CF00N80000004UxfP={!Project__c.Name}&amp;CF00N80000004UxfP_lkid={!Project__c.Id}&amp;retURL=%2F{!Project__c.Id}&amp;RecordType=01280000000Hev6&amp;ent=01I80000000tVUu</url>
+    </webLinks>
+</CustomObject>

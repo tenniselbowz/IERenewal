@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created for MA Tasking List.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADDITION_S_AND_OR_EXCEPTION_S__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>ADDITION(S) AND/OR EXCEPTION(S):</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Inspection_Re_Certification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Annual Inspection &amp; Re-Certification:</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Annual Inspection:</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Annual__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Burners_and_Combustions_Boilers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Burners and Combustions / Boilers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Coils_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Coils Services</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Electric_type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Electric type *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Emergency_Coverage_Response__c</fullName>
+        <description>Emergency Coverage Response value copied over from Proposal Product Attribute Value object.</description>
+        <externalId>false</externalId>
+        <label>Emergency Coverage Response</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Group__c</fullName>
+        <description>Equipment Group value copied over from Proposal Line Item object.</description>
+        <externalId>false</externalId>
+        <label>Equipment Group</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filters_and_Belts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Filters and Belts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Generic_Tasks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Generic Tasks</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>High_efficiency_purge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>High efficiency purge *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indoor_Unit_Annual_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Indoor Unit - Annual Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indoor_Unit_Operation_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Indoor Unit - Operation Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Intelligent_Solutions_Options__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Intelligent Solutions Options</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MA_Bundle_Item_Sequence__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Bundle Item Sequence</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Bundle_Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Bundle Line Number</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Bundle_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Bundle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer_Model_Serial__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer/Model/Serial</label>
+        <length>1500</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Note__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Note</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Oil_type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Oil type *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Oil_type_boilers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Oil type boilers *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Operational_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Operational Inspection:</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Operational__c</fullName>
+        <externalId>false</externalId>
+        <label>Operational</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outdoor_Unit_Operation_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Outdoor Unit - Operation Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outdoor_unit_Annual_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Outdoor unit - Annual Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PRE_COOLING_INSPECTION_Spring_Seasona__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>PRE-COOLING INSPECTION (Spring)- Seasona</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PRE_HEATING_INSPECTION_Fall_Seasonal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>PRE-HEATING INSPECTION (Fall)- Seasonal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Perform_Seasonal_Start_up__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Perform Seasonal Start-up</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Predictive_Maintenance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Predictive Maintenance</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Preventative_Maintenance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Preventative Maintenance</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Program__c</fullName>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Propane_natural_gas_type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Propane &amp; natural gas type *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Propane_natural_gas_type_boilers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Propane &amp; natural gas type boilers *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purge_System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Purge System*</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Proposal__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote/Proposal</label>
+        <referenceTo>Apttus_Proposal__Proposal__c</referenceTo>
+        <relationshipLabel>Proposal MA Bundles</relationshipLabel>
+        <relationshipName>Proposal_MA_Bundles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Seasonal_Shut_down__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>If the Product for the Quote/Proposal Line Item is &apos;Seasonal Shut-down&apos; then set field to 1 else 0</description>
+        <externalId>false</externalId>
+        <label>Seasonal Shut-down</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seasonal_Start_up__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>If the Product for the Quote/Proposal Line Item is &apos;Seasonal Start-up&apos; then set field to 1 else 0</description>
+        <externalId>false</externalId>
+        <label>Seasonal Start-up</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Site Location</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Starter_Type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Starter Type*</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Steam_type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option group</inlineHelpText>
+        <label>Steam type *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Steam_type_boilers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Steam type boilers *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>The_Annual_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>The Annual Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>The_Operational_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>The Operational Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>The_Seasonal_Inspection_Fall__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>The Seasonal Inspection (Fall)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>The_Seasonal_Inspection_Spring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>The Seasonal Inspection (Spring)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tube_Services_Condenser_Evaporator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Tube Services - (Condenser/Evaporator)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Variable_frequency_drive_s__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Variable frequency drive(s) *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Water_cooled_purge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Option Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option Group</inlineHelpText>
+        <label>Water cooled purge *</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X300_Point_Inspection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>300 Point Inspection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Proposal MA Bundle</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>MABundle-{0000000}</displayFormat>
+        <label>Proposal MA Bundle Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Proposal MA Bundles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

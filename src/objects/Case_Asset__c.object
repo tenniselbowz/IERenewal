@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Junction object to allow association of more than one Asset record on a Case.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_Tag_old__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.Active_Tag__c</formula>
+        <inlineHelpText>Editable Tag on the Asset record.</inlineHelpText>
+        <label>Active Tag</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Case Assets</relationshipLabel>
+        <relationshipName>Case_Assets</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Closed_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.ClosedDate</formula>
+        <label>Case Closed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Contact.FirstName + &quot; &quot; +  Case__r.Contact.LastName + &quot; (&quot; +  Case__r.Contact.Account.Name  + &quot;)&quot;</formula>
+        <label>Case Contact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Opened_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.CreatedDate</formula>
+        <label>Case Opened Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case_Status_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Case__r.Status)</formula>
+        <label>Case Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Case__r.Status) + BR() + &quot;Opened Date: &quot; + Text(Case__r.CreatedDate) + BR() + &quot;Closed Date: &quot; +  Text(Case__r.ClosedDate)</formula>
+        <label>Case Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Case Assets</relationshipLabel>
+        <relationshipName>Case_Assets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Failure_Category_Cause__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Failure_Category__c) &amp; &quot; - &quot; &amp; Text(Failure_Cause__c)</formula>
+        <label>Failure Category/Cause</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Failure_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Failure Category</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Administration</fullName>
+                    <default>false</default>
+                    <label>Administration</label>
+                </value>
+                <value>
+                    <fullName>Blower Assembly</fullName>
+                    <default>false</default>
+                    <label>Blower Assembly</label>
+                </value>
+                <value>
+                    <fullName>Cabinetry</fullName>
+                    <default>false</default>
+                    <label>Cabinetry</label>
+                </value>
+                <value>
+                    <fullName>Commissioning Start-Up Assist</fullName>
+                    <default>false</default>
+                    <label>Commissioning Start-Up Assist</label>
+                </value>
+                <value>
+                    <fullName>Compressor</fullName>
+                    <default>false</default>
+                    <label>Compressor</label>
+                </value>
+                <value>
+                    <fullName>Condenser</fullName>
+                    <default>false</default>
+                    <label>Condenser</label>
+                </value>
+                <value>
+                    <fullName>Controls</fullName>
+                    <default>false</default>
+                    <label>Controls</label>
+                </value>
+                <value>
+                    <fullName>Electrical</fullName>
+                    <default>false</default>
+                    <label>Electrical</label>
+                </value>
+                <value>
+                    <fullName>Evaporator</fullName>
+                    <default>false</default>
+                    <label>Evaporator</label>
+                </value>
+                <value>
+                    <fullName>Hydronic Coil</fullName>
+                    <default>false</default>
+                    <label>Hydronic Coil</label>
+                </value>
+                <value>
+                    <fullName>Intelligent Equipment</fullName>
+                    <default>false</default>
+                    <label>Intelligent Equipment</label>
+                </value>
+                <value>
+                    <fullName>Jobsite</fullName>
+                    <default>false</default>
+                    <label>Jobsite</label>
+                </value>
+                <value>
+                    <fullName>Leaks</fullName>
+                    <default>false</default>
+                    <label>Leaks</label>
+                </value>
+                <value>
+                    <fullName>Mechanical</fullName>
+                    <default>false</default>
+                    <label>Mechanical</label>
+                </value>
+                <value>
+                    <fullName>Network</fullName>
+                    <default>false</default>
+                    <label>Network</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Refrigeration Circuit</fullName>
+                    <default>false</default>
+                    <label>Refrigeration Circuit</label>
+                </value>
+                <value>
+                    <fullName>Starter</fullName>
+                    <default>false</default>
+                    <label>Starter</label>
+                </value>
+                <value>
+                    <fullName>Unit Controller</fullName>
+                    <default>false</default>
+                    <label>Unit Controller</label>
+                </value>
+                <value>
+                    <fullName>Unit Options</fullName>
+                    <default>false</default>
+                    <label>Unit Options</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Failure_Cause__c</fullName>
+        <externalId>false</externalId>
+        <label>Failure Cause</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Failure_Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Actuator F&amp;BP</fullName>
+                    <default>false</default>
+                    <label>Actuator F&amp;BP</label>
+                </value>
+                <value>
+                    <fullName>Actuators OA/RA</fullName>
+                    <default>false</default>
+                    <label>Actuators OA/RA</label>
+                </value>
+                <value>
+                    <fullName>Airflow</fullName>
+                    <default>false</default>
+                    <label>Airflow</label>
+                </value>
+                <value>
+                    <fullName>Air Leaks</fullName>
+                    <default>false</default>
+                    <label>Air Leaks</label>
+                </value>
+                <value>
+                    <fullName>Alignment/Fitup</fullName>
+                    <default>false</default>
+                    <label>Alignment/Fitup</label>
+                </value>
+                <value>
+                    <fullName>Analysis/Investigation</fullName>
+                    <default>false</default>
+                    <label>Analysis/Investigation</label>
+                </value>
+                <value>
+                    <fullName>Application</fullName>
+                    <default>false</default>
+                    <label>Application</label>
+                </value>
+                <value>
+                    <fullName>Assembly questions</fullName>
+                    <default>false</default>
+                    <label>Assembly questions</label>
+                </value>
+                <value>
+                    <fullName>Assign Users</fullName>
+                    <default>false</default>
+                    <label>Assign Users</label>
+                </value>
+                <value>
+                    <fullName>BAS</fullName>
+                    <default>false</default>
+                    <label>BAS</label>
+                </value>
+                <value>
+                    <fullName>BCM Program</fullName>
+                    <default>false</default>
+                    <label>BCM Program</label>
+                </value>
+                <value>
+                    <fullName>Bearing</fullName>
+                    <default>false</default>
+                    <label>Bearing</label>
+                </value>
+                <value>
+                    <fullName>Boiler/Tower</fullName>
+                    <default>false</default>
+                    <label>Boiler/Tower</label>
+                </value>
+                <value>
+                    <fullName>BOM questions</fullName>
+                    <default>false</default>
+                    <label>BOM questions</label>
+                </value>
+                <value>
+                    <fullName>Boost Fan</fullName>
+                    <default>false</default>
+                    <label>Boost Fan</label>
+                </value>
+                <value>
+                    <fullName>Capacity issue</fullName>
+                    <default>false</default>
+                    <label>Capacity issue</label>
+                </value>
+                <value>
+                    <fullName>Capillary Tube</fullName>
+                    <default>false</default>
+                    <label>Capillary Tube</label>
+                </value>
+                <value>
+                    <fullName>Cloud communication issues</fullName>
+                    <default>false</default>
+                    <label>Cloud communication issues</label>
+                </value>
+                <value>
+                    <fullName>CO2 Sensor</fullName>
+                    <default>false</default>
+                    <label>CO2 Sensor</label>
+                </value>
+                <value>
+                    <fullName>Coil Failure</fullName>
+                    <default>false</default>
+                    <label>Coil Failure</label>
+                </value>
+                <value>
+                    <fullName>Communication</fullName>
+                    <default>false</default>
+                    <label>Communication</label>
+                </value>
+                <value>
+                    <fullName>Conference with Controls</fullName>
+                    <default>false</default>
+                    <label>Conference with Controls</label>
+                </value>
+                <value>
+                    <fullName>Control Card Failure</fullName>
+                    <default>false</default>
+                    <label>Control Card Failure</label>
+                </value>
+                <value>
+                    <fullName>Controller</fullName>
+                    <default>false</default>
+                    <label>Controller</label>
+                </value>
+                <value>
+                    <fullName>Controller Setup</fullName>
+                    <default>false</default>
+                    <label>Controller Setup</label>
+                </value>
+                <value>
+                    <fullName>Controller setup/Network</fullName>
+                    <default>false</default>
+                    <label>Controller setup/Network</label>
+                </value>
+                <value>
+                    <fullName>Cooling/heating issue</fullName>
+                    <default>false</default>
+                    <label>Cooling/heating issue</label>
+                </value>
+                <value>
+                    <fullName>Corrosion</fullName>
+                    <default>false</default>
+                    <label>Corrosion</label>
+                </value>
+                <value>
+                    <fullName>Damage</fullName>
+                    <default>false</default>
+                    <label>Damage</label>
+                </value>
+                <value>
+                    <fullName>DDC Controller</fullName>
+                    <default>false</default>
+                    <label>DDC Controller</label>
+                </value>
+                <value>
+                    <fullName>Desuperheater</fullName>
+                    <default>false</default>
+                    <label>Desuperheater</label>
+                </value>
+                <value>
+                    <fullName>Device not set up</fullName>
+                    <default>false</default>
+                    <label>Device not set up</label>
+                </value>
+                <value>
+                    <fullName>Device set up incorrectly</fullName>
+                    <default>false</default>
+                    <label>Device set up incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Directing caller to correct support</fullName>
+                    <default>false</default>
+                    <label>Directing caller to correct support</label>
+                </value>
+                <value>
+                    <fullName>Direct to correct support</fullName>
+                    <default>false</default>
+                    <label>Direct to correct support</label>
+                </value>
+                <value>
+                    <fullName>Document Search</fullName>
+                    <default>false</default>
+                    <label>Document Search</label>
+                </value>
+                <value>
+                    <fullName>Download from website</fullName>
+                    <default>false</default>
+                    <label>Download from website</label>
+                </value>
+                <value>
+                    <fullName>Drain Pan</fullName>
+                    <default>false</default>
+                    <label>Drain Pan</label>
+                </value>
+                <value>
+                    <fullName>Drain Valve</fullName>
+                    <default>false</default>
+                    <label>Drain Valve</label>
+                </value>
+                <value>
+                    <fullName>Drive Issue</fullName>
+                    <default>false</default>
+                    <label>Drive Issue</label>
+                </value>
+                <value>
+                    <fullName>Duct or building pressure</fullName>
+                    <default>false</default>
+                    <label>Duct or building pressure</label>
+                </value>
+                <value>
+                    <fullName>ECM Motor</fullName>
+                    <default>false</default>
+                    <label>ECM Motor</label>
+                </value>
+                <value>
+                    <fullName>ECM Speed Selector</fullName>
+                    <default>false</default>
+                    <label>ECM Speed Selector</label>
+                </value>
+                <value>
+                    <fullName>Electrical</fullName>
+                    <default>false</default>
+                    <label>Electrical</label>
+                </value>
+                <value>
+                    <fullName>Electrical Failure</fullName>
+                    <default>false</default>
+                    <label>Electrical Failure</label>
+                </value>
+                <value>
+                    <fullName>Electric Heat</fullName>
+                    <default>false</default>
+                    <label>Electric Heat</label>
+                </value>
+                <value>
+                    <fullName>Extend Air</fullName>
+                    <default>false</default>
+                    <label>Extend Air</label>
+                </value>
+                <value>
+                    <fullName>F&amp;BP Damper</fullName>
+                    <default>false</default>
+                    <label>F&amp;BP Damper</label>
+                </value>
+                <value>
+                    <fullName>Failed part authorization</fullName>
+                    <default>false</default>
+                    <label>Failed part authorization</label>
+                </value>
+                <value>
+                    <fullName>Fan Wheels</fullName>
+                    <default>false</default>
+                    <label>Fan Wheels</label>
+                </value>
+                <value>
+                    <fullName>Flow/Pressure Drop</fullName>
+                    <default>false</default>
+                    <label>Flow/Pressure Drop</label>
+                </value>
+                <value>
+                    <fullName>Flow Switch</fullName>
+                    <default>false</default>
+                    <label>Flow Switch</label>
+                </value>
+                <value>
+                    <fullName>Freeze Up</fullName>
+                    <default>false</default>
+                    <label>Freeze Up</label>
+                </value>
+                <value>
+                    <fullName>Fusible Plug</fullName>
+                    <default>false</default>
+                    <label>Fusible Plug</label>
+                </value>
+                <value>
+                    <fullName>Gateway on the Go</fullName>
+                    <default>false</default>
+                    <label>Gateway on the Go</label>
+                </value>
+                <value>
+                    <fullName>Generator</fullName>
+                    <default>false</default>
+                    <label>Generator</label>
+                </value>
+                <value>
+                    <fullName>Geothermal Loop</fullName>
+                    <default>false</default>
+                    <label>Geothermal Loop</label>
+                </value>
+                <value>
+                    <fullName>Hardware failure</fullName>
+                    <default>false</default>
+                    <label>Hardware failure</label>
+                </value>
+                <value>
+                    <fullName>Hardware incompatibility</fullName>
+                    <default>false</default>
+                    <label>Hardware incompatibility</label>
+                </value>
+                <value>
+                    <fullName>HFLO Sensor</fullName>
+                    <default>false</default>
+                    <label>HFLO Sensor</label>
+                </value>
+                <value>
+                    <fullName>Hot Gas Reheat</fullName>
+                    <default>false</default>
+                    <label>Hot Gas Reheat</label>
+                </value>
+                <value>
+                    <fullName>Hot Gas Valve</fullName>
+                    <default>false</default>
+                    <label>Hot Gas Valve</label>
+                </value>
+                <value>
+                    <fullName>How to questions</fullName>
+                    <default>false</default>
+                    <label>How to questions</label>
+                </value>
+                <value>
+                    <fullName>How to setup software</fullName>
+                    <default>false</default>
+                    <label>How to setup software</label>
+                </value>
+                <value>
+                    <fullName>How to use software</fullName>
+                    <default>false</default>
+                    <label>How to use software</label>
+                </value>
+                <value>
+                    <fullName>Humidity Sensor</fullName>
+                    <default>false</default>
+                    <label>Humidity Sensor</label>
+                </value>
+                <value>
+                    <fullName>Hydronic Heat Coil</fullName>
+                    <default>false</default>
+                    <label>Hydronic Heat Coil</label>
+                </value>
+                <value>
+                    <fullName>I/O Board</fullName>
+                    <default>false</default>
+                    <label>I/O Board</label>
+                </value>
+                <value>
+                    <fullName>IAQ Fan</fullName>
+                    <default>false</default>
+                    <label>IAQ Fan</label>
+                </value>
+                <value>
+                    <fullName>Incomplete/Built Incorrectly</fullName>
+                    <default>false</default>
+                    <label>Incomplete/Built Incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Incorrect components</fullName>
+                    <default>false</default>
+                    <label>Incorrect components</label>
+                </value>
+                <value>
+                    <fullName>Incorrect install</fullName>
+                    <default>false</default>
+                    <label>Incorrect install</label>
+                </value>
+                <value>
+                    <fullName>Incorrect wiring</fullName>
+                    <default>false</default>
+                    <label>Incorrect wiring</label>
+                </value>
+                <value>
+                    <fullName>Indoor Fan Wheel</fullName>
+                    <default>false</default>
+                    <label>Indoor Fan Wheel</label>
+                </value>
+                <value>
+                    <fullName>Indoor Motor</fullName>
+                    <default>false</default>
+                    <label>Indoor Motor</label>
+                </value>
+                <value>
+                    <fullName>Initial Installation</fullName>
+                    <default>false</default>
+                    <label>Initial Installation</label>
+                </value>
+                <value>
+                    <fullName>Installation</fullName>
+                    <default>false</default>
+                    <label>Installation</label>
+                </value>
+                <value>
+                    <fullName>Insulation</fullName>
+                    <default>false</default>
+                    <label>Insulation</label>
+                </value>
+                <value>
+                    <fullName>Integrator mistake</fullName>
+                    <default>false</default>
+                    <label>Integrator mistake</label>
+                </value>
+                <value>
+                    <fullName>Integrator problem</fullName>
+                    <default>false</default>
+                    <label>Integrator problem</label>
+                </value>
+                <value>
+                    <fullName>Internal Control Board</fullName>
+                    <default>false</default>
+                    <label>Internal Control Board</label>
+                </value>
+                <value>
+                    <fullName>Inverter Comp</fullName>
+                    <default>false</default>
+                    <label>Inverter Comp</label>
+                </value>
+                <value>
+                    <fullName>Leak</fullName>
+                    <default>false</default>
+                    <label>Leak</label>
+                </value>
+                <value>
+                    <fullName>Low Air Temp Switch</fullName>
+                    <default>false</default>
+                    <label>Low Air Temp Switch</label>
+                </value>
+                <value>
+                    <fullName>Low DX Temp Switch</fullName>
+                    <default>false</default>
+                    <label>Low DX Temp Switch</label>
+                </value>
+                <value>
+                    <fullName>Main Board</fullName>
+                    <default>false</default>
+                    <label>Main Board</label>
+                </value>
+                <value>
+                    <fullName>Mechanical</fullName>
+                    <default>false</default>
+                    <label>Mechanical</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Failure</fullName>
+                    <default>false</default>
+                    <label>Mechanical Failure</label>
+                </value>
+                <value>
+                    <fullName>MMP trips</fullName>
+                    <default>false</default>
+                    <label>MMP trips</label>
+                </value>
+                <value>
+                    <fullName>MTI, II, or III Contoller</fullName>
+                    <default>false</default>
+                    <label>MTI, II, or III Contoller</label>
+                </value>
+                <value>
+                    <fullName>Need application</fullName>
+                    <default>false</default>
+                    <label>Need application</label>
+                </value>
+                <value>
+                    <fullName>Need download</fullName>
+                    <default>false</default>
+                    <label>Need download</label>
+                </value>
+                <value>
+                    <fullName>Need software</fullName>
+                    <default>false</default>
+                    <label>Need software</label>
+                </value>
+                <value>
+                    <fullName>Need Training</fullName>
+                    <default>false</default>
+                    <label>Need Training</label>
+                </value>
+                <value>
+                    <fullName>Need upgrade</fullName>
+                    <default>false</default>
+                    <label>Need upgrade</label>
+                </value>
+                <value>
+                    <fullName>Network wiring problem</fullName>
+                    <default>false</default>
+                    <label>Network wiring problem</label>
+                </value>
+                <value>
+                    <fullName>Never Communicated</fullName>
+                    <default>false</default>
+                    <label>Never Communicated</label>
+                </value>
+                <value>
+                    <fullName>No documents</fullName>
+                    <default>false</default>
+                    <label>No documents</label>
+                </value>
+                <value>
+                    <fullName>OA/RA Damper</fullName>
+                    <default>false</default>
+                    <label>OA/RA Damper</label>
+                </value>
+                <value>
+                    <fullName>Oil Issue</fullName>
+                    <default>false</default>
+                    <label>Oil Issue</label>
+                </value>
+                <value>
+                    <fullName>OITS</fullName>
+                    <default>false</default>
+                    <label>OITS</label>
+                </value>
+                <value>
+                    <fullName>Order Error</fullName>
+                    <default>false</default>
+                    <label>Order Error</label>
+                </value>
+                <value>
+                    <fullName>Outdoor Fan Assy</fullName>
+                    <default>false</default>
+                    <label>Outdoor Fan Assy</label>
+                </value>
+                <value>
+                    <fullName>Outdoor Motor</fullName>
+                    <default>false</default>
+                    <label>Outdoor Motor</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Pressure Switch</fullName>
+                    <default>false</default>
+                    <label>Pressure Switch</label>
+                </value>
+                <value>
+                    <fullName>Product mis-applied</fullName>
+                    <default>false</default>
+                    <label>Product mis-applied</label>
+                </value>
+                <value>
+                    <fullName>Product misunderstood</fullName>
+                    <default>false</default>
+                    <label>Product misunderstood</label>
+                </value>
+                <value>
+                    <fullName>PSC Motor</fullName>
+                    <default>false</default>
+                    <label>PSC Motor</label>
+                </value>
+                <value>
+                    <fullName>Pump Package</fullName>
+                    <default>false</default>
+                    <label>Pump Package</label>
+                </value>
+                <value>
+                    <fullName>Pumps/Flow</fullName>
+                    <default>false</default>
+                    <label>Pumps/Flow</label>
+                </value>
+                <value>
+                    <fullName>Quality</fullName>
+                    <default>false</default>
+                    <label>Quality</label>
+                </value>
+                <value>
+                    <fullName>Refrigerant Leaks</fullName>
+                    <default>false</default>
+                    <label>Refrigerant Leaks</label>
+                </value>
+                <value>
+                    <fullName>Refrigerant Oil</fullName>
+                    <default>false</default>
+                    <label>Refrigerant Oil</label>
+                </value>
+                <value>
+                    <fullName>Relays</fullName>
+                    <default>false</default>
+                    <label>Relays</label>
+                </value>
+                <value>
+                    <fullName>Reversing Valve</fullName>
+                    <default>false</default>
+                    <label>Reversing Valve</label>
+                </value>
+                <value>
+                    <fullName>Sequence of operations</fullName>
+                    <default>false</default>
+                    <label>Sequence of operations</label>
+                </value>
+                <value>
+                    <fullName>Service Monitor</fullName>
+                    <default>false</default>
+                    <label>Service Monitor</label>
+                </value>
+                <value>
+                    <fullName>Service Port</fullName>
+                    <default>false</default>
+                    <label>Service Port</label>
+                </value>
+                <value>
+                    <fullName>Service Tools</fullName>
+                    <default>false</default>
+                    <label>Service Tools</label>
+                </value>
+                <value>
+                    <fullName>Setup/Settings</fullName>
+                    <default>false</default>
+                    <label>Setup/Settings</label>
+                </value>
+                <value>
+                    <fullName>Shaft</fullName>
+                    <default>false</default>
+                    <label>Shaft</label>
+                </value>
+                <value>
+                    <fullName>Shipping Damage</fullName>
+                    <default>false</default>
+                    <label>Shipping Damage</label>
+                </value>
+                <value>
+                    <fullName>Smoke Detector</fullName>
+                    <default>false</default>
+                    <label>Smoke Detector</label>
+                </value>
+                <value>
+                    <fullName>Software/Firmware</fullName>
+                    <default>false</default>
+                    <label>Software/Firmware</label>
+                </value>
+                <value>
+                    <fullName>Software issues</fullName>
+                    <default>false</default>
+                    <label>Software issues</label>
+                </value>
+                <value>
+                    <fullName>Sound</fullName>
+                    <default>false</default>
+                    <label>Sound</label>
+                </value>
+                <value>
+                    <fullName>Stopped Communicating</fullName>
+                    <default>false</default>
+                    <label>Stopped Communicating</label>
+                </value>
+                <value>
+                    <fullName>Structural</fullName>
+                    <default>false</default>
+                    <label>Structural</label>
+                </value>
+                <value>
+                    <fullName>Subscriptions</fullName>
+                    <default>false</default>
+                    <label>Subscriptions</label>
+                </value>
+                <value>
+                    <fullName>Support other groups product</fullName>
+                    <default>false</default>
+                    <label>Support other groups product</label>
+                </value>
+                <value>
+                    <fullName>Temp. Sensor</fullName>
+                    <default>false</default>
+                    <label>Temp. Sensor</label>
+                </value>
+                <value>
+                    <fullName>Thermostat</fullName>
+                    <default>false</default>
+                    <label>Thermostat</label>
+                </value>
+                <value>
+                    <fullName>Touch Pad</fullName>
+                    <default>false</default>
+                    <label>Touch Pad</label>
+                </value>
+                <value>
+                    <fullName>Transducer</fullName>
+                    <default>false</default>
+                    <label>Transducer</label>
+                </value>
+                <value>
+                    <fullName>Transformer</fullName>
+                    <default>false</default>
+                    <label>Transformer</label>
+                </value>
+                <value>
+                    <fullName>Transformer, speed</fullName>
+                    <default>false</default>
+                    <label>Transformer, speed</label>
+                </value>
+                <value>
+                    <fullName>Tube Failure</fullName>
+                    <default>false</default>
+                    <label>Tube Failure</label>
+                </value>
+                <value>
+                    <fullName>Tubing</fullName>
+                    <default>false</default>
+                    <label>Tubing</label>
+                </value>
+                <value>
+                    <fullName>TXV</fullName>
+                    <default>false</default>
+                    <label>TXV/EXV</label>
+                </value>
+                <value>
+                    <fullName>Vacuum Breaker, Steam</fullName>
+                    <default>false</default>
+                    <label>Vacuum Breaker, Steam</label>
+                </value>
+                <value>
+                    <fullName>Valves</fullName>
+                    <default>false</default>
+                    <label>Valves</label>
+                </value>
+                <value>
+                    <fullName>VFD programming/issue</fullName>
+                    <default>false</default>
+                    <label>VFD programming/issue</label>
+                </value>
+                <value>
+                    <fullName>Vibration</fullName>
+                    <default>false</default>
+                    <label>Vibration</label>
+                </value>
+                <value>
+                    <fullName>Wall Sensor</fullName>
+                    <default>false</default>
+                    <label>Wall Sensor</label>
+                </value>
+                <value>
+                    <fullName>Water Leaks</fullName>
+                    <default>false</default>
+                    <label>Water Leaks</label>
+                </value>
+                <value>
+                    <fullName>Water Pumps</fullName>
+                    <default>false</default>
+                    <label>Water Pumps</label>
+                </value>
+                <value>
+                    <fullName>Water Side Economizer</fullName>
+                    <default>false</default>
+                    <label>Water Side Economizer</label>
+                </value>
+                <value>
+                    <fullName>Wifi or LAN</fullName>
+                    <default>false</default>
+                    <label>Wifi or LAN</label>
+                </value>
+                <value>
+                    <fullName>Wiring</fullName>
+                    <default>false</default>
+                    <label>Wiring</label>
+                </value>
+                <value>
+                    <fullName>Wiring/Connector</fullName>
+                    <default>false</default>
+                    <label>Wiring/Connector</label>
+                </value>
+                <value>
+                    <fullName>Wrong documents</fullName>
+                    <default>false</default>
+                    <label>Wrong documents</label>
+                </value>
+                <value>
+                    <fullName>Wrong product ordered</fullName>
+                    <default>false</default>
+                    <label>Wrong product ordered</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Leaks</controllingFieldValue>
+                <valueName>Air Leaks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Leaks</controllingFieldValue>
+                <valueName>Refrigerant Leaks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Leaks</controllingFieldValue>
+                <valueName>Water Leaks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical</controllingFieldValue>
+                <valueName>Assembly questions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical</controllingFieldValue>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <valueName>BOM questions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical</controllingFieldValue>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Incomplete/Built Incorrectly</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical</controllingFieldValue>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <valueName>Mechanical Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical</controllingFieldValue>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Quality</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network</controllingFieldValue>
+                <valueName>Conference with Controls</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network</controllingFieldValue>
+                <valueName>Controller setup/Network</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network</controllingFieldValue>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>Failed part authorization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Sequence of operations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Airflow</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Capacity issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Cooling/heating issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Duct or building pressure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>VFD programming/issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Analysis/Investigation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Capillary Tube</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Fusible Plug</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Hot Gas Valve</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <valueName>Insulation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Reversing Valve</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Service Port</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <valueName>Tubing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refrigeration Circuit</controllingFieldValue>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <controllingFieldValue>Commissioning Start-Up Assist</controllingFieldValue>
+                <valueName>TXV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <valueName>Control Card Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <valueName>Electrical Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <valueName>Setup/Settings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Starter</controllingFieldValue>
+                <valueName>Wiring</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>BCM Program</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>Controller Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>DDC Controller</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>How to questions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>MTI, II, or III Contoller</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>Service Monitor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>Service Tools</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Controller</controllingFieldValue>
+                <valueName>Software issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Desuperheater</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Electric Heat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Extend Air</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Hot Gas Reheat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Hydronic Heat Coil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>IAQ Fan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Pump Package</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unit Options</controllingFieldValue>
+                <valueName>Water Side Economizer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Assign Users</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Gateway on the Go</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Initial Installation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Never Communicated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Stopped Communicating</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intelligent Equipment</controllingFieldValue>
+                <valueName>Wifi or LAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <valueName>Damage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Directing caller to correct support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Document Search</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Order Error</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administration</controllingFieldValue>
+                <valueName>Shipping Damage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Bearing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Boost Fan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>ECM Motor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Fan Wheels</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Indoor Fan Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Indoor Motor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Outdoor Fan Assy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Outdoor Motor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>PSC Motor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Shaft</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Sound</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blower Assembly</controllingFieldValue>
+                <valueName>Transformer, speed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <valueName>Alignment/Fitup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <valueName>Structural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cabinetry</controllingFieldValue>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <valueName>Vibration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <valueName>Drive Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <valueName>Inverter Comp</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Leak</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <valueName>Oil Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compressor</controllingFieldValue>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Performance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <valueName>Coil Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Corrosion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <valueName>Drain Valve</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Flow/Pressure Drop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Freeze Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Condenser</controllingFieldValue>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Tube Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>CO2 Sensor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Communication</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Controller</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Device not set up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Device set up incorrectly</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Direct to correct support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Download from website</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Flow Switch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Hardware failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Hardware incompatibility</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>How to setup software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>How to use software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Incorrect install</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Integrator mistake</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Integrator problem</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Main Board</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Need application</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Need download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Need software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Need Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Need upgrade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Network wiring problem</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>No documents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>OITS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Product mis-applied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Product misunderstood</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Smoke Detector</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Software/Firmware</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Support other groups product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Temp. Sensor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Thermostat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Touch Pad</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Transducer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Transformer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Valves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Wall Sensor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Wiring/Connector</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Wrong documents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Controls</controllingFieldValue>
+                <valueName>Wrong product ordered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Generator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <valueName>Incorrect components</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <valueName>Incorrect wiring</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electrical</controllingFieldValue>
+                <valueName>MMP trips</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Evaporator</controllingFieldValue>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Drain Pan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hydronic Coil</controllingFieldValue>
+                <valueName>Vacuum Breaker, Steam</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Application</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>BAS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Boiler/Tower</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Electrical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Geothermal Loop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Installation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Mechanical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jobsite</controllingFieldValue>
+                <valueName>Pumps/Flow</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GO_Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.GO_Line_Number__c</formula>
+        <label>GO Line Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.GO_Number__c</formula>
+        <label>GO Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Job Name from the Order associated with this Asset.</inlineHelpText>
+        <label>Job Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PCL_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>PCL Group</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Class__c</fullName>
+        <description>Being populated with the value in Product.DW_Product_Class by a workflow rule. Original purpose for reporting of Cases by Product to Kirk T.</description>
+        <externalId>false</externalId>
+        <label>Product Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SO_Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.SO_Line_Number__c</formula>
+        <label>SO Line Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SO_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>SO # associated to this Asset.</inlineHelpText>
+        <label>SO Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selling_Rep_Office__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.Selling_Rep_Office__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Selling Rep Office</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRC_Group_text__c</fullName>
+        <externalId>false</externalId>
+        <label>TRC Group</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Asset</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Case Asset ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Assets</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Case__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Asset__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Active_Tag_old__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SO_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Failure_Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Failure_Cause__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Case__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Asset__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Failure_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Failure_Cause__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Case__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Asset__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Failure_Category__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Failure_Cause__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Case__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Asset__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Active_Tag_old__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Job_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SO_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Case_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Failure_Category_Cause__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Case_Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

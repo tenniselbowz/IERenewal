@@ -1,0 +1,120 @@
+<!--
+@Name: APTS_AddModels.page
+@Author: Hardik Shah
+@CreateDate: 18/01/2016
+@Description: VF Page - This Page allows user to enter model details.
+@UsedBy: Custom-Button - AddModels on Cart Page
+@ModifiedBy: NA
+@ModifiedDate: NA
+@ChangeDescription: 
+PS: @ModifiedBy and @ChangeDescription can be repeated multiple time, based on number of changes made to the original process.
+***************************************************************** -->
+<apex:page controller="APTS_AddModelController2" extensions="AssetSelectorCont" showHeader="True" sidebar="True">
+  <apex:includeScript value="https://code.jquery.com/jquery-2.2.1.min.js" />
+  <apex:includeScript value="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" />
+  <apex:includeScript value="{!$Resource.bwComboBox}" />
+  <apex:includeScript value="/soap/ajax/30.0/connection.js" />
+  <apex:includeScript value="/soap/ajax/30.0/apex.js" />
+  <apex:styleSheet value="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <apex:styleSheet value="{!$Resource.bwComboBoxCSS}" />
+  <apex:messages id="msgs" />
+  <apex:form >
+    <apex:pageBlock >
+      <apex:sectionHeader title="Please provide model information" id="section1" />
+      <apex:pageMessages id="errorMessage"/>
+      <apex:pageBlockTable value="{!allModels}" var="model" id="modelList">
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Equipment_Type__c.Label}">
+          <apex:inputField value="{!model.modelObj.Equipment_Type__c}" style="width:90px" rendered="{!!isAllLabor}"/>
+          <apex:inputField value="{!model.modelObj.Equipment_Type_Labor__c}" style="width:90px" rendered="{!isAllLabor}"/>
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Equipment_Group__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Equipment_Group__c}" style="width:90px" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Model__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Model__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Serial__c.Label}">
+          <apex:inputField id="serialNumberComboBox" value="{!model.modelObj.Serial__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Manufacturer__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Manufacturer__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Site_Location__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Site_Location__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Other_Manufacturer__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Other_Manufacturer__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Special_Instructions__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Special_Instructions__c}" />
+        </apex:column>
+        <apex:column headerValue="{!$ObjectType.MA_Model__c.Fields.Non_Serialized__c.Label}">
+          <apex:inputfield value="{!model.modelObj.Non_Serialized__c}" />
+        </apex:column>
+        <apex:column >
+          <apex:commandButton value="Add" action="{!AddRow}" reRender="modelList,errorMessage" oncomplete="renderComboBox()">
+           <apex:param name="testModel" value="{!model.rowNumber}" assignTo="{!rowToAdd}" />
+          </apex:commandButton>
+        </apex:column>
+        <apex:column >
+          <apex:commandLink value="Del" action="{!removeRow}" styleClass="btn" style="color:black;text-decoration:none" reRender="modelList,errorMessage" oncomplete="renderComboBox()">
+            <apex:param name="testModel" value="{!model.rowNumber}" assignTo="{!rowToDelete}" />
+          </apex:commandLink>
+        </apex:column>
+      </apex:pageBlockTable>
+      <div align="center" draggable="false">
+        <br></br>
+        <apex:commandButton value="Add Row" action="{!AddRow}" reRender="modelList" oncomplete="renderComboBox()" />
+        <apex:commandButton value="Save and Return to Cart" action="{!saveMAModels}" reRender="errorMessage" oncomplete="renderComboBox()" />
+      </div>
+    </apex:pageBlock>
+  </apex:form>
+  <script>
+  var renderComboBox, renderFocusedBox;
+  (function($) {
+    function setFocusOnLoad() {}
+
+    $j = jQuery.noConflict();
+
+    var nameCache = [];
+    var k;
+
+    function getAllAssets(request, response) {
+      var searchTerm = request.term;
+      var key = searchTerm;
+
+      if ("undefined" === typeof nameCache[key]) {
+        var data = new Array();
+        AssetSelectorCont.getAssetBySerialNumber(searchTerm, function(result, event) {
+            if (event.status) {
+              for (i = 0; i < result.length; i++) {
+                obj = {
+                  label: result[i].Serial_Number_ID__c
+
+                };
+                data[i] = obj;
+              }
+              nameCache[key] = data;
+              response(data);
+            }
+        });
+      } else {
+        response(nameCache[key]);
+      }
+    }
+
+    renderComboBox = function renderComboBox() {
+        $j("[id$=serialNumberComboBox]").each(function() {
+          $j(this).combobox({
+            delay: 800,
+            source: getAllAssets
+          });
+        });
+      }
+
+    $j(document).ready(function() {
+      renderComboBox();
+    });
+  })(jQuery);
+  </script>
+</apex:page>

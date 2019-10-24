@@ -1,0 +1,13 @@
+39.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:04:56.0 (68594)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-05:00
+17:04:56.0 (105140)|EXECUTION_STARTED
+17:04:56.0 (110120)|CODE_UNIT_STARTED|[EXTERNAL]|0661A000000FlbF|VFRemote: FindNearbyLeads invoke(getNearbyAssets)
+17:04:56.0 (123888)|SYSTEM_MODE_ENTER|true
+17:04:56.0 (764569)|SYSTEM_MODE_ENTER|false
+17:04:56.0 (785263)|SYSTEM_MODE_EXIT|false
+17:04:56.0 (804128)|SYSTEM_MODE_ENTER|false
+17:04:56.0 (3884406)|SOQL_EXECUTE_BEGIN|[79]|Aggregations:0|SELECT Id, Name, SerialNumber, Asset_Address__r.Address_Line_1__c, Asset_Address__r.City__c, Asset_Address__r.Postal_Code__c, Asset_Address__r.Country__c, Asset_Address__r.State_Province__c, Account.OwnerId, Asset_Address__r.Geographic_Location__latitude__s, Asset_Address__r.Geographic_Location__longitude__s , Model_Type__c FROM Asset WHERE DISTANCE(Asset_Address__r.Geographic_Location__c, GEOLOCATION(45.0034439,-93.45197449999999), 'mi') < 100 ORDER BY DISTANCE(Asset_Address__r.Geographic_Location__c, GEOLOCATION(45.0034439,-93.45197449999999), 'mi') ASC LIMIT 100
+17:04:56.0 (63911041)|SOQL_EXECUTE_END|[79]|Rows:1
+17:04:56.0 (64218624)|SYSTEM_MODE_EXIT|false
+17:04:56.0 (64350104)|CODE_UNIT_FINISHED|VFRemote: FindNearbyLeads invoke(getNearbyAssets)
+17:04:56.0 (66568416)|EXECUTION_FINISHED

@@ -1,0 +1,187 @@
+41.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINE;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: string model='AGZ999';
+Execute Anonymous: Boolean supported = false;
+Execute Anonymous: 		string prefix = null;
+Execute Anonymous: 		string letter = '';
+Execute Anonymous: 
+Execute Anonymous: 		if (String.isNotEmpty(model) && (model.length() >= 3))
+Execute Anonymous: 		{
+Execute Anonymous: 			prefix = model.substring(0, 3);
+Execute Anonymous: 
+Execute Anonymous: 			//For AGZ and AWS models look at the 7th character in the string to get the corresponding letter for verification (D or E for AGZ and C for AWS).
+Execute Anonymous: 			//We will only see a 3 digit tonnage in the model, e.g., AGZ055D…, or AGZ190E…, or AWS120C…
+Execute Anonymous: 			if (model.length() >= 7)
+Execute Anonymous: 				letter = model.substring(6, 7);
+Execute Anonymous: 
+Execute Anonymous: 			if (prefix.trim().equalsIgnoreCase('DPS')) {
+Execute Anonymous: 				// Rebel
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('MPS')) {
+Execute Anonymous: 				// Mav-II
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('RAH') || prefix.trim().equalsIgnoreCase('RDS') ||
+Execute Anonymous: 					prefix.trim().equalsIgnoreCase('RDT') || prefix.trim().equalsIgnoreCase('RFS') ||
+Execute Anonymous: 					prefix.trim().equalsIgnoreCase('RPR') || prefix.trim().equalsIgnoreCase('RPS')) {
+Execute Anonymous: 				// Roofpak
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('AGZ') && (letter.equalsIgnoreCase('D') || letter.equalsIgnoreCase('E'))) {
+Execute Anonymous: 				// Trailblazer
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if ((prefix.trim().equalsIgnoreCase('AWV') || prefix.trim().equalsIgnoreCase('AWS')) && letter.equalsIgnoreCase('C')) {
+Execute Anonymous: 				// Pathfinder
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 		}
+Execute Anonymous: 
+Execute Anonymous:         System.debug(logginglevel.error, 'Model = ' + model + ' prefix = ' + prefix + ' letter = ' + letter + ' IE supported model = ' + supported);
+14:47:27.3 (3261706)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+14:47:27.3 (3290258)|EXECUTION_STARTED
+14:47:27.3 (3297034)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+14:47:27.3 (3570647)|VARIABLE_SCOPE_BEGIN|[4]|letter|String|false|false
+14:47:27.3 (3673413)|VARIABLE_SCOPE_BEGIN|[1]|model|String|false|false
+14:47:27.3 (3708642)|VARIABLE_SCOPE_BEGIN|[3]|prefix|String|false|false
+14:47:27.3 (3727917)|VARIABLE_SCOPE_BEGIN|[2]|supported|Boolean|false|false
+14:47:27.3 (3840498)|HEAP_ALLOCATE|[72]|Bytes:3
+14:47:27.3 (3881474)|HEAP_ALLOCATE|[77]|Bytes:152
+14:47:27.3 (3903072)|HEAP_ALLOCATE|[342]|Bytes:408
+14:47:27.3 (3925223)|HEAP_ALLOCATE|[355]|Bytes:408
+14:47:27.3 (3945623)|HEAP_ALLOCATE|[467]|Bytes:48
+14:47:27.3 (3978650)|HEAP_ALLOCATE|[139]|Bytes:6
+14:47:27.3 (4007939)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:56
+14:47:27.3 (4245678)|STATEMENT_EXECUTE|[1]
+14:47:27.3 (4248627)|STATEMENT_EXECUTE|[1]
+14:47:27.3 (4252910)|HEAP_ALLOCATE|[1]|Bytes:6
+14:47:27.3 (4293262)|VARIABLE_ASSIGNMENT|[1]|model|"AGZ999"
+14:47:27.3 (4299160)|STATEMENT_EXECUTE|[2]
+14:47:27.3 (4331339)|HEAP_ALLOCATE|[50]|Bytes:5
+14:47:27.3 (4354564)|HEAP_ALLOCATE|[56]|Bytes:5
+14:47:27.3 (4366596)|HEAP_ALLOCATE|[64]|Bytes:7
+14:47:27.3 (4396226)|HEAP_ALLOCATE|[2]|Bytes:5
+14:47:27.3 (4408821)|VARIABLE_ASSIGNMENT|[2]|supported|false
+14:47:27.3 (4414247)|STATEMENT_EXECUTE|[3]
+14:47:27.3 (4420329)|VARIABLE_ASSIGNMENT|[3]|prefix|null
+14:47:27.3 (4424190)|STATEMENT_EXECUTE|[4]
+14:47:27.3 (4431247)|VARIABLE_ASSIGNMENT|[4]|letter|""
+14:47:27.3 (4614025)|SYSTEM_METHOD_ENTRY|[6]|String.isNotEmpty(String)
+14:47:27.3 (4738571)|SYSTEM_METHOD_EXIT|[6]|String.isNotEmpty(String)
+14:47:27.3 (4770834)|SYSTEM_METHOD_ENTRY|[6]|String.length()
+14:47:27.3 (4785123)|SYSTEM_METHOD_EXIT|[6]|String.length()
+14:47:27.3 (4793506)|STATEMENT_EXECUTE|[7]
+14:47:27.3 (4794975)|STATEMENT_EXECUTE|[8]
+14:47:27.3 (4814962)|SYSTEM_METHOD_ENTRY|[8]|String.substring(Integer, Integer)
+14:47:27.3 (4832493)|HEAP_ALLOCATE|[8]|Bytes:3
+14:47:27.3 (4847853)|SYSTEM_METHOD_EXIT|[8]|String.substring(Integer, Integer)
+14:47:27.3 (4862929)|VARIABLE_ASSIGNMENT|[8]|prefix|"AGZ"
+14:47:27.3 (4879081)|SYSTEM_METHOD_ENTRY|[12]|String.length()
+14:47:27.3 (4898815)|SYSTEM_METHOD_EXIT|[12]|String.length()
+14:47:27.3 (4905954)|STATEMENT_EXECUTE|[12]
+14:47:27.3 (4919971)|SYSTEM_METHOD_ENTRY|[15]|String.trim()
+14:47:27.3 (4933685)|HEAP_ALLOCATE|[15]|Bytes:3
+14:47:27.3 (4946139)|SYSTEM_METHOD_EXIT|[15]|String.trim()
+14:47:27.3 (4953190)|HEAP_ALLOCATE|[15]|Bytes:3
+14:47:27.3 (4970450)|SYSTEM_METHOD_ENTRY|[15]|String.equalsIgnoreCase(String)
+14:47:27.3 (4984256)|SYSTEM_METHOD_EXIT|[15]|String.equalsIgnoreCase(String)
+14:47:27.3 (4998658)|SYSTEM_METHOD_ENTRY|[19]|String.trim()
+14:47:27.3 (5009921)|HEAP_ALLOCATE|[19]|Bytes:3
+14:47:27.3 (5022855)|SYSTEM_METHOD_EXIT|[19]|String.trim()
+14:47:27.3 (5029566)|HEAP_ALLOCATE|[19]|Bytes:3
+14:47:27.3 (5044010)|SYSTEM_METHOD_ENTRY|[19]|String.equalsIgnoreCase(String)
+14:47:27.3 (5056895)|SYSTEM_METHOD_EXIT|[19]|String.equalsIgnoreCase(String)
+14:47:27.3 (5071479)|SYSTEM_METHOD_ENTRY|[23]|String.trim()
+14:47:27.3 (5082805)|HEAP_ALLOCATE|[23]|Bytes:3
+14:47:27.3 (5094379)|SYSTEM_METHOD_EXIT|[23]|String.trim()
+14:47:27.3 (5100960)|HEAP_ALLOCATE|[23]|Bytes:3
+14:47:27.3 (5114965)|SYSTEM_METHOD_ENTRY|[23]|String.equalsIgnoreCase(String)
+14:47:27.3 (5127744)|SYSTEM_METHOD_EXIT|[23]|String.equalsIgnoreCase(String)
+14:47:27.3 (5141976)|SYSTEM_METHOD_ENTRY|[23]|String.trim()
+14:47:27.3 (5147694)|HEAP_ALLOCATE|[23]|Bytes:3
+14:47:27.3 (5157566)|SYSTEM_METHOD_EXIT|[23]|String.trim()
+14:47:27.3 (5163417)|HEAP_ALLOCATE|[23]|Bytes:3
+14:47:27.3 (5176846)|SYSTEM_METHOD_ENTRY|[23]|String.equalsIgnoreCase(String)
+14:47:27.3 (5189046)|SYSTEM_METHOD_EXIT|[23]|String.equalsIgnoreCase(String)
+14:47:27.3 (5202577)|SYSTEM_METHOD_ENTRY|[24]|String.trim()
+14:47:27.3 (5213721)|HEAP_ALLOCATE|[24]|Bytes:3
+14:47:27.3 (5225255)|SYSTEM_METHOD_EXIT|[24]|String.trim()
+14:47:27.3 (5231906)|HEAP_ALLOCATE|[24]|Bytes:3
+14:47:27.3 (5245823)|SYSTEM_METHOD_ENTRY|[24]|String.equalsIgnoreCase(String)
+14:47:27.3 (5258908)|SYSTEM_METHOD_EXIT|[24]|String.equalsIgnoreCase(String)
+14:47:27.3 (5273009)|SYSTEM_METHOD_ENTRY|[24]|String.trim()
+14:47:27.3 (5278483)|HEAP_ALLOCATE|[24]|Bytes:3
+14:47:27.3 (5288627)|SYSTEM_METHOD_EXIT|[24]|String.trim()
+14:47:27.3 (5294286)|HEAP_ALLOCATE|[24]|Bytes:3
+14:47:27.3 (5307508)|SYSTEM_METHOD_ENTRY|[24]|String.equalsIgnoreCase(String)
+14:47:27.3 (5320086)|SYSTEM_METHOD_EXIT|[24]|String.equalsIgnoreCase(String)
+14:47:27.3 (5333709)|SYSTEM_METHOD_ENTRY|[25]|String.trim()
+14:47:27.3 (5344783)|HEAP_ALLOCATE|[25]|Bytes:3
+14:47:27.3 (5356208)|SYSTEM_METHOD_EXIT|[25]|String.trim()
+14:47:27.3 (5362601)|HEAP_ALLOCATE|[25]|Bytes:3
+14:47:27.3 (5380474)|SYSTEM_METHOD_ENTRY|[25]|String.equalsIgnoreCase(String)
+14:47:27.3 (5394767)|SYSTEM_METHOD_EXIT|[25]|String.equalsIgnoreCase(String)
+14:47:27.3 (5409242)|SYSTEM_METHOD_ENTRY|[25]|String.trim()
+14:47:27.3 (5415100)|HEAP_ALLOCATE|[25]|Bytes:3
+14:47:27.3 (5425110)|SYSTEM_METHOD_EXIT|[25]|String.trim()
+14:47:27.3 (5430910)|HEAP_ALLOCATE|[25]|Bytes:3
+14:47:27.3 (5444220)|SYSTEM_METHOD_ENTRY|[25]|String.equalsIgnoreCase(String)
+14:47:27.3 (5456427)|SYSTEM_METHOD_EXIT|[25]|String.equalsIgnoreCase(String)
+14:47:27.3 (5471107)|SYSTEM_METHOD_ENTRY|[29]|String.trim()
+14:47:27.3 (5482870)|HEAP_ALLOCATE|[29]|Bytes:3
+14:47:27.3 (5494502)|SYSTEM_METHOD_EXIT|[29]|String.trim()
+14:47:27.3 (5500996)|HEAP_ALLOCATE|[29]|Bytes:3
+14:47:27.3 (5514812)|SYSTEM_METHOD_ENTRY|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5527429)|SYSTEM_METHOD_EXIT|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5535537)|HEAP_ALLOCATE|[29]|Bytes:1
+14:47:27.3 (5549418)|SYSTEM_METHOD_ENTRY|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5561925)|SYSTEM_METHOD_EXIT|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5569383)|HEAP_ALLOCATE|[29]|Bytes:1
+14:47:27.3 (5584015)|SYSTEM_METHOD_ENTRY|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5596369)|SYSTEM_METHOD_EXIT|[29]|String.equalsIgnoreCase(String)
+14:47:27.3 (5611134)|SYSTEM_METHOD_ENTRY|[33]|String.trim()
+14:47:27.3 (5622399)|HEAP_ALLOCATE|[33]|Bytes:3
+14:47:27.3 (5634305)|SYSTEM_METHOD_EXIT|[33]|String.trim()
+14:47:27.3 (5641033)|HEAP_ALLOCATE|[33]|Bytes:3
+14:47:27.3 (5654820)|SYSTEM_METHOD_ENTRY|[33]|String.equalsIgnoreCase(String)
+14:47:27.3 (5667511)|SYSTEM_METHOD_EXIT|[33]|String.equalsIgnoreCase(String)
+14:47:27.3 (5681193)|SYSTEM_METHOD_ENTRY|[33]|String.trim()
+14:47:27.3 (5686858)|HEAP_ALLOCATE|[33]|Bytes:3
+14:47:27.3 (5696418)|SYSTEM_METHOD_EXIT|[33]|String.trim()
+14:47:27.3 (5702051)|HEAP_ALLOCATE|[33]|Bytes:3
+14:47:27.3 (5714731)|SYSTEM_METHOD_ENTRY|[33]|String.equalsIgnoreCase(String)
+14:47:27.3 (5727238)|SYSTEM_METHOD_EXIT|[33]|String.equalsIgnoreCase(String)
+14:47:27.3 (5733664)|STATEMENT_EXECUTE|[15]
+14:47:27.3 (5735335)|STATEMENT_EXECUTE|[39]
+14:47:27.3 (5926462)|HEAP_ALLOCATE|[39]|Bytes:8
+14:47:27.3 (5936104)|HEAP_ALLOCATE|[39]|Bytes:10
+14:47:27.3 (5941710)|HEAP_ALLOCATE|[39]|Bytes:10
+14:47:27.3 (5954387)|HEAP_ALLOCATE|[39]|Bytes:37
+14:47:27.3 (5959808)|HEAP_ALLOCATE|[39]|Bytes:22
+14:47:27.3 (5986637)|SYSTEM_METHOD_ENTRY|[39]|String.valueOf(Object)
+14:47:27.3 (6005164)|HEAP_ALLOCATE|[39]|Bytes:5
+14:47:27.3 (6023416)|SYSTEM_METHOD_EXIT|[39]|String.valueOf(Object)
+14:47:27.3 (6036248)|HEAP_ALLOCATE|[39]|Bytes:27
+14:47:27.3 (6042875)|HEAP_ALLOCATE|[39]|Bytes:64
+14:47:27.3 (6070628)|SYSTEM_METHOD_ENTRY|[39]|System.debug(APEX_OBJECT, ANY)
+14:47:27.3 (6087250)|USER_DEBUG|[39]|ERROR|Model = AGZ999 prefix = AGZ letter =  IE supported model = false
+14:47:27.3 (6095963)|SYSTEM_METHOD_EXIT|[39]|System.debug(APEX_OBJECT, ANY)
+14:47:27.6 (6142242)|CUMULATIVE_LIMIT_USAGE
+14:47:27.6 (6142242)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:47:27.6 (6142242)|CUMULATIVE_LIMIT_USAGE_END
+
+14:47:27.3 (6188480)|CODE_UNIT_FINISHED|execute_anonymous_apex
+14:47:27.3 (7499887)|EXECUTION_FINISHED

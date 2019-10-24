@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to identify and tie IE Subscriptions, to their appropriate Unit (Asset), Buyer (Account), and Users (Contacts).</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Pass this attribute to IE as part of 1.2 release.  Removes need to change the Subscription End Date from the contract term end date if it&apos;s necessary to remove access to Unit in IE prior to End Date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, Subscription has started and is currently in effect.  Uncheck if Subscription should be made inactive for any reason. (e.g. Contract Expired, Non-payment, Legal)</inlineHelpText>
+        <label>Active</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Intelligent Equipment Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Buyer_ID__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Buyer ID</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Intelligent Equipment Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field used to disable triggers or validation rules firing.
+Note: For bulk loading data from a script, the trigger assumes all records in the list have this field set to true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to disable triggers or validation rules firing.
+Note: For bulk loading data from a script, the trigger assumes all records in the list have this field set to true.</inlineHelpText>
+        <label>Bypass</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Connectivity_Type__c</fullName>
+        <description>Subscription connectivity plan to either use AT&amp;T Cellular option with the SIM card active or customer&apos;s own WiFi/LAN option to send data to the Daikin IE cloud (MS Azure).</description>
+        <externalId>false</externalId>
+        <label>Connectivity Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cellular</fullName>
+                    <default>false</default>
+                    <label>Cellular</label>
+                </value>
+                <value>
+                    <fullName>WiFi/LAN</fullName>
+                    <default>false</default>
+                    <label>WiFi/LAN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Days_to_Expiration__c</fullName>
+        <externalId>false</externalId>
+        <formula>(DateValue(End_Date__c)- TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Expiration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>GWotGoAsset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Gateway on the Go Asset</description>
+        <externalId>false</externalId>
+        <label>GWotGo Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>GW on the Go Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IE_ID__c</fullName>
+        <description>IE database unique record ID.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>IE database unique record ID.</inlineHelpText>
+        <label>IE ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IE_Subscription__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to indicate the record pertains to the IE integration. This is set on import of record from Daikin IE Back Office database.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag to indicate the record pertains to the IE integration. This is set on import of record from Daikin IE Back Office database.</inlineHelpText>
+        <label>IE Subscription</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_Sync_Status__c</fullName>
+        <description>Status that gets set when attributes on the record are updated and therefore needs to be sent to the IE system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Pending = Record needs to be sent to the IE system. 
+Processed = Record was successfully received by IE system. 
+Error = Record was not successfully received by IE system.</inlineHelpText>
+        <label>IE Sync Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IE_Updated_Date__c</fullName>
+        <description>IE system date for when the record was last updated in the IE database.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>IE system date for when the record was last updated in the IE database.</inlineHelpText>
+        <label>IE Updated Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>IEorder_Subscription_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID. Source: IntelligentEquipmentOrders.SubscriptionId</inlineHelpText>
+        <label>IEorder Subscription ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Renewal_Date__c</fullName>
+        <description>Previous renewal date for the subscription</description>
+        <externalId>false</externalId>
+        <label>Last Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Record_Usage__c</fullName>
+        <description>Designed to show other systems that use the information in this record and for the purpose of preventing record deletion.</description>
+        <externalId>false</externalId>
+        <label>Record Usage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Renewal_Counter__c</fullName>
+        <description>Number of times the subscription has been renewed</description>
+        <externalId>false</externalId>
+        <label>Renewal Counter</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_Date__c</fullName>
+        <description>Date the subscription was renewed</description>
+        <externalId>false</externalId>
+        <label>Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Current_Month__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean flag to keep track if an email was sent for a subscription renewal where the end date is in the current month.</description>
+        <externalId>false</externalId>
+        <label>Renewal Notice Current Month</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Last_Month_Minus_1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean flag to keep track if an email was sent for a subscription renewal where the end date is in the last month minus 1.</description>
+        <externalId>false</externalId>
+        <label>Renewal Notice Last Month Minus 1</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Last_Month__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean flag to keep track if an email was sent for a subscription renewal where the end date is in the last month.</description>
+        <externalId>false</externalId>
+        <label>Renewal Notice Last Month</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Next_Month_Plus_1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean flag to keep track if an email was sent for a subscription renewal where the end date is in the next month plus 1.</description>
+        <externalId>false</externalId>
+        <label>Renewal Notice Next Month Plus 1</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Next_Month__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean flag to keep track if an email was sent for a subscription renewal where the end date is in the next month.</description>
+        <externalId>false</externalId>
+        <label>Renewal Notice Next Month</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.SerialNumber</formula>
+        <label>Serial Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Term_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Term (Years)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TriggerInvokedByAPI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hidden field used to determine if the Subscription trigger was invoked by the API and not the Salesforce UI. 
+Temporarily gets set to true when a record is inserted via ETL or updated via IE Renewal Web Service and the Subscription triggers are fired. This is used to avoid some code paths in the trigger if the user inserted or updated a record via the Salesforce UI.</description>
+        <externalId>false</externalId>
+        <label>TriggerInvokedByAPI</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Intelligent Equipment system subscription type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Intelligent Equipment system subscription type.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CustomRead</fullName>
+                    <default>false</default>
+                    <label>CustomRead</label>
+                </value>
+                <value>
+                    <fullName>TechReadWrite</fullName>
+                    <default>false</default>
+                    <label>TechReadWrite</label>
+                </value>
+                <value>
+                    <fullName>TechRead</fullName>
+                    <default>false</default>
+                    <label>TechRead</label>
+                </value>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Subscription</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>IESubscriptions</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Asset__c</columns>
+        <columns>Serial_Number__c</columns>
+        <columns>Buyer_ID__c</columns>
+        <columns>Type__c</columns>
+        <columns>Term_Years__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Active__c</columns>
+        <columns>IE_Subscription__c</columns>
+        <columns>IE_ID__c</columns>
+        <columns>IE_Sync_Status__c</columns>
+        <columns>IE_Updated_Date__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IE_Subscription__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Record_Usage__c</field>
+            <operation>includes</operation>
+            <value>IE</value>
+        </filters>
+        <label>IE Subscriptions</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>S-{000000000}</displayFormat>
+        <label>Subscription Number</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Subscriptions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Asset__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Serial_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Buyer_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Asset__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Serial_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Buyer_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IE_Subscription__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Asset__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Serial_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Buyer_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IE_Subscription__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,45 @@
+<apex:page standardController="Case" extensions="WarrantyOracleController">
+<apex:form >
+
+<apex:pageBlock >
+<apex:commandButton action="{!getWarrantyInfo}" value="Refresh" />
+<apex:pageBlockTable value="{!Items}" var="itm">
+
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Status" /></apex:facet>
+        <apex:outputText value="{!itm.Status}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Start Date" /></apex:facet>
+        <apex:outputText value="{!itm.StartDate}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="End Date" /></apex:facet>
+        <apex:outputText value="{!itm.EndDate}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Item" /></apex:facet>
+        <apex:outputText value="{!itm.Item}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Item Type" /></apex:facet>
+        <apex:outputText value="{!itm.ItemType}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Type" /></apex:facet>
+        <apex:outputText value="{!itm.Type}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Sub Type" /></apex:facet>
+        <apex:outputText value="{!itm.SubType}"/>
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header"><apex:outputText value="Description" /></apex:facet>
+        <apex:outputText value="{!itm.Description}"/>
+    </apex:column>
+    
+</apex:pageBlockTable>
+</apex:pageBlock>
+    
+</apex:form>
+</apex:page>

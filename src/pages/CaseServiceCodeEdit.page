@@ -1,0 +1,261 @@
+<apex:page standardController="Case_Service_Code__c" showHeader="true" standardStylesheets="true" lightningStylesheets="true" extensions="CaseServiceCodeControllerExtension">
+    <style type="text/css">
+        .myClass { width: 100%; }
+    </style>
+    <apex:form >
+      <apex:pageBlock title="" mode="edit">  
+        <apex:pageBlockButtons >
+         <apex:commandButton action="{!save}" value="Save"/>
+         <apex:commandButton action="{!cancel}" value="Cancel" immediate="true" html-formnovalidate="formnovalidate" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Case Service Code" columns="1">
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">Serial Number</th><td class="data2Col ">{!SerialNumber}</td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">Model</th><td class="data2Col ">{!Model}</td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">PCL</th><td class="data2Col ">{!PCL}</td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">Ship Date</th><td class="data2Col ">{!ShipDate}</td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">Startup Date</th><td class="data2Col ">{!StartupDate}</td></tr>
+            <apex:inputField value="{!Case_Service_Code__c.Case__c}" taborderhint="1" />
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.Business_Unit_Calc__c.Label}</th><td class="data2Col " id="bunitcode" data="{!CaseBusinessUnitId}">{!CaseBusinessUnit}</td></tr>
+<!--            <apex:SelectList value="{!Case_Service_Code__c.BusinessUnitCode__c}" size="1" onchange="bUnitChange(this)" id="bunitcode">
+                <apex:selectOption itemValue="" itemLabel="" />
+                <apex:SelectOptions value="{!BusinessUnits}"></apex:SelectOptions>
+            </apex:SelectList>        -->
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.UnitCode__c.Label}</th><td class="data2Col " id="units"><select></select></td></tr>
+            <apex:SelectList value="{!Case_Service_Code__c.ModeCode__c}" size="1" id="modecode" onchange="unitChange(this);">
+                <apex:selectOption itemValue="" itemLabel="" />
+                <apex:SelectOptions value="{!Modes}"></apex:SelectOptions>
+            </apex:SelectList>        
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.TypeCode__c.Label}</th><td class="data2Col " id="types"><select></select></td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.MajorCode__c.Label}</th><td class="data2Col " id="majors"><select></select></td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.SpecificCode__c.Label}</th><td class="data2Col " id="specifics"><select></select></td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.WarrantyClassCode__c.Label}</th><td class="data2Col " id="wclass"><select></select></td></tr>
+            <tr><th class="labelCol vfLabelColTextWrap " scope="row">{!$ObjectType.case_service_code__c.fields.Responsibility__c.Label}</th><td class="data2Col " id="resps"><select></select></td></tr>
+            <apex:inputHidden value="{!Case_Service_Code__c.UnitCode__c}" id="unitcode" />
+            <apex:inputHidden value="{!Case_Service_Code__c.TypeCode__c}" id="typecode" />
+            <apex:inputHidden value="{!Case_Service_Code__c.MajorCode__c}" id="majorcode" />
+            <apex:inputHidden value="{!Case_Service_Code__c.SpecificCode__c}" id="specificcode" />
+            <apex:inputHidden value="{!Case_Service_Code__c.WarrantyClassCode__c}" id="wclasscode" />
+            <apex:inputHidden value="{!Case_Service_Code__c.Responsibility__c}" id="respcode" />
+            <apex:inputField styleClass="myClass" value="{!Case_Service_Code__c.Description__c}" taborderhint="2"/>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockSection title="Amounts" columns="2">
+            <apex:inputField value="{!Case_Service_Code__c.Hours_Requested__c}" taborderhint="3"/>
+            <apex:inputField value="{!Case_Service_Code__c.Hours_Approved__c}" taborderhint="8"/>
+
+            <apex:inputField value="{!Case_Service_Code__c.Labor_Amount_Requested__c}" taborderhint="4"/>
+            <apex:inputField value="{!Case_Service_Code__c.Labor_Amount_Approved__c}" taborderhint="9"/>
+
+            <apex:inputField value="{!Case_Service_Code__c.Daikin_Parts_Amount_Requested__c}" taborderhint="5"/>
+            <apex:inputField value="{!Case_Service_Code__c.Daikin_Parts_Amount_Approved__c}" taborderhint="10"/>
+
+            <apex:inputField value="{!Case_Service_Code__c.X3rd_Party_Parts_Amount_Requested__c}" taborderhint="6"/>
+            <apex:inputField value="{!Case_Service_Code__c.X3rd_Party_Parts_Amount_Approved__c}" taborderhint="11"/>
+
+            <apex:inputField value="{!Case_Service_Code__c.Additional_Materials_Amount_Requested__c}" taborderhint="7"/>
+            <apex:inputField value="{!Case_Service_Code__c.Additional_Materials_Amount_Approved__c}" taborderhint="12"/>
+        </apex:pageBlockSection>
+      </apex:pageBlock>
+    </apex:form>
+    <script>
+    // this will reload the page if redirected with inline=1 in the url params
+    //  var url = location.href;
+    //  var match = url.match(/inline=1/);
+    // if (match != null) { 
+    //     var newUrl = url.replace(/inline=1/, '');
+    //     window.top.location=newUrl;
+    // }
+
+        var containerId='j_id0:j_id2:j_id3:j_id7:';
+        
+        function bUnitChange(BU){
+            //var BU = sel.options[sel.selectedIndex].value;
+            if(BU !== ''){
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getResponsibility}', BU,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="respChange(this);" id="respselect">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'respcode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+result[property][1]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('resps').innerHTML = options;
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );            
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getClassifications}', BU,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="wclassChange(this);" id="wclassselect">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'wclasscode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+result[property][1]+' '+result[property][2]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('wclass').innerHTML = options;
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );            
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getUnits}', BU,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="unitChange(this);" id="unitselect">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'unitcode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+/*result[property][1]+' '+*/result[property][2]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('units').innerHTML = options;
+                             unitChange(document.getElementById('unitselect'));
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );            
+            } else{
+                document.getElementById('units').innerHTML = '';
+                document.getElementById('types').innerHTML = '';
+                document.getElementById('majors').innerHTML = '';
+                document.getElementById('specifics').innerHTML = '';
+                document.getElementById('wclass').innerHTML = '';
+                document.getElementById('resps').innerHTML = '';
+            }
+        }
+        function respChange(sel){
+            var resp = sel.options[sel.selectedIndex].value;
+            document.getElementById(containerId+'respcode').value=resp;
+        }
+        function wclassChange(sel){
+            var wclass = sel.options[sel.selectedIndex].value;
+            document.getElementById(containerId+'wclasscode').value=wclass;
+        }
+        function unitChange(sel){
+            var unit;
+            var mode;
+            if(sel.getAttribute('id')=='unitselect'){
+                unit = sel.options[sel.selectedIndex].value;
+                mode = document.getElementById(containerId+'modecode').value;
+            } else {
+                mode = sel.options[sel.selectedIndex].value;
+                unit = document.getElementById('unitselect').value;
+            }
+            document.getElementById(containerId+'unitcode').value=unit;
+            if(unit !== '' && mode !== ''){                
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getTypes}', mode, unit,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="document.getElementById(\''+containerId+'typecode\').value=this.options[this.selectedIndex].value;">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'typecode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+/*result[property][1]+' '+*/result[property][2]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('types').innerHTML = options;
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );            
+
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getMajors}', document.getElementById('bunitcode').getAttribute("data"), unit,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="javascript:majorChange(this)" id="majorselect">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'majorcode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+/*result[property][1]+' '+*/result[property][2]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('majors').innerHTML = options;
+                             majorChange(document.getElementById('majorselect'));
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );            
+            } else{
+                document.getElementById('types').innerHTML = '';
+                document.getElementById('majors').innerHTML = '';
+                document.getElementById('specifics').innerHTML = '';
+            }
+        }
+        function majorChange(sel){
+            var major = sel.options[sel.selectedIndex].value;
+            document.getElementById(containerId+'majorcode').value=major;
+            if(major !== ''){
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.CaseServiceCodeControllerExtension.getSpecifics}', major, document.getElementById(containerId+'unitcode').value,
+                     function(result, event){
+                         if (event.status) {
+                             var options = '<select onchange="document.getElementById(\''+containerId+'specificcode\').value=this.options[this.selectedIndex].value;">';
+                             options += '<option value=""></option>';                        
+                             for (var property in result) {
+                                 if (result.hasOwnProperty(property)) {
+                                     //console.log(result[property]);            
+                                     options += '<option value="'+result[property][0]+'"';
+                                     if(document.getElementById(containerId+'specificcode').value==result[property][0])
+                                         options += ' selected="true"';
+                                     options +='>'+result[property][1]+' '+result[property][2]+'</option>';
+                                 }
+                             }
+                             options += '</select>';
+                             document.getElementById('specifics').innerHTML = options;
+                         } else if (event.type === 'exception') {
+                             //exception case code          
+                         } else {                                    
+                         }  
+                      }, 
+                      {escape: true}
+                );   
+            } else {
+                document.getElementById('specifics').innerHTML = '';
+            }
+        }
+        
+        bUnitChange(document.getElementById('bunitcode').getAttribute("data"));//innerText);//value);       
+    </script>
+</apex:page>

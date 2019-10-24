@@ -1,0 +1,127 @@
+41.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: string model='AGZ999';
+Execute Anonymous: Boolean supported = false;
+Execute Anonymous: 		string prefix = null;
+Execute Anonymous: 		string letter = '';
+Execute Anonymous: 
+Execute Anonymous: 		if (String.isNotEmpty(model) && (model.length() >= 3))
+Execute Anonymous: 		{
+Execute Anonymous: 			prefix = model.substring(0, 3);
+Execute Anonymous: 
+Execute Anonymous: 			//For AGZ and AWS models look at the 7th character in the string to get the corresponding letter for verification (D or E for AGZ and C for AWS).
+Execute Anonymous: 			//We will only see a 3 digit tonnage in the model, e.g., AGZ055D…, or AGZ190E…, or AWS120C…
+Execute Anonymous: 			if (model.length() >= 7)
+Execute Anonymous: 				letter = model.substring(6, 7);
+Execute Anonymous: 
+Execute Anonymous: 			if (prefix.trim().equalsIgnoreCase('DPS')) {
+Execute Anonymous: 				// Rebel
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('MPS')) {
+Execute Anonymous: 				// Mav-II
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('RAH') || prefix.trim().equalsIgnoreCase('RDS') ||
+Execute Anonymous: 					prefix.trim().equalsIgnoreCase('RDT') || prefix.trim().equalsIgnoreCase('RFS') ||
+Execute Anonymous: 					prefix.trim().equalsIgnoreCase('RPR') || prefix.trim().equalsIgnoreCase('RPS')) {
+Execute Anonymous: 				// Roofpak
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if (prefix.trim().equalsIgnoreCase('AGZ') && (letter.equalsIgnoreCase('D') || letter.equalsIgnoreCase('E'))) {
+Execute Anonymous: 				// Trailblazer
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 			else if ((prefix.trim().equalsIgnoreCase('AWV') || prefix.trim().equalsIgnoreCase('AWS')) && letter.equalsIgnoreCase('C')) {
+Execute Anonymous: 				// Pathfinder
+Execute Anonymous: 				supported = true;
+Execute Anonymous: 			}
+Execute Anonymous: 		}
+Execute Anonymous: 
+Execute Anonymous:         System.debug(logginglevel.error, 'Model = ' + model + ' prefix = ' + prefix + ' letter = ' + letter + ' IE supported model = ' + supported);
+14:41:33.4 (4106462)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+14:41:33.4 (4134023)|EXECUTION_STARTED
+14:41:33.4 (4138747)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+14:41:33.4 (4440014)|VARIABLE_SCOPE_BEGIN|[4]|letter|String|false|false
+14:41:33.4 (4496442)|VARIABLE_SCOPE_BEGIN|[1]|model|String|false|false
+14:41:33.4 (4521346)|VARIABLE_SCOPE_BEGIN|[3]|prefix|String|false|false
+14:41:33.4 (4540786)|VARIABLE_SCOPE_BEGIN|[2]|supported|Boolean|false|false
+14:41:33.4 (4678179)|HEAP_ALLOCATE|[72]|Bytes:3
+14:41:33.4 (4752870)|HEAP_ALLOCATE|[77]|Bytes:152
+14:41:33.4 (4774729)|HEAP_ALLOCATE|[342]|Bytes:408
+14:41:33.4 (4795878)|HEAP_ALLOCATE|[355]|Bytes:408
+14:41:33.4 (4815123)|HEAP_ALLOCATE|[467]|Bytes:48
+14:41:33.4 (4850545)|HEAP_ALLOCATE|[139]|Bytes:6
+14:41:33.4 (4880003)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:56
+14:41:33.4 (5141032)|STATEMENT_EXECUTE|[1]
+14:41:33.4 (5145626)|STATEMENT_EXECUTE|[1]
+14:41:33.4 (5149443)|HEAP_ALLOCATE|[1]|Bytes:6
+14:41:33.4 (5197413)|VARIABLE_ASSIGNMENT|[1]|model|"AGZ999"
+14:41:33.4 (5203421)|STATEMENT_EXECUTE|[2]
+14:41:33.4 (5236257)|HEAP_ALLOCATE|[50]|Bytes:5
+14:41:33.4 (5269407)|HEAP_ALLOCATE|[56]|Bytes:5
+14:41:33.4 (5282503)|HEAP_ALLOCATE|[64]|Bytes:7
+14:41:33.4 (5309328)|HEAP_ALLOCATE|[2]|Bytes:5
+14:41:33.4 (5323433)|VARIABLE_ASSIGNMENT|[2]|supported|false
+14:41:33.4 (5328606)|STATEMENT_EXECUTE|[3]
+14:41:33.4 (5336004)|VARIABLE_ASSIGNMENT|[3]|prefix|null
+14:41:33.4 (5340551)|STATEMENT_EXECUTE|[4]
+14:41:33.4 (5348223)|VARIABLE_ASSIGNMENT|[4]|letter|""
+14:41:33.4 (5460730)|STATEMENT_EXECUTE|[7]
+14:41:33.4 (5463145)|STATEMENT_EXECUTE|[8]
+14:41:33.4 (5493826)|HEAP_ALLOCATE|[8]|Bytes:3
+14:41:33.4 (5519539)|VARIABLE_ASSIGNMENT|[8]|prefix|"AGZ"
+14:41:33.4 (5554296)|STATEMENT_EXECUTE|[12]
+14:41:33.4 (5577007)|HEAP_ALLOCATE|[15]|Bytes:3
+14:41:33.4 (5593881)|HEAP_ALLOCATE|[15]|Bytes:3
+14:41:33.4 (5633515)|HEAP_ALLOCATE|[19]|Bytes:3
+14:41:33.4 (5649056)|HEAP_ALLOCATE|[19]|Bytes:3
+14:41:33.4 (5683417)|HEAP_ALLOCATE|[23]|Bytes:3
+14:41:33.4 (5698581)|HEAP_ALLOCATE|[23]|Bytes:3
+14:41:33.4 (5727175)|HEAP_ALLOCATE|[23]|Bytes:3
+14:41:33.4 (5740300)|HEAP_ALLOCATE|[23]|Bytes:3
+14:41:33.4 (5773547)|HEAP_ALLOCATE|[24]|Bytes:3
+14:41:33.4 (5788536)|HEAP_ALLOCATE|[24]|Bytes:3
+14:41:33.4 (5816542)|HEAP_ALLOCATE|[24]|Bytes:3
+14:41:33.4 (5829378)|HEAP_ALLOCATE|[24]|Bytes:3
+14:41:33.4 (5862286)|HEAP_ALLOCATE|[25]|Bytes:3
+14:41:33.4 (5877354)|HEAP_ALLOCATE|[25]|Bytes:3
+14:41:33.4 (5904717)|HEAP_ALLOCATE|[25]|Bytes:3
+14:41:33.4 (5917196)|HEAP_ALLOCATE|[25]|Bytes:3
+14:41:33.4 (5950615)|HEAP_ALLOCATE|[29]|Bytes:3
+14:41:33.4 (5965442)|HEAP_ALLOCATE|[29]|Bytes:3
+14:41:33.4 (5987276)|HEAP_ALLOCATE|[29]|Bytes:1
+14:41:33.4 (6008599)|HEAP_ALLOCATE|[29]|Bytes:1
+14:41:33.4 (6045499)|HEAP_ALLOCATE|[33]|Bytes:3
+14:41:33.4 (6066587)|HEAP_ALLOCATE|[33]|Bytes:3
+14:41:33.4 (6095278)|HEAP_ALLOCATE|[33]|Bytes:3
+14:41:33.4 (6107252)|HEAP_ALLOCATE|[33]|Bytes:3
+14:41:33.4 (6126117)|STATEMENT_EXECUTE|[15]
+14:41:33.4 (6127917)|STATEMENT_EXECUTE|[39]
+14:41:33.4 (6336277)|HEAP_ALLOCATE|[39]|Bytes:8
+14:41:33.4 (6346143)|HEAP_ALLOCATE|[39]|Bytes:10
+14:41:33.4 (6351080)|HEAP_ALLOCATE|[39]|Bytes:10
+14:41:33.4 (6364558)|HEAP_ALLOCATE|[39]|Bytes:37
+14:41:33.4 (6369708)|HEAP_ALLOCATE|[39]|Bytes:22
+14:41:33.4 (6413144)|HEAP_ALLOCATE|[39]|Bytes:5
+14:41:33.4 (6436409)|HEAP_ALLOCATE|[39]|Bytes:27
+14:41:33.4 (6443179)|HEAP_ALLOCATE|[39]|Bytes:64
+14:41:33.4 (6490620)|USER_DEBUG|[39]|ERROR|Model = AGZ999 prefix = AGZ letter =  IE supported model = false
+14:41:33.6 (6541776)|CUMULATIVE_LIMIT_USAGE
+14:41:33.6 (6541776)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:41:33.6 (6541776)|CUMULATIVE_LIMIT_USAGE_END
+
+14:41:33.4 (6588059)|CODE_UNIT_FINISHED|execute_anonymous_apex
+14:41:33.4 (7896949)|EXECUTION_FINISHED

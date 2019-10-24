@@ -1,0 +1,32 @@
+<apex:page standardController="Account" extensions="AccountHierarchy" >
+
+  <apex:form >
+    <apex:pageBlock >
+        
+      <apex:pageBlockTable value="{!opportunityList}" var="opp">
+         <!-- <apex:outputLink value="/{!opp.Id}" id="theLink">{!opp.Name}</apex:outputLink>-->
+          
+
+          <apex:column headerValue="Opportunity Name"> 
+          <apex:outputLink value="/{!opp.Id}" target="_blank">                         
+                            {!opp.Name}                            
+                        </apex:outputLink>  
+          </apex:column>
+          <apex:column headerValue="Account Name" > 
+          <apex:outputLink value="/{!opp.accountId}" target="_blank">                         
+                            {!opp.account.Name}                            
+                        </apex:outputLink>  
+          </apex:column>
+            
+          <apex:column value="{!opp.StageName}"/>
+           <apex:column value="{!opp.Amount}"/>
+           <apex:column value="{!opp.CloseDate}"/>
+          <apex:column value="{!opp.owner.Name}"/>
+          
+        </apex:pageBlockTable>
+        
+      </apex:pageBlock>
+    
+    </apex:form>
+          
+</apex:page>

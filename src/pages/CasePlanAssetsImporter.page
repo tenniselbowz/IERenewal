@@ -1,0 +1,11 @@
+<apex:page standardController="Case_Plan__c" extensions="importCasePlanAssetsFromCSVController">
+<apex:form >
+    <apex:pagemessages />
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="2"> 
+              <apex:inputFile value="{!csvFileBody}"  filename="{!csvAsString}"/>
+              <apex:commandButton value="Import Serial Numbers" action="{!importCSVFile}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+ </apex:form>
+ </apex:page>

@@ -1,0 +1,92 @@
+24.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+18:32:29.1 (1433672)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-06:00
+18:32:29.1 (1509737)|EXECUTION_STARTED
+18:32:29.1 (1516129)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000EbVf|ResetGWotGoAsset_Test.testPut_processRequest_ExceptionThrown
+18:32:29.1 (2477304)|DML_BEGIN|[305]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+18:32:29.24 (24488043)|ENTERING_MANAGED_PKG|AVA_SFCORE
+18:32:29.24 (26524815)|ENTERING_MANAGED_PKG|AVA_SFCORE
+18:32:29.24 (27443955)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+18:32:29.24 (32628985)|SOQL_EXECUTE_END|[58]|Rows:0
+18:32:29.32 (32880595)|CUMULATIVE_LIMIT_USAGE
+18:32:29.32 (32880595)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:32:29.32 (32880595)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:32:29.32 (32880595)|CUMULATIVE_LIMIT_USAGE_END
+
+18:32:29.1 (85664594)|DML_END|[305]
+18:32:29.1 (113166408)|SYSTEM_MODE_ENTER|false
+18:32:29.1 (113189870)|SYSTEM_MODE_EXIT|false
+18:32:29.1 (113470848)|SYSTEM_MODE_ENTER|false
+18:32:29.1 (142908269)|SYSTEM_MODE_ENTER|true
+18:32:29.1 (142950406)|SYSTEM_MODE_EXIT|true
+18:32:29.1 (144427303)|USER_DEBUG|[98]|ERROR|Unit Serial Number = null GW MAC Address = null User Email = null
+18:32:29.1 (146226359)|SOQL_EXECUTE_BEGIN|[102]|Aggregations:1|SELECT Id, Name, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Asset__c, IE_Sync_Status__c, IE_Updated_Date__c, Current_Code_String_Breakdown__c, Code_String_Breakdown__c, LastModifiedDate, Product2.ProductCode, Product2.Name, Order__c, AccountId, Asset_Address__c, Asset_Address__r.Country__c, Asset_Address__r.Postal_Code__c, Asset_Address__r.State_Province__c, Asset_Address__r.County__c, Asset_Address__r.State_Province_ISO_Code__c, Asset_Address__r.Country_ISO_Code__c, Asset_Address__r.City__c, Asset_Address__r.Address_Line_4__c, Asset_Address__r.Address_Line_3__c, Asset_Address__r.Address_Line_2__c, Asset_Address__r.Address_Line_1__c, Asset_Address__r.Name, Asset_Address__r.IE_ID__c, Asset_Address__r.Id, Asset_Address__r.LastModifiedDate, (SELECT Id, Name, Product2.Name, Parent_Asset__c, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, MAC_Address__c, Status, GWotGo__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Updated_Date__c, LastModifiedDate FROM Assets__r WHERE Status != 'Obsolete') FROM Asset WHERE SerialNumber = :tmpVar1
+18:32:29.1 (163417133)|SOQL_EXECUTE_END|[102]|Rows:0
+18:32:29.1 (163609785)|USER_DEBUG|[566]|ERROR|New Unit not found for Serial Number = null
+18:32:29.1 (163995843)|USER_DEBUG|[650]|ERROR|ResetGWotGoAsset Service Response object = ResetResponse:[Errors=(Response_Error:[ErrorCode=NEWUNIT_NOT_FOUND, ErrorMessage=New Unit not found for Serial Number = null]), GatewayMACAddress=null, UnitSerialNumber=null, UserEmail=null, Warnings=()]
+18:32:29.1 (164017692)|SYSTEM_MODE_EXIT|false
+18:32:29.1 (165032906)|EXCEPTION_THROWN|[328]|System.AssertException: Assertion Failed: Expected: UNIT_RESET_EXCEPTION, Actual: NEWUNIT_NOT_FOUND
+18:32:29.1 (165281845)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: UNIT_RESET_EXCEPTION, Actual: NEWUNIT_NOT_FOUND
+
+Class.ResetGWotGoAsset_Test.testPut_processRequest_ExceptionThrown: line 328, column 1
+18:32:29.1 (165306787)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: UNIT_RESET_EXCEPTION, Actual: NEWUNIT_NOT_FOUND
+
+Class.ResetGWotGoAsset_Test.testPut_processRequest_ExceptionThrown: line 328, column 1
+18:32:29.165 (165317260)|CUMULATIVE_LIMIT_USAGE
+18:32:29.165 (165317260)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:32:29.165 (165317260)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:32:29.165 (165317260)|CUMULATIVE_LIMIT_USAGE_END
+
+18:32:29.1 (165384180)|CODE_UNIT_FINISHED|ResetGWotGoAsset_Test.testPut_processRequest_ExceptionThrown
+18:32:29.1 (167828452)|EXECUTION_FINISHED

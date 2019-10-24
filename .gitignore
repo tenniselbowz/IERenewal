@@ -1,0 +1,6 @@
+/.localHistory
+**/.localHistory
+*.sfuo
+TestCache.xml
+TestsResultsCache.xml
+**/.cache

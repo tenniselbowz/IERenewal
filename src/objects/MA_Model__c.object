@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Equipment_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Group</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>true</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D</label>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>E</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>G</fullName>
+                    <default>false</default>
+                    <label>G</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+                <value>
+                    <fullName>I</fullName>
+                    <default>false</default>
+                    <label>I</label>
+                </value>
+                <value>
+                    <fullName>J</fullName>
+                    <default>false</default>
+                    <label>J</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Equipment_Type_Labor__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Absorption Chiller</fullName>
+                    <default>false</default>
+                    <label>Absorption Chiller</label>
+                </value>
+                <value>
+                    <fullName>Air Cooled Screw Chiller</fullName>
+                    <default>false</default>
+                    <label>Air Cooled Screw Chiller</label>
+                </value>
+                <value>
+                    <fullName>Air Cooled Scroll Chiller</fullName>
+                    <default>false</default>
+                    <label>Air Cooled Scroll Chiller</label>
+                </value>
+                <value>
+                    <fullName>Air Handler</fullName>
+                    <default>false</default>
+                    <label>Air Handler</label>
+                </value>
+                <value>
+                    <fullName>Balancing Valves</fullName>
+                    <default>false</default>
+                    <label>Balancing Valves</label>
+                </value>
+                <value>
+                    <fullName>Boiler -  Condensing</fullName>
+                    <default>false</default>
+                    <label>Boiler -  Condensing</label>
+                </value>
+                <value>
+                    <fullName>Boiler - Steam</fullName>
+                    <default>false</default>
+                    <label>Boiler - Steam</label>
+                </value>
+                <value>
+                    <fullName>Boiler - Water</fullName>
+                    <default>false</default>
+                    <label>Boiler - Water</label>
+                </value>
+                <value>
+                    <fullName>Breaching or venting System</fullName>
+                    <default>false</default>
+                    <label>Breaching or venting System</label>
+                </value>
+                <value>
+                    <fullName>Condensing Unit</fullName>
+                    <default>false</default>
+                    <label>Condensing Unit</label>
+                </value>
+                <value>
+                    <fullName>Controls</fullName>
+                    <default>false</default>
+                    <label>Controls</label>
+                </value>
+                <value>
+                    <fullName>Cooling Tower</fullName>
+                    <default>false</default>
+                    <label>Cooling Tower</label>
+                </value>
+                <value>
+                    <fullName>Duct System</fullName>
+                    <default>false</default>
+                    <label>Duct System</label>
+                </value>
+                <value>
+                    <fullName>Energy Recovery Wheels</fullName>
+                    <default>false</default>
+                    <label>Energy Recovery Wheels</label>
+                </value>
+                <value>
+                    <fullName>Evaporative Cooler</fullName>
+                    <default>false</default>
+                    <label>Evaporative Cooler</label>
+                </value>
+                <value>
+                    <fullName>Fan</fullName>
+                    <default>false</default>
+                    <label>Fan</label>
+                </value>
+                <value>
+                    <fullName>Fan Coil</fullName>
+                    <default>false</default>
+                    <label>Fan Coil</label>
+                </value>
+                <value>
+                    <fullName>Fan Coil Unit</fullName>
+                    <default>false</default>
+                    <label>Fan Coil Unit</label>
+                </value>
+                <value>
+                    <fullName>Fluid Cooler</fullName>
+                    <default>false</default>
+                    <label>Fluid Cooler</label>
+                </value>
+                <value>
+                    <fullName>Heat Exchanger - Air</fullName>
+                    <default>false</default>
+                    <label>Heat Exchanger - Air</label>
+                </value>
+                <value>
+                    <fullName>Heat Exchange - Plate &amp; Frame</fullName>
+                    <default>false</default>
+                    <label>Heat Exchange - Plate &amp; Frame</label>
+                </value>
+                <value>
+                    <fullName>Heat Exchange -Shell &amp; Tube</fullName>
+                    <default>false</default>
+                    <label>Heat Exchange -Shell &amp; Tube</label>
+                </value>
+                <value>
+                    <fullName>Isolation Valve</fullName>
+                    <default>false</default>
+                    <label>Isolation Valve</label>
+                </value>
+                <value>
+                    <fullName>Piping System</fullName>
+                    <default>false</default>
+                    <label>Piping System</label>
+                </value>
+                <value>
+                    <fullName>Pneumatic Controls</fullName>
+                    <default>false</default>
+                    <label>Pneumatic Controls</label>
+                </value>
+                <value>
+                    <fullName>Pump</fullName>
+                    <default>false</default>
+                    <label>Pump</label>
+                </value>
+                <value>
+                    <fullName>Pump Strainer</fullName>
+                    <default>false</default>
+                    <label>Pump Strainer</label>
+                </value>
+                <value>
+                    <fullName>Refrigerant Air Dryer</fullName>
+                    <default>false</default>
+                    <label>Refrigerant Air Dryer</label>
+                </value>
+                <value>
+                    <fullName>Refrigerant Monitor</fullName>
+                    <default>false</default>
+                    <label>Refrigerant Monitor</label>
+                </value>
+                <value>
+                    <fullName>Rooftop Unit</fullName>
+                    <default>false</default>
+                    <label>Rooftop Unit</label>
+                </value>
+                <value>
+                    <fullName>Split System</fullName>
+                    <default>false</default>
+                    <label>Split System</label>
+                </value>
+                <value>
+                    <fullName>Steam Trap</fullName>
+                    <default>false</default>
+                    <label>Steam Trap</label>
+                </value>
+                <value>
+                    <fullName>Strainer</fullName>
+                    <default>false</default>
+                    <label>Strainer</label>
+                </value>
+                <value>
+                    <fullName>Tank - Expansion</fullName>
+                    <default>false</default>
+                    <label>Tank - Expansion</label>
+                </value>
+                <value>
+                    <fullName>Tank - Misc</fullName>
+                    <default>false</default>
+                    <label>Tank - Misc</label>
+                </value>
+                <value>
+                    <fullName>Tube Bundles</fullName>
+                    <default>false</default>
+                    <label>Tube Bundles</label>
+                </value>
+                <value>
+                    <fullName>Unit Heaters</fullName>
+                    <default>false</default>
+                    <label>Unit Heaters</label>
+                </value>
+                <value>
+                    <fullName>Unit Ventilators</fullName>
+                    <default>false</default>
+                    <label>Unit Ventilators</label>
+                </value>
+                <value>
+                    <fullName>Variable Refrigerant Volume Indoor Units</fullName>
+                    <default>false</default>
+                    <label>Variable Refrigerant Volume Indoor Units</label>
+                </value>
+                <value>
+                    <fullName>Variable Refrigerant Volume Outdoor Units</fullName>
+                    <default>false</default>
+                    <label>Variable Refrigerant Volume Outdoor Units</label>
+                </value>
+                <value>
+                    <fullName>Variable Speed Drives</fullName>
+                    <default>false</default>
+                    <label>Variable Speed Drives</label>
+                </value>
+                <value>
+                    <fullName>VAV Boxes</fullName>
+                    <default>false</default>
+                    <label>VAV Boxes</label>
+                </value>
+                <value>
+                    <fullName>Vertical Self Contained Unit</fullName>
+                    <default>false</default>
+                    <label>Vertical Self Contained Unit</label>
+                </value>
+                <value>
+                    <fullName>Water Coil</fullName>
+                    <default>false</default>
+                    <label>Water Coil</label>
+                </value>
+                <value>
+                    <fullName>Water Cooled Centrifugal Chiller</fullName>
+                    <default>false</default>
+                    <label>Water Cooled Centrifugal Chiller</label>
+                </value>
+                <value>
+                    <fullName>Water Cooled Magnetic Bearing Chiller</fullName>
+                    <default>false</default>
+                    <label>Water Cooled Magnetic Bearing Chiller</label>
+                </value>
+                <value>
+                    <fullName>Water Cooled Reciprocating Chiller</fullName>
+                    <default>false</default>
+                    <label>Water Cooled Reciprocating Chiller</label>
+                </value>
+                <value>
+                    <fullName>Water Cooled Screw Chiller</fullName>
+                    <default>false</default>
+                    <label>Water Cooled Screw Chiller</label>
+                </value>
+                <value>
+                    <fullName>Water Cooled Scroll Chiller</fullName>
+                    <default>false</default>
+                    <label>Water Cooled Scroll Chiller</label>
+                </value>
+                <value>
+                    <fullName>Water Source Heat Pump</fullName>
+                    <default>false</default>
+                    <label>Water Source Heat Pump</label>
+                </value>
+                <value>
+                    <fullName>Window Air Conditioners</fullName>
+                    <default>false</default>
+                    <label>Window Air Conditioners</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Equipment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Absorption Chillers</fullName>
+                    <default>false</default>
+                    <label>Absorption Chillers</label>
+                </value>
+                <value>
+                    <fullName>AC Screw</fullName>
+                    <default>false</default>
+                    <label>AC Screw</label>
+                </value>
+                <value>
+                    <fullName>Air Cleaners</fullName>
+                    <default>false</default>
+                    <label>Air Cleaners</label>
+                </value>
+                <value>
+                    <fullName>Air Handlers &amp; Make-up Air Units</fullName>
+                    <default>false</default>
+                    <label>Air Handlers &amp; Make-up Air Units</label>
+                </value>
+                <value>
+                    <fullName>Airside Heat Recovery - Fixed Plate</fullName>
+                    <default>false</default>
+                    <label>Airside Heat Recovery - Fixed Plate</label>
+                </value>
+                <value>
+                    <fullName>Airside Heat Recovery Ventilator-Wheel</fullName>
+                    <default>false</default>
+                    <label>Airside Heat Recovery Ventilator-Wheel</label>
+                </value>
+                <value>
+                    <fullName>Back Flow Prevention</fullName>
+                    <default>false</default>
+                    <label>Back Flow Prevention</label>
+                </value>
+                <value>
+                    <fullName>Blow Down Heat Recovery</fullName>
+                    <default>false</default>
+                    <label>Blow Down Heat Recovery</label>
+                </value>
+                <value>
+                    <fullName>Boilers - Electric Type</fullName>
+                    <default>false</default>
+                    <label>Boilers - Electric Type</label>
+                </value>
+                <value>
+                    <fullName>Boilers- Fossil Fuel Types</fullName>
+                    <default>false</default>
+                    <label>Boilers- Fossil Fuel Types</label>
+                </value>
+                <value>
+                    <fullName>Centrifugal Chillers - Negative (low) Pressure</fullName>
+                    <default>false</default>
+                    <label>Centrifugal Chillers - Negative (low) Pressure</label>
+                </value>
+                <value>
+                    <fullName>Centrifugal Chillers - Positive (high) Pressure</fullName>
+                    <default>false</default>
+                    <label>Centrifugal Chillers - Positive (high) Pressure</label>
+                </value>
+                <value>
+                    <fullName>Computer Room Air Conditioning Units - (CRAC)</fullName>
+                    <default>false</default>
+                    <label>Computer Room Air Conditioning Units - (CRAC)</label>
+                </value>
+                <value>
+                    <fullName>Cooling Towers</fullName>
+                    <default>false</default>
+                    <label>Cooling Towers</label>
+                </value>
+                <value>
+                    <fullName>De-Humidifiers - Desiccant or Refrigerant Type</fullName>
+                    <default>false</default>
+                    <label>De-Humidifiers - Desiccant or Refrigerant Type</label>
+                </value>
+                <value>
+                    <fullName>Domestic Water Heaters</fullName>
+                    <default>false</default>
+                    <label>Domestic Water Heaters</label>
+                </value>
+                <value>
+                    <fullName>Dry Coolers - Air cooled fluid cooler</fullName>
+                    <default>false</default>
+                    <label>Dry Coolers - Air cooled fluid cooler</label>
+                </value>
+                <value>
+                    <fullName>Exhaust &amp; Return Fans</fullName>
+                    <default>false</default>
+                    <label>Exhaust &amp; Return Fans</label>
+                </value>
+                <value>
+                    <fullName>Fan Coil Units or Unit Ventilator</fullName>
+                    <default>false</default>
+                    <label>Fan Coil Units or Unit Ventilator</label>
+                </value>
+                <value>
+                    <fullName>Flue Gas Heat Recovery (Stack economizer)</fullName>
+                    <default>false</default>
+                    <label>Flue Gas Heat Recovery (Stack economizer)</label>
+                </value>
+                <value>
+                    <fullName>Furnaces</fullName>
+                    <default>false</default>
+                    <label>Furnaces</label>
+                </value>
+                <value>
+                    <fullName>Heat Exchangers - Plate &amp; Frame / Shell &amp; Tube</fullName>
+                    <default>false</default>
+                    <label>Heat Exchangers - Plate &amp; Frame / Shell &amp; Tube</label>
+                </value>
+                <value>
+                    <fullName>Humidifier Units - Electric &amp; Steam</fullName>
+                    <default>false</default>
+                    <label>Humidifier Units - Electric &amp; Steam</label>
+                </value>
+                <value>
+                    <fullName>Magnetic Bearing Centrifugal Chillers</fullName>
+                    <default>false</default>
+                    <label>Magnetic Bearing Centrifugal Chillers</label>
+                </value>
+                <value>
+                    <fullName>Pneumatic Air Compressor System</fullName>
+                    <default>false</default>
+                    <label>Pneumatic Air Compressor System</label>
+                </value>
+                <value>
+                    <fullName>PTAC - Packaged Through the wall Air Conditioners</fullName>
+                    <default>false</default>
+                    <label>PTAC - Packaged Through the wall Air Conditioners</label>
+                </value>
+                <value>
+                    <fullName>Reciprocating / Scroll Chillers - Air and Water Cooled</fullName>
+                    <default>false</default>
+                    <label>Reciprocating / Scroll Chillers - Air and Water Cooled</label>
+                </value>
+                <value>
+                    <fullName>Refrigerant Monitor</fullName>
+                    <default>false</default>
+                    <label>Refrigerant Monitor</label>
+                </value>
+                <value>
+                    <fullName>Refrigerated Air Driers</fullName>
+                    <default>false</default>
+                    <label>Refrigerated Air Driers</label>
+                </value>
+                <value>
+                    <fullName>Roof Top / Packaged or Split Systems (Unitary Equipment, Heating and cooling)</fullName>
+                    <default>false</default>
+                    <label>Roof Top / Packaged or Split Systems (Unitary Equipment, Heating and cooling)</label>
+                </value>
+                <value>
+                    <fullName>Screw / Rotary Chillers - Air and Water Cooled</fullName>
+                    <default>false</default>
+                    <label>Screw / Rotary Chillers - Air and Water Cooled</label>
+                </value>
+                <value>
+                    <fullName>Unit Heaters - (Duct and Space)</fullName>
+                    <default>false</default>
+                    <label>Unit Heaters - (Duct and Space)</label>
+                </value>
+                <value>
+                    <fullName>Variable Air Volume Boxes</fullName>
+                    <default>false</default>
+                    <label>Variable Air Volume Boxes</label>
+                </value>
+                <value>
+                    <fullName>VRV - Variable Refrigerant Volume Units</fullName>
+                    <default>false</default>
+                    <label>VRV - Variable Refrigerant Volume Units</label>
+                </value>
+                <value>
+                    <fullName>Water Pumps</fullName>
+                    <default>false</default>
+                    <label>Water Pumps</label>
+                </value>
+                <value>
+                    <fullName>Water Source Heat Pump (WSHP)</fullName>
+                    <default>false</default>
+                    <label>Water Source Heat Pump (WSHP)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>McQuay</fullName>
+                    <default>false</default>
+                    <label>McQuay</label>
+                </value>
+                <value>
+                    <fullName>Aaon</fullName>
+                    <default>false</default>
+                    <label>Aaon</label>
+                </value>
+                <value>
+                    <fullName>Amana</fullName>
+                    <default>false</default>
+                    <label>Amana</label>
+                </value>
+                <value>
+                    <fullName>Armstrong</fullName>
+                    <default>false</default>
+                    <label>Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chigo</fullName>
+                    <default>false</default>
+                    <label>Chigo</label>
+                </value>
+                <value>
+                    <fullName>Chil-Pak</fullName>
+                    <default>false</default>
+                    <label>Chil-Pak</label>
+                </value>
+                <value>
+                    <fullName>Climate Master</fullName>
+                    <default>false</default>
+                    <label>Climate Master</label>
+                </value>
+                <value>
+                    <fullName>Climaveneta</fullName>
+                    <default>false</default>
+                    <label>Climaveneta</label>
+                </value>
+                <value>
+                    <fullName>Dunham Bush</fullName>
+                    <default>false</default>
+                    <label>Dunham Bush</label>
+                </value>
+                <value>
+                    <fullName>EAS</fullName>
+                    <default>false</default>
+                    <label>EAS</label>
+                </value>
+                <value>
+                    <fullName>Envirosep</fullName>
+                    <default>false</default>
+                    <label>Envirosep</label>
+                </value>
+                <value>
+                    <fullName>Epsilon</fullName>
+                    <default>false</default>
+                    <label>Epsilon</label>
+                </value>
+                <value>
+                    <fullName>FHP</fullName>
+                    <default>false</default>
+                    <label>FHP</label>
+                </value>
+                <value>
+                    <fullName>GE</fullName>
+                    <default>false</default>
+                    <label>GE</label>
+                </value>
+                <value>
+                    <fullName>Goodman</fullName>
+                    <default>false</default>
+                    <label>Goodman</label>
+                </value>
+                <value>
+                    <fullName>Gree</fullName>
+                    <default>false</default>
+                    <label>Gree</label>
+                </value>
+                <value>
+                    <fullName>Lennox</fullName>
+                    <default>false</default>
+                    <label>Lennox</label>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                    <label>LG</label>
+                </value>
+                <value>
+                    <fullName>Mammoth</fullName>
+                    <default>false</default>
+                    <label>Mammoth</label>
+                </value>
+                <value>
+                    <fullName>Maytag</fullName>
+                    <default>false</default>
+                    <label>Maytag</label>
+                </value>
+                <value>
+                    <fullName>Midea</fullName>
+                    <default>false</default>
+                    <label>Midea</label>
+                </value>
+                <value>
+                    <fullName>Mitsubishi</fullName>
+                    <default>false</default>
+                    <label>Mitsubishi</label>
+                </value>
+                <value>
+                    <fullName>Multi Aqua</fullName>
+                    <default>false</default>
+                    <label>Multi Aqua</label>
+                </value>
+                <value>
+                    <fullName>Nordyne</fullName>
+                    <default>false</default>
+                    <label>Nordyne</label>
+                </value>
+                <value>
+                    <fullName>Panasonic</fullName>
+                    <default>false</default>
+                    <label>Panasonic</label>
+                </value>
+                <value>
+                    <fullName>Petra</fullName>
+                    <default>false</default>
+                    <label>Petra</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Smardt</fullName>
+                    <default>false</default>
+                    <label>Smardt</label>
+                </value>
+                <value>
+                    <fullName>Stellar</fullName>
+                    <default>false</default>
+                    <label>Stellar</label>
+                </value>
+                <value>
+                    <fullName>Systecon</fullName>
+                    <default>false</default>
+                    <label>Systecon</label>
+                </value>
+                <value>
+                    <fullName>Tappan</fullName>
+                    <default>false</default>
+                    <label>Tappan</label>
+                </value>
+                <value>
+                    <fullName>TAS</fullName>
+                    <default>false</default>
+                    <label>TAS</label>
+                </value>
+                <value>
+                    <fullName>Tiger-Flow</fullName>
+                    <default>false</default>
+                    <label>Tiger-Flow</label>
+                </value>
+                <value>
+                    <fullName>TMI</fullName>
+                    <default>false</default>
+                    <label>TMI</label>
+                </value>
+                <value>
+                    <fullName>Toshiba</fullName>
+                    <default>false</default>
+                    <label>Toshiba</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+                <value>
+                    <fullName>York</fullName>
+                    <default>false</default>
+                    <label>York</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Serialized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-Serialized</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Manufacturer</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Proposal__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote/Proposal</label>
+        <referenceTo>Apttus_Proposal__Proposal__c</referenceTo>
+        <relationshipLabel>MA Models</relationshipLabel>
+        <relationshipName>MA_Models</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Serial__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial #</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Site Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Site 1</fullName>
+                    <default>false</default>
+                    <label>Site 1</label>
+                </value>
+                <value>
+                    <fullName>Site 2</fullName>
+                    <default>false</default>
+                    <label>Site 2</label>
+                </value>
+                <value>
+                    <fullName>Site 3</fullName>
+                    <default>false</default>
+                    <label>Site 3</label>
+                </value>
+                <value>
+                    <fullName>Site 4</fullName>
+                    <default>false</default>
+                    <label>Site 4</label>
+                </value>
+                <value>
+                    <fullName>Site 5</fullName>
+                    <default>false</default>
+                    <label>Site 5</label>
+                </value>
+                <value>
+                    <fullName>Site 6</fullName>
+                    <default>false</default>
+                    <label>Site 6</label>
+                </value>
+                <value>
+                    <fullName>Site 7</fullName>
+                    <default>false</default>
+                    <label>Site 7</label>
+                </value>
+                <value>
+                    <fullName>Site 8</fullName>
+                    <default>false</default>
+                    <label>Site 8</label>
+                </value>
+                <value>
+                    <fullName>Site 9</fullName>
+                    <default>false</default>
+                    <label>Site 9</label>
+                </value>
+                <value>
+                    <fullName>Site 10</fullName>
+                    <default>false</default>
+                    <label>Site 10</label>
+                </value>
+                <value>
+                    <fullName>Site 11</fullName>
+                    <default>false</default>
+                    <label>Site 11</label>
+                </value>
+                <value>
+                    <fullName>Site 12</fullName>
+                    <default>false</default>
+                    <label>Site 12</label>
+                </value>
+                <value>
+                    <fullName>Site 13</fullName>
+                    <default>false</default>
+                    <label>Site 13</label>
+                </value>
+                <value>
+                    <fullName>Site 14</fullName>
+                    <default>false</default>
+                    <label>Site 14</label>
+                </value>
+                <value>
+                    <fullName>Site 15</fullName>
+                    <default>false</default>
+                    <label>Site 15</label>
+                </value>
+                <value>
+                    <fullName>Site 16</fullName>
+                    <default>false</default>
+                    <label>Site 16</label>
+                </value>
+                <value>
+                    <fullName>Site 17</fullName>
+                    <default>false</default>
+                    <label>Site 17</label>
+                </value>
+                <value>
+                    <fullName>Site 18</fullName>
+                    <default>false</default>
+                    <label>Site 18</label>
+                </value>
+                <value>
+                    <fullName>Site 19</fullName>
+                    <default>false</default>
+                    <label>Site 19</label>
+                </value>
+                <value>
+                    <fullName>Site 20</fullName>
+                    <default>false</default>
+                    <label>Site 20</label>
+                </value>
+                <value>
+                    <fullName>Site 21</fullName>
+                    <default>false</default>
+                    <label>Site 21</label>
+                </value>
+                <value>
+                    <fullName>Site 22</fullName>
+                    <default>false</default>
+                    <label>Site 22</label>
+                </value>
+                <value>
+                    <fullName>Site 23</fullName>
+                    <default>false</default>
+                    <label>Site 23</label>
+                </value>
+                <value>
+                    <fullName>Site 24</fullName>
+                    <default>false</default>
+                    <label>Site 24</label>
+                </value>
+                <value>
+                    <fullName>Site 25</fullName>
+                    <default>false</default>
+                    <label>Site 25</label>
+                </value>
+                <value>
+                    <fullName>Site 26</fullName>
+                    <default>false</default>
+                    <label>Site 26</label>
+                </value>
+                <value>
+                    <fullName>Site 27</fullName>
+                    <default>false</default>
+                    <label>Site 27</label>
+                </value>
+                <value>
+                    <fullName>Site 28</fullName>
+                    <default>false</default>
+                    <label>Site 28</label>
+                </value>
+                <value>
+                    <fullName>Site 29</fullName>
+                    <default>false</default>
+                    <label>Site 29</label>
+                </value>
+                <value>
+                    <fullName>Site 90</fullName>
+                    <default>false</default>
+                    <label>Site 90</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Special_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Instructions</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UniqueNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>UniqueNumber</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MA Model</label>
+    <nameField>
+        <displayFormat>MAM-{000000000}</displayFormat>
+        <label>MA Model Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MA Models</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

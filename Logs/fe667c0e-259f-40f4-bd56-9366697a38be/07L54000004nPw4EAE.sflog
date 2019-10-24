@@ -1,0 +1,416 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+18:45:30.0 (318051)|USER_INFO|[EXTERNAL]|005C0000005kwrQ|dt.interface@daikinapplied.com.ierenewal|Central Standard Time|GMT-05:00
+18:45:30.0 (466201)|EXECUTION_STARTED
+18:45:30.0 (471868)|CODE_UNIT_STARTED|[EXTERNAL]|01p54000000Dk3n|ResetGWotGoAsset.doPost
+18:45:30.0 (942058)|HEAP_ALLOCATE|[72]|Bytes:3
+18:45:30.0 (1017870)|HEAP_ALLOCATE|[77]|Bytes:152
+18:45:30.0 (1038416)|HEAP_ALLOCATE|[342]|Bytes:408
+18:45:30.0 (1059475)|HEAP_ALLOCATE|[355]|Bytes:408
+18:45:30.0 (1079652)|HEAP_ALLOCATE|[467]|Bytes:48
+18:45:30.0 (1145408)|HEAP_ALLOCATE|[139]|Bytes:6
+18:45:30.0 (1177449)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:252
+18:45:30.0 (1205387)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:25
+18:45:30.0 (1231000)|SYSTEM_METHOD_ENTRY|[1]|RestRequest.RestRequest()
+18:45:30.0 (1237171)|STATEMENT_EXECUTE|[1]
+18:45:30.0 (1265121)|SYSTEM_METHOD_EXIT|[1]|RestRequest
+18:45:30.0 (1277309)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (1297053)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:45:30.0 (1301136)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:19
+18:45:30.0 (1308750)|VARIABLE_SCOPE_BEGIN|[16]|this|System.RestRequest|true|false
+18:45:30.0 (1440159)|VARIABLE_ASSIGNMENT|[16]|this|{}|0xc9186b2
+18:45:30.0 (1448997)|VARIABLE_SCOPE_BEGIN|[16]|request|java:com.force.swag.rest.RestRequest|true|false
+18:45:30.0 (1633582)|VARIABLE_ASSIGNMENT|[16]|request|"com.force.swag.rest.RestRequestServletImpl@7ea316d0"|0x7ea316d0
+18:45:30.0 (1645240)|VARIABLE_SCOPE_BEGIN|[16]|urlMapping|String|false|false
+18:45:30.0 (1657449)|VARIABLE_ASSIGNMENT|[16]|urlMapping|"/ResetGWotGoAsset/*"
+18:45:30.0 (2287813)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (2297031)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+18:45:30.0 (2300072)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:13
+18:45:30.0 (2305785)|VARIABLE_SCOPE_BEGIN|[24]|this|System.RestRequest|true|false
+18:45:30.0 (2344635)|VARIABLE_ASSIGNMENT|[24]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (2354751)|VARIABLE_SCOPE_BEGIN|[24]|name|String|false|false
+18:45:30.0 (2362836)|VARIABLE_ASSIGNMENT|[24]|name|"UnitSerialNumber"
+18:45:30.0 (2366992)|VARIABLE_SCOPE_BEGIN|[24]|value|String|false|false
+18:45:30.0 (2373655)|VARIABLE_ASSIGNMENT|[24]|value|"FBOU150900980"
+18:45:30.0 (2475037)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (2483384)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:14
+18:45:30.0 (2486386)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+18:45:30.0 (2490951)|VARIABLE_SCOPE_BEGIN|[24]|this|System.RestRequest|true|false
+18:45:30.0 (2521717)|VARIABLE_ASSIGNMENT|[24]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (2530108)|VARIABLE_SCOPE_BEGIN|[24]|name|String|false|false
+18:45:30.0 (2537467)|VARIABLE_ASSIGNMENT|[24]|name|"GatewayMACAddr"
+18:45:30.0 (2541635)|VARIABLE_SCOPE_BEGIN|[24]|value|String|false|false
+18:45:30.0 (2547654)|VARIABLE_ASSIGNMENT|[24]|value|"00600c816f55"
+18:45:30.0 (2601917)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (2608777)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+18:45:30.0 (2611754)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+18:45:30.0 (2616896)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (2646358)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (2655486)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (2662920)|VARIABLE_ASSIGNMENT|[28]|name|"Accept"
+18:45:30.0 (2666856)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (2675000)|VARIABLE_ASSIGNMENT|[28]|value|"\u002A/*"
+18:45:30.0 (2754683)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (2762005)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:11
+18:45:30.0 (2765249)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:44
+18:45:30.0 (2769675)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (2799465)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (2807922)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (2815998)|VARIABLE_ASSIGNMENT|[28]|name|"CipherSuite"
+18:45:30.0 (2819988)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (2827206)|VARIABLE_ASSIGNMENT|[28]|value|"ECDHE-RSA-AES256-GCM (24 more) ..."
+18:45:30.0 (2877478)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (2884328)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+18:45:30.0 (2887190)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+18:45:30.0 (2891689)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (2920536)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (2929027)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (2936091)|VARIABLE_ASSIGNMENT|[28]|name|"User-Agent"
+18:45:30.0 (2940052)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (2946951)|VARIABLE_ASSIGNMENT|[28]|value|"PostmanRuntime/6.4.1"
+18:45:30.0 (2997355)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3004127)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+18:45:30.0 (3007745)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+18:45:30.0 (3011978)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3040748)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3050088)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3057393)|VARIABLE_ASSIGNMENT|[28]|name|"Connection"
+18:45:30.0 (3061067)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3066948)|VARIABLE_ASSIGNMENT|[28]|value|"keep-alive"
+18:45:30.0 (3115601)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3122525)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (3125458)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:19
+18:45:30.0 (3129688)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3158277)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3166820)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3173923)|VARIABLE_ASSIGNMENT|[28]|name|"Host"
+18:45:30.0 (3178115)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3184220)|VARIABLE_ASSIGNMENT|[28]|value|"cs40.salesforce.com"
+18:45:30.0 (3233292)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3240172)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+18:45:30.0 (3242946)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:13
+18:45:30.0 (3247016)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3275933)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3284526)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3292485)|VARIABLE_ASSIGNMENT|[28]|name|"Accept-Encoding"
+18:45:30.0 (3296372)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3302898)|VARIABLE_ASSIGNMENT|[28]|value|"gzip, deflate"
+18:45:30.0 (3352487)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3359423)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+18:45:30.0 (3362306)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+18:45:30.0 (3366411)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3394630)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3403726)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3411784)|VARIABLE_ASSIGNMENT|[28]|name|"X-Salesforce-SIP"
+18:45:30.0 (3416254)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3422337)|VARIABLE_ASSIGNMENT|[28]|value|"207.250.114.249"
+18:45:30.0 (3471581)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3478445)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:13
+18:45:30.0 (3481505)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:45:30.0 (3485781)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3513587)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3522002)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3529076)|VARIABLE_ASSIGNMENT|[28]|name|"Cache-Control"
+18:45:30.0 (3533192)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3540124)|VARIABLE_ASSIGNMENT|[28]|value|"no-cache"
+18:45:30.0 (3588971)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3595691)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:13
+18:45:30.0 (3598714)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:36
+18:45:30.0 (3606141)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3635500)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3643731)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3651286)|VARIABLE_ASSIGNMENT|[28]|name|"Postman-Token"
+18:45:30.0 (3655353)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3662337)|VARIABLE_ASSIGNMENT|[28]|value|"cf6d5dea-f99b-4fee-a (16 more) ..."
+18:45:30.0 (3711825)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3722423)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+18:45:30.0 (3725538)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+18:45:30.0 (3729779)|VARIABLE_SCOPE_BEGIN|[28]|this|System.RestRequest|true|false
+18:45:30.0 (3758242)|VARIABLE_ASSIGNMENT|[28]|this|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (3767451)|VARIABLE_SCOPE_BEGIN|[28]|name|String|false|false
+18:45:30.0 (3775215)|VARIABLE_ASSIGNMENT|[28]|name|"Content-Type"
+18:45:30.0 (3779300)|VARIABLE_SCOPE_BEGIN|[28]|value|String|false|false
+18:45:30.0 (3785948)|VARIABLE_ASSIGNMENT|[28]|value|"application/json"
+18:45:30.0 (3852673)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (3859756)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (3886391)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.requestBody|BLOB(0 bytes)|0xc9186b2
+18:45:30.0 (3956863)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:156
+18:45:30.0 (3966240)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+18:45:30.0 (3974069)|SYSTEM_METHOD_ENTRY|[1]|RestResponse.RestResponse()
+18:45:30.0 (3977709)|STATEMENT_EXECUTE|[1]
+18:45:30.0 (3984799)|SYSTEM_METHOD_EXIT|[1]|RestResponse
+18:45:30.0 (3991512)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+18:45:30.0 (3996277)|VARIABLE_SCOPE_BEGIN|[7]|this|System.RestResponse|true|false
+18:45:30.0 (4018211)|VARIABLE_ASSIGNMENT|[7]|this|{}|0x75fdb2ba
+18:45:30.0 (4146519)|VARIABLE_SCOPE_BEGIN|[4]|RestContext.request|System.RestRequest|true|true
+18:45:30.0 (4157974)|VARIABLE_SCOPE_BEGIN|[5]|RestContext.response|System.RestResponse|true|true
+18:45:30.0 (4167804)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:112
+18:45:30.0 (4174052)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+18:45:30.0 (4181350)|SYSTEM_METHOD_ENTRY|[2]|RestContext.RestContext()
+18:45:30.0 (4184895)|STATEMENT_EXECUTE|[2]
+18:45:30.0 (4191305)|SYSTEM_METHOD_EXIT|[2]|RestContext
+18:45:30.0 (4198413)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+18:45:30.0 (4248054)|VARIABLE_ASSIGNMENT|[EXTERNAL]|RestContext.request|{"headers":"0x28f59852","httpMethod":"POST","params":"0x75d91ea5","remoteAddress":"207.250.114.249","requestBody":BLOB(0 bytes),"requestURI":"/ResetGWotGoAsset","resourcePath":"/services/apexrest/R (17 more) ..."}|0xc9186b2
+18:45:30.0 (4267776)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+18:45:30.0 (4289828)|VARIABLE_ASSIGNMENT|[EXTERNAL]|RestContext.response|{"headers":"0x138e3f43"}|0x75fdb2ba
+18:45:30.0 (4892046)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+18:45:30.0 (4901658)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+18:45:30.0 (4905941)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:27
+18:45:30.0 (4914197)|METHOD_ENTRY|[2]|01p54000000Dk3n|ResetGWotGoAsset.ResetGWotGoAsset()
+18:45:30.0 (4919374)|STATEMENT_EXECUTE|[2]
+18:45:30.0 (4922574)|STATEMENT_EXECUTE|[2]
+18:45:30.0 (5562492)|SYSTEM_MODE_ENTER|false
+18:45:30.0 (5581077)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+18:45:30.0 (5588217)|STATEMENT_EXECUTE|[231]
+18:45:30.0 (5589793)|STATEMENT_EXECUTE|[251]
+18:45:30.0 (5594484)|SYSTEM_MODE_EXIT|false
+18:45:30.0 (5604031)|METHOD_EXIT|[2]|ResetGWotGoAsset
+18:45:30.0 (5624559)|SYSTEM_MODE_ENTER|false
+18:45:30.0 (5632461)|HEAP_ALLOCATE|[6]|Bytes:5
+18:45:30.0 (5637277)|STATEMENT_EXECUTE|[5]
+18:45:30.0 (5638591)|STATEMENT_EXECUTE|[6]
+18:45:30.0 (5649196)|METHOD_ENTRY|[6]|01p54000000Dk3n|ResetGWotGoAsset.processRequest()
+18:45:30.0 (5685854)|HEAP_ALLOCATE|[20]|Bytes:5
+18:45:30.0 (5693218)|STATEMENT_EXECUTE|[18]
+18:45:30.0 (5694648)|STATEMENT_EXECUTE|[20]
+18:45:30.0 (11704169)|VARIABLE_SCOPE_BEGIN|[9]|TriggerUtility.limitAccountAddressExecution|Boolean|false|true
+18:45:30.0 (11722291)|VARIABLE_SCOPE_BEGIN|[5]|TriggerUtility.limitAccountExecution|Boolean|false|true
+18:45:30.0 (11730409)|VARIABLE_SCOPE_BEGIN|[7]|TriggerUtility.limitAddressExecution|Boolean|false|true
+18:45:30.0 (11738241)|VARIABLE_SCOPE_BEGIN|[10]|TriggerUtility.limitAssetAddressExecution|Boolean|false|true
+18:45:30.0 (11745890)|VARIABLE_SCOPE_BEGIN|[8]|TriggerUtility.limitContactAddressExecution|Boolean|false|true
+18:45:30.0 (11752963)|VARIABLE_SCOPE_BEGIN|[6]|TriggerUtility.limitContactExecution|Boolean|false|true
+18:45:30.0 (11760885)|VARIABLE_SCOPE_BEGIN|[4]|TriggerUtility.limitIeServiceIntegration|Boolean|false|true
+18:45:30.0 (11768160)|VARIABLE_SCOPE_BEGIN|[3]|TriggerUtility.limitIntegrationBatch|Boolean|false|true
+18:45:30.0 (11775485)|VARIABLE_SCOPE_BEGIN|[12]|TriggerUtility.syncedAddresses|Boolean|false|true
+18:45:30.0 (11786632)|HEAP_ALLOCATE|[20]|Bytes:6
+18:45:30.0 (11803322)|METHOD_ENTRY|[1]|01pC0000000hfVk|TriggerUtility.TriggerUtility()
+18:45:30.0 (11808719)|STATEMENT_EXECUTE|[1]
+18:45:30.0 (11811864)|STATEMENT_EXECUTE|[1]
+18:45:30.0 (11824760)|SYSTEM_MODE_ENTER|true
+18:45:30.0 (11833117)|HEAP_ALLOCATE|[3]|Bytes:5
+18:45:30.0 (11838347)|STATEMENT_EXECUTE|[3]
+18:45:30.0 (11842795)|HEAP_ALLOCATE|[3]|Bytes:5
+18:45:30.0 (11932919)|VARIABLE_ASSIGNMENT|[3]|TriggerUtility.limitIntegrationBatch|false
+18:45:30.0 (11942084)|STATEMENT_EXECUTE|[4]
+18:45:30.0 (11949010)|HEAP_ALLOCATE|[4]|Bytes:5
+18:45:30.0 (11959786)|VARIABLE_ASSIGNMENT|[4]|TriggerUtility.limitIeServiceIntegration|false
+18:45:30.0 (11964032)|STATEMENT_EXECUTE|[5]
+18:45:30.0 (11967791)|HEAP_ALLOCATE|[5]|Bytes:5
+18:45:30.0 (11974444)|VARIABLE_ASSIGNMENT|[5]|TriggerUtility.limitAccountExecution|false
+18:45:30.0 (11978398)|STATEMENT_EXECUTE|[6]
+18:45:30.0 (11981843)|HEAP_ALLOCATE|[6]|Bytes:5
+18:45:30.0 (11988444)|VARIABLE_ASSIGNMENT|[6]|TriggerUtility.limitContactExecution|false
+18:45:30.0 (11992507)|STATEMENT_EXECUTE|[7]
+18:45:30.0 (11995829)|HEAP_ALLOCATE|[7]|Bytes:5
+18:45:30.0 (12002274)|VARIABLE_ASSIGNMENT|[7]|TriggerUtility.limitAddressExecution|false
+18:45:30.0 (12006996)|STATEMENT_EXECUTE|[8]
+18:45:30.0 (12010356)|HEAP_ALLOCATE|[8]|Bytes:5
+18:45:30.0 (12016994)|VARIABLE_ASSIGNMENT|[8]|TriggerUtility.limitContactAddressExecution|false
+18:45:30.0 (12021152)|STATEMENT_EXECUTE|[9]
+18:45:30.0 (12024335)|HEAP_ALLOCATE|[9]|Bytes:5
+18:45:30.0 (12030531)|VARIABLE_ASSIGNMENT|[9]|TriggerUtility.limitAccountAddressExecution|false
+18:45:30.0 (12034429)|STATEMENT_EXECUTE|[10]
+18:45:30.0 (12037816)|HEAP_ALLOCATE|[10]|Bytes:5
+18:45:30.0 (12044162)|VARIABLE_ASSIGNMENT|[10]|TriggerUtility.limitAssetAddressExecution|false
+18:45:30.0 (12048510)|STATEMENT_EXECUTE|[12]
+18:45:30.0 (12051848)|HEAP_ALLOCATE|[12]|Bytes:5
+18:45:30.0 (12058410)|VARIABLE_ASSIGNMENT|[12]|TriggerUtility.syncedAddresses|false
+18:45:30.0 (12065254)|SYSTEM_MODE_EXIT|true
+18:45:30.0 (12075840)|METHOD_EXIT|[1]|TriggerUtility
+18:45:30.0 (12082769)|HEAP_ALLOCATE|[20]|Bytes:5
+18:45:30.0 (12091582)|VARIABLE_ASSIGNMENT|[20]|TriggerUtility.limitIeServiceIntegration|true
+18:45:30.0 (12096099)|STATEMENT_EXECUTE|[22]
+18:45:30.0 (12143576)|HEAP_ALLOCATE|[22]|Bytes:16
+18:45:30.0 (12165781)|VARIABLE_SCOPE_BEGIN|[22]|unitSN|String|false|false
+18:45:30.0 (12178053)|VARIABLE_ASSIGNMENT|[22]|unitSN|"FBOU150900980"
+18:45:30.0 (12182658)|STATEMENT_EXECUTE|[23]
+18:45:30.0 (12214635)|HEAP_ALLOCATE|[23]|Bytes:14
+18:45:30.0 (12232075)|VARIABLE_SCOPE_BEGIN|[23]|gatewayMACAddr|String|false|false
+18:45:30.0 (12243304)|VARIABLE_ASSIGNMENT|[23]|gatewayMACAddr|"00600c816f55"
+18:45:30.0 (12247902)|STATEMENT_EXECUTE|[25]
+18:45:30.0 (12252584)|HEAP_ALLOCATE|[25]|Bytes:7
+18:45:30.0 (12439995)|HEAP_ALLOCATE|[25]|Bytes:16
+18:45:30.0 (12460127)|CONSTRUCTOR_ENTRY|[25]|01p54000000Dk3n|<init>()
+18:45:30.0 (12494981)|VARIABLE_SCOPE_BEGIN|[237]|this|ResetGWotGoAsset.ResetResponse|true|false
+18:45:30.0 (12526718)|VARIABLE_ASSIGNMENT|[237]|this|{}|0x3542bd4e
+18:45:30.0 (12535054)|STATEMENT_EXECUTE|[231]
+18:45:30.0 (12536512)|STATEMENT_EXECUTE|[233]
+18:45:30.0 (12537705)|STATEMENT_EXECUTE|[234]
+18:45:30.0 (12538674)|STATEMENT_EXECUTE|[235]
+18:45:30.0 (12552820)|STATEMENT_EXECUTE|[238]
+18:45:30.0 (12554307)|STATEMENT_EXECUTE|[239]
+18:45:30.0 (12566386)|HEAP_ALLOCATE|[239]|Bytes:4
+18:45:30.0 (12689112)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (12705824)|VARIABLE_ASSIGNMENT|[239]|this.Errors|[]|0x3542bd4e
+18:45:30.0 (12715795)|CONSTRUCTOR_EXIT|[25]|01p54000000Dk3n|<init>()
+18:45:30.0 (12726618)|VARIABLE_SCOPE_BEGIN|[25]|theResponse|ResetGWotGoAsset.ResetResponse|true|false
+18:45:30.0 (12750641)|VARIABLE_ASSIGNMENT|[25]|theResponse|{"Errors":"0x431b5a25"}|0x3542bd4e
+18:45:30.0 (12758135)|STATEMENT_EXECUTE|[26]
+18:45:30.0 (12767027)|VARIABLE_ASSIGNMENT|[26]|this.UnitSerialNumber|"FBOU150900980"|0x3542bd4e
+18:45:30.0 (12772522)|STATEMENT_EXECUTE|[27]
+18:45:30.0 (12777805)|VARIABLE_ASSIGNMENT|[27]|this.GatewayMACAddress|"00600c816f55"|0x3542bd4e
+18:45:30.0 (12782958)|STATEMENT_EXECUTE|[30]
+18:45:30.0 (13365537)|VARIABLE_SCOPE_BEGIN|[30]|integrationErrorList|List<Integration_Error__c>|true|false
+18:45:30.0 (13382151)|VARIABLE_ASSIGNMENT|[30]|integrationErrorList|null|
+18:45:30.0 (13387339)|STATEMENT_EXECUTE|[31]
+18:45:30.0 (13464706)|HEAP_ALLOCATE|[31]|Bytes:4
+18:45:30.0 (13500429)|VARIABLE_SCOPE_BEGIN|[31]|syncIeCloudUnitsAssetResultsMap|Map<Id,Asset>|true|false
+18:45:30.0 (13522549)|VARIABLE_ASSIGNMENT|[31]|syncIeCloudUnitsAssetResultsMap|{}|0x4b12363b
+18:45:30.0 (13529203)|STATEMENT_EXECUTE|[32]
+18:45:30.0 (13545662)|HEAP_ALLOCATE|[32]|Bytes:4
+18:45:30.0 (13556359)|VARIABLE_SCOPE_BEGIN|[32]|syncIeCloudUnitsRelatedAssetResultsMap|Map<Id,Asset>|true|false
+18:45:30.0 (13570646)|VARIABLE_ASSIGNMENT|[32]|syncIeCloudUnitsRelatedAssetResultsMap|{}|0x2f1d9a4
+18:45:30.0 (13576719)|STATEMENT_EXECUTE|[33]
+18:45:30.0 (13639389)|HEAP_ALLOCATE|[33]|Bytes:4
+18:45:30.0 (13665225)|VARIABLE_SCOPE_BEGIN|[33]|syncIeCloudUnitsAddressMap|Map<Id,Address__c>|true|false
+18:45:30.0 (13682241)|VARIABLE_ASSIGNMENT|[33]|syncIeCloudUnitsAddressMap|{}|0x2279bc79
+18:45:30.0 (13688373)|STATEMENT_EXECUTE|[34]
+18:45:30.0 (13753630)|HEAP_ALLOCATE|[34]|Bytes:4
+18:45:30.0 (13780030)|VARIABLE_SCOPE_BEGIN|[34]|syncIeCloudSubResultsMap|Map<Id,Subscription__c>|true|false
+18:45:30.0 (13797545)|VARIABLE_ASSIGNMENT|[34]|syncIeCloudSubResultsMap|{}|0x3baa0061
+18:45:30.0 (13803775)|STATEMENT_EXECUTE|[38]
+18:45:30.0 (13807844)|HEAP_ALLOCATE|[38]|Bytes:441
+18:45:30.0 (13824597)|HEAP_ALLOCATE|[38]|Bytes:4
+18:45:30.0 (13835815)|HEAP_ALLOCATE|[38]|Bytes:7
+18:45:30.0 (22012590)|SOQL_EXECUTE_BEGIN|[38]|Aggregations:2|SELECT Id, Parent_Asset__c, SIM_Card_Active__c, SIM_Card_ICCID__c, MAC_Address__c, Status, GWotGo__c, Commissioned__c, (SELECT Id, Type__c, Name, Serial_Number__c, GWotGoAsset__c FROM Subscriptions1__r), (SELECT Name, Role__c, Contact__r.Name, Contact__r.Email, GWotGoAsset__c, GWotGoPermAssoc__c FROM Contact_Subscriptions1__r) FROM Asset WHERE (Name = 'Intelligent Equipment Gateway' AND Status != 'Obsolete' AND MAC_Address__c = :tmpVar1)
+18:45:30.0 (43222500)|SOQL_EXECUTE_END|[38]|Rows:1
+18:45:30.0 (43268665)|HEAP_ALLOCATE|[38]|Bytes:8
+18:45:30.0 (43306517)|HEAP_ALLOCATE|[38]|Bytes:746
+18:45:30.0 (43368275)|HEAP_ALLOCATE|[38]|Bytes:8
+18:45:30.0 (43389024)|VARIABLE_SCOPE_BEGIN|[38]|gwl|List<Asset>|true|false
+18:45:30.0 (43441436)|VARIABLE_ASSIGNMENT|[38]|gwl|[{"Id":"02i54000002YArxAAG","Parent_Asset__c":"02i54000002YArsAAG","SIM_Card_Active__c":true,"SIM_Card_ICCID__c":"89011704252305619063","MAC_Address__c":"00600c816f55","GWotGo__c":true,"Commissioned__c":true,"Subscriptions1__r":[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqpvEAA","Type__c":"TechReadWrite","Name":"S-000000816"},{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqq0EAA","Type__c":"CustomRead","Name":"S-000000817"}],"Contact_Subscription (5 more) ...":[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0G54000001GjVzEAK","Name":"CS-000112159","Role__c":"TechnicianAdministra (3 more) ...","Contact__c":"00354000009jVuoAAE","GWotGoPermAssoc__c":true,"Contact__r":{"Id":"00354000009jVuoAAE","Name":"Kent Roessler","Email":"kent.roessler@daikin (11 more) ..."}}]}]|0x5deb77a2
+18:45:30.0 (43464392)|STATEMENT_EXECUTE|[43]
+18:45:30.0 (43469801)|VARIABLE_SCOPE_BEGIN|[43]|gwAsset|Asset|true|false
+18:45:30.0 (43479215)|VARIABLE_ASSIGNMENT|[43]|gwAsset|null|
+18:45:30.0 (43483434)|STATEMENT_EXECUTE|[44]
+18:45:30.0 (43485831)|VARIABLE_SCOPE_BEGIN|[44]|parentAssetOld|Asset|true|false
+18:45:30.0 (43493415)|VARIABLE_ASSIGNMENT|[44]|parentAssetOld|null|
+18:45:30.0 (43497195)|STATEMENT_EXECUTE|[45]
+18:45:30.0 (43499344)|VARIABLE_SCOPE_BEGIN|[45]|parentAssetNew|Asset|true|false
+18:45:30.0 (43506367)|VARIABLE_ASSIGNMENT|[45]|parentAssetNew|null|
+18:45:30.0 (43509959)|STATEMENT_EXECUTE|[46]
+18:45:30.0 (43540912)|HEAP_ALLOCATE|[46]|Bytes:4
+18:45:30.0 (43599312)|VARIABLE_SCOPE_BEGIN|[46]|subscriptionList|List<Subscription__c>|true|false
+18:45:30.0 (43612044)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (43620926)|VARIABLE_ASSIGNMENT|[46]|subscriptionList|[]|0x6deaa39b
+18:45:30.0 (43626641)|STATEMENT_EXECUTE|[47]
+18:45:30.0 (43673607)|HEAP_ALLOCATE|[47]|Bytes:4
+18:45:30.0 (43715131)|VARIABLE_SCOPE_BEGIN|[47]|subscriptionContacts|List<Contact_Subscription__c>|true|false
+18:45:30.0 (43732141)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (43740585)|VARIABLE_ASSIGNMENT|[47]|subscriptionContacts|[]|0x163723f2
+18:45:30.0 (43808714)|STATEMENT_EXECUTE|[50]
+18:45:30.0 (43811774)|STATEMENT_EXECUTE|[51]
+18:45:30.0 (43822089)|HEAP_ALLOCATE|[51]|Bytes:40
+18:45:30.0 (43860668)|VARIABLE_ASSIGNMENT|[51]|gwAsset|{"Id":"02i54000002YArxAAG","Parent_Asset__c":"02i54000002YArsAAG","SIM_Card_Active__c":true,"SIM_Card_ICCID__c":"89011704252305619063","MAC_Address__c":"00600c816f55","GWotGo__c":true,"Commissioned__c":true,"Subscriptions1__r":[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqpvEAA","Type__c":"TechReadWrite","Name":"S-000000816"},{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqq0EAA","Type__c":"CustomRead","Name":"S-000000817"}],"Contact_Subscription (5 more) ...":[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0G54000001GjVzEAK","Name":"CS-000112159","Role__c":"TechnicianAdministra (3 more) ...","Contact__c":"00354000009jVuoAAE","GWotGoPermAssoc__c":true,"Contact__r":{"Id":"00354000009jVuoAAE","Name":"Kent Roessler","Email":"kent.roessler@daikin (11 more) ..."}}]}|0x272e5619
+18:45:30.0 (43882002)|STATEMENT_EXECUTE|[54]
+18:45:30.0 (43886843)|HEAP_ALLOCATE|[54]|Bytes:1066
+18:45:30.0 (43903311)|HEAP_ALLOCATE|[54]|Bytes:4
+18:45:30.0 (46871785)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:1|SELECT Id, Name, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Asset__c, IE_Sync_Status__c, IE_Updated_Date__c, Current_Code_String_Breakdown__c, Code_String_Breakdown__c, LastModifiedDate, Asset_Address__c, Asset_Address__r.Country__c, Asset_Address__r.Postal_Code__c, Asset_Address__r.State_Province__c, Asset_Address__r.County__c, Asset_Address__r.State_Province_ISO_Code__c, Asset_Address__r.Country_ISO_Code__c, Asset_Address__r.City__c, Asset_Address__r.Address_Line_4__c, Asset_Address__r.Address_Line_3__c, Asset_Address__r.Address_Line_2__c, Asset_Address__r.Address_Line_1__c, Asset_Address__r.Name, Asset_Address__r.IE_ID__c, Asset_Address__r.Id, Asset_Address__r.LastModifiedDate, (SELECT Id, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Updated_Date__c, LastModifiedDate FROM Assets__r WHERE Status != 'Obsolete') FROM Asset WHERE Id = :tmpVar1
+18:45:30.0 (62638524)|SOQL_EXECUTE_END|[54]|Rows:1
+18:45:30.0 (62674397)|HEAP_ALLOCATE|[54]|Bytes:8
+18:45:30.0 (62695270)|HEAP_ALLOCATE|[54]|Bytes:454
+18:45:30.0 (62741268)|HEAP_ALLOCATE|[54]|Bytes:8
+18:45:30.0 (62758390)|HEAP_ALLOCATE|[54]|Bytes:31
+18:45:30.0 (62776284)|HEAP_ALLOCATE|[54]|Bytes:36
+18:45:30.0 (62834444)|VARIABLE_ASSIGNMENT|[54]|parentAssetOld|{"Id":"02i54000002YArsAAG","Name":"Dummy GWotGo Unit As (3 more) ...","SIM_Card_Active__c":false,"Commissioned__c":false,"IE_Asset__c":true,"IE_Sync_Status__c":"Pending","LastModifiedDate":"2017-10-19T02:16:39.000Z","Assets__r":[{"Parent_Asset__c":"02i54000002YArsAAG","Id":"02i54000002YArxAAG","SerialNumber":"PO112711-1-003","Device_ID__c":"00000000-00000000-00 (15 more) ...","SIM_Card_ICCID__c":"89011704252305619063","SIM_Card_Active__c":true,"Commissioned__c":true,"LastModifiedDate":"2017-10-19T02:16:39.000Z"}]}|0x36f9cbf7
+18:45:30.0 (62852147)|STATEMENT_EXECUTE|[110]
+18:45:30.0 (62856328)|HEAP_ALLOCATE|[110]|Bytes:1076
+18:45:30.0 (62872554)|HEAP_ALLOCATE|[110]|Bytes:4
+18:45:30.0 (64047259)|SOQL_EXECUTE_BEGIN|[110]|Aggregations:1|SELECT Id, Name, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Asset__c, IE_Sync_Status__c, IE_Updated_Date__c, Current_Code_String_Breakdown__c, Code_String_Breakdown__c, LastModifiedDate, Asset_Address__c, Asset_Address__r.Country__c, Asset_Address__r.Postal_Code__c, Asset_Address__r.State_Province__c, Asset_Address__r.County__c, Asset_Address__r.State_Province_ISO_Code__c, Asset_Address__r.Country_ISO_Code__c, Asset_Address__r.City__c, Asset_Address__r.Address_Line_4__c, Asset_Address__r.Address_Line_3__c, Asset_Address__r.Address_Line_2__c, Asset_Address__r.Address_Line_1__c, Asset_Address__r.Name, Asset_Address__r.IE_ID__c, Asset_Address__r.Id, Asset_Address__r.LastModifiedDate, (SELECT Id, SerialNumber, Tag__c, SO_Number__c, Job_Name__c, Device_ID__c, SIM_Card_ICCID__c, SIM_Card_Active__c, Format_Number__c, Commissioned__c, IE_ID__c, IE_Updated_Date__c, LastModifiedDate FROM Assets__r WHERE Status != 'Obsolete') FROM Asset WHERE SerialNumber = :tmpVar1
+18:45:30.0 (84797936)|SOQL_EXECUTE_END|[110]|Rows:1
+18:45:30.0 (84841509)|HEAP_ALLOCATE|[110]|Bytes:8
+18:45:30.0 (84870274)|HEAP_ALLOCATE|[110]|Bytes:5608
+18:45:30.0 (84915433)|HEAP_ALLOCATE|[110]|Bytes:8
+18:45:30.0 (84948433)|HEAP_ALLOCATE|[110]|Bytes:76
+18:45:30.0 (85033971)|VARIABLE_ASSIGNMENT|[110]|parentAssetNew|{"Id":"02i54000001ZwaaAAC","Name":"Daikin/McQuay Packag (8 more) ...","SerialNumber":"FBOU150900980","Tag__c":"RTU-1","SO_Number__c":"245284","Job_Name__c":"East Office Unit","SIM_Card_Active__c":false,"Format_Number__c":"974","Commissioned__c":true,"IE_ID__c":"88","IE_Asset__c":true,"IE_Sync_Status__c":"Pending","IE_Updated_Date__c":"2015-12-11T19:11:00.000Z","Code_String_Breakdow (4 more) ...":"[{\"code_sequence\":\"1 (4448 more) ...","LastModifiedDate":"2016-11-11T21:19:09.000Z","Asset_Address__c":"a0254000000yxYsAAI","Assets__r":[{"Parent_Asset__c":"02i54000001ZwaaAAC","Id":"02i54000001aGhGAAU","SerialNumber":"PO112711-2-075","Device_ID__c":"00000000-00000000-00 (15 more) ...","SIM_Card_ICCID__c":"89011704258018735310","SIM_Card_Active__c":true,"Commissioned__c":true,"LastModifiedDate":"2017-10-10T23:38:58.000Z"},{"Parent_Asset__c":"02i54000001ZwaaAAC","Id":"02i54000001aGWNAA2","SerialNumber":"MESF04115","SIM_Card_Active__c":false,"Commissioned__c":false,"LastModifiedDate":"2016-11-14T17:18:48.000Z"}],"Asset_Address__r":{"Id":"a0254000000yxYsAAI","Country__c":"United States","Postal_Code__c":"27417-7258","State_Province__c":"North Carolina","State_Province_ISO_C (6 more) ...":"NC","Country_ISO_Code__c":"USA","City__c":"Greensboro","Address_Line_1__c":"P.O. Box 77258","Name":"1385055","LastModifiedDate":"2016-11-11T20:38:47.000Z"}}|0x66571d09
+18:45:30.0 (85069408)|STATEMENT_EXECUTE|[165]
+18:45:30.0 (85294630)|HEAP_ALLOCATE|[165]|Bytes:28
+18:45:30.0 (85328247)|HEAP_ALLOCATE|[165]|Bytes:17
+18:45:30.0 (85358747)|HEAP_ALLOCATE|[165]|Bytes:86
+18:45:30.0 (85583218)|USER_DEBUG|[165]|ERROR|New Unit Asset Info: Name = Daikin/McQuay Package System Serial Number = FBOU150900980
+18:45:30.0 (85599058)|STATEMENT_EXECUTE|[169]
+18:45:30.0 (85605081)|HEAP_ALLOCATE|[169]|Bytes:17
+18:45:30.0 (85611124)|HEAP_ALLOCATE|[169]|Bytes:15
+18:45:30.0 (85666942)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+18:45:30.0 (85700350)|HEAP_ALLOCATE|[169]|Bytes:12
+18:45:30.0 (85765083)|VARIABLE_ASSIGNMENT|[169]|subscriptionList|[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqpvEAA","Type__c":"TechReadWrite","Name":"S-000000816"},{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqq0EAA","Type__c":"CustomRead","Name":"S-000000817"}]|0x76989427
+18:45:30.0 (85937331)|HEAP_ALLOCATE|[170]|Bytes:5
+18:45:30.0 (85958852)|HEAP_ALLOCATE|[170]|Bytes:20
+18:45:30.0 (85969717)|VARIABLE_SCOPE_BEGIN|[170]|s|Subscription__c|true|false
+18:45:30.0 (85987145)|VARIABLE_ASSIGNMENT|[170]|s|{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqpvEAA","Type__c":"TechReadWrite","Name":"S-000000816"}|0x66e85c9d
+18:45:30.0 (85995104)|STATEMENT_EXECUTE|[170]
+18:45:30.0 (85996509)|STATEMENT_EXECUTE|[171]
+18:45:30.0 (86003070)|HEAP_ALLOCATE|[171]|Bytes:26
+18:45:30.0 (86035599)|HEAP_ALLOCATE|[171]|Bytes:8
+18:45:30.0 (86060917)|HEAP_ALLOCATE|[171]|Bytes:58
+18:45:30.0 (86090389)|USER_DEBUG|[171]|ERROR|Subscription Pair: Name = S-000000816 Type = TechReadWrite
+18:45:30.0 (86112008)|HEAP_ALLOCATE|[170]|Bytes:5
+18:45:30.0 (86126937)|HEAP_ALLOCATE|[170]|Bytes:20
+18:45:30.0 (86136478)|VARIABLE_SCOPE_BEGIN|[170]|s|Subscription__c|true|false
+18:45:30.0 (86152873)|VARIABLE_ASSIGNMENT|[170]|s|{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0F54000000vqq0EAA","Type__c":"CustomRead","Name":"S-000000817"}|0x33a340c7
+18:45:30.0 (86159645)|STATEMENT_EXECUTE|[170]
+18:45:30.0 (86160848)|STATEMENT_EXECUTE|[171]
+18:45:30.0 (86175437)|HEAP_ALLOCATE|[171]|Bytes:55
+18:45:30.0 (86192414)|USER_DEBUG|[171]|ERROR|Subscription Pair: Name = S-000000817 Type = CustomRead
+18:45:30.0 (86210110)|HEAP_ALLOCATE|[170]|Bytes:5
+18:45:30.0 (86225368)|VARIABLE_ASSIGNMENT|[170]|s|null|
+18:45:30.0 (86231320)|STATEMENT_EXECUTE|[176]
+18:45:30.0 (86235934)|HEAP_ALLOCATE|[176]|Bytes:25
+18:45:30.0 (86241372)|HEAP_ALLOCATE|[176]|Bytes:23
+18:45:30.0 (86276503)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:45:30.0 (86309018)|HEAP_ALLOCATE|[176]|Bytes:8
+18:45:30.0 (86341292)|VARIABLE_ASSIGNMENT|[176]|subscriptionContacts|[{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0G54000001GjVzEAK","Name":"CS-000112159","Role__c":"TechnicianAdministra (3 more) ...","Contact__c":"00354000009jVuoAAE","GWotGoPermAssoc__c":true,"Contact__r":{"Id":"00354000009jVuoAAE","Name":"Kent Roessler","Email":"kent.roessler@daikin (11 more) ..."}}]|0x48bdf497
+18:45:30.0 (86432642)|HEAP_ALLOCATE|[177]|Bytes:5
+18:45:30.0 (86452463)|HEAP_ALLOCATE|[177]|Bytes:32
+18:45:30.0 (86462502)|VARIABLE_SCOPE_BEGIN|[177]|cs|Contact_Subscription__c|true|false
+18:45:30.0 (86484362)|VARIABLE_ASSIGNMENT|[177]|cs|{"GWotGoAsset__c":"02i54000002YArxAAG","Id":"a0G54000001GjVzEAK","Name":"CS-000112159","Role__c":"TechnicianAdministra (3 more) ...","Contact__c":"00354000009jVuoAAE","GWotGoPermAssoc__c":true,"Contact__r":{"Id":"00354000009jVuoAAE","Name":"Kent Roessler","Email":"kent.roessler@daikin (11 more) ..."}}|0x34eba115
+18:45:30.0 (86495536)|STATEMENT_EXECUTE|[177]
+18:45:30.0 (86497020)|STATEMENT_EXECUTE|[178]
+18:45:30.0 (86503621)|HEAP_ALLOCATE|[178]|Bytes:29
+18:45:30.0 (86595048)|HEAP_ALLOCATE|[178]|Bytes:9
+18:45:30.0 (86625262)|HEAP_ALLOCATE|[178]|Bytes:82
+18:45:30.0 (86654581)|USER_DEBUG|[178]|ERROR|Contact Subscription: Name = Kent Roessler Email = kent.roessler@daikinapplied.com
+18:45:30.0 (86675707)|HEAP_ALLOCATE|[177]|Bytes:5
+18:45:30.0 (86691180)|VARIABLE_ASSIGNMENT|[177]|cs|null|
+18:45:30.0 (86723570)|STATEMENT_EXECUTE|[191]
+18:45:30.0 (86738639)|HEAP_ALLOCATE|[192]|Bytes:23
+18:45:30.0 (86761800)|STATEMENT_EXECUTE|[193]
+18:45:30.0 (86763509)|STATEMENT_EXECUTE|[196]
+18:45:30.0 (86768264)|HEAP_ALLOCATE|[196]|Bytes:40
+18:45:30.0 (86774097)|HEAP_ALLOCATE|[196]|Bytes:30
+18:45:30.0 (86782104)|HEAP_ALLOCATE|[196]|Bytes:95
+18:45:30.0 (86805376)|USER_DEBUG|[196]|ERROR|First Reset Operation for MAC Address = 00600c816f55 and new Unit Serial Number = FBOU150900980
+18:45:30.0 (86816359)|STATEMENT_EXECUTE|[197]
+18:45:30.0 (86835490)|HEAP_ALLOCATE|[197]|Bytes:4
+18:45:30.0 (86866804)|VARIABLE_SCOPE_BEGIN|[197]|parentAssetNewList|List<Asset>|true|false
+18:45:30.0 (86878390)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (86887445)|VARIABLE_ASSIGNMENT|[197]|parentAssetNewList|[]|0x32ec9b12
+18:45:30.0 (86892997)|STATEMENT_EXECUTE|[198]
+18:45:30.0 (86934659)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (86946924)|STATEMENT_EXECUTE|[225]
+18:45:30.0 (86958711)|METHOD_EXIT|[6]|01p54000000Dk3n|ResetGWotGoAsset.processRequest()
+18:45:30.0 (86967916)|SYSTEM_MODE_EXIT|false
+18:45:30.0 (87269009)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (87386203)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:45:30.0 (87398278)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+18:45:30.0 (88034480)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+18:45:30.0 (88064861)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+18:45:30.0 (88073612)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+18:45:30.88 (88310470)|CUMULATIVE_LIMIT_USAGE
+18:45:30.88 (88310470)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 9 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:45:30.88 (88310470)|CUMULATIVE_LIMIT_USAGE_END
+
+18:45:30.0 (88353818)|CODE_UNIT_FINISHED|ResetGWotGoAsset.doPost
+18:45:30.0 (90161240)|EXECUTION_FINISHED

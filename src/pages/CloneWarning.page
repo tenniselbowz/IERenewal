@@ -1,0 +1,83 @@
+<apex:page showHeader="true" sidebar="false" standardController="Opportunity" extensions="CloneWarningExt">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock rendered="{!showWarning}" id="warning">
+            <p style="font-size:30px"> {!$Label.Opportunity_Clone_Warning} </p>
+            <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            <apex:commandButton value="Continue" action="{!cloneSobject}"/>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!showQuote}" id="quoteProposal">
+            <apex:pageBlock >
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!saveQuoteClone}" value="Save"/>
+                    <apex:commandButton action="{!cancel}" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockSection title="Information" columns="2" >
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Account__c}" required="true"/>
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Opportunity__c}" required="true"/>
+                    <apex:outputField value="{!cloneQuote.Line_of_Business__c}"/>
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Primary_Contact__c}" required="true"/>
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Proposal_Name__c}" required="true"/>
+                    <apex:inputField value="{!cloneQuote.Term_in_Years__c}"/>
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Primary__c}"/>
+                    <apex:inputField value="{!cloneQuote.Effective_Start_Date__c}"/>
+                    <apex:inputField value="{!cloneQuote.Apttus_Proposal__Presented_Date__c}"/>
+                    <apex:inputField value="{!cloneQuote.MA_Term_Expiration_Date__c}"/>
+                    <apex:inputField value="{!cloneQuote.Internal_Team_Notes__c}"/>
+                    <apex:inputField value="{!cloneQuote.Payments_will_be_made__c}"/>
+                    <apex:inputField value="{!cloneQuote.Local_Currency__c}" required="true"/>
+                    <apex:inputField value="{!cloneQuote.Payments__c}"/>
+                    <apex:inputField value="{!cloneQuote.Bulk_Exchange_Rate__c}"/>
+
+                    <apex:inputField value="{!cloneQuote.Previous_Quote__c}"/>
+                    <apex:inputField value="{!cloneQuote.Non_Standard_T_Cs__c}"/>
+
+                    <apex:inputField value="{!cloneQuote.Previous_Quote_Total_Net_Price__c}"/>
+                    <apex:inputField value="{!cloneQuote.Cortera_4_5_and_6_Guidelines_Met_for_P__c}"/>
+                    <apex:inputField value="{!cloneQuote.Customer_in_Good_Standing__c}"/>
+                    <apex:inputField value="{!cloneQuote.Include_Estimated_Sales_Tax_in_Total__c}"/>
+                    <apex:inputField value="{!cloneQuote.Service_Coordinator__c}"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Quote Document Fields" columns="2" >
+                        <apex:inputField value="{!cloneQuote.Turnkey_Proposal_Title_Prefix__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.Estimated_Close_Date__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.Billing_Terms__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.Quote_Document_Date__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.License__c}"/>
+                        <apex:inputField value="{!cloneQuote.Proposal_Valid_for_Days__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.Emergency_Service_Level__c}" required="true"/>
+                        <apex:inputField value="{!cloneQuote.T_C_Country__c}" required="true"/>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Scope of Work" />
+                            <apex:outputPanel >
+                                <apex:inputtextarea label="RichText"  richtext="true" value="{!cloneQuote.Scope_of_Work__c}"
+                                id="Body" cols="100" rows="15" required="true"/>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                        <apex:inputField value="{!cloneQuote.Quote_Presentation_Currency__c}"/>
+                        <apex:inputField value="{!cloneQuote.Executive_Summary_Company_History__c}"/>
+                        <apex:inputField value="{!cloneQuote.Executive_Summary_Analysis__c}"/>
+                        <apex:inputField value="{!cloneQuote.Executive_Summary_Recommendations__c}"/>
+                        <apex:inputField value="{!cloneQuote.Executive_Summary_Why_Now_Why_Daikin__c}"/>
+                        <apex:inputField value="{!cloneQuote.Included_Clauses__c}"/>
+                        <apex:inputField value="{!cloneQuote.Certificate_of_Insurance__c}"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Clarifications, Exceptions and Exclusions
+    " columns="1" >
+                    <apex:inputField value="{!cloneQuote.MA_Standard_Exclusions__c}"/>
+                    <apex:inputField value="{!cloneQuote.MA_Additional_Standard_Exclusions__c}"/>
+
+                     <apex:inputField value="{!cloneQuote.Clarifications__c}" required="false"/>
+                  <apex:inputField value="{!cloneQuote.Exclusions__c}" required="false"/>
+                                      <apex:inputField value="{!cloneQuote.Turnkey_Additional_Proposal_Clarifi__c}"/>
+                 <!--   <apex:inputField value="{!cloneQuote.Turnkey_Proposal_Clarifications_Excepti__c}"/>-->
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Turnkey Fields" columns="2" >
+                    <apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.Turnkey_Fields}" var="field">
+                        <apex:inputField value="{!cloneQuote[field]}" required="{!OR(field.required, field.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

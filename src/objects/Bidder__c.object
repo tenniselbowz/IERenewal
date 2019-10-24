@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>DMNY</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Apparent_Winning_Bidder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Apparent Winning Bidder (AWB)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Average_Follow_up_Time_Frame__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR( Opportunity__r.Bid_Date__c &gt;  TODAY() ,
+Inactive__c, 
+  AND( 
+      Apparent_Winning_Bidder__c,
+     OR( 
+      ISPICKVAL(Daikin_Outcome_Feedback__c ,&apos;Daikin not successful with this bidder&apos;),
+      ISPICKVAL(Daikin_Outcome_Feedback__c ,&apos;Daikin successful with this bidder&apos;),
+      ISPICKVAL(Daikin_Outcome_Feedback__c , &apos;Received firm commitment to use Daikin&apos;),
+      ISPICKVAL(Daikin_Outcome_Feedback__c , &apos;FSE hasn’t followed up yet&apos;)
+
+        )),
+      ISPICKVAL( Bidder_Outcome_Feedback__c , &apos;A different bidder is the apparent winning bidder.&apos;),
+        NOT(
+			OR(
+				ISPICKVAL( Opportunity__r.StageName ,&apos;Proposal/Price Quote/Bid&apos;),
+				ISPICKVAL(Opportunity__r.StageName ,&apos;Post Bid - Daikin Status Unknown&apos;)
+				)
+			)
+        ),
+         0,  
+     (IF( (of_Follow_up_Attempts__c&gt;0),
+      (NOW()-(DATETIMEVALUE(Opportunity__r.Bid_Date__c)+(19/24)))/ of_Follow_up_Attempts__c,
+       (NOW()-(DATETIMEVALUE(Opportunity__r.Bid_Date__c)+(19/24)))/ 1
+      ))
+      )</formula>
+        <label>Average Follow-up Time Frame</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bidder_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Bidder_Name__r.Auto_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bidder Account Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bidder_Account_Owner__c</fullName>
+        <description>Record owner for Bidder Account.</description>
+        <externalId>false</externalId>
+        <formula>Bidder_Name__r.Owner.FirstName + &quot; &quot; + Bidder_Name__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Record owner for Bidder Account.</inlineHelpText>
+        <label>Bidder Account Owner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bidder_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>DMNY</description>
+        <externalId>false</externalId>
+        <label>Bidder Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Bidders</relationshipLabel>
+        <relationshipName>Bidders</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bidder_Outcome_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Bidder Outcome Feedback</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FSE hasn’t followed up yet</fullName>
+                    <default>true</default>
+                    <label>FSE hasn’t followed up yet</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Bidder is not the winning bidder.</fullName>
+                    <default>false</default>
+                    <label>Bidder is not the winning bidder.</label>
+                </value>
+                <value>
+                    <fullName>Bidder is the apparent winning bidder.</fullName>
+                    <default>false</default>
+                    <label>Bidder is the apparent winning bidder.</label>
+                </value>
+                <value>
+                    <fullName>A different bidder is the apparent winning bidder.</fullName>
+                    <default>false</default>
+                    <label>A different bidder is the apparent winning bidder.</label>
+                </value>
+                <value>
+                    <fullName>Bidder has abandoned this project.</fullName>
+                    <default>false</default>
+                    <label>Bidder has abandoned this project.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Daikin_Outcome_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Daikin Outcome Feedback</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FSE hasn’t followed up yet</fullName>
+                    <default>true</default>
+                    <label>FSE hasn’t followed up yet</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Daikin not successful with this bidder</fullName>
+                    <default>false</default>
+                    <label>Daikin not successful with this bidder</label>
+                </value>
+                <value>
+                    <fullName>Daikin successful with this bidder</fullName>
+                    <default>false</default>
+                    <label>Daikin successful with this bidder</label>
+                </value>
+                <value>
+                    <fullName>Received firm commitment to use Daikin</fullName>
+                    <default>false</default>
+                    <label>Received firm commitment to use Daikin</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates bidder not successful or no longer active.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates bidder not successful or no longer active.</inlineHelpText>
+        <label>Inactive</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Bid_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Bid_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Bid Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Bidders</relationshipLabel>
+        <relationshipName>Bidders</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Quoted_Price__c</fullName>
+        <description>Quoted Price</description>
+        <externalId>false</externalId>
+        <label>Quoted Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>of_Follow_up_Attempts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># of Follow-up Attempts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Bidder</label>
+    <nameField>
+        <label>Bidder Number</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Bidders</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Bidder_Outcome_Feedback_validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(ISPICKVAL( Bidder_Outcome_Feedback__c , &apos;Bidder is not the winning bidder.&apos;) &amp;&amp; NOT(Inactive__c),
+ISPICKVAL( Bidder_Outcome_Feedback__c , &apos;Bidder has abandoned this project.&apos;) &amp;&amp; NOT(Inactive__c))</errorConditionFormula>
+        <errorMessage>&quot;Inactive&quot; field is not TRUE</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validation_for_Apparent_Winnig_Bidder</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Bidder_Outcome_Feedback__c , &apos;Bidder is the apparent winning bidder.&apos;) &amp;&amp; NOT(Apparent_Winning_Bidder__c)</errorConditionFormula>
+        <errorMessage>Apparent Winning Bidder in not True</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

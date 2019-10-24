@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Quota Master
+Used by the SSR Tracking spreadsheet (DBAmp)
+Used by MAPS</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Current_Quota__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Default is true. Identifies record should be utilized for current MAPS reporting calculations.</inlineHelpText>
+        <label>Current Quota</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q1_M1_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_MA_Quota__c +  Q1_M1_MCP_Quota__c +  Q1_M1_Other_Quota__c +  Q1_M1_RC_Quota__c +  Q1_M1_SR_Quota__c + Q1_M1_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q1 M1 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q1_M2_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M2_MA_Quota__c + Q1_M2_MCP_Quota__c + Q1_M2_Other_Quota__c + Q1_M2_RC_Quota__c + Q1_M2_SR_Quota__c + Q1_M2_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q1 M2 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q1_M3_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M3_MA_Quota__c + Q1_M3_MCP_Quota__c + Q1_M3_Other_Quota__c + Q1_M3_RC_Quota__c + Q1_M3_SR_Quota__c + Q1_M3_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q1 M3 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q2_M1_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q2_M1_MA_Quota__c + Q2_M1_MCP_Quota__c + Q2_M1_Other_Quota__c + Q2_M1_RC_Quota__c + Q2_M1_SR_Quota__c + Q2_M1_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q2 M1 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q2_M2_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q2_M2_MA_Quota__c + Q2_M2_MCP_Quota__c + Q2_M2_Other_Quota__c + Q2_M2_RC_Quota__c + Q2_M2_SR_Quota__c + Q2_M2_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q2 M2 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q2_M3_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q2_M3_MA_Quota__c + Q2_M3_MCP_Quota__c + Q2_M3_Other_Quota__c + Q2_M3_RC_Quota__c + Q2_M3_SR_Quota__c + Q2_M3_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q2 M3 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q3_M1_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q3_M1_MA_Quota__c + Q3_M1_MCP_Quota__c + Q3_M1_Other_Quota__c + Q3_M1_RC_Quota__c + Q3_M1_SR_Quota__c + Q3_M1_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q3 M1 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q3_M2_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q3_M2_MA_Quota__c + Q3_M2_MCP_Quota__c + Q3_M2_Other_Quota__c + Q3_M2_RC_Quota__c + Q3_M2_SR_Quota__c + Q3_M2_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q3 M2 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q3_M3_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q3_M3_MA_Quota__c + Q3_M3_MCP_Quota__c + Q3_M3_Other_Quota__c + Q3_M3_RC_Quota__c + Q3_M3_SR_Quota__c + Q3_M3_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q3 M3 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q4_M1_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q4_M1_MA_Quota__c + Q4_M1_MCP_Quota__c + Q4_M1_Other_Quota__c + Q4_M1_RC_Quota__c + Q4_M1_SR_Quota__c + Q4_M1_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q4 M1 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q4_M2_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q4_M2_MA_Quota__c + Q4_M2_MCP_Quota__c + Q4_M2_Other_Quota__c + Q4_M2_RC_Quota__c + Q4_M2_SR_Quota__c + Q4_M2_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q4 M2 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FY_Q4_M3_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q4_M3_MA_Quota__c + Q4_M3_MCP_Quota__c + Q4_M3_Other_Quota__c + Q4_M3_RC_Quota__c + Q4_M3_SR_Quota__c + Q4_M3_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q4 M3 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Fiscal year in which this quota record applies</inlineHelpText>
+        <label>Fiscal Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 1, Month 1, MA Quota</inlineHelpText>
+        <label>FY Q1 M1 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M1 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M1 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M1 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M1 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M1_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M1 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 1, Month 2, MA Quota</inlineHelpText>
+        <label>FY Q1 M2 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M2 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M2 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M2 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M2 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M2_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M2 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 1, Month 3, MA Quota</inlineHelpText>
+        <label>FY Q1 M3 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M3 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M3 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M3 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M3 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_M3_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 M3 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q1 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q1_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_MA_Quota__c + Q1_SR_Quota__c + Q1_TK_Quota__c +  Q1_RC_Quota__c +  Q1_MCP_Quota__c +  Q1_Other_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q1 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 2, Month 1, MA Quota</inlineHelpText>
+        <label>FY Q2 M1 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M1 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M1 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M1 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M1 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M1_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M1 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 2, Month 2, MA Quota</inlineHelpText>
+        <label>FY Q2 M2 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M2 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M2 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M2 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M2 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M2_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M2 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 2, Month 3, MA Quota</inlineHelpText>
+        <label>FY Q2 M3 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M3 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M3 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M3 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M3 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_M3_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 M3 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q2 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q2_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q2_MA_Quota__c + Q2_SR_Quota__c + Q2_TK_Quota__c +  Q2_RC_Quota__c +  Q2_MCP_Quota__c +  Q2_Other_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q2 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 3, Month 1, MA Quota</inlineHelpText>
+        <label>FY Q3 M1 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M1 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M1 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M1 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M1 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M1_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M1 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 3, Month 2, MA Quota</inlineHelpText>
+        <label>FY Q3 M2 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M2 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M2 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M2 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M2 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M2_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M2 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 3, Month 3, MA Quota</inlineHelpText>
+        <label>FY Q3 M3 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M3 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M3 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M3 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M3 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_M3_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 M3 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q3 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q3_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q3_MA_Quota__c + Q3_SR_Quota__c + Q3_TK_Quota__c +  Q3_RC_Quota__c +  Q3_MCP_Quota__c +  Q3_Other_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q3 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 4, Month 1, MA Quota</inlineHelpText>
+        <label>FY Q4 M1 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M1 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M1 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M1 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M1 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M1_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M1 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 4, Month 2, MA Quota</inlineHelpText>
+        <label>FY Q4 M2 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M2 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M2 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M2 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M2 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M2_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M2 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Quarter 4, Month 3, MA Quota</inlineHelpText>
+        <label>FY Q4 M3 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M3 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M3 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M3 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M3 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_M3_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 M3 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_MA_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 MA Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_MCP_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 MCP Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_Other_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 Other Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_RC_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 RC Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_SR_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 SR Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_TK_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>FY Q4 TK Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Q4_Total_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q4_MA_Quota__c + Q4_SR_Quota__c + Q4_TK_Quota__c +  Q4_RC_Quota__c +  Q4_MCP_Quota__c +  Q4_Other_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FY Q4 Total Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_MA__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_MA_Quota__c + Q1_M2_MA_Quota__c + Q1_M3_MA_Quota__c + Q2_M1_MA_Quota__c + Q2_M2_MA_Quota__c + Q2_M3_MA_Quota__c + Q3_M1_MA_Quota__c + Q3_M2_MA_Quota__c + Q3_M3_MA_Quota__c + Q4_M1_MA_Quota__c + Q4_M2_MA_Quota__c + Q4_M3_MA_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota MA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_MCP__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_MCP_Quota__c + Q1_M2_MCP_Quota__c + Q1_M3_MCP_Quota__c + Q2_M1_MCP_Quota__c + Q2_M2_MCP_Quota__c + Q2_M3_MCP_Quota__c + Q3_M1_MCP_Quota__c + Q3_M2_MCP_Quota__c + Q3_M3_MCP_Quota__c + Q4_M1_MCP_Quota__c + Q4_M2_MCP_Quota__c + Q4_M3_MCP_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota MCP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_Other__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_Other_Quota__c + Q1_M2_Other_Quota__c + Q1_M3_Other_Quota__c + Q2_M1_Other_Quota__c + Q2_M2_Other_Quota__c + Q2_M3_Other_Quota__c + Q3_M1_Other_Quota__c + Q3_M2_Other_Quota__c + Q3_M3_Other_Quota__c + Q4_M1_Other_Quota__c + Q4_M2_Other_Quota__c + Q4_M3_Other_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota Other</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_RC_Quota__c + Q1_M2_RC_Quota__c + Q1_M3_RC_Quota__c + Q2_M1_RC_Quota__c + Q2_M2_RC_Quota__c + Q2_M3_RC_Quota__c + Q3_M1_RC_Quota__c + Q3_M2_RC_Quota__c + Q3_M3_RC_Quota__c + Q4_M1_RC_Quota__c + Q4_M2_RC_Quota__c + Q4_M3_RC_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota RC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_SR__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_SR_Quota__c + Q1_M2_SR_Quota__c + Q1_M3_SR_Quota__c + Q2_M1_SR_Quota__c + Q2_M2_SR_Quota__c + Q2_M3_SR_Quota__c + Q3_M1_SR_Quota__c  + Q3_M2_SR_Quota__c + Q3_M3_SR_Quota__c + Q4_M1_SR_Quota__c + Q4_M2_SR_Quota__c + Q4_M3_SR_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota SR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota_TK__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_M1_TK_Quota__c + Q1_M2_TK_Quota__c + Q1_M3_TK_Quota__c + Q2_M1_TK_Quota__c + Q2_M2_TK_Quota__c + Q2_M3_TK_Quota__c + Q3_M1_TK_Quota__c + Q3_M2_TK_Quota__c + Q3_M3_TK_Quota__c + Q4_M1_TK_Quota__c + Q4_M2_TK_Quota__c + Q4_M3_TK_Quota__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota TK</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annual_Quota__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Annual_Quota_MA__c  +  Total_Annual_Quota_SR__c  +  Total_Annual_Quota_TK__c  +  Total_Annual_Quota_RC__c  +  Total_Annual_Quota_MCP__c  +  Total_Annual_Quota_Other__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Annual Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>User_Focus__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( User__r.User_Focus__c )</formula>
+        <inlineHelpText>Traditional or Turn Key</inlineHelpText>
+        <label>User Focus</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of sales person assigned to this quota in the &quot;User&quot; field. This field is populated to enable positive search results for the Sales Rep Quota record when searching by the User&apos;s name.</inlineHelpText>
+        <label>User Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sales_Rep_Quotas</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Sales Rep Quota</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Current_Quota__c</columns>
+        <columns>Fiscal_Year__c</columns>
+        <columns>User__c</columns>
+        <columns>Total_Annual_Quota__c</columns>
+        <columns>Total_Annual_Quota_MA__c</columns>
+        <columns>Total_Annual_Quota_SR__c</columns>
+        <columns>Total_Annual_Quota_TK__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>X2018_Quotas</fullName>
+        <columns>NAME</columns>
+        <columns>User_Name__c</columns>
+        <columns>Current_Quota__c</columns>
+        <columns>Total_Annual_Quota__c</columns>
+        <columns>Fiscal_Year__c</columns>
+        <columns>Total_Annual_Quota_MA__c</columns>
+        <columns>Total_Annual_Quota_MCP__c</columns>
+        <columns>Total_Annual_Quota_Other__c</columns>
+        <columns>Total_Annual_Quota_SR__c</columns>
+        <columns>Total_Annual_Quota_TK__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Fiscal_Year__c</field>
+            <operation>equals</operation>
+            <value>2018</value>
+        </filters>
+        <label>2018 Quotas</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>X2019_Quotas</fullName>
+        <columns>NAME</columns>
+        <columns>User_Name__c</columns>
+        <columns>Current_Quota__c</columns>
+        <columns>Total_Annual_Quota__c</columns>
+        <columns>Fiscal_Year__c</columns>
+        <columns>Total_Annual_Quota_MA__c</columns>
+        <columns>Total_Annual_Quota_MCP__c</columns>
+        <columns>Total_Annual_Quota_Other__c</columns>
+        <columns>Total_Annual_Quota_SR__c</columns>
+        <columns>Total_Annual_Quota_TK__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Fiscal_Year__c</field>
+            <operation>equals</operation>
+            <value>2019</value>
+        </filters>
+        <label>2019 Quotas</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SRQ-{000000}</displayFormat>
+        <label>Sales Rep Quota ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sales Rep Quotas</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>User__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Total_Annual_Quota__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,3241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Convert</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FindDup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Latin America</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Owner Sales</fullName>
+        <description>Owner Sales</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obsolete%2FExhausted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Opportunity Already Exists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Account_Lead_Conversion_Flag__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field value on conversion moved to Account object field: From Lead Conversion.(Read only field for everyone) 
+Please do not uncheck this check box.</description>
+        <externalId>false</externalId>
+        <label>Account Lead Conversion Flag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Number__c</fullName>
+        <description>Oracle assigned account number</description>
+        <externalId>false</externalId>
+        <label>Account Number</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <description>Additional Information</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional Information</inlineHelpText>
+        <label>Additional Information</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Address</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Building_Status__c</fullName>
+        <description>Work that the equipment was provided for</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Work that the equipment was provided for</inlineHelpText>
+        <label>Building Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Addition</fullName>
+                    <default>false</default>
+                    <label>Addition</label>
+                </value>
+                <value>
+                    <fullName>Combo</fullName>
+                    <default>false</default>
+                    <label>Combo</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Remodel</fullName>
+                    <default>false</default>
+                    <label>Remodel</label>
+                </value>
+                <value>
+                    <fullName>Replace Other</fullName>
+                    <default>false</default>
+                    <label>Replace Other</label>
+                </value>
+                <value>
+                    <fullName>Replace Our Own Equip</fullName>
+                    <default>false</default>
+                    <label>Replace Our Own Equip</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to skip validation rules while uploading or updating records into Salesforce. After updating records please uncheck the field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Administrator use only. To know more please read field description.
+Do not use this field anywhere including reports.</inlineHelpText>
+        <label>Bypass</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Codestring__c</fullName>
+        <description>Codestring for the shipped equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Codestring for the shipped equipment</inlineHelpText>
+        <label>Codestring</label>
+        <length>500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Company_Type__c</fullName>
+        <description>Identifies the type of company</description>
+        <externalId>false</externalId>
+        <label>Company Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                    <label>Architect</label>
+                </value>
+                <value>
+                    <fullName>Consulting Engineer</fullName>
+                    <default>false</default>
+                    <label>Consulting Engineer</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                    <label>Developer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>End User</fullName>
+                    <default>false</default>
+                    <label>End User</label>
+                </value>
+                <value>
+                    <fullName>General Contractor</fullName>
+                    <default>false</default>
+                    <label>General Contractor</label>
+                </value>
+                <value>
+                    <fullName>Installer</fullName>
+                    <default>false</default>
+                    <label>Installer</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Contractor</fullName>
+                    <default>false</default>
+                    <label>Mechanical Contractor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Lead_Conversion_Flag__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field value on conversion moved to Contact object field: From Lead Conversion.(Read only field for everyone)
+Please do not uncheck this check box.</description>
+        <externalId>false</externalId>
+        <label>Contact Lead Conversion Flag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_Date__c</fullName>
+        <description>Date/Time the lead was created</description>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date/Time the lead was created</inlineHelpText>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Days_Open__c</fullName>
+        <description>If it&apos;s converted; Converted Date - Created Date, Else Now-Created Date</description>
+        <externalId>false</externalId>
+        <formula>/*If it&apos;s converted take the converted date - created date otherwise Now - created date*/
+
+
+IF (IsConverted,(ConvertedDate - (DATEVALUE(CreatedDate))), (NOW() - CreatedDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If it&apos;s converted; Converted Date - Created Date, else Today-Created Date</inlineHelpText>
+        <label>Days Open</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Equipment_Purchased_By__c</fullName>
+        <description>Who purchased the shipped equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of who purchased the shipped equipment</inlineHelpText>
+        <label>Equipment Purchased By</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Startup_Date__c</fullName>
+        <description>Date when the equipment was started up</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When was the equipment started up?</inlineHelpText>
+        <label>Equipment Startup Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Facility_Size__c</fullName>
+        <description>Size of facility or number of sites</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Size of facility or number of sites</inlineHelpText>
+        <label>Facility Size</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Large (&gt; 250K FT2)</fullName>
+                    <default>false</default>
+                    <label>Large (&gt; 250K FT2)</label>
+                </value>
+                <value>
+                    <fullName>Medium (100K – 250K FT2)</fullName>
+                    <default>false</default>
+                    <label>Medium (100K – 250K FT2)</label>
+                </value>
+                <value>
+                    <fullName>Small (&lt; 100K FT2)</fullName>
+                    <default>false</default>
+                    <label>Small (&lt; 100K FT2)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Interests__c</fullName>
+        <description>User interests from McQuay.Com Lead</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose one or more Interests that you would like more information on.  To choose more than one, use Ctrl-Click.</inlineHelpText>
+        <label>Interests</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Air Handlers</fullName>
+                    <default>false</default>
+                    <label>Air Handlers</label>
+                </value>
+                <value>
+                    <fullName>Applied Equipment – New Building</fullName>
+                    <default>false</default>
+                    <label>Applied Equipment – New Building</label>
+                </value>
+                <value>
+                    <fullName>Chillers</fullName>
+                    <default>false</default>
+                    <label>Chillers</label>
+                </value>
+                <value>
+                    <fullName>Consulting/Advice</fullName>
+                    <default>false</default>
+                    <label>Consulting/Advice</label>
+                </value>
+                <value>
+                    <fullName>Contracting Services</fullName>
+                    <default>false</default>
+                    <label>Contracting Services</label>
+                </value>
+                <value>
+                    <fullName>Controls</fullName>
+                    <default>false</default>
+                    <label>Controls</label>
+                </value>
+                <value>
+                    <fullName>Controls/Integration</fullName>
+                    <default>false</default>
+                    <label>Controls/Integration</label>
+                </value>
+                <value>
+                    <fullName>Custom Packaged Systems</fullName>
+                    <default>false</default>
+                    <label>Custom Packaged Systems</label>
+                </value>
+                <value>
+                    <fullName>Daikin VRV</fullName>
+                    <default>false</default>
+                    <label>Daikin VRV</label>
+                </value>
+                <value>
+                    <fullName>EEH</fullName>
+                    <default>false</default>
+                    <label>EEH</label>
+                </value>
+                <value>
+                    <fullName>Energy Saving Project</fullName>
+                    <default>false</default>
+                    <label>Energy Saving Project</label>
+                </value>
+                <value>
+                    <fullName>Energy Services</fullName>
+                    <default>false</default>
+                    <label>Energy Services</label>
+                </value>
+                <value>
+                    <fullName>Engineering Services</fullName>
+                    <default>false</default>
+                    <label>Engineering Services</label>
+                </value>
+                <value>
+                    <fullName>Filters (AAF)</fullName>
+                    <default>false</default>
+                    <label>Filters (AAF)</label>
+                </value>
+                <value>
+                    <fullName>General Information</fullName>
+                    <default>false</default>
+                    <label>General Information</label>
+                </value>
+                <value>
+                    <fullName>Healthcare</fullName>
+                    <default>false</default>
+                    <label>Healthcare</label>
+                </value>
+                <value>
+                    <fullName>LEED</fullName>
+                    <default>false</default>
+                    <label>LEED</label>
+                </value>
+                <value>
+                    <fullName>MCP</fullName>
+                    <default>false</default>
+                    <label>MCP</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Parts</fullName>
+                    <default>false</default>
+                    <label>Parts</label>
+                </value>
+                <value>
+                    <fullName>Performance Contracting</fullName>
+                    <default>false</default>
+                    <label>Performance Contracting</label>
+                </value>
+                <value>
+                    <fullName>Pharmaceutical</fullName>
+                    <default>false</default>
+                    <label>Pharmaceutical</label>
+                </value>
+                <value>
+                    <fullName>PPS (CPS)</fullName>
+                    <default>false</default>
+                    <label>PPS (CPS)</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Retrofit</fullName>
+                    <default>false</default>
+                    <label>Retrofit</label>
+                </value>
+                <value>
+                    <fullName>Rooftops</fullName>
+                    <default>false</default>
+                    <label>Rooftops</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Sustainability</fullName>
+                    <default>false</default>
+                    <label>Sustainability</label>
+                </value>
+                <value>
+                    <fullName>Turnkey</fullName>
+                    <default>false</default>
+                    <label>Turnkey</label>
+                </value>
+                <value>
+                    <fullName>Unitary Equipment</fullName>
+                    <default>false</default>
+                    <label>Unitary Equipment</label>
+                </value>
+                <value>
+                    <fullName>Warranty Issues</fullName>
+                    <default>false</default>
+                    <label>Warranty Issues</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Job_Address_County__c</fullName>
+        <description>County for the Job Address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>County for the Job Address</inlineHelpText>
+        <label>Job Address County</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Name__c</fullName>
+        <description>Name of the Job for the Shipped Equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Job for the Shipped Equipment</inlineHelpText>
+        <label>Job Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastTransferDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Category__c</fullName>
+        <description>This category should be updated by then Rep.  When they begin working it,is it Cold, Warm or Hot??</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the status of the Lead?  This should be updated by the Rep &quot;working&quot; the Lead.</inlineHelpText>
+        <label>Lead Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cold</fullName>
+                    <default>false</default>
+                    <label>Cold</label>
+                </value>
+                <value>
+                    <fullName>Warm</fullName>
+                    <default>false</default>
+                    <label>Warm</label>
+                </value>
+                <value>
+                    <fullName>Hot</fullName>
+                    <default>false</default>
+                    <label>Hot</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lead_Checked__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If a user want to create an Opportunity upon Lead conversion. Then there is no way to know(On Opportunity) if that Opportunity is created from a Lead.  We will use this field to know if this Opportunity is from Lead or not and this field is always true, and used to mark the field &quot;Converted Lead&quot; on the Opportunity to TRUE upon Lead conversion.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If a user want to create an Opportunity upon Lead conversion. Then there is no way to know(On Opportunity) if that Opportunity is created from a Lead.  Do not Use this field in Reports.</inlineHelpText>
+        <label>Lead Checked</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Id__c</fullName>
+        <description>Lead Id of the Lead that is passed over to the opportunity when it&apos;s converted.</description>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lead Id of the Lead that is passed over to the opportunity when it&apos;s converted.</inlineHelpText>
+        <label>Lead Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner_Division__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Owner:User.User_Division__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Owner Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.UserRole.Name</formula>
+        <label>Lead Owner Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner_User_Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Owner:User.User_Department__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Owner User Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Summary__c</fullName>
+        <description>Lead Summary</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lead Summary</inlineHelpText>
+        <label>Lead Summary</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Value__c</fullName>
+        <description>Total points Auto calcs from TAS selection values</description>
+        <externalId>false</externalId>
+        <formula>CASE(Facility_Size__c, &quot;Small (&lt; 100K FT2)&quot;, 10, &quot;Large (&gt; 250K FT2)&quot;, 30, &quot;Medium (100K – 250K FT2)&quot;, 50, 0) 
++
+CASE(Primary_Equip_Make__c, &quot;Other&quot;, 10, &quot;Carrier&quot;, 20, &quot;Trane&quot;, 30, &quot;JCI York&quot;, 40, &quot;Daikin Applied&quot;, 50, 0)
++
+CASE(Primary_Service_Provider__c, &quot;Daikin Applied&quot;, 0, &quot;Mech Contractor&quot;, 10, &quot;In-House&quot;, 10, &quot;Siemens&quot;, 20, &quot;Honeywell&quot;, 20, &quot;Carrier&quot;, 30, &quot;Trane&quot;, 40, &quot;JCI York&quot;, 50, 0)
++
+CASE(System_Type__c, &quot;DX - Splits&quot;, 20, &quot;Lg RTU / SC&quot;, 30, &quot;A-C Chiller&quot;, 40, &quot;W-C Chiller&quot;, 50, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Auto Calc based on Facility Size, Primary Equip Make, Primary Service Provider and System Type.</inlineHelpText>
+        <label>Lead Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_of_Business__c</fullName>
+        <description>Line of Business for Leads</description>
+        <externalId>false</externalId>
+        <label>Line of Business</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CTK - Complex Turnkey</fullName>
+                    <default>false</default>
+                    <label>CTK - Complex Turnkey</label>
+                </value>
+                <value>
+                    <fullName>Equipment Only</fullName>
+                    <default>false</default>
+                    <label>Equipment Only</label>
+                </value>
+                <value>
+                    <fullName>MA - Maintenance Agreement</fullName>
+                    <default>false</default>
+                    <label>MA - Maintenance Agreement</label>
+                </value>
+                <value>
+                    <fullName>MA - Renewal</fullName>
+                    <default>false</default>
+                    <label>MA - Renewal</label>
+                </value>
+                <value>
+                    <fullName>MCP</fullName>
+                    <default>false</default>
+                    <label>MCP</label>
+                </value>
+                <value>
+                    <fullName>Parts Only</fullName>
+                    <default>false</default>
+                    <label>Parts Only</label>
+                </value>
+                <value>
+                    <fullName>Rental Chillers</fullName>
+                    <default>false</default>
+                    <label>Rental Chillers</label>
+                </value>
+                <value>
+                    <fullName>Retrofit/Upgrades</fullName>
+                    <default>false</default>
+                    <label>Retrofit/Upgrades</label>
+                </value>
+                <value>
+                    <fullName>Service &amp; Repair - Quoted</fullName>
+                    <default>false</default>
+                    <label>Service &amp; Repair - Quoted</label>
+                </value>
+                <value>
+                    <fullName>Service &amp; Repair - T&amp;M</fullName>
+                    <default>false</default>
+                    <label>Service &amp; Repair - T&amp;M</label>
+                </value>
+                <value>
+                    <fullName>Start-Up</fullName>
+                    <default>false</default>
+                    <label>Start-Up</label>
+                </value>
+                <value>
+                    <fullName>TK - Turnkey Contracting</fullName>
+                    <default>false</default>
+                    <label>TK - Turnkey Contracting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Middle_Name__c</fullName>
+        <description>Middle Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter middle name if any</inlineHelpText>
+        <label>Middle Name</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <description>Model of the shipped equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Model of the shipped equipment</inlineHelpText>
+        <label>Model</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_Activities__c</fullName>
+        <externalId>false</externalId>
+        <formula>Number_of_Open_Activities__c  +  Number_of_Closed_Activities__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Closed_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Closed Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Open_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Open Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_City__c</fullName>
+        <description>Site location city</description>
+        <externalId>false</externalId>
+        <label>Opportunity City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Lead_Conversion_Flag__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field value on conversion moved to Opportunity object field: From Lead Conversion (Read only field for everyone). 
+Please do not uncheck this check box.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Lead Conversion Flag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_State__c</fullName>
+        <description>State site is in</description>
+        <externalId>false</externalId>
+        <label>Opportunity State</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <inlineHelpText>To include an extension put a comma after the number with a space (e.g. - 6121112222, 333.)  This will allow calling from the Salesforce1 App</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Primary_Equip_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Equip Make</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Daikin Applied</fullName>
+                    <default>false</default>
+                    <label>Daikin Applied</label>
+                </value>
+                <value>
+                    <fullName>Daikin Manufacturing (VRV)</fullName>
+                    <default>false</default>
+                    <label>Daikin Manufacturing (VRV)</label>
+                </value>
+                <value>
+                    <fullName>Goodman</fullName>
+                    <default>false</default>
+                    <label>Goodman</label>
+                </value>
+                <value>
+                    <fullName>JCI York</fullName>
+                    <default>false</default>
+                    <label>JCI York</label>
+                </value>
+                <value>
+                    <fullName>Liebert</fullName>
+                    <default>false</default>
+                    <label>Liebert</label>
+                </value>
+                <value>
+                    <fullName>Mammoth</fullName>
+                    <default>false</default>
+                    <label>Mammoth</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Smardt</fullName>
+                    <default>false</default>
+                    <label>Smardt</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Service_Provider__c</fullName>
+        <description>Existing Svc Provider</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Who currently services job</inlineHelpText>
+        <label>Primary Service Provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Daikin Applied</fullName>
+                    <default>false</default>
+                    <label>Daikin Applied</label>
+                </value>
+                <value>
+                    <fullName>Honeywell</fullName>
+                    <default>false</default>
+                    <label>Honeywell</label>
+                </value>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>JCI York</fullName>
+                    <default>false</default>
+                    <label>JCI York</label>
+                </value>
+                <value>
+                    <fullName>Mech Contractor</fullName>
+                    <default>false</default>
+                    <label>Mech Contractor</label>
+                </value>
+                <value>
+                    <fullName>Siemens</fullName>
+                    <default>false</default>
+                    <label>Siemens</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Type__c</fullName>
+        <description>Maps to Opportunity on Convert</description>
+        <externalId>false</externalId>
+        <label>Project Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Retrofit</fullName>
+                    <default>false</default>
+                    <label>Retrofit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Referring_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Which Customer gave us the referral?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which Customer gave us the referral?</inlineHelpText>
+        <label>Referring Customer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leads (Referring Customer)</relationshipLabel>
+        <relationshipName>Leads1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SO_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>SO Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <description>This field is used as an External ID.</description>
+        <externalId>true</externalId>
+        <label>Serial Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Contract_Expiration__c</fullName>
+        <description>Date that the Service Contract Expires. This can be for our equipment or competitors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the Service Contract Expires. This can be for our equipment or competitors.</inlineHelpText>
+        <label>Service Contract Expiration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ship_Date__c</fullName>
+        <description>Date the equipment shipped</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the equipment shipped</inlineHelpText>
+        <label>Ship Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Shipped_Equipment_Owner_Name__c</fullName>
+        <description>Owner Name of the Shipped Equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Owner Name of the Shipped Equipment</inlineHelpText>
+        <label>Shipped Equipment Owner Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Standard_Warranty_Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Warranty Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <inlineHelpText>Open- Has not been contacted, Contacted- Working the Lead, Qualified- Converted to an Opportunity, Obsolete/Exhausted- Does not ever need to be followed up on or cannot be contacted, Prospect- Currently no need, but potentially in the future.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>System_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>System Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>A-C Chiller</fullName>
+                    <default>false</default>
+                    <label>A-C Chiller</label>
+                </value>
+                <value>
+                    <fullName>DX - Splits</fullName>
+                    <default>false</default>
+                    <label>DX - Splits</label>
+                </value>
+                <value>
+                    <fullName>Lg RTU / SC</fullName>
+                    <default>false</default>
+                    <label>Lg RTU / SC</label>
+                </value>
+                <value>
+                    <fullName>W-C Chiller</fullName>
+                    <default>false</default>
+                    <label>W-C Chiller</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>What is the name of the Tech that gave the Tech Tip for this Lead?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the name of the Tech that gave the Tech Tip for this Lead?
+(Contact Type is Service Tech or DA Factory Service Tech OR Title is Journeyman, Foreman, Apprentice or Service Supervisor)</inlineHelpText>
+        <label>Tech</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+            <errorMessage>Contact must be a Service Tech</errorMessage>
+            <filterItems>
+                <field>Contact.Type__c</field>
+                <operation>equals</operation>
+                <value>Service Tech, DA Factory Service Tech</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Title</field>
+                <operation>equals</operation>
+                <value>Journeyman, Technician</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Title</field>
+                <operation>equals</operation>
+                <value>Apprentice, Foreman</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Title</field>
+                <operation>equals</operation>
+                <value>Service Supervisor</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Active_DCW__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Select the Tech who gave the tip</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Top_Ten_Lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check if one of your top ten leads</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS use only-Check only if one of your top 10 leads</inlineHelpText>
+        <label>Top Ten Lead?</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Top_ten_Lead_Order__c</fullName>
+        <description>FS Use Only - Order of Top Ten Leads</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Use Only - Order of Top Ten Leads</inlineHelpText>
+        <label>Top Ten Lead Order</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Top_Ten_Lead__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>6</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>7</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>8</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>9</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>10</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Warranty__c</fullName>
+        <description>Warranty on the shipped equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Warranty on the shipped equipment</inlineHelpText>
+        <label>Warranty</label>
+        <length>500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>AllOpenLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Qualified,Unqualified</value>
+        </filters>
+        <label>All Open Leads</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Birmingham_Queue_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Birmingham District Leads</label>
+        <queue>Birmingham_District_Leads</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DAAL_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>DAAL</value>
+        </filters>
+        <label>DAAL Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DAAL</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DAFL_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>DAFL</value>
+        </filters>
+        <label>DAFL Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>South_Florida</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DAGA_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>DAGA</value>
+        </filters>
+        <label>DAGA Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DAGA</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DANY_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>DANY</value>
+        </filters>
+        <label>DANY Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_DSO_Read_Write</group>
+            <roleAndSubordinates>DANY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Leads_Created_by_Tina</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <operation>equals</operation>
+            <value>tbusc</value>
+        </filters>
+        <label>Leads Created by Tina</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>TampaDistrict</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MCP_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>contains</operation>
+            <value>MCP</value>
+        </filters>
+        <label>MCP Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>MCP</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>Lead_Category__c</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Contacted,Open</value>
+        </filters>
+        <label>My Open Leads</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Nashville_District_Leads_Lead</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Queue</filterScope>
+        <label>Nashville District Leads</label>
+        <language>en_US</language>
+        <queue>Nashville_District_Leads</queue>
+        <sharedTo>
+            <role>NashvilleSales</role>
+            <role>Nashville_District</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>National_Accounts_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LAST_NAME</columns>
+        <columns>LEAD.FIRST_NAME</columns>
+        <columns>LEAD.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Owner_User_Department__c</field>
+            <operation>equals</operation>
+            <value>National Accounts</value>
+        </filters>
+        <label>National Accounts Leads</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>National_Accounts</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Other_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>Additional_Information__c</columns>
+        <columns>Serial_Number__c</columns>
+        <columns>Model__c</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>contains</operation>
+            <value>Warranty</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Contacted,Open</value>
+        </filters>
+        <label>Other Leads</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>QA_Campaign_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Serial_Number__c</columns>
+        <columns>SO_Number__c</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>Additional_Information__c</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>equals</operation>
+            <value>QA</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Contacted,Open</value>
+        </filters>
+        <label>QA Leads</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Rochester_District_Leads_Lead</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Queue</filterScope>
+        <label>Rochester District Leads</label>
+        <language>en_US</language>
+        <queue>Rochester_District_Leads</queue>
+        <sharedTo>
+            <roleAndSubordinates>Rochester_District</roleAndSubordinates>
+            <roleAndSubordinates>Rochester_Sales</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Shipped_Equipment</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>Serial_Number__c</columns>
+        <columns>SO_Number__c</columns>
+        <columns>Additional_Information__c</columns>
+        <columns>Job_Name__c</columns>
+        <columns>Warranty__c</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.COUNTRY_CODE</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>equals</operation>
+            <value>Shipped Equipment</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Contacted,Open</value>
+        </filters>
+        <label>Shipped Equipment</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Tech_Tip_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>Tech__c</columns>
+        <columns>LEAD.STATE_CODE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>Additional_Information__c</columns>
+        <columns>Serial_Number__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>equals</operation>
+            <value>Tech Tip</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Open,Contacted</value>
+        </filters>
+        <label>Tech Tip Leads</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Warranty_Leads_Canada_STN</fullName>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>Serial_Number__c</columns>
+        <columns>Standard_Warranty_Expiry_Date__c</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.COUNTRY</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>equals</operation>
+            <value>Warranty Database</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Open,Contacted</value>
+        </filters>
+        <filters>
+            <field>LEAD.COUNTRY</field>
+            <operation>equals</operation>
+            <value>Canada</value>
+        </filters>
+        <filters>
+            <field>Serial_Number__c</field>
+            <operation>startsWith</operation>
+            <value>STN</value>
+        </filters>
+        <label>Warranty Leads - Canada (STN)</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>CanadaRegion</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Latin_America</fullName>
+        <active>false</active>
+        <businessProcess>Latin America</businessProcess>
+        <label>Latin America</label>
+        <picklistValues>
+            <picklist>Company_Type__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Developer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Facility_Size__c</picklist>
+            <values>
+                <fullName>Large %28%3E 250K FT2%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium %28100K %E2%80%93 250K FT2%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small %28%3C 100K FT2%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Airports %26 Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly%2C Arenas%2C and Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Centers And Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education K-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial %2F Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Life Sciences%2C Pharm%2C Biotech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lodging %2F Hotels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Facilities and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Nonresidential Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-family Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Religious Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stores and Restaurants %2F Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouses %28excl%2E Manufacturer Owned%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interests__c</picklist>
+            <values>
+                <fullName>Applied Equipment %E2%80%93 New Building</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting%2FAdvice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls%2FIntegration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin VRV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy Saving Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters %28AAF%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Us Web Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New equipment start-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Generated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tech Tip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Category__c</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Equip_Make__c</picklist>
+            <values>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JCI York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trane</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Service_Provider__c</picklist>
+            <values>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Honeywell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-House</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JCI York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mech Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siemens</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trane</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Type__c</picklist>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>System_Type__c</picklist>
+            <values>
+                <fullName>A-C Chiller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DX - Splits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lg RTU %2F SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W-C Chiller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_ten_Lead_Order__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Owner_Sales</fullName>
+        <active>true</active>
+        <businessProcess>Owner Sales</businessProcess>
+        <description>Owner Sales</description>
+        <label>Owner Sales</label>
+        <picklistValues>
+            <picklist>Building_Status__c</picklist>
+            <values>
+                <fullName>Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replace Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replace Our Own Equip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Type__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Facility_Size__c</picklist>
+            <values>
+                <fullName>Large %28%3E 250K FT2%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium %28100K %E2%80%93 250K FT2%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small %28%3C 100K FT2%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Airports %26 Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly%2C Arenas%2C and Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Centers And Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education K-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial %2F Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Life Sciences%2C Pharm%2C Biotech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lodging %2F Hotels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Facilities and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marine Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Nonresidential Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-family Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Religious Buildings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stores and Restaurants %2F Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouses %28excl%2E Manufacturer Owned%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interests__c</picklist>
+            <values>
+                <fullName>Air Handlers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Equipment %E2%80%93 New Building</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chillers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting%2FAdvice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracting Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls%2FIntegration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Packaged Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin VRV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EEH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy Saving Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPS %28CPS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance Contracting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rooftops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sustainability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turnkey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New equipment start-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Generated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipped Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tech Tip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technician Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Database</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Category__c</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_of_Business__c</picklist>
+            <values>
+                <fullName>CTK - Complex Turnkey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA - Maintenance Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental Chillers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit%2FUpgrades</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service %26 Repair - Quoted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service %26 Repair - T%26M</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Start-Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TK - Turnkey Contracting</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>ARQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Equip_Make__c</picklist>
+            <values>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Manufacturing %28VRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goodman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JCI York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liebert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mammoth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Smardt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trane</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Service_Provider__c</picklist>
+            <values>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Honeywell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-House</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JCI York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mech Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siemens</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trane</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Type__c</picklist>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>System_Type__c</picklist>
+            <values>
+                <fullName>A-C Chiller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DX - Splits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lg RTU %2F SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W-C Chiller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_ten_Lead_Order__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.MOBILE_PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>City_State_and_Country_Required</fullName>
+        <active>false</active>
+        <description>City State and Country Required</description>
+        <errorConditionFormula>(NOT(BEGINS($Profile.Name, &quot;Latin&quot;)  ||  $User.CommunityNickname = &quot;LATAM_Web_to_Lead&quot;) &amp;&amp; (City =&quot;&quot; || Country =&quot;&quot; || (CONTAINS(&quot;Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia, Plurinational State of:Bonaire, Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China:Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Italy:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua:Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:United States:Uruguay:Saint Vincent and the Grenadines:Venezuela, Bolivarian Republic of&quot;,Country) &amp;&amp; ISPICKVAL(StateCode, &quot;&quot;))))
+
+&amp;&amp; 
+
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>Please enter City, State and Country values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Country_Validaton_Rule</fullName>
+        <active>false</active>
+        <description>Ensures a valid three character ISO country code is entered</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; (LEN(Country) != 3 || NOT(CONTAINS(&quot;USA:ARG:BOL:BRA:CHL:COL:CRI:CUB:DOM:ECU:SLV:GTM:GUY:HTI:HND:JAM:MEX:NIC:PAN:PRY:PER:PRI:SUR:URY:VEN:CYM:GRD:ATG:BHS:CUW:TCA:LCA:ABW:BRB:KNA:VCT:TTO:DMA:BES:MAF:SXM:AIA:VIR&quot;,Country)))  &amp;&amp; (($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>Please enter a valid three-letter country code.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Industry_Validation_Rule</fullName>
+        <active>true</active>
+        <description>Requires industry to be entered when Company Type = End User, Owner, or Consulting Engineer</description>
+        <errorConditionFormula>AND (
+OR( ISPICKVAL(Company_Type__c, &quot;End User&quot;), ISPICKVAL(Company_Type__c, &quot;Owner&quot;), ISPICKVAL(Company_Type__c, &quot;Consulting Engineer&quot;)),
+ISBLANK(TEXT(Industry)))
+&amp;&amp;
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>Please specify an Industry value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lead_Contact_Information_Rule</fullName>
+        <active>true</active>
+        <description>Requires Lead to have a minimum set of contact information.</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; ISBLANK(Email) &amp;&amp; ISBLANK(Phone) &amp;&amp; ISBLANK(City) &amp;&amp; ISBLANK(State)
+
+&amp;&amp;
+
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>Please specify at least one of the following: Phone, Email, City, or State.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lead_Source_Specify_new_Value</fullName>
+        <active>false</active>
+        <description>This rules enforces users to choose new Lead Source value from available options for all existing values.</description>
+        <errorConditionFormula>(CASE( TEXT( LeadSource ),
+&quot;Advertisement&quot;, 1,
+&quot;Contract renewal&quot;, 1,
+&quot;Customer Referral&quot;, 1,
+&quot;Customer Service Request&quot;, 1,
+&quot;Daikin internal&quot;, 1,
+&quot;Daikin shipment database&quot;, 1,
+&quot;Direct marketing&quot;, 1,
+&quot;GSA&quot;, 1,
+&quot;Independent rep&quot;, 1,
+&quot;Japanese Company Referral&quot;, 1,
+&quot;National accounts&quot;, 1,
+&quot;New equipment start-up&quot;, 1,
+&quot;Owner sales/service&quot;, 1,
+&quot;Partner Referral&quot;, 1,
+&quot;Phone Inquiry&quot;, 1,
+&quot;QA&quot;, 1, 
+&quot;Purchased List&quot;, 1,
+&quot;RFP/RFI/Bid&quot;, 1,
+&quot;Self Generated&quot;, 1,
+&quot;Seminar&quot;, 1,
+&quot;Shipped Equipment&quot;,1,
+&quot;Tech Tip&quot;, 1,
+&quot;Web&quot;, 1,
+&quot;Word of mouth&quot;, 1,
+&quot;Contact Us Web Page&quot;,1,
+&quot;Technician Follow-up&quot;,1,
+&quot;Tech Tip&quot;,1,
+&quot;Trade Show&quot;,1,
+&quot;Warranty Database&quot;,1,
+&quot;Web&quot;,1,
+&quot;Word of mouth&quot;,1,
+&quot;&quot;, 1,0)&lt;1)
+
+&amp;&amp;
+
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>LeadSource</errorDisplayField>
+        <errorMessage>The Specified Lead Source value no longer valid. Please select new Lead Source from the list of options.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lead_Source_is_Customer_Referral</fullName>
+        <active>true</active>
+        <description>If the Lead Source is Customer Referral then a Referring Customer must be selected</description>
+        <errorConditionFormula>(ISPICKVAL(LeadSource , &quot;Customer Referral&quot;) &amp;&amp; ISBLANK(Referring_Customer__c) )
+
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>Referring_Customer__c</errorDisplayField>
+        <errorMessage>You must select a Referring Customer since your Source is Customer Referral</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lead_Source_is_Tech_Tip</fullName>
+        <active>true</active>
+        <description>If the Lead Source is Tech Tip then a Tech must be selected</description>
+        <errorConditionFormula>(ISPICKVAL(LeadSource , &quot;Tech Tip&quot;) &amp;&amp; ISBLANK(Tech__c) )
+
+&amp;&amp; 
+(($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorDisplayField>Tech__c</errorDisplayField>
+        <errorMessage>You must select a Tech since your Source is Tech Tip</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Vertical_Market_Specify_New_Value</fullName>
+        <active>true</active>
+        <description>This rule enforces users to choose Vertical Market value from the new values as the specified Vertical Market values no longer valid.</description>
+        <errorConditionFormula>(CASE( TEXT( Industry ) ,
+&quot;Airports &amp; Transportation&quot;, 1, 
+&quot;Assembly, Arenas, and Recreation&quot;, 1, 
+&quot;Education K-12&quot;, 1, 
+&quot;Financial / Office Space&quot;, 1, 
+&quot;Government Buildings&quot;, 1, 
+&quot;Healthcare&quot;, 1, 
+&quot;Higher Education&quot;, 1, 
+&quot;Life Sciences, Pharm, Biotech&quot;, 1, 
+&quot;Lodging / Hotels&quot;, 1, 
+&quot;Manufacturing Facilities and Warehouses&quot;, 1, 
+&quot;Mining&quot;, 1, 
+&quot;Miscellaneous Nonresidential Buildings&quot;, 1, 
+&quot;Multi-family Residential&quot;, 1, 
+&quot;Multi-Sector&quot;, 1,
+&quot;Religious Buildings&quot;, 1, 
+&quot;Stores and Restaurants / Retail&quot;, 1, 
+&quot;Data Centers And Telecommunications&quot;, 1, 
+&quot;Warehouses (excl. Manufacturer Owned)&quot;, 1, &quot;&quot;, 1,0)&lt;1)
+
+
+&amp;&amp; (($Profile.Name != &quot;System Administrator&quot; ) || ($Profile.Name = &quot;System Administrator&quot;&amp;&amp; PRIORVALUE(Bypass__c)=false &amp;&amp; (Bypass__c != true)))</errorConditionFormula>
+        <errorMessage>The specified Vertical Market value is no longer valid. Please select a new Vertical Market value from the list of options.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Apttus_Proposal__CreateProposal</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>sControl</linkType>
+        <masterLabel>Create Proposal</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <scontrol>Apttus_Proposal__aptsProposalCreateFromLead</scontrol>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Lead_Street}+{!Lead_City}+{!Lead_State}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Lead_Company}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Lead_Email}&lt;{!Lead_LastName}, {!Lead_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&amp;csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&amp;addr={!Lead_Address}</url>
+    </webLinks>
+</CustomObject>

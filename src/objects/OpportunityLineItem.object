@@ -1,0 +1,3562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>DST_Fields_for_Delete</fullName>
+        <description>DaikinToolsOpptyUpdateService.cls (when a DELETE call is made using the REST service)</description>
+        <displayedFields>
+            <field>DST_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>DST Fields for Delete</label>
+    </fieldSets>
+    <fields>
+        <fullName>APTPS_Product_Id__c</fullName>
+        <description>To identify products without price book entry while creating opportunity line items</description>
+        <externalId>false</externalId>
+        <label>Product Id</label>
+        <length>23</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Jurisdictions that were applied to the SalesTax Calculation, including name and rate.  Cannot be Edited.</inlineHelpText>
+        <label>Sales Tax Details</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__LineTax__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales Tax Calculated For This Line - Cannot Be Edited</inlineHelpText>
+        <label>Sales Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__LineTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TotalPrice  +  AVA_SFCORE__LineTax__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Tax Rate applied to this line.  Cannot be Edited</inlineHelpText>
+        <label>Sales Tax Rate</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Acceptable_Equal_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Other manufacturers we are competing with</inlineHelpText>
+        <label>Acceptable Equal 1</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AAF</fullName>
+                    <default>false</default>
+                    <label>AAF</label>
+                </value>
+                <value>
+                    <fullName>AAON</fullName>
+                    <default>false</default>
+                    <label>AAON</label>
+                </value>
+                <value>
+                    <fullName>ABB</fullName>
+                    <default>false</default>
+                    <label>ABB</label>
+                </value>
+                <value>
+                    <fullName>AboveAir</fullName>
+                    <default>false</default>
+                    <label>AboveAir</label>
+                </value>
+                <value>
+                    <fullName>Addison</fullName>
+                    <default>false</default>
+                    <label>Addison</label>
+                </value>
+                <value>
+                    <fullName>Advantix</fullName>
+                    <default>false</default>
+                    <label>Advantix</label>
+                </value>
+                <value>
+                    <fullName>Aerco Boilers</fullName>
+                    <default>false</default>
+                    <label>Aerco Boilers</label>
+                </value>
+                <value>
+                    <fullName>AMANA</fullName>
+                    <default>false</default>
+                    <label>AMANA</label>
+                </value>
+                <value>
+                    <fullName>Annexair</fullName>
+                    <default>false</default>
+                    <label>Annexair</label>
+                </value>
+                <value>
+                    <fullName>ArchtiChill</fullName>
+                    <default>false</default>
+                    <label>ArchtiChill</label>
+                </value>
+                <value>
+                    <fullName>Armstrong</fullName>
+                    <default>false</default>
+                    <label>Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Armstrong Pumps</fullName>
+                    <default>false</default>
+                    <label>Armstrong Pumps</label>
+                </value>
+                <value>
+                    <fullName>Aurora Pump</fullName>
+                    <default>false</default>
+                    <label>Aurora Pump</label>
+                </value>
+                <value>
+                    <fullName>Bard</fullName>
+                    <default>false</default>
+                    <label>Bard</label>
+                </value>
+                <value>
+                    <fullName>Belimo</fullName>
+                    <default>false</default>
+                    <label>Belimo</label>
+                </value>
+                <value>
+                    <fullName>Bosch</fullName>
+                    <default>false</default>
+                    <label>Bosch</label>
+                </value>
+                <value>
+                    <fullName>Bry-Air</fullName>
+                    <default>false</default>
+                    <label>Bry-Air</label>
+                </value>
+                <value>
+                    <fullName>Buffalo</fullName>
+                    <default>false</default>
+                    <label>Buffalo</label>
+                </value>
+                <value>
+                    <fullName>Camfill Farr</fullName>
+                    <default>false</default>
+                    <label>Camfill Farr</label>
+                </value>
+                <value>
+                    <fullName>CaptiveAire</fullName>
+                    <default>false</default>
+                    <label>CaptiveAire</label>
+                </value>
+                <value>
+                    <fullName>Carel USA</fullName>
+                    <default>false</default>
+                    <label>Carel USA</label>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chigo</fullName>
+                    <default>false</default>
+                    <label>Chigo</label>
+                </value>
+                <value>
+                    <fullName>Chil-Pak</fullName>
+                    <default>false</default>
+                    <label>Chil-Pak</label>
+                </value>
+                <value>
+                    <fullName>China Refrigeration</fullName>
+                    <default>false</default>
+                    <label>China Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>Cleaver Brooks</fullName>
+                    <default>false</default>
+                    <label>Cleaver Brooks</label>
+                </value>
+                <value>
+                    <fullName>ClimaCool</fullName>
+                    <default>false</default>
+                    <label>ClimaCool</label>
+                </value>
+                <value>
+                    <fullName>Climatecraft</fullName>
+                    <default>false</default>
+                    <label>Climatecraft</label>
+                </value>
+                <value>
+                    <fullName>Climate Master</fullName>
+                    <default>false</default>
+                    <label>Climate Master</label>
+                </value>
+                <value>
+                    <fullName>Climate Technologies</fullName>
+                    <default>false</default>
+                    <label>Climate Technologies</label>
+                </value>
+                <value>
+                    <fullName>Climateworx</fullName>
+                    <default>false</default>
+                    <label>Climateworx</label>
+                </value>
+                <value>
+                    <fullName>ClimatVenta</fullName>
+                    <default>false</default>
+                    <label>ClimatVenta</label>
+                </value>
+                <value>
+                    <fullName>Computaire</fullName>
+                    <default>false</default>
+                    <label>Computaire</label>
+                </value>
+                <value>
+                    <fullName>Dadanco</fullName>
+                    <default>false</default>
+                    <label>Dadanco</label>
+                </value>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>Daikin Applied</fullName>
+                    <default>false</default>
+                    <label>Daikin Applied</label>
+                </value>
+                <value>
+                    <fullName>Danfoss</fullName>
+                    <default>false</default>
+                    <label>Danfoss</label>
+                </value>
+                <value>
+                    <fullName>Data Aire</fullName>
+                    <default>false</default>
+                    <label>Data Aire</label>
+                </value>
+                <value>
+                    <fullName>Dectron</fullName>
+                    <default>false</default>
+                    <label>Dectron</label>
+                </value>
+                <value>
+                    <fullName>Delta Cooling Towers</fullName>
+                    <default>false</default>
+                    <label>Delta Cooling Towers</label>
+                </value>
+                <value>
+                    <fullName>dPoint Technologies</fullName>
+                    <default>false</default>
+                    <label>dPoint Technologies</label>
+                </value>
+                <value>
+                    <fullName>Drake Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Drake Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>DriSteem</fullName>
+                    <default>false</default>
+                    <label>DriSteem</label>
+                </value>
+                <value>
+                    <fullName>Dunham Bush</fullName>
+                    <default>false</default>
+                    <label>Dunham Bush</label>
+                </value>
+                <value>
+                    <fullName>EAS</fullName>
+                    <default>false</default>
+                    <label>EAS</label>
+                </value>
+                <value>
+                    <fullName>Ecochillers</fullName>
+                    <default>false</default>
+                    <label>Ecochillers</label>
+                </value>
+                <value>
+                    <fullName>Envirosep</fullName>
+                    <default>false</default>
+                    <label>Envirosep</label>
+                </value>
+                <value>
+                    <fullName>Epsilon</fullName>
+                    <default>false</default>
+                    <label>Epsilon</label>
+                </value>
+                <value>
+                    <fullName>Evapco</fullName>
+                    <default>false</default>
+                    <label>Evapco</label>
+                </value>
+                <value>
+                    <fullName>FHP</fullName>
+                    <default>false</default>
+                    <label>FHP</label>
+                </value>
+                <value>
+                    <fullName>First Company Friedrich</fullName>
+                    <default>false</default>
+                    <label>First Company Friedrich</label>
+                </value>
+                <value>
+                    <fullName>Fujitsu Corporation</fullName>
+                    <default>false</default>
+                    <label>Fujitsu Corporation</label>
+                </value>
+                <value>
+                    <fullName>GE</fullName>
+                    <default>false</default>
+                    <label>GE</label>
+                </value>
+                <value>
+                    <fullName>Global Plasma Solutions</fullName>
+                    <default>false</default>
+                    <label>Global Plasma Solutions</label>
+                </value>
+                <value>
+                    <fullName>Goodman</fullName>
+                    <default>false</default>
+                    <label>Goodman</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) RTU</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) RTU</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) Splits</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) Splits</label>
+                </value>
+                <value>
+                    <fullName>Governair</fullName>
+                    <default>false</default>
+                    <label>Governair</label>
+                </value>
+                <value>
+                    <fullName>Graham</fullName>
+                    <default>false</default>
+                    <label>Graham</label>
+                </value>
+                <value>
+                    <fullName>Gree</fullName>
+                    <default>false</default>
+                    <label>Gree</label>
+                </value>
+                <value>
+                    <fullName>Greenheck</fullName>
+                    <default>false</default>
+                    <label>Greenheck</label>
+                </value>
+                <value>
+                    <fullName>Heatcraft</fullName>
+                    <default>false</default>
+                    <label>Heatcraft</label>
+                </value>
+                <value>
+                    <fullName>Heatex America</fullName>
+                    <default>false</default>
+                    <label>Heatex America</label>
+                </value>
+                <value>
+                    <fullName>Heat Pipe Technology</fullName>
+                    <default>false</default>
+                    <label>Heat Pipe Technology</label>
+                </value>
+                <value>
+                    <fullName>Indeeco</fullName>
+                    <default>false</default>
+                    <label>Indeeco</label>
+                </value>
+                <value>
+                    <fullName>Ingenia</fullName>
+                    <default>false</default>
+                    <label>Ingenia</label>
+                </value>
+                <value>
+                    <fullName>Intelligent Equipment (IE)</fullName>
+                    <default>false</default>
+                    <label>Intelligent Equipment (IE)</label>
+                </value>
+                <value>
+                    <fullName>Johnson Controls</fullName>
+                    <default>false</default>
+                    <label>Johnson Controls</label>
+                </value>
+                <value>
+                    <fullName>Johnson Marcraft Air Rotation</fullName>
+                    <default>false</default>
+                    <label>Johnson Marcraft Air Rotation</label>
+                </value>
+                <value>
+                    <fullName>Krueger</fullName>
+                    <default>false</default>
+                    <label>Krueger</label>
+                </value>
+                <value>
+                    <fullName>Kyoto</fullName>
+                    <default>false</default>
+                    <label>Kyoto</label>
+                </value>
+                <value>
+                    <fullName>Lennox</fullName>
+                    <default>false</default>
+                    <label>Lennox</label>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                    <label>LG</label>
+                </value>
+                <value>
+                    <fullName>Liebert</fullName>
+                    <default>false</default>
+                    <label>Liebert</label>
+                </value>
+                <value>
+                    <fullName>LJ Wing</fullName>
+                    <default>false</default>
+                    <label>LJ Wing</label>
+                </value>
+                <value>
+                    <fullName>Lochinvar</fullName>
+                    <default>false</default>
+                    <label>Lochinvar</label>
+                </value>
+                <value>
+                    <fullName>Luvarta</fullName>
+                    <default>false</default>
+                    <label>Luvarta</label>
+                </value>
+                <value>
+                    <fullName>Madea</fullName>
+                    <default>false</default>
+                    <label>Madea</label>
+                </value>
+                <value>
+                    <fullName>MAFNA</fullName>
+                    <default>false</default>
+                    <label>MAFNA</label>
+                </value>
+                <value>
+                    <fullName>Mammoth</fullName>
+                    <default>false</default>
+                    <label>Mammoth</label>
+                </value>
+                <value>
+                    <fullName>Marcraft</fullName>
+                    <default>false</default>
+                    <label>Marcraft</label>
+                </value>
+                <value>
+                    <fullName>Maytag</fullName>
+                    <default>false</default>
+                    <label>Maytag</label>
+                </value>
+                <value>
+                    <fullName>Mdea</fullName>
+                    <default>false</default>
+                    <label>Mdea</label>
+                </value>
+                <value>
+                    <fullName>Metalaire</fullName>
+                    <default>false</default>
+                    <label>Metalaire</label>
+                </value>
+                <value>
+                    <fullName>Mitsubishi</fullName>
+                    <default>false</default>
+                    <label>Mitsubishi</label>
+                </value>
+                <value>
+                    <fullName>MJC/Trane</fullName>
+                    <default>false</default>
+                    <label>MJC/Trane</label>
+                </value>
+                <value>
+                    <fullName>Modine</fullName>
+                    <default>false</default>
+                    <label>Modine</label>
+                </value>
+                <value>
+                    <fullName>Motivair</fullName>
+                    <default>false</default>
+                    <label>Motivair</label>
+                </value>
+                <value>
+                    <fullName>Multi Aqua</fullName>
+                    <default>false</default>
+                    <label>Multi Aqua</label>
+                </value>
+                <value>
+                    <fullName>Multistack</fullName>
+                    <default>false</default>
+                    <label>Multistack</label>
+                </value>
+                <value>
+                    <fullName>Nailor</fullName>
+                    <default>false</default>
+                    <label>Nailor</label>
+                </value>
+                <value>
+                    <fullName>Nordyne</fullName>
+                    <default>false</default>
+                    <label>Nordyne</label>
+                </value>
+                <value>
+                    <fullName>Nortec</fullName>
+                    <default>false</default>
+                    <label>Nortec</label>
+                </value>
+                <value>
+                    <fullName>NovelAire</fullName>
+                    <default>false</default>
+                    <label>NovelAire</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Panasonic</fullName>
+                    <default>false</default>
+                    <label>Panasonic</label>
+                </value>
+                <value>
+                    <fullName>Petra</fullName>
+                    <default>false</default>
+                    <label>Petra</label>
+                </value>
+                <value>
+                    <fullName>PoolPak</fullName>
+                    <default>false</default>
+                    <label>PoolPak</label>
+                </value>
+                <value>
+                    <fullName>Portacool</fullName>
+                    <default>false</default>
+                    <label>Portacool</label>
+                </value>
+                <value>
+                    <fullName>Powermatic</fullName>
+                    <default>false</default>
+                    <label>Powermatic</label>
+                </value>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>false</default>
+                    <label>Price</label>
+                </value>
+                <value>
+                    <fullName>Pure Humidifiers</fullName>
+                    <default>false</default>
+                    <label>Pure Humidifiers</label>
+                </value>
+                <value>
+                    <fullName>Quantech (JCI rep&apos;d chiller)</fullName>
+                    <default>false</default>
+                    <label>Quantech (JCI rep&apos;d chiller)</label>
+                </value>
+                <value>
+                    <fullName>Reflok</fullName>
+                    <default>false</default>
+                    <label>Reflok</label>
+                </value>
+                <value>
+                    <fullName>RenewAire</fullName>
+                    <default>false</default>
+                    <label>RenewAire</label>
+                </value>
+                <value>
+                    <fullName>Ruskin</fullName>
+                    <default>false</default>
+                    <label>Ruskin</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Seibu Giken</fullName>
+                    <default>false</default>
+                    <label>Seibu Giken</label>
+                </value>
+                <value>
+                    <fullName>Semco</fullName>
+                    <default>false</default>
+                    <label>Semco</label>
+                </value>
+                <value>
+                    <fullName>Smardt</fullName>
+                    <default>false</default>
+                    <label>Smardt</label>
+                </value>
+                <value>
+                    <fullName>Smart DT</fullName>
+                    <default>false</default>
+                    <label>Smart DT</label>
+                </value>
+                <value>
+                    <fullName>SPX Cooling</fullName>
+                    <default>false</default>
+                    <label>SPX Cooling</label>
+                </value>
+                <value>
+                    <fullName>Square D</fullName>
+                    <default>false</default>
+                    <label>Square D</label>
+                </value>
+                <value>
+                    <fullName>Stellar</fullName>
+                    <default>false</default>
+                    <label>Stellar</label>
+                </value>
+                <value>
+                    <fullName>Sterling</fullName>
+                    <default>false</default>
+                    <label>Sterling</label>
+                </value>
+                <value>
+                    <fullName>Stultz</fullName>
+                    <default>false</default>
+                    <label>Stultz</label>
+                </value>
+                <value>
+                    <fullName>Systecon</fullName>
+                    <default>false</default>
+                    <label>Systecon</label>
+                </value>
+                <value>
+                    <fullName>Taco</fullName>
+                    <default>false</default>
+                    <label>Taco</label>
+                </value>
+                <value>
+                    <fullName>Tappan</fullName>
+                    <default>false</default>
+                    <label>Tappan</label>
+                </value>
+                <value>
+                    <fullName>TAS</fullName>
+                    <default>false</default>
+                    <label>TAS</label>
+                </value>
+                <value>
+                    <fullName>Tecogen</fullName>
+                    <default>false</default>
+                    <label>Tecogen</label>
+                </value>
+                <value>
+                    <fullName>Temtrol</fullName>
+                    <default>false</default>
+                    <label>Temtrol</label>
+                </value>
+                <value>
+                    <fullName>Thybar</fullName>
+                    <default>false</default>
+                    <label>Thybar</label>
+                </value>
+                <value>
+                    <fullName>Tigerflow</fullName>
+                    <default>false</default>
+                    <label>Tigerflow</label>
+                </value>
+                <value>
+                    <fullName>Tiger-Flow</fullName>
+                    <default>false</default>
+                    <label>Tiger-Flow</label>
+                </value>
+                <value>
+                    <fullName>Titus</fullName>
+                    <default>false</default>
+                    <label>Titus</label>
+                </value>
+                <value>
+                    <fullName>TMI</fullName>
+                    <default>false</default>
+                    <label>TMI</label>
+                </value>
+                <value>
+                    <fullName>Toshiba</fullName>
+                    <default>false</default>
+                    <label>Toshiba</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+                <value>
+                    <fullName>Triatek</fullName>
+                    <default>false</default>
+                    <label>Triatek</label>
+                </value>
+                <value>
+                    <fullName>Trox</fullName>
+                    <default>false</default>
+                    <label>Trox</label>
+                </value>
+                <value>
+                    <fullName>Tuttle and Bailey</fullName>
+                    <default>false</default>
+                    <label>Tuttle and Bailey</label>
+                </value>
+                <value>
+                    <fullName>UVDI</fullName>
+                    <default>false</default>
+                    <label>UVDI</label>
+                </value>
+                <value>
+                    <fullName>UV Resources</fullName>
+                    <default>false</default>
+                    <label>UV Resources</label>
+                </value>
+                <value>
+                    <fullName>Ventrol</fullName>
+                    <default>false</default>
+                    <label>Ventrol</label>
+                </value>
+                <value>
+                    <fullName>Whalen</fullName>
+                    <default>false</default>
+                    <label>Whalen</label>
+                </value>
+                <value>
+                    <fullName>Williams</fullName>
+                    <default>false</default>
+                    <label>Williams</label>
+                </value>
+                <value>
+                    <fullName>Yaskawa</fullName>
+                    <default>false</default>
+                    <label>Yaskawa</label>
+                </value>
+                <value>
+                    <fullName>York</fullName>
+                    <default>false</default>
+                    <label>York</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Acceptable_Equal_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Other manufacturers we are competing with</inlineHelpText>
+        <label>Acceptable Equal 2</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AAF</fullName>
+                    <default>false</default>
+                    <label>AAF</label>
+                </value>
+                <value>
+                    <fullName>AAON</fullName>
+                    <default>false</default>
+                    <label>AAON</label>
+                </value>
+                <value>
+                    <fullName>ABB</fullName>
+                    <default>false</default>
+                    <label>ABB</label>
+                </value>
+                <value>
+                    <fullName>AboveAir</fullName>
+                    <default>false</default>
+                    <label>AboveAir</label>
+                </value>
+                <value>
+                    <fullName>Addison</fullName>
+                    <default>false</default>
+                    <label>Addison</label>
+                </value>
+                <value>
+                    <fullName>Advantix</fullName>
+                    <default>false</default>
+                    <label>Advantix</label>
+                </value>
+                <value>
+                    <fullName>Aerco Boilers</fullName>
+                    <default>false</default>
+                    <label>Aerco Boilers</label>
+                </value>
+                <value>
+                    <fullName>AMANA</fullName>
+                    <default>false</default>
+                    <label>AMANA</label>
+                </value>
+                <value>
+                    <fullName>Annexair</fullName>
+                    <default>false</default>
+                    <label>Annexair</label>
+                </value>
+                <value>
+                    <fullName>ArchtiChill</fullName>
+                    <default>false</default>
+                    <label>ArchtiChill</label>
+                </value>
+                <value>
+                    <fullName>Armstrong</fullName>
+                    <default>false</default>
+                    <label>Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Armstrong Pumps</fullName>
+                    <default>false</default>
+                    <label>Armstrong Pumps</label>
+                </value>
+                <value>
+                    <fullName>Aurora Pump</fullName>
+                    <default>false</default>
+                    <label>Aurora Pump</label>
+                </value>
+                <value>
+                    <fullName>Bard</fullName>
+                    <default>false</default>
+                    <label>Bard</label>
+                </value>
+                <value>
+                    <fullName>Belimo</fullName>
+                    <default>false</default>
+                    <label>Belimo</label>
+                </value>
+                <value>
+                    <fullName>Bosch</fullName>
+                    <default>false</default>
+                    <label>Bosch</label>
+                </value>
+                <value>
+                    <fullName>Bry-Air</fullName>
+                    <default>false</default>
+                    <label>Bry-Air</label>
+                </value>
+                <value>
+                    <fullName>Buffalo</fullName>
+                    <default>false</default>
+                    <label>Buffalo</label>
+                </value>
+                <value>
+                    <fullName>Camfill Farr</fullName>
+                    <default>false</default>
+                    <label>Camfill Farr</label>
+                </value>
+                <value>
+                    <fullName>CaptiveAire</fullName>
+                    <default>false</default>
+                    <label>CaptiveAire</label>
+                </value>
+                <value>
+                    <fullName>Carel USA</fullName>
+                    <default>false</default>
+                    <label>Carel USA</label>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chigo</fullName>
+                    <default>false</default>
+                    <label>Chigo</label>
+                </value>
+                <value>
+                    <fullName>Chil-Pak</fullName>
+                    <default>false</default>
+                    <label>Chil-Pak</label>
+                </value>
+                <value>
+                    <fullName>China Refrigeration</fullName>
+                    <default>false</default>
+                    <label>China Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>Cleaver Brooks</fullName>
+                    <default>false</default>
+                    <label>Cleaver Brooks</label>
+                </value>
+                <value>
+                    <fullName>ClimaCool</fullName>
+                    <default>false</default>
+                    <label>ClimaCool</label>
+                </value>
+                <value>
+                    <fullName>Climatecraft</fullName>
+                    <default>false</default>
+                    <label>Climatecraft</label>
+                </value>
+                <value>
+                    <fullName>Climate Master</fullName>
+                    <default>false</default>
+                    <label>Climate Master</label>
+                </value>
+                <value>
+                    <fullName>Climate Technologies</fullName>
+                    <default>false</default>
+                    <label>Climate Technologies</label>
+                </value>
+                <value>
+                    <fullName>Climateworx</fullName>
+                    <default>false</default>
+                    <label>Climateworx</label>
+                </value>
+                <value>
+                    <fullName>Climaveneta</fullName>
+                    <default>false</default>
+                    <label>Climaveneta</label>
+                </value>
+                <value>
+                    <fullName>Computaire</fullName>
+                    <default>false</default>
+                    <label>Computaire</label>
+                </value>
+                <value>
+                    <fullName>Dadanco</fullName>
+                    <default>false</default>
+                    <label>Dadanco</label>
+                </value>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>Daikin Applied</fullName>
+                    <default>false</default>
+                    <label>Daikin Applied</label>
+                </value>
+                <value>
+                    <fullName>Danfoss</fullName>
+                    <default>false</default>
+                    <label>Danfoss</label>
+                </value>
+                <value>
+                    <fullName>Data Aire</fullName>
+                    <default>false</default>
+                    <label>Data Aire</label>
+                </value>
+                <value>
+                    <fullName>Dectron</fullName>
+                    <default>false</default>
+                    <label>Dectron</label>
+                </value>
+                <value>
+                    <fullName>Delta Cooling Towers</fullName>
+                    <default>false</default>
+                    <label>Delta Cooling Towers</label>
+                </value>
+                <value>
+                    <fullName>dPoint Technologies</fullName>
+                    <default>false</default>
+                    <label>dPoint Technologies</label>
+                </value>
+                <value>
+                    <fullName>Drake Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Drake Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>DriSteem</fullName>
+                    <default>false</default>
+                    <label>DriSteem</label>
+                </value>
+                <value>
+                    <fullName>Dunham Bush</fullName>
+                    <default>false</default>
+                    <label>Dunham Bush</label>
+                </value>
+                <value>
+                    <fullName>EAS</fullName>
+                    <default>false</default>
+                    <label>EAS</label>
+                </value>
+                <value>
+                    <fullName>Ecochillers</fullName>
+                    <default>false</default>
+                    <label>Ecochillers</label>
+                </value>
+                <value>
+                    <fullName>Envirosep</fullName>
+                    <default>false</default>
+                    <label>Envirosep</label>
+                </value>
+                <value>
+                    <fullName>Epsilon</fullName>
+                    <default>false</default>
+                    <label>Epsilon</label>
+                </value>
+                <value>
+                    <fullName>Evapco</fullName>
+                    <default>false</default>
+                    <label>Evapco</label>
+                </value>
+                <value>
+                    <fullName>FHP</fullName>
+                    <default>false</default>
+                    <label>FHP</label>
+                </value>
+                <value>
+                    <fullName>First Company</fullName>
+                    <default>false</default>
+                    <label>First Company</label>
+                </value>
+                <value>
+                    <fullName>Friedrich</fullName>
+                    <default>false</default>
+                    <label>Friedrich</label>
+                </value>
+                <value>
+                    <fullName>Fujitsu Corporation</fullName>
+                    <default>false</default>
+                    <label>Fujitsu Corporation</label>
+                </value>
+                <value>
+                    <fullName>GE</fullName>
+                    <default>false</default>
+                    <label>GE</label>
+                </value>
+                <value>
+                    <fullName>Global Plasma Solutions</fullName>
+                    <default>false</default>
+                    <label>Global Plasma Solutions</label>
+                </value>
+                <value>
+                    <fullName>Goodman</fullName>
+                    <default>false</default>
+                    <label>Goodman</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) RTU</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) RTU</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) Splits</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) Splits</label>
+                </value>
+                <value>
+                    <fullName>Governair</fullName>
+                    <default>false</default>
+                    <label>Governair</label>
+                </value>
+                <value>
+                    <fullName>Graham</fullName>
+                    <default>false</default>
+                    <label>Graham</label>
+                </value>
+                <value>
+                    <fullName>Gree</fullName>
+                    <default>false</default>
+                    <label>Gree</label>
+                </value>
+                <value>
+                    <fullName>Greenheck</fullName>
+                    <default>false</default>
+                    <label>Greenheck</label>
+                </value>
+                <value>
+                    <fullName>Heatcraft</fullName>
+                    <default>false</default>
+                    <label>Heatcraft</label>
+                </value>
+                <value>
+                    <fullName>Heatex America</fullName>
+                    <default>false</default>
+                    <label>Heatex America</label>
+                </value>
+                <value>
+                    <fullName>Heat Pipe Technology</fullName>
+                    <default>false</default>
+                    <label>Heat Pipe Technology</label>
+                </value>
+                <value>
+                    <fullName>Indeeco</fullName>
+                    <default>false</default>
+                    <label>Indeeco</label>
+                </value>
+                <value>
+                    <fullName>Ingenia</fullName>
+                    <default>false</default>
+                    <label>Ingenia</label>
+                </value>
+                <value>
+                    <fullName>Intelligent Equipment (IE)</fullName>
+                    <default>false</default>
+                    <label>Intelligent Equipment (IE)</label>
+                </value>
+                <value>
+                    <fullName>Johnson Controls</fullName>
+                    <default>false</default>
+                    <label>Johnson Controls</label>
+                </value>
+                <value>
+                    <fullName>Johnson Marcraft Air Rotation</fullName>
+                    <default>false</default>
+                    <label>Johnson Marcraft Air Rotation</label>
+                </value>
+                <value>
+                    <fullName>Krueger</fullName>
+                    <default>false</default>
+                    <label>Krueger</label>
+                </value>
+                <value>
+                    <fullName>Kyoto</fullName>
+                    <default>false</default>
+                    <label>Kyoto</label>
+                </value>
+                <value>
+                    <fullName>Lennox</fullName>
+                    <default>false</default>
+                    <label>Lennox</label>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                    <label>LG</label>
+                </value>
+                <value>
+                    <fullName>Liebert</fullName>
+                    <default>false</default>
+                    <label>Liebert</label>
+                </value>
+                <value>
+                    <fullName>LJ Wing</fullName>
+                    <default>false</default>
+                    <label>LJ Wing</label>
+                </value>
+                <value>
+                    <fullName>Lochinvar</fullName>
+                    <default>false</default>
+                    <label>Lochinvar</label>
+                </value>
+                <value>
+                    <fullName>Luvarta</fullName>
+                    <default>false</default>
+                    <label>Luvarta</label>
+                </value>
+                <value>
+                    <fullName>Madea</fullName>
+                    <default>false</default>
+                    <label>Madea</label>
+                </value>
+                <value>
+                    <fullName>MAFNA</fullName>
+                    <default>false</default>
+                    <label>MAFNA</label>
+                </value>
+                <value>
+                    <fullName>Mammoth</fullName>
+                    <default>false</default>
+                    <label>Mammoth</label>
+                </value>
+                <value>
+                    <fullName>Marcraft</fullName>
+                    <default>false</default>
+                    <label>Marcraft</label>
+                </value>
+                <value>
+                    <fullName>Maytag</fullName>
+                    <default>false</default>
+                    <label>Maytag</label>
+                </value>
+                <value>
+                    <fullName>Mdea</fullName>
+                    <default>false</default>
+                    <label>Mdea</label>
+                </value>
+                <value>
+                    <fullName>Metailaire</fullName>
+                    <default>false</default>
+                    <label>Metailaire</label>
+                </value>
+                <value>
+                    <fullName>Mitsubishi</fullName>
+                    <default>false</default>
+                    <label>Mitsubishi</label>
+                </value>
+                <value>
+                    <fullName>MJC/Trane</fullName>
+                    <default>false</default>
+                    <label>MJC/Trane</label>
+                </value>
+                <value>
+                    <fullName>Modine</fullName>
+                    <default>false</default>
+                    <label>Modine</label>
+                </value>
+                <value>
+                    <fullName>Motivair</fullName>
+                    <default>false</default>
+                    <label>Motivair</label>
+                </value>
+                <value>
+                    <fullName>Multi Aqua</fullName>
+                    <default>false</default>
+                    <label>Multi Aqua</label>
+                </value>
+                <value>
+                    <fullName>Multistack</fullName>
+                    <default>false</default>
+                    <label>Multistack</label>
+                </value>
+                <value>
+                    <fullName>Nailor</fullName>
+                    <default>false</default>
+                    <label>Nailor</label>
+                </value>
+                <value>
+                    <fullName>Nordyne</fullName>
+                    <default>false</default>
+                    <label>Nordyne</label>
+                </value>
+                <value>
+                    <fullName>Nortec</fullName>
+                    <default>false</default>
+                    <label>Nortec</label>
+                </value>
+                <value>
+                    <fullName>NovelAire</fullName>
+                    <default>false</default>
+                    <label>NovelAire</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Panasonic</fullName>
+                    <default>false</default>
+                    <label>Panasonic</label>
+                </value>
+                <value>
+                    <fullName>Petra</fullName>
+                    <default>false</default>
+                    <label>Petra</label>
+                </value>
+                <value>
+                    <fullName>PoolPak</fullName>
+                    <default>false</default>
+                    <label>PoolPak</label>
+                </value>
+                <value>
+                    <fullName>Portacool</fullName>
+                    <default>false</default>
+                    <label>Portacool</label>
+                </value>
+                <value>
+                    <fullName>Powermatic</fullName>
+                    <default>false</default>
+                    <label>Powermatic</label>
+                </value>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>false</default>
+                    <label>Price</label>
+                </value>
+                <value>
+                    <fullName>Pure Humidifiers</fullName>
+                    <default>false</default>
+                    <label>Pure Humidifiers</label>
+                </value>
+                <value>
+                    <fullName>Quantech (JCI rep&apos;d chiller)</fullName>
+                    <default>false</default>
+                    <label>Quantech (JCI rep&apos;d chiller)</label>
+                </value>
+                <value>
+                    <fullName>Reflok</fullName>
+                    <default>false</default>
+                    <label>Reflok</label>
+                </value>
+                <value>
+                    <fullName>RenewAire</fullName>
+                    <default>false</default>
+                    <label>RenewAire</label>
+                </value>
+                <value>
+                    <fullName>Ruskin</fullName>
+                    <default>false</default>
+                    <label>Ruskin</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Seibu Giken</fullName>
+                    <default>false</default>
+                    <label>Seibu Giken</label>
+                </value>
+                <value>
+                    <fullName>Semco</fullName>
+                    <default>false</default>
+                    <label>Semco</label>
+                </value>
+                <value>
+                    <fullName>Smardt</fullName>
+                    <default>false</default>
+                    <label>Smardt</label>
+                </value>
+                <value>
+                    <fullName>Smart DT</fullName>
+                    <default>false</default>
+                    <label>Smart DT</label>
+                </value>
+                <value>
+                    <fullName>SPX Cooling</fullName>
+                    <default>false</default>
+                    <label>SPX Cooling</label>
+                </value>
+                <value>
+                    <fullName>Square D</fullName>
+                    <default>false</default>
+                    <label>Square D</label>
+                </value>
+                <value>
+                    <fullName>Stellar</fullName>
+                    <default>false</default>
+                    <label>Stellar</label>
+                </value>
+                <value>
+                    <fullName>Sterling</fullName>
+                    <default>false</default>
+                    <label>Sterling</label>
+                </value>
+                <value>
+                    <fullName>Stultz</fullName>
+                    <default>false</default>
+                    <label>Stultz</label>
+                </value>
+                <value>
+                    <fullName>Systecon</fullName>
+                    <default>false</default>
+                    <label>Systecon</label>
+                </value>
+                <value>
+                    <fullName>Taco</fullName>
+                    <default>false</default>
+                    <label>Taco</label>
+                </value>
+                <value>
+                    <fullName>Tappan</fullName>
+                    <default>false</default>
+                    <label>Tappan</label>
+                </value>
+                <value>
+                    <fullName>TAS</fullName>
+                    <default>false</default>
+                    <label>TAS</label>
+                </value>
+                <value>
+                    <fullName>Tecogen</fullName>
+                    <default>false</default>
+                    <label>Tecogen</label>
+                </value>
+                <value>
+                    <fullName>Temtrol</fullName>
+                    <default>false</default>
+                    <label>Temtrol</label>
+                </value>
+                <value>
+                    <fullName>Thybar</fullName>
+                    <default>false</default>
+                    <label>Thybar</label>
+                </value>
+                <value>
+                    <fullName>Tigerflow</fullName>
+                    <default>false</default>
+                    <label>Tigerflow</label>
+                </value>
+                <value>
+                    <fullName>Tiger-Flow</fullName>
+                    <default>false</default>
+                    <label>Tiger-Flow</label>
+                </value>
+                <value>
+                    <fullName>Titus</fullName>
+                    <default>false</default>
+                    <label>Titus</label>
+                </value>
+                <value>
+                    <fullName>TMI</fullName>
+                    <default>false</default>
+                    <label>TMI</label>
+                </value>
+                <value>
+                    <fullName>Toshiba</fullName>
+                    <default>false</default>
+                    <label>Toshiba</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+                <value>
+                    <fullName>Triatek</fullName>
+                    <default>false</default>
+                    <label>Triatek</label>
+                </value>
+                <value>
+                    <fullName>Trox</fullName>
+                    <default>false</default>
+                    <label>Trox</label>
+                </value>
+                <value>
+                    <fullName>Tuttle and Bailey</fullName>
+                    <default>false</default>
+                    <label>Tuttle and Bailey</label>
+                </value>
+                <value>
+                    <fullName>UVDI</fullName>
+                    <default>false</default>
+                    <label>UVDI</label>
+                </value>
+                <value>
+                    <fullName>UV Resources</fullName>
+                    <default>false</default>
+                    <label>UV Resources</label>
+                </value>
+                <value>
+                    <fullName>Ventrol</fullName>
+                    <default>false</default>
+                    <label>Ventrol</label>
+                </value>
+                <value>
+                    <fullName>Whalen</fullName>
+                    <default>false</default>
+                    <label>Whalen</label>
+                </value>
+                <value>
+                    <fullName>Williams</fullName>
+                    <default>false</default>
+                    <label>Williams</label>
+                </value>
+                <value>
+                    <fullName>Yaskawa</fullName>
+                    <default>false</default>
+                    <label>Yaskawa</label>
+                </value>
+                <value>
+                    <fullName>York</fullName>
+                    <default>false</default>
+                    <label>York</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Actual_Gross_Margin__c</fullName>
+        <description>Created for the DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>Actual Gross Margin $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Gross_Marginpct__c</fullName>
+        <description>Created for the DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>Actual Gross Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Ship_Date__c</fullName>
+        <description>Estimated Ship Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual Ship Date</inlineHelpText>
+        <label>Actual Ship Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount USD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Discount_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount %</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_QPConfig_LineType__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Type</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Auto_Number__c</fullName>
+        <displayFormat>{00000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>Auto_Number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>BOD_Vendor__c</fullName>
+        <description>Created for the DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>BOD Vendor</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AAF</fullName>
+                    <default>false</default>
+                    <label>AAF</label>
+                </value>
+                <value>
+                    <fullName>AAON</fullName>
+                    <default>false</default>
+                    <label>AAON</label>
+                </value>
+                <value>
+                    <fullName>ABB</fullName>
+                    <default>false</default>
+                    <label>ABB</label>
+                </value>
+                <value>
+                    <fullName>AboveAir</fullName>
+                    <default>false</default>
+                    <label>AboveAir</label>
+                </value>
+                <value>
+                    <fullName>Addison</fullName>
+                    <default>false</default>
+                    <label>Addison</label>
+                </value>
+                <value>
+                    <fullName>Advantix</fullName>
+                    <default>false</default>
+                    <label>Advantix</label>
+                </value>
+                <value>
+                    <fullName>Aerco Boilers</fullName>
+                    <default>false</default>
+                    <label>Aerco Boilers</label>
+                </value>
+                <value>
+                    <fullName>AMANA</fullName>
+                    <default>false</default>
+                    <label>AMANA</label>
+                </value>
+                <value>
+                    <fullName>Annexair</fullName>
+                    <default>false</default>
+                    <label>Annexair</label>
+                </value>
+                <value>
+                    <fullName>ArchtiChill</fullName>
+                    <default>false</default>
+                    <label>ArchtiChill</label>
+                </value>
+                <value>
+                    <fullName>Armstrong</fullName>
+                    <default>false</default>
+                    <label>Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Armstrong Pumps</fullName>
+                    <default>false</default>
+                    <label>Armstrong Pumps</label>
+                </value>
+                <value>
+                    <fullName>Aurora Pump</fullName>
+                    <default>false</default>
+                    <label>Aurora Pump</label>
+                </value>
+                <value>
+                    <fullName>Bard</fullName>
+                    <default>false</default>
+                    <label>Bard</label>
+                </value>
+                <value>
+                    <fullName>Belimo</fullName>
+                    <default>false</default>
+                    <label>Belimo</label>
+                </value>
+                <value>
+                    <fullName>Bosch</fullName>
+                    <default>false</default>
+                    <label>Bosch</label>
+                </value>
+                <value>
+                    <fullName>Bry-Air</fullName>
+                    <default>false</default>
+                    <label>Bry-Air</label>
+                </value>
+                <value>
+                    <fullName>Buffalo</fullName>
+                    <default>false</default>
+                    <label>Buffalo</label>
+                </value>
+                <value>
+                    <fullName>Camfill Farr</fullName>
+                    <default>false</default>
+                    <label>Camfill Farr</label>
+                </value>
+                <value>
+                    <fullName>CaptiveAire</fullName>
+                    <default>false</default>
+                    <label>CaptiveAire</label>
+                </value>
+                <value>
+                    <fullName>Carel USA</fullName>
+                    <default>false</default>
+                    <label>Carel USA</label>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chigo</fullName>
+                    <default>false</default>
+                    <label>Chigo</label>
+                </value>
+                <value>
+                    <fullName>Chil-Pak</fullName>
+                    <default>false</default>
+                    <label>Chil-Pak</label>
+                </value>
+                <value>
+                    <fullName>China Refrigeration</fullName>
+                    <default>false</default>
+                    <label>China Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>Cleaver Brooks</fullName>
+                    <default>false</default>
+                    <label>Cleaver Brooks</label>
+                </value>
+                <value>
+                    <fullName>ClimaCool</fullName>
+                    <default>false</default>
+                    <label>ClimaCool</label>
+                </value>
+                <value>
+                    <fullName>Climatecraft</fullName>
+                    <default>false</default>
+                    <label>Climatecraft</label>
+                </value>
+                <value>
+                    <fullName>Climate Master</fullName>
+                    <default>false</default>
+                    <label>Climate Master</label>
+                </value>
+                <value>
+                    <fullName>Climate Technologies</fullName>
+                    <default>false</default>
+                    <label>Climate Technologies</label>
+                </value>
+                <value>
+                    <fullName>Climateworx</fullName>
+                    <default>false</default>
+                    <label>Climateworx</label>
+                </value>
+                <value>
+                    <fullName>ClimatVenta</fullName>
+                    <default>false</default>
+                    <label>ClimatVenta</label>
+                </value>
+                <value>
+                    <fullName>Computaire</fullName>
+                    <default>false</default>
+                    <label>Computaire</label>
+                </value>
+                <value>
+                    <fullName>Dadanco</fullName>
+                    <default>false</default>
+                    <label>Dadanco</label>
+                </value>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>Daikin Applied</fullName>
+                    <default>false</default>
+                    <label>Daikin Applied</label>
+                </value>
+                <value>
+                    <fullName>Danfoss</fullName>
+                    <default>false</default>
+                    <label>Danfoss</label>
+                </value>
+                <value>
+                    <fullName>Data Aire</fullName>
+                    <default>false</default>
+                    <label>Data Aire</label>
+                </value>
+                <value>
+                    <fullName>Dectron</fullName>
+                    <default>false</default>
+                    <label>Dectron</label>
+                </value>
+                <value>
+                    <fullName>Delta Cooling Towers</fullName>
+                    <default>false</default>
+                    <label>Delta Cooling Towers</label>
+                </value>
+                <value>
+                    <fullName>dPoint Technologies</fullName>
+                    <default>false</default>
+                    <label>dPoint Technologies</label>
+                </value>
+                <value>
+                    <fullName>Drake Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Drake Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>DriSteem</fullName>
+                    <default>false</default>
+                    <label>DriSteem</label>
+                </value>
+                <value>
+                    <fullName>Dunham Bush</fullName>
+                    <default>false</default>
+                    <label>Dunham Bush</label>
+                </value>
+                <value>
+                    <fullName>EAS</fullName>
+                    <default>false</default>
+                    <label>EAS</label>
+                </value>
+                <value>
+                    <fullName>Ecochillers</fullName>
+                    <default>false</default>
+                    <label>Ecochillers</label>
+                </value>
+                <value>
+                    <fullName>Envirosep</fullName>
+                    <default>false</default>
+                    <label>Envirosep</label>
+                </value>
+                <value>
+                    <fullName>Epsilon</fullName>
+                    <default>false</default>
+                    <label>Epsilon</label>
+                </value>
+                <value>
+                    <fullName>Evapco</fullName>
+                    <default>false</default>
+                    <label>Evapco</label>
+                </value>
+                <value>
+                    <fullName>FHP</fullName>
+                    <default>false</default>
+                    <label>FHP</label>
+                </value>
+                <value>
+                    <fullName>First Company</fullName>
+                    <default>false</default>
+                    <label>First Company</label>
+                </value>
+                <value>
+                    <fullName>Friedrich</fullName>
+                    <default>false</default>
+                    <label>Friedrich</label>
+                </value>
+                <value>
+                    <fullName>Fujitsu Corporation</fullName>
+                    <default>false</default>
+                    <label>Fujitsu Corporation</label>
+                </value>
+                <value>
+                    <fullName>GE</fullName>
+                    <default>false</default>
+                    <label>GE</label>
+                </value>
+                <value>
+                    <fullName>Global Plasma Solutions</fullName>
+                    <default>false</default>
+                    <label>Global Plasma Solutions</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) RTU</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) RTU</label>
+                </value>
+                <value>
+                    <fullName>Goodman (or Daikin) Splits</fullName>
+                    <default>false</default>
+                    <label>Goodman (or Daikin) Splits</label>
+                </value>
+                <value>
+                    <fullName>Governair</fullName>
+                    <default>false</default>
+                    <label>Governair</label>
+                </value>
+                <value>
+                    <fullName>Graham</fullName>
+                    <default>false</default>
+                    <label>Graham</label>
+                </value>
+                <value>
+                    <fullName>Gree</fullName>
+                    <default>false</default>
+                    <label>Gree</label>
+                </value>
+                <value>
+                    <fullName>Greenheck</fullName>
+                    <default>false</default>
+                    <label>Greenheck</label>
+                </value>
+                <value>
+                    <fullName>Heatcraft</fullName>
+                    <default>false</default>
+                    <label>Heatcraft</label>
+                </value>
+                <value>
+                    <fullName>Heatex America</fullName>
+                    <default>false</default>
+                    <label>Heatex America</label>
+                </value>
+                <value>
+                    <fullName>Heat Pipe Technology</fullName>
+                    <default>false</default>
+                    <label>Heat Pipe Technology</label>
+                </value>
+                <value>
+                    <fullName>Indeeco</fullName>
+                    <default>false</default>
+                    <label>Indeeco</label>
+                </value>
+                <value>
+                    <fullName>Ingenia</fullName>
+                    <default>false</default>
+                    <label>Ingenia</label>
+                </value>
+                <value>
+                    <fullName>Intelligent Equipment (IE)</fullName>
+                    <default>false</default>
+                    <label>Intelligent Equipment (IE)</label>
+                </value>
+                <value>
+                    <fullName>Johnson Controls</fullName>
+                    <default>false</default>
+                    <label>Johnson Controls</label>
+                </value>
+                <value>
+                    <fullName>Johnson Marcraft Air Rotation</fullName>
+                    <default>false</default>
+                    <label>Johnson Marcraft Air Rotation</label>
+                </value>
+                <value>
+                    <fullName>Krueger</fullName>
+                    <default>false</default>
+                    <label>Krueger</label>
+                </value>
+                <value>
+                    <fullName>Kyoto</fullName>
+                    <default>false</default>
+                    <label>Kyoto</label>
+                </value>
+                <value>
+                    <fullName>Lennox</fullName>
+                    <default>false</default>
+                    <label>Lennox</label>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                    <label>LG</label>
+                </value>
+                <value>
+                    <fullName>Liebert</fullName>
+                    <default>false</default>
+                    <label>Liebert</label>
+                </value>
+                <value>
+                    <fullName>LJ Wing</fullName>
+                    <default>false</default>
+                    <label>LJ Wing</label>
+                </value>
+                <value>
+                    <fullName>Lochinvar</fullName>
+                    <default>false</default>
+                    <label>Lochinvar</label>
+                </value>
+                <value>
+                    <fullName>Luvarta</fullName>
+                    <default>false</default>
+                    <label>Luvarta</label>
+                </value>
+                <value>
+                    <fullName>Madea</fullName>
+                    <default>false</default>
+                    <label>Madea</label>
+                </value>
+                <value>
+                    <fullName>MAFNA</fullName>
+                    <default>false</default>
+                    <label>MAFNA</label>
+                </value>
+                <value>
+                    <fullName>Mammoth</fullName>
+                    <default>false</default>
+                    <label>Mammoth</label>
+                </value>
+                <value>
+                    <fullName>Marcraft</fullName>
+                    <default>false</default>
+                    <label>Marcraft</label>
+                </value>
+                <value>
+                    <fullName>Maytag</fullName>
+                    <default>false</default>
+                    <label>Maytag</label>
+                </value>
+                <value>
+                    <fullName>Mdea</fullName>
+                    <default>false</default>
+                    <label>Mdea</label>
+                </value>
+                <value>
+                    <fullName>Metalaire</fullName>
+                    <default>false</default>
+                    <label>Metalaire</label>
+                </value>
+                <value>
+                    <fullName>Mitsubishi</fullName>
+                    <default>false</default>
+                    <label>Mitsubishi</label>
+                </value>
+                <value>
+                    <fullName>MJC/Trane</fullName>
+                    <default>false</default>
+                    <label>MJC/Trane</label>
+                </value>
+                <value>
+                    <fullName>Modine</fullName>
+                    <default>false</default>
+                    <label>Modine</label>
+                </value>
+                <value>
+                    <fullName>Motivair</fullName>
+                    <default>false</default>
+                    <label>Motivair</label>
+                </value>
+                <value>
+                    <fullName>Multi Aqua</fullName>
+                    <default>false</default>
+                    <label>Multi Aqua</label>
+                </value>
+                <value>
+                    <fullName>Multistack</fullName>
+                    <default>false</default>
+                    <label>Multistack</label>
+                </value>
+                <value>
+                    <fullName>Nailor</fullName>
+                    <default>false</default>
+                    <label>Nailor</label>
+                </value>
+                <value>
+                    <fullName>Nordyne</fullName>
+                    <default>false</default>
+                    <label>Nordyne</label>
+                </value>
+                <value>
+                    <fullName>Nortec</fullName>
+                    <default>false</default>
+                    <label>Nortec</label>
+                </value>
+                <value>
+                    <fullName>NovelAire</fullName>
+                    <default>false</default>
+                    <label>NovelAire</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Panasonic</fullName>
+                    <default>false</default>
+                    <label>Panasonic</label>
+                </value>
+                <value>
+                    <fullName>Petra</fullName>
+                    <default>false</default>
+                    <label>Petra</label>
+                </value>
+                <value>
+                    <fullName>PoolPak</fullName>
+                    <default>false</default>
+                    <label>PoolPak</label>
+                </value>
+                <value>
+                    <fullName>Portacool</fullName>
+                    <default>false</default>
+                    <label>Portacool</label>
+                </value>
+                <value>
+                    <fullName>Powermatic</fullName>
+                    <default>false</default>
+                    <label>Powermatic</label>
+                </value>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>false</default>
+                    <label>Price</label>
+                </value>
+                <value>
+                    <fullName>Pure Humidifiers</fullName>
+                    <default>false</default>
+                    <label>Pure Humidifiers</label>
+                </value>
+                <value>
+                    <fullName>Quantech (JCI rep&apos;d chiller)</fullName>
+                    <default>false</default>
+                    <label>Quantech (JCI rep&apos;d chiller)</label>
+                </value>
+                <value>
+                    <fullName>Reflok</fullName>
+                    <default>false</default>
+                    <label>Reflok</label>
+                </value>
+                <value>
+                    <fullName>RenewAire</fullName>
+                    <default>false</default>
+                    <label>RenewAire</label>
+                </value>
+                <value>
+                    <fullName>Ruskin</fullName>
+                    <default>false</default>
+                    <label>Ruskin</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Seibu Giken</fullName>
+                    <default>false</default>
+                    <label>Seibu Giken</label>
+                </value>
+                <value>
+                    <fullName>Smardt</fullName>
+                    <default>false</default>
+                    <label>Smardt</label>
+                </value>
+                <value>
+                    <fullName>SPX Cooling</fullName>
+                    <default>false</default>
+                    <label>SPX Cooling</label>
+                </value>
+                <value>
+                    <fullName>Square D</fullName>
+                    <default>false</default>
+                    <label>Square D</label>
+                </value>
+                <value>
+                    <fullName>Stellar</fullName>
+                    <default>false</default>
+                    <label>Stellar</label>
+                </value>
+                <value>
+                    <fullName>Sterling</fullName>
+                    <default>false</default>
+                    <label>Sterling</label>
+                </value>
+                <value>
+                    <fullName>Stultz</fullName>
+                    <default>false</default>
+                    <label>Stultz</label>
+                </value>
+                <value>
+                    <fullName>Systecon</fullName>
+                    <default>false</default>
+                    <label>Systecon</label>
+                </value>
+                <value>
+                    <fullName>Taco</fullName>
+                    <default>false</default>
+                    <label>Taco</label>
+                </value>
+                <value>
+                    <fullName>Tappan</fullName>
+                    <default>false</default>
+                    <label>Tappan</label>
+                </value>
+                <value>
+                    <fullName>TAS</fullName>
+                    <default>false</default>
+                    <label>TAS</label>
+                </value>
+                <value>
+                    <fullName>Tecogen</fullName>
+                    <default>false</default>
+                    <label>Tecogen</label>
+                </value>
+                <value>
+                    <fullName>Temtrol</fullName>
+                    <default>false</default>
+                    <label>Temtrol</label>
+                </value>
+                <value>
+                    <fullName>Thybar</fullName>
+                    <default>false</default>
+                    <label>Thybar</label>
+                </value>
+                <value>
+                    <fullName>Tiger-Flow</fullName>
+                    <default>false</default>
+                    <label>Tiger-Flow</label>
+                </value>
+                <value>
+                    <fullName>Titus</fullName>
+                    <default>false</default>
+                    <label>Titus</label>
+                </value>
+                <value>
+                    <fullName>TMI</fullName>
+                    <default>false</default>
+                    <label>TMI</label>
+                </value>
+                <value>
+                    <fullName>Toshiba</fullName>
+                    <default>false</default>
+                    <label>Toshiba</label>
+                </value>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+                <value>
+                    <fullName>Triatek</fullName>
+                    <default>false</default>
+                    <label>Triatek</label>
+                </value>
+                <value>
+                    <fullName>Trox</fullName>
+                    <default>false</default>
+                    <label>Trox</label>
+                </value>
+                <value>
+                    <fullName>Tuttle and Bailey</fullName>
+                    <default>false</default>
+                    <label>Tuttle and Bailey</label>
+                </value>
+                <value>
+                    <fullName>UVDI</fullName>
+                    <default>false</default>
+                    <label>UVDI</label>
+                </value>
+                <value>
+                    <fullName>UV Resources</fullName>
+                    <default>false</default>
+                    <label>UV Resources</label>
+                </value>
+                <value>
+                    <fullName>Ventrol</fullName>
+                    <default>false</default>
+                    <label>Ventrol</label>
+                </value>
+                <value>
+                    <fullName>Whalen</fullName>
+                    <default>false</default>
+                    <label>Whalen</label>
+                </value>
+                <value>
+                    <fullName>Williams</fullName>
+                    <default>false</default>
+                    <label>Williams</label>
+                </value>
+                <value>
+                    <fullName>Yaskawa</fullName>
+                    <default>false</default>
+                    <label>Yaskawa</label>
+                </value>
+                <value>
+                    <fullName>York</fullName>
+                    <default>false</default>
+                    <label>York</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Base_Bid_Alternate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Alternate?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Converted_to_Asset__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Converted to Asset?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cost__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost Total $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Custom_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>10000</length>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_Invoice_Number__c</fullName>
+        <description>Customer Invoice #</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Invoice #</inlineHelpText>
+        <label>Customer Invoice #</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DST_ID__c</fullName>
+        <description>Added by Gary Sanders.   Will be logic done by Daikin that fills this.  Added for development and testing activities before this is done.  Some records will be filled with dummy values for testing</description>
+        <externalId>true</externalId>
+        <label>DST ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DT_App_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>DT App Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DT_Code_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>DT Code Item</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>12</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DT_Format_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>DT Format Number</label>
+        <length>3</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DT_InputsAndOutputs__c</fullName>
+        <externalId>false</externalId>
+        <label>DT InputsAndOutputs</label>
+        <length>15000</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DT_Item_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>DT Item Status</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DT_PCL__c</fullName>
+        <externalId>false</externalId>
+        <label>DT PCL</label>
+        <length>4</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DT_Parent_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>DT Parent ID</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount_Percent__c</fullName>
+        <description>Equipment + Freight Discount %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment + Freight Discount %</inlineHelpText>
+        <label>Equipment + Freight Discount %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <description>Equipment + Freight Discount $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment + Freight Discount $
+Divide this amount by Quantity of Product item</inlineHelpText>
+        <label>Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Gross_Margin__c</fullName>
+        <description>Equipment Gross Margin %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment Gross Margin %</inlineHelpText>
+        <label>Equipment Gross Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Price_FOB__c</fullName>
+        <description>Unit Equipment Cost $
+(Item Price * Multiplier (PAR) ) + Commission Add On + Start-up Add On + Service Add On + Misc. Add On One $ + Misc. Add On Two $ + Misc. Add On Three $ + Misc. Add On Four $</description>
+        <externalId>false</externalId>
+        <formula>ROUND(( List_Price__c  * Multiplier_PAR__c),2)  + Service_Add_On__c + Start_up_Add_On__c + Outsource_Add_On__c +  Misc_Add_On_One_Amount__c +  Misc_Add_On_Two_Amount__c +  Misc_Add_On_Three_Amount__c +  Misc_Add_On_Four_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Equipment Cost $
+(List Price $ * Multiplier (PAR) ) + Commission Add On + Start-up Add On + Service Add On + Misc. Add On One $ + Misc. Add On Two $ + Misc. Add On Three $ + Misc. Add On Four $</inlineHelpText>
+        <label>Unit Equipment Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_With_F_L__c</fullName>
+        <description>Total Equipment + Freight Cost $
+(Unit Equipment Cost $  +  Unit Freight Cost $) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>(Equipment_Price_FOB__c  +  Total_Freight_Logistic__c) *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equipment + Freight Cost $
+(Unit Equipment Cost $  +  Unit Freight Cost $) * Quantity</inlineHelpText>
+        <label>Total Equipment + Freight Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <defaultValue>1.0</defaultValue>
+        <description>Exchange rate from USD to Opportunity&apos;s Local Currency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exchange rate from USD to Opportunity&apos;s Local Currency.</inlineHelpText>
+        <label>Exchange Rate</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extend__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extend</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Freight_Gross_Margin__c</fullName>
+        <description>Freight Gross Margin %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Freight Gross Margin %</inlineHelpText>
+        <label>Freight Gross Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Freight_Percent__c</fullName>
+        <description>Domestic Freight %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Domestic Freight %</inlineHelpText>
+        <label>Domestic Freight %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Freight__c</fullName>
+        <description>Domestic Freight $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Domestic Freight $
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Domestic Freight $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gross_Margin_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>GM USD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gross_Margin_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>GM %</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IsAccessory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Accessory</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsAlternate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Alternate</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Cancelled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Cancelled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Not_Found__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Not Found</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Outside_Vendor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Outside Vendor</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Priced__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Priced</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Quick_Ship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Quick Ship</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Stock__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Stock</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Item_Number__c</fullName>
+        <description>Item #</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item #</inlineHelpText>
+        <label>Item #</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Property_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Property Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Property_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Property Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Amount_Report__c</fullName>
+        <description>Field to be used in reports to display correct Total Opportunity Product Amount.</description>
+        <externalId>false</externalId>
+        <formula>Total_Selling_Price_w_Log_Disc__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Field to be used in reports to display correct Total Opportunity Product Amount.</inlineHelpText>
+        <label>Line Amount (Report)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Line_Expected_Revenue_Report__c</fullName>
+        <description>Field to be used in reports to display correct Total Opportunity Product Expected Revenue.</description>
+        <externalId>false</externalId>
+        <formula>Line_Amount_Report__c *  Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Field to be used in reports to display correct Total Opportunity Product Expected Revenue.</inlineHelpText>
+        <label>Line Expected Revenue (Report)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>List_Price_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * List_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>List Price Total $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Local_Currency__c</fullName>
+        <description>Local Currency of Opportunity.</description>
+        <externalId>false</externalId>
+        <formula>TEXT((Opportunity.Local_Currency__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Currency of Opportunity.</inlineHelpText>
+        <label>Local Currency</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Logistics_Add_On__c</fullName>
+        <description>Export Freight Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Export Freight Add On $
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Export Freight Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Margin_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin %</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Four_Amount__c</fullName>
+        <description>Specifies amount of fourth miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of fourth miscellaneous cost add on.
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Misc. Add On Four $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Four_Type__c</fullName>
+        <description>Specifies type of fourth miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of fourth miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Four Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Contingency</fullName>
+                    <default>false</default>
+                    <label>Contingency</label>
+                </value>
+                <value>
+                    <fullName>Contractor Markup</fullName>
+                    <default>false</default>
+                    <label>Contractor Markup</label>
+                </value>
+                <value>
+                    <fullName>CO-OP Marketing Reserve</fullName>
+                    <default>false</default>
+                    <label>CO-OP Marketing Reserve</label>
+                </value>
+                <value>
+                    <fullName>Extended Warranty</fullName>
+                    <default>false</default>
+                    <label>Extended Warranty</label>
+                </value>
+                <value>
+                    <fullName>Inspection</fullName>
+                    <default>false</default>
+                    <label>Inspection</label>
+                </value>
+                <value>
+                    <fullName>Labor Hours</fullName>
+                    <default>false</default>
+                    <label>Labor Hours</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Visits</fullName>
+                    <default>false</default>
+                    <label>Maintenance Visits</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Standard Warranty</fullName>
+                    <default>false</default>
+                    <label>Standard Warranty</label>
+                </value>
+                <value>
+                    <fullName>Training Factory</fullName>
+                    <default>false</default>
+                    <label>Training Factory</label>
+                </value>
+                <value>
+                    <fullName>Training On Site</fullName>
+                    <default>false</default>
+                    <label>Training On Site</label>
+                </value>
+                <value>
+                    <fullName>Travel Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel Expenses</label>
+                </value>
+                <value>
+                    <fullName>Warranty Reserve</fullName>
+                    <default>false</default>
+                    <label>Warranty Reserve</label>
+                </value>
+                <value>
+                    <fullName>Witness Test</fullName>
+                    <default>false</default>
+                    <label>Witness Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_One_Amount__c</fullName>
+        <description>Specifies amount of first miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of first miscellaneous cost add on.
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Misc. Add On One $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_One_Type__c</fullName>
+        <description>Specifies type of first miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of first miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On One Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Contingency</fullName>
+                    <default>false</default>
+                    <label>Contingency</label>
+                </value>
+                <value>
+                    <fullName>Contractor Markup</fullName>
+                    <default>false</default>
+                    <label>Contractor Markup</label>
+                </value>
+                <value>
+                    <fullName>CO-OP Marketing Reserve</fullName>
+                    <default>false</default>
+                    <label>CO-OP Marketing Reserve</label>
+                </value>
+                <value>
+                    <fullName>Extended Warranty</fullName>
+                    <default>false</default>
+                    <label>Extended Warranty</label>
+                </value>
+                <value>
+                    <fullName>Inspection</fullName>
+                    <default>false</default>
+                    <label>Inspection</label>
+                </value>
+                <value>
+                    <fullName>Labor Hours</fullName>
+                    <default>false</default>
+                    <label>Labor Hours</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Visits</fullName>
+                    <default>false</default>
+                    <label>Maintenance Visits</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Standard Warranty</fullName>
+                    <default>false</default>
+                    <label>Standard Warranty</label>
+                </value>
+                <value>
+                    <fullName>Training Factory</fullName>
+                    <default>false</default>
+                    <label>Training Factory</label>
+                </value>
+                <value>
+                    <fullName>Training On Site</fullName>
+                    <default>false</default>
+                    <label>Training On Site</label>
+                </value>
+                <value>
+                    <fullName>Travel Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel Expenses</label>
+                </value>
+                <value>
+                    <fullName>Warranty Reserve</fullName>
+                    <default>false</default>
+                    <label>Warranty Reserve</label>
+                </value>
+                <value>
+                    <fullName>Witness Test</fullName>
+                    <default>false</default>
+                    <label>Witness Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Three_Amount__c</fullName>
+        <description>Specifies amount of third miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of third miscellaneous cost add on.
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Misc. Add On Three $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Three_Type__c</fullName>
+        <description>Specifies type of third miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of third miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Three Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Contingency</fullName>
+                    <default>false</default>
+                    <label>Contingency</label>
+                </value>
+                <value>
+                    <fullName>Contractor Markup</fullName>
+                    <default>false</default>
+                    <label>Contractor Markup</label>
+                </value>
+                <value>
+                    <fullName>CO-OP Marketing Reserve</fullName>
+                    <default>false</default>
+                    <label>CO-OP Marketing Reserve</label>
+                </value>
+                <value>
+                    <fullName>Extended Warranty</fullName>
+                    <default>false</default>
+                    <label>Extended Warranty</label>
+                </value>
+                <value>
+                    <fullName>Inspection</fullName>
+                    <default>false</default>
+                    <label>Inspection</label>
+                </value>
+                <value>
+                    <fullName>Labor Hours</fullName>
+                    <default>false</default>
+                    <label>Labor Hours</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Visits</fullName>
+                    <default>false</default>
+                    <label>Maintenance Visits</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Standard Warranty</fullName>
+                    <default>false</default>
+                    <label>Standard Warranty</label>
+                </value>
+                <value>
+                    <fullName>Training Factory</fullName>
+                    <default>false</default>
+                    <label>Training Factory</label>
+                </value>
+                <value>
+                    <fullName>Training On Site</fullName>
+                    <default>false</default>
+                    <label>Training On Site</label>
+                </value>
+                <value>
+                    <fullName>Travel Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel Expenses</label>
+                </value>
+                <value>
+                    <fullName>Warranty Reserve</fullName>
+                    <default>false</default>
+                    <label>Warranty Reserve</label>
+                </value>
+                <value>
+                    <fullName>Witness Test</fullName>
+                    <default>false</default>
+                    <label>Witness Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Two_Amount__c</fullName>
+        <description>Specifies amount of second miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of second miscellaneous cost add on.
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Misc. Add On Two $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Two_Type__c</fullName>
+        <description>Specifies type of second miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of second miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Two Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Contingency</fullName>
+                    <default>false</default>
+                    <label>Contingency</label>
+                </value>
+                <value>
+                    <fullName>Contractor Markup</fullName>
+                    <default>false</default>
+                    <label>Contractor Markup</label>
+                </value>
+                <value>
+                    <fullName>CO-OP Marketing Reserve</fullName>
+                    <default>false</default>
+                    <label>CO-OP Marketing Reserve</label>
+                </value>
+                <value>
+                    <fullName>Extended Warranty</fullName>
+                    <default>false</default>
+                    <label>Extended Warranty</label>
+                </value>
+                <value>
+                    <fullName>Inspection</fullName>
+                    <default>false</default>
+                    <label>Inspection</label>
+                </value>
+                <value>
+                    <fullName>Labor Hours</fullName>
+                    <default>false</default>
+                    <label>Labor Hours</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Visits</fullName>
+                    <default>false</default>
+                    <label>Maintenance Visits</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Standard Warranty</fullName>
+                    <default>false</default>
+                    <label>Standard Warranty</label>
+                </value>
+                <value>
+                    <fullName>Training Factory</fullName>
+                    <default>false</default>
+                    <label>Training Factory</label>
+                </value>
+                <value>
+                    <fullName>Training On Site</fullName>
+                    <default>false</default>
+                    <label>Training On Site</label>
+                </value>
+                <value>
+                    <fullName>Travel Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel Expenses</label>
+                </value>
+                <value>
+                    <fullName>Warranty Reserve</fullName>
+                    <default>false</default>
+                    <label>Warranty Reserve</label>
+                </value>
+                <value>
+                    <fullName>Witness Test</fullName>
+                    <default>false</default>
+                    <label>Witness Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Multiplier_PAR__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>Multiplier (PAR)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multiplier (PAR)</inlineHelpText>
+        <label>Multiplier (PAR)</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NetPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Net_Cost_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Net_Cost__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Cost Total $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Option_Selling_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Option Selling Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Outsource_Add_On__c</fullName>
+        <description>Commission Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Commission Add On $
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Commission Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PAR_Reference_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>PAR Number</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Release_Date__c</fullName>
+        <description>Created for DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>Release Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Ship_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Ship Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Date_Month__c</fullName>
+        <description>This field is created to display the Estimated Shipping Month for Latin America at Product level.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR( ServiceDate  ))&amp; &quot; &quot; &amp; CASE(MONTH(  ServiceDate ), 1, &quot;01(January)&quot;, 2, &quot;02(February)&quot;, 3, &quot;03(March)&quot;, 4, &quot;04(April)&quot;, 5, &quot;05(May)&quot;, 6, &quot;06(June)&quot;, 7, &quot;07(July)&quot;, 8, &quot;08(August)&quot;, 9, &quot;09(September)&quot;, 10, &quot;10(October)&quot;, 11, &quot;11(November)&quot;, 12, &quot;12(December)&quot;, &quot;&quot;)</formula>
+        <inlineHelpText>This field is created to display the Estimated Shipping Month for Latin America at Product level.</inlineHelpText>
+        <label>Revenue Date (Month)</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revenue_Date_Report__c</fullName>
+        <description>Field to be used in reports to display correct Pipeline date.</description>
+        <externalId>false</externalId>
+        <formula>IF(!ISPICKVAL(Opportunity.StageName, &quot;Won&quot;),IF(ISNULL(ServiceDate),Opportunity.CloseDate,ServiceDate),IF(ISNULL(Actual_Ship_Date__c),IF(ISNULL(ServiceDate),Opportunity.CloseDate,ServiceDate),Actual_Ship_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Field to be used in reports to display correct Pipeline date.</inlineHelpText>
+        <label>Revenue Date (Report)</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Price_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Total_Equip_Price_FOB__c</fullName>
+        <description>Total Equipment Selling Price $
+Unit Equipment Selling Price $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Selling_Unitary_Equipment_Price_FOB__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equipment Selling Price $
+Unit Equipment Selling Price $ * Quantity</inlineHelpText>
+        <label>Total Equipment Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Total_F_L__c</fullName>
+        <description>Total Freight Selling Price $
+Unit Freight Selling Price $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Selling_Unitary_Freight_Logistic__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Freight Selling Price $
+Unit Freight Selling Price $ * Quantity</inlineHelpText>
+        <label>Total Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Unitary_Equipment_Price_FOB__c</fullName>
+        <description>Unit Equipment Selling Price $
+Unit Equipment Cost $ / (1- Equipment Gross Margin %)</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Equipment_Price_FOB__c  / (1 - Equipment_Gross_Margin__c),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Equipment Selling Price $
+Unit Equipment Cost $ / (1- Equipment Gross Margin %)</inlineHelpText>
+        <label>Unit Equipment Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Unitary_Freight_Logistic__c</fullName>
+        <description>Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Total_Freight_Logistic__c / (1 - Freight_Gross_Margin__c),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</inlineHelpText>
+        <label>Unit Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Service_Add_On__c</fullName>
+        <description>Service Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Add On $
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Service Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Start_up_Add_On__c</fullName>
+        <description>Start-up Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Start-up Add On $
+Divide this cost by Quantity of Product item</inlineHelpText>
+        <label>Start-up Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Supplier_Part_Number__c</fullName>
+        <description>Created for the DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>Supplier Part Number</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TAG__c</fullName>
+        <description>TAG</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TAG</inlineHelpText>
+        <label>TAG</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Opp_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Test Opp Product</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Total_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * Unit_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Freight_Logistic__c</fullName>
+        <description>Unit Freight Cost $
+(Unit Equipment Cost $ * Domestic Freight %) + Domestic Freight $ + Export Freight Add On $</description>
+        <externalId>false</externalId>
+        <formula>ROUND((Equipment_Price_FOB__c  * Freight_Percent__c),2) + Freight__c + Logistics_Add_On__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Freight Cost $
+(Unit Equipment Cost $ * Domestic Freight %) + Domestic Freight $ + Export Freight Add On $</inlineHelpText>
+        <label>Unit Freight Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * List_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>List Price $ * Quantity</inlineHelpText>
+        <label>Total List Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price__c</fullName>
+        <description>This field is used to calculate total price for each line item(Quanitity * ListPrice)</description>
+        <externalId>false</externalId>
+        <formula>Quantity * ListPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Price of this product</inlineHelpText>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Discount__c</fullName>
+        <description>Total Equipment + Freight Discount $
+[Unit Equipment + Freight Discount $] * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Unitary_Selling_Discount__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equipment + Freight Discount $
+[Unit Equipment + Freight Discount $] * Quantity</inlineHelpText>
+        <label>Total Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Unitary_Selling_Price_w_Log_Disc__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</inlineHelpText>
+        <label>Total Equip+Freight Selling Price w Disc</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Price_w_Logistics__c</fullName>
+        <description>Total Equip + Freight Selling Price $
+[Unit Equipment Selling Price $ + Unit Freight Selling Price $] * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Unitary_Selling_Price_w_Logistics__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equip + Freight Selling Price $
+[Unit Equipment Selling Price $ + Unit Freight Selling Price $] * Quantity</inlineHelpText>
+        <label>Total Equip + Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+        <inlineHelpText>Default to 0 when adding an Opportunity Product; Automatically updated to final Selling Price.</inlineHelpText>
+    </fields>
+    <fields>
+        <fullName>Unit_Cost__c</fullName>
+        <description>Created for the DSO&apos;s</description>
+        <externalId>false</externalId>
+        <label>Unit Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Discount__c</fullName>
+        <description>Unit Equipment + Freight Discount $
+([Equipment + Freight Selling Price $] * [Equipment + Freight Discount %]) + [Equipment + Freight Discount $]</description>
+        <externalId>false</externalId>
+        <formula>ROUND(ROUND((Unitary_Selling_Price_w_Logistics__c   *  Discount_Percent__c),2) +  Discount__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Equipment + Freight Discount $
+([Equipment + Freight Selling Price $] * [Equipment + Freight Discount %]) + [Equipment + Freight Discount $]</inlineHelpText>
+        <label>Unit Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) - [Unit Equipment + Freight Discount $]</description>
+        <externalId>false</externalId>
+        <formula>Unitary_Selling_Price_w_Logistics__c - Unitary_Selling_Discount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) - [Unit Equipment + Freight Discount $]</inlineHelpText>
+        <label>Unit Equip +Freight Selling Price w Disc</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Price_w_Logistics__c</fullName>
+        <description>Unit Equipment + Freight Selling Price $
+Unit Equipment Selling Price $ + Unit Freight Selling Price $</description>
+        <externalId>false</externalId>
+        <formula>(Selling_Unitary_Freight_Logistic__c + Selling_Unitary_Equipment_Price_FOB__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit Equipment + Freight Selling Price $
+Unit Equipment Selling Price $ + Unit Freight Selling Price $</inlineHelpText>
+        <label>Unit Equipment + Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Updated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Updated ?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Supplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.Vendor_Supplier__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor/Supplier</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Actual_Ship_Date_Validation_Rule</fullName>
+        <active>false</active>
+        <description>Requires Actual Ship Date to be specified for closed/won opportunities.</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; ISPICKVAL(Opportunity.StageName,&quot;Won&quot;) &amp;&amp;  ISBLANK(Actual_Ship_Date__c) &amp;&amp; IF(ISCHANGED(ServiceDate),False,True) &amp;&amp; IF(ISCHANGED(Converted_to_Asset__c),False,True)</errorConditionFormula>
+        <errorMessage>You must specify an Actual Ship Date for Closed/Won opportunities.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Exchange_Rate_Validation_Rule</fullName>
+        <active>true</active>
+        <description>Ensures that a valid exchange rate is entered.</description>
+        <errorConditionFormula>BEGINS($Profile.Name, &quot;Latin&quot;) &amp;&amp; NOT(ISNEW()) &amp;&amp; Local_Currency__c &lt;&gt; &quot;USD&quot; &amp;&amp; Local_Currency__c &lt;&gt; &quot;&quot; &amp;&amp;  Exchange_Rate__c = 1.0 &amp;&amp; !ISPICKVAL(Opportunity.StageName,&quot;Won&quot;)</errorConditionFormula>
+        <errorMessage>Please enter a valid exchange rate.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Miscellaneous_Add_Ons_Validation_Rule</fullName>
+        <active>true</active>
+        <description>Ensures that miscellaneous add on amounts and types are entered correctly.</description>
+        <errorConditionFormula>(Misc_Add_On_One_Amount__c &lt;&gt; 0 &amp;&amp; TEXT(Misc_Add_On_One_Type__c) = &quot;&quot;)
+||
+(Misc_Add_On_Two_Amount__c &lt;&gt; 0 &amp;&amp; TEXT(Misc_Add_On_Two_Type__c) = &quot;&quot;)
+||
+(Misc_Add_On_Three_Amount__c &lt;&gt; 0 &amp;&amp; TEXT(Misc_Add_On_Three_Type__c) = &quot;&quot;)
+||
+(Misc_Add_On_Four_Amount__c &lt;&gt; 0 &amp;&amp; TEXT(Misc_Add_On_Four_Type__c) = &quot;&quot;)
+||
+(Misc_Add_On_One_Amount__c = 0 &amp;&amp; NOT(TEXT(Misc_Add_On_One_Type__c) = &quot;&quot;))
+||
+(Misc_Add_On_Two_Amount__c = 0 &amp;&amp; NOT(TEXT(Misc_Add_On_Two_Type__c) = &quot;&quot;))
+||
+(Misc_Add_On_Three_Amount__c = 0 &amp;&amp; NOT(TEXT(Misc_Add_On_Three_Type__c) = &quot;&quot;))
+||
+(Misc_Add_On_Four_Amount__c = 0 &amp;&amp; NOT(TEXT(Misc_Add_On_Four_Type__c) = &quot;&quot;))</errorConditionFormula>
+        <errorMessage>When entering Misc. Add Ons, both the type and amount must be specified.</errorMessage>
+    </validationRules>
+</CustomObject>

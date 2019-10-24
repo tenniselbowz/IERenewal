@@ -1,0 +1,111 @@
+<apex:page controller="WarrantyOrderAssetControllerExtension" showHeader="false" standardStylesheets="true" lightningStylesheets="true">
+    <head>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    </head>
+    <apex:form >
+      <apex:pageBlock title="Select the assets to associate to the Request" mode="edit">  
+        <apex:pageBlockButtons >
+         <apex:commandButton action="{!close}" value="Apply" onclick="return apply();" />
+         <apex:commandButton action="{!close}" value="Cancel" immediate="true" html-formnovalidate="formnovalidate" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Assets" columns="1">
+<apex:pageblock >
+    <!--<apex:pageblocktable value="{!OrderAssets}" var="a" id="pbTable">
+        <apex:column >
+            <apex:facet name="header">
+                <input type="checkbox" id="main" name="main" onclick="return checkAll(this)" />
+            </apex:facet>
+            <input type="checkbox" name="id-{!a.Id}" aid="{!a.Id}" />
+        </apex:column>
+        
+        <apex:column value="{!a.Product2.ProductCode}"/>
+        <apex:column value="{!a.SerialNumber}"/>
+        <apex:column value="{!a.SO_Line_Number__c}"/>
+        <apex:column value="{!a.Product2.DW_Product_Business_Unit__c}"/>
+        <apex:column value="{!a.Name}"/>
+        
+    </apex:pageblocktable>-->
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                stateSave: true,
+                lengthMenu: [ 10, 25, 50, 100, 250, 500, 1000 ]
+            } );
+        } );
+        </script>
+    <table id="example" style="width:100%;padding:10px">
+        <thead>
+            <tr>
+                <th style="padding-top: 10px;padding-left: 10px;">
+                    <input type="checkbox" id="main" name="main" onclick="return checkAll(this)" />
+                </th>
+                <th>Model</th>
+                <th>Serial Number</th>
+                <th>Line Item #</th>
+                <th>DW Product Business Unit</th>
+                <th>Asset Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <apex:repeat value="{!OrderAssets}" var="a">
+                <tr>
+                    <td> <input type="checkbox" name="id-{!a.Id}" aid="{!a.Id}" /></td>
+                    <td>{!a.Product2.ProductCode}</td>
+                    <td>{!a.SerialNumber}</td>
+                    <td>{!a.SO_Line_Number__c}</td>
+                    <td>{!a.Product2.DW_Product_Business_Unit__c}</td>
+                    <td>{!a.Name}</td>
+                </tr>    
+                
+            </apex:repeat>
+        </tbody>
+    </table>
+</apex:pageblock>        
+        </apex:pageBlockSection>
+      </apex:pageBlock>
+    </apex:form>
+    <script>
+function checkAll(cb){   
+    var inputElem = document.getElementsByTagName("input");
+    for(var i=1; i<inputElem.length; i++){
+            var name = inputElem[i].getAttribute('name');
+            if(name !== undefined && name !== null && name.startsWith('id-'))
+                inputElem[i].checked = cb.checked;
+    }
+}
+
+function apply(){
+    var lst = [];
+    var inputElem = document.getElementsByTagName("input");
+    for(var i=1; i<inputElem.length; i++){        
+        if(inputElem[i].checked){
+            var name = inputElem[i].getAttribute('name');
+            if(name !== undefined && name !== null && name.startsWith('id-'))
+                lst.push(inputElem[i].getAttribute('aid'));
+        }
+    }
+    if(lst.length>0){
+        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.WarrantyOrderAssetControllerExtension.createOrderAssets}', '{!Id}', lst,
+             function(result, event){
+                 if (event.status) {
+                     //alert(result+' assets created.');
+                     //return true;
+                 } else if (event.type === 'exception') {
+                     //exception case code          
+                 } else {                                    
+                 }  
+              }, 
+              {escape: true}
+        );
+    }
+    else {
+        alert('Please Select atleast one Asset');
+        return false;
+    }
+    return true;
+}
+    </script>
+</apex:page>
+<!--https://developer.salesforce.com/forums/?id=906F000000090K5IAI-->

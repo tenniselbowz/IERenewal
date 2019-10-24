@@ -1,0 +1,7 @@
+<apex:page controller="GenerateMABundleTaskingController" action="{!generateMABundleTaskingItems}">
+    <apex:pageMessages ></apex:pageMessages>
+    <!-- This Visualforce page triggers the creation of MA-Bundle and MA-Tasking reocrds from Proposal Line Items.
+If the ProposalLineItem.Apttus_QPConfig__LineType__c == 'Product/Service' then it will Create MA-Bundle Records
+else if the ProposalLineItem.Apttus_QPConfig__LineType__c == 'Option' then it will Create MA-Tasking Records
+	-->
+</apex:page>

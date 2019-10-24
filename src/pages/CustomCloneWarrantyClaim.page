@@ -1,0 +1,23 @@
+<apex:page standardController="Case" standardStylesheets="true" extensions="CustomCloneWarrantyClaimController" docType="Html-5.0">
+    
+    <apex:form >
+      <apex:pageBlock title="New Case" mode="edit">
+            <apex:messages > </apex:messages>
+          <apex:pageBlockButtons >
+              <apex:commandButton value="Save" action="{!saveCase}"/>
+              <apex:commandButton value="Save & Close" action="{!saveAndClose}"/>
+              <apex:commandButton value="Save & New" action="{!saveAndNewCase}"/>
+              <apex:commandButton value="Cancel" action="{!cancel}" immediate="true" html-formnovalidate="formnovalidate"/>
+          </apex:pageBlockButtons>
+        
+          <apex:pageBlockSection title="Case Edit">
+              <apex:repeat value="{!fields}" var="f">
+                  <apex:inputField value="{!caserecord[f.fieldPath]}" html-disabled=""
+                      required="{!OR(f.required, f.dbrequired)}" rendered="{!f.label=='Business Unit'}" />
+                  <apex:inputField value="{!caserecord[f.fieldPath]}" 
+                      required="{!OR(f.required, f.dbrequired)}"   rendered="{!f.label !='Business Unit'}" />
+              </apex:repeat> 
+          </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

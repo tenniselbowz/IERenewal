@@ -1,0 +1,131 @@
+<apex:page standardController="Apttus_Proposal__Proposal__c" extensions="CreateNewServiceProposalController" showHeader="true">
+    <apex:sectionHeader title="New Quote/Proposal"/>
+    <apex:form > 
+        <apex:pageblock title="Quote/Proposal Edit">
+        <apex:pageMessages id="messages"/>  
+        <apex:pageBlockButtons location="Top">
+            <apex:commandButton value="Save" action="{!save}" reRender="messages"/>
+            <apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>                
+        </apex:pageBlockButtons>  
+            <apex:pageBlockSection title="Information" collapsible="FALSE" columns="2">
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Account__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Opportunity__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.Line_of_Business__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Primary_Contact__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Proposal_Name__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Term_in_Years__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Primary__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Effective_Start_Date__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Apttus_Proposal__Presented_Date__c}" required="false"/>
+                <apex:inputField value="{!Proposal.MA_Term_Expiration_Date__c}" required="false"/>
+                                
+                <apex:inputField value="{!Proposal.Internal_Team_Notes__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Payments_will_be_made__c}" required="false"/>
+                
+                <!--<apex:inputField value="{!Proposal.Warranty__c}" required="false"/>-->
+                <!--<apex:inputField value="{!Proposal.Risk__c}" required="false"/>-->
+                <apex:inputField value="{!Proposal.Local_Currency__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Payments__c}" required="false"/>
+                
+                <!--<apex:inputField value="{!Proposal.Turnkey_Contingency__c}" required="false"/>-->
+                
+                <apex:inputField value="{!Proposal.Bulk_Exchange_Rate__c}" required="false"/>
+
+                <apex:inputField value="{!Proposal.Non_Standard_T_Cs__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Cortera_4_5_and_6_Guidelines_Met_for_P__c}" required="false" />
+
+                <apex:inputField value="{!Proposal.Customer_in_Good_Standing__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Include_Estimated_Sales_Tax_in_Total__c}" required="false"/>
+                
+                 
+                <!--<apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_Information}" var="ProposalInformation">
+                    <apex:inputField value="{!Apttus_Proposal__Proposal__c[ProposalInformation]}" required="{!ProposalInformation.required}"/>
+                </apex:repeat>-->      
+            </apex:pageBlockSection>
+            
+            <!--<apex:pageBlockSection title="Actions" collapsible="FALSE">
+                <apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_Actions}" var="ProposalActions">
+                    <apex:inputField value="{!Apttus_Proposal__Proposal__c[ProposalActions]}" required="{!ProposalActions.required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>-->
+            
+            <apex:pageBlockSection title="Quote Document Fields" collapsible="FALSE">
+                <apex:inputField value="{!Proposal.Turnkey_Proposal_Title_Prefix__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Estimated_Close_Date__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.Billing_Terms__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Quote_Document_Date__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.License__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Proposal_Valid_for_Days__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.Emergency_Service_Level__c}" required="true"/>
+                <apex:inputField value="{!Proposal.T_C_Country__c}" required="true"/>
+                
+                <apex:inputField value="{!Proposal.Scope_of_Work__c}" required="true"/>
+                <apex:inputField value="{!Proposal.Quote_Presentation_Currency__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Executive_Summary_Company_History__c}" required="false"/>
+
+                <apex:inputField value="{!Proposal.Executive_Summary_Analysis__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Executive_Summary_Recommendations__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Executive_Summary_Why_Now_Why_Daikin__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Included_Clauses__c}" required="false"/>
+                
+                <!--<apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_QuoteDocument}" var="QuoteDocumentFields">
+                    <apex:inputField value="{!Proposal[QuoteDocumentFields]}" required="{!QuoteDocumentFields.required}"/>
+                </apex:repeat>-->
+            </apex:pageBlockSection>
+            
+            <!--<apex:pageBlockSection title="Financial Information" collapsible="FALSE">
+                <apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_FinancialFields}" var="FinancialSummary">
+                    <apex:inputField value="{!Proposal[FinancialSummary]}" required="{!FinancialSummary.required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>-->
+            
+            <apex:pageBlockSection title="Clarifications, Exceptions and Exclusions" collapsible="FALSE">
+                <apex:inputField value="{!Proposal.MA_Standard_Exclusions__c}" required="false"/>
+                <apex:inputField value="{!Proposal.MA_Additional_Standard_Exclusions__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Turnkey_Additional_Proposal_Clarifi__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Turnkey_Proposal_Clarifications_Excepti__c}" required="false"/>
+                
+                <!--<apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_MA_Fields}" var="MAFields">
+                    <apex:inputField value="{!Proposal[MAFields]}" required="{!MAFields.required}"/>
+                </apex:repeat>-->
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Turnkey Fields" collapsible="FALSE">
+                <apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_Turnkey_Fields}" var="TKFields">
+                    <apex:inputField value="{!Proposal[TKFields]}" required="{!TKFields.required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            
+            <!--<apex:pageBlockSection title="System Information" collapsible="FALSE">
+                <apex:inputField value="{!Proposal.CreatedById}" required="false"/>
+                <apex:inputField value="{!Proposal.Apttus_QPConfig__ConfigurationFinalizedDate__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.LastModifiedById}" required="false"/>
+                <apex:inputField value="{!Proposal.Apttus_Proposal__ReadyToPresent__c}" required="false"/>
+                
+                <apex:inputField value="{!Proposal.Apttus_QPConfig__PriceListId__c}" required="false"/>
+                <apex:inputField value="{!Proposal.Local_Currency__c}" required="true"/>
+                
+                <apex:pageBlockSectionItem ></apex:pageBlockSectionItem>
+                <apex:inputField value="{!Proposal.Bulk_Exchange_Rate__c}" required="false"/>
+                
+                <!--<apex:repeat value="{!$ObjectType.Apttus_Proposal__Proposal__c.FieldSets.CreateNewServiceProposal_System_Info}" var="SystemInfo">
+                    <apex:inputField value="{!Proposal[SystemInfo]}" required="{!SystemInfo.required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>-->
+        </apex:pageblock>
+    </apex:form>
+    
+</apex:page>

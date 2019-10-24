@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fieldSets>
+        <fullName>DisplaySupportAssetFields</fullName>
+        <description>Support Page</description>
+        <displayedFields>
+            <field>Asset_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SerialNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>GO_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SO_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Address_Line_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Country__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_City__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_State_Province__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Postal_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>DisplaySupportAssetFields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>EditableSupportAssetFields</fullName>
+        <description>Support Page</description>
+        <label>EditableSupportAssetFields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>ExportSupportAssetFields</fullName>
+        <description>The export of the support page</description>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Full_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IE_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Address_Line_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Warehouse_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Startup_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ship_To_Postal_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ship_To_City__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ship_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SerialNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Record_Usage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Postal_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Selling_Rep_Office__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Rep_PO_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ExportSupportAssetFields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Intel_Integration_Fields</fullName>
+        <description>AssetTrigger</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SerialNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Format_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Current_Code_String_Breakdown__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Code_String_Breakdown__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MAC_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Asset_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Order__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Product2Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Intel Integration Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Active_Tag__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Short description of this asset for entry/update by TRC analyst.</inlineHelpText>
+        <label>Active Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Warranty_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Actual Warranty End Date?</inlineHelpText>
+        <label>Actual Warranty End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Warranty_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Actual Warranty Start Date?</inlineHelpText>
+        <label>Actual Warranty Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Address_Line_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Address_Line_3__c</formula>
+        <label>Address Line 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Address_Line_4__c</formula>
+        <label>Address Line 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssetLevel</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssetProvidedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetServicedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Address_Line_1__c</formula>
+        <label>Address Line 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Address_Line_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Address_Line_2__c</formula>
+        <label>Address Line 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Asset_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.City__c</formula>
+        <label>City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Country_ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Country_ISO_Code__c</formula>
+        <label>Country ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Asset_Address__r.Country__c)</formula>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Number__c</fullName>
+        <displayFormat>{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Asset Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.Postal_Code__c</formula>
+        <label>Zip/Postal Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_State_ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address__r.State_Province_ISO_Code__c</formula>
+        <label>State/Province ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Asset_Address__r.State_Province__c)</formula>
+        <label>State/Province</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field used to disable triggers or validation rules firing.
+Note: For bulk loading data from a script, the trigger assumes all records in the list have this field set to true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to disable triggers or validation rules firing.
+Note: For bulk loading data from a script, the trigger assumes all records in the list have this field set to true.</inlineHelpText>
+        <label>Bypass</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Code_String_Breakdown__c</fullName>
+        <description>Display Breakdown of code string. Raw data pulled from Data Warehouse then transformed and compiled in the SFDC Integration dba prior to load here.</description>
+        <externalId>false</externalId>
+        <label>Code String Breakdown</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Code_String__c</fullName>
+        <externalId>false</externalId>
+        <label>Code String</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Commissioned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>IE Use Only. If checked, the initial Gateway for this asset has been commissioned.</inlineHelpText>
+        <label>Gateway Commissioned</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Model__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Competitor Model # if this is a competitor&apos;s piece of equipment.</inlineHelpText>
+        <label>Competitor Model</label>
+        <length>70</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Current_Code_String_Breakdown__c</fullName>
+        <description>Displays breakdown of code string with any modifications since Raw data was pulled from Data Warehouse (Code_String_Breakdown__c)</description>
+        <externalId>false</externalId>
+        <label>Current Code String Breakdown</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.Customer_PO_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer PO Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DW_Product_Line__c</fullName>
+        <description>DW Product Line from the Product</description>
+        <externalId>false</externalId>
+        <formula>Product2.DW_Product_Line__c</formula>
+        <inlineHelpText>DW Product Line from the Product</inlineHelpText>
+        <label>DW Product Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Device_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (MAC_Address__c &lt;&gt; null, (&quot;00000000-00000000-&quot; &amp;  UPPER(LEFT( MAC_Address__c, 6)) &amp; &quot;FF-FF&quot; &amp;  UPPER(RIGHT(MAC_Address__c, 6))), &quot;&quot;)</formula>
+        <inlineHelpText>Etherios Device ID passed to IE web service as MACAddress</inlineHelpText>
+        <label>Device ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Description__c</fullName>
+        <description>DW PCL Description of the Product</description>
+        <externalId>false</externalId>
+        <formula>Product2.DW_PCL_Description__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>DW PCL Description of the Product</inlineHelpText>
+        <label>Equipment Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Format_Number__c</fullName>
+        <description>DW_McQuayDataWarehouse.dbo.DW_DIM_CODE_STRING.DCST_FORMAT</description>
+        <externalId>false</externalId>
+        <label>Format Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset_Address_Line_1__c &amp; &quot; &quot;&amp; if(Asset_Address_Line_2__c != &quot;&quot;,Asset_Address_Line_2__c&amp;&quot; &quot;,&quot;&quot;)&amp;
+Asset_City__c &amp; &quot;, &quot; &amp;
+Asset_State_Province__c &amp; &quot; &quot; &amp;
+Asset_Postal_Code__c &amp;&quot; &quot;&amp;
+Asset_Country__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GO_Line_Number__c</fullName>
+        <description>Used to indicate the General Order Line number assigned to the Asset</description>
+        <externalId>false</externalId>
+        <label>GO Line Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.GO_Number__c</formula>
+        <label>GO Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GWotGo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gateway on the Go 
+Checked if the IE Gateway is a Gateway on the Go asset</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gateway on the Go 
+Checked if the IE Gateway is a Gateway on the Go asset</inlineHelpText>
+        <label>GWotGo</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Gateway_Commissioned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Gateway Commissioned Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>General_Contractor_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.General_Contractor_Name__c</formula>
+        <label>General Contractor Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Has_Maintenance_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When checked, this should contain a maintenance agreement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, this should contain a maintenance agreement</inlineHelpText>
+        <label>Has Maintenance Agreement</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_Asset__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to indicate the record pertains to the IE integration. This is set on import of record from Daikin IE Back Office database.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag to indicate the record pertains to the IE integration. This is set on import of record from Daikin IE Back Office database.</inlineHelpText>
+        <label>IE Asset</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>IE ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IE_Retrofit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, an IE Retrofit Kit was ordered for this asset.</inlineHelpText>
+        <label>IE Retrofit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IE_Sync_Status__c</fullName>
+        <description>Status that gets set when attributes on the record are updated and therefore needs to be sent to the IE system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Pending = Record needs to be sent to the IE system. 
+Processed = Record was successfully received by IE system. 
+Error = Record was not successfully received by IE system.</inlineHelpText>
+        <label>IE Sync Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IE_Updated_Date__c</fullName>
+        <description>IE system date for when the record was last updated in the IE database.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>IE system date for when the record was last updated in the IE database.</inlineHelpText>
+        <label>IE Updated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>InstallDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Install_City__c</fullName>
+        <description>Install City</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Install City</inlineHelpText>
+        <label>Install City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Install_Country__c</fullName>
+        <description>Install Country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Install Country</inlineHelpText>
+        <label>Install Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Anguilla</fullName>
+                    <default>false</default>
+                    <label>Anguilla</label>
+                </value>
+                <value>
+                    <fullName>Antigua and Barbuda</fullName>
+                    <default>false</default>
+                    <label>Antigua and Barbuda</label>
+                </value>
+                <value>
+                    <fullName>Argentina</fullName>
+                    <default>false</default>
+                    <label>Argentina</label>
+                </value>
+                <value>
+                    <fullName>Aruba</fullName>
+                    <default>false</default>
+                    <label>Aruba</label>
+                </value>
+                <value>
+                    <fullName>Bahamas, The</fullName>
+                    <default>false</default>
+                    <label>Bahamas, The</label>
+                </value>
+                <value>
+                    <fullName>Barbados</fullName>
+                    <default>false</default>
+                    <label>Barbados</label>
+                </value>
+                <value>
+                    <fullName>Bolivia</fullName>
+                    <default>false</default>
+                    <label>Bolivia</label>
+                </value>
+                <value>
+                    <fullName>Bonaire</fullName>
+                    <default>false</default>
+                    <label>Bonaire</label>
+                </value>
+                <value>
+                    <fullName>Brazil</fullName>
+                    <default>false</default>
+                    <label>Brazil</label>
+                </value>
+                <value>
+                    <fullName>Cayman Islands</fullName>
+                    <default>false</default>
+                    <label>Cayman Islands</label>
+                </value>
+                <value>
+                    <fullName>Chile</fullName>
+                    <default>false</default>
+                    <label>Chile</label>
+                </value>
+                <value>
+                    <fullName>Colombia</fullName>
+                    <default>false</default>
+                    <label>Colombia</label>
+                </value>
+                <value>
+                    <fullName>Costa Rica</fullName>
+                    <default>false</default>
+                    <label>Costa Rica</label>
+                </value>
+                <value>
+                    <fullName>Cuba</fullName>
+                    <default>false</default>
+                    <label>Cuba</label>
+                </value>
+                <value>
+                    <fullName>Curacao</fullName>
+                    <default>false</default>
+                    <label>Curacao</label>
+                </value>
+                <value>
+                    <fullName>Dominica</fullName>
+                    <default>false</default>
+                    <label>Dominica</label>
+                </value>
+                <value>
+                    <fullName>Dominican Republic</fullName>
+                    <default>false</default>
+                    <label>Dominican Republic</label>
+                </value>
+                <value>
+                    <fullName>Ecuador</fullName>
+                    <default>false</default>
+                    <label>Ecuador</label>
+                </value>
+                <value>
+                    <fullName>El Salvador</fullName>
+                    <default>false</default>
+                    <label>El Salvador</label>
+                </value>
+                <value>
+                    <fullName>Grenada</fullName>
+                    <default>false</default>
+                    <label>Grenada</label>
+                </value>
+                <value>
+                    <fullName>Guatemala</fullName>
+                    <default>false</default>
+                    <label>Guatemala</label>
+                </value>
+                <value>
+                    <fullName>Guyana</fullName>
+                    <default>false</default>
+                    <label>Guyana</label>
+                </value>
+                <value>
+                    <fullName>Haiti</fullName>
+                    <default>false</default>
+                    <label>Haiti</label>
+                </value>
+                <value>
+                    <fullName>Honduras</fullName>
+                    <default>false</default>
+                    <label>Honduras</label>
+                </value>
+                <value>
+                    <fullName>Jamaica</fullName>
+                    <default>false</default>
+                    <label>Jamaica</label>
+                </value>
+                <value>
+                    <fullName>Mexico</fullName>
+                    <default>false</default>
+                    <label>Mexico</label>
+                </value>
+                <value>
+                    <fullName>Nicaragua</fullName>
+                    <default>false</default>
+                    <label>Nicaragua</label>
+                </value>
+                <value>
+                    <fullName>Not Available</fullName>
+                    <default>false</default>
+                    <label>Not Available</label>
+                </value>
+                <value>
+                    <fullName>Panama</fullName>
+                    <default>false</default>
+                    <label>Panama</label>
+                </value>
+                <value>
+                    <fullName>Paraguay</fullName>
+                    <default>false</default>
+                    <label>Paraguay</label>
+                </value>
+                <value>
+                    <fullName>Peru</fullName>
+                    <default>false</default>
+                    <label>Peru</label>
+                </value>
+                <value>
+                    <fullName>Puerto Rico</fullName>
+                    <default>false</default>
+                    <label>Puerto Rico</label>
+                </value>
+                <value>
+                    <fullName>Saint Kitts and Nevis</fullName>
+                    <default>false</default>
+                    <label>Saint Kitts and Nevis</label>
+                </value>
+                <value>
+                    <fullName>Saint Lucia</fullName>
+                    <default>false</default>
+                    <label>Saint Lucia</label>
+                </value>
+                <value>
+                    <fullName>Saint Martin</fullName>
+                    <default>false</default>
+                    <label>Saint Martin</label>
+                </value>
+                <value>
+                    <fullName>Saint Vincent and The Grenadines</fullName>
+                    <default>false</default>
+                    <label>Saint Vincent and The Grenadines</label>
+                </value>
+                <value>
+                    <fullName>Sint Maarten</fullName>
+                    <default>false</default>
+                    <label>Sint Maarten</label>
+                </value>
+                <value>
+                    <fullName>Suriname</fullName>
+                    <default>false</default>
+                    <label>Suriname</label>
+                </value>
+                <value>
+                    <fullName>Trinidad and Tobago</fullName>
+                    <default>false</default>
+                    <label>Trinidad and Tobago</label>
+                </value>
+                <value>
+                    <fullName>Turks and Caicos Islands</fullName>
+                    <default>false</default>
+                    <label>Turks and Caicos Islands</label>
+                </value>
+                <value>
+                    <fullName>Uruguay</fullName>
+                    <default>false</default>
+                    <label>Uruguay</label>
+                </value>
+                <value>
+                    <fullName>Venezuela</fullName>
+                    <default>false</default>
+                    <label>Venezuela</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Install_State__c</fullName>
+        <description>Install State</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Install State</inlineHelpText>
+        <label>Install State</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Install_Street__c</fullName>
+        <description>Install Street</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Install Street</inlineHelpText>
+        <label>Install Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Install_ZIP_Postal_Code__c</fullName>
+        <description>Install ZIP/Postal Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Install ZIP/Postal Code</inlineHelpText>
+        <label>Install Zip/Postal Code</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Installer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Company who installed the asset.</inlineHelpText>
+        <label>Installer Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Assets (Installer)</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Intel_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Intel ID</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Intel_Operator__c</fullName>
+        <defaultValue>&quot;Daikin&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Intel Operator</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsCompetitorProduct</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsInternal</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.Job_Name__c</formula>
+        <label>Job Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MAC_Address__c</fullName>
+        <description>Only applicable for IE Assets.  This is the MAC Address for the IE hardware on the asset.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only applicable for IE Assets.  This is the MAC Address for the IE hardware on the asset.</inlineHelpText>
+        <label>MAC Address</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Product2.Model_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Model Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_temp__c</fullName>
+        <externalId>false</externalId>
+        <label>Model (temp)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Latin_America_Opportunity_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>SFDC Order record unique Id number. Auto-generated within SFDC.</inlineHelpText>
+        <label>Order ID</label>
+        <referenceTo>Order__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Account_Owner_Name__c</formula>
+        <label>Owner Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment that this Asset is controlling or tied to.</inlineHelpText>
+        <label>Parent Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Related Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductDescription</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Class__c</fullName>
+        <description>DW_McQuayDataWarehouse.dbo.DW_DIM_CODE_STRING.DCST_PCL</description>
+        <externalId>false</externalId>
+        <label>Product Class</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Description__c</fullName>
+        <description>Product Description</description>
+        <externalId>false</externalId>
+        <formula>Product2.Description</formula>
+        <inlineHelpText>Product Description</inlineHelpText>
+        <label>Product Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PurchaseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Recommended_Warranty_End_Date__c</fullName>
+        <description>Captures 12 month from the Recommended Warranty Start Date</description>
+        <externalId>false</externalId>
+        <formula>ADDMONTHS( Recommended_Warranty_Start_Date__c ,12)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated as 12 months from the Recommended Warranty Start Date</inlineHelpText>
+        <label>Recommended Warranty End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recommended_Warranty_Start_Date__c</fullName>
+        <description>Formula field captures Warranty Start Date definitions in order to be populated in a date field that would allow for manual overwrite. If Startup date is populated, this date is the Recommended Start Date, otherwise it will be the Ship Date.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Startup_Date__c)), Startup_Date__c, Ship_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If the Startup Date is populated that is this date, otherwise it will be the Ship Date.  If the Startup Date is not populated it&apos;s because we have not received the startup form.</inlineHelpText>
+        <label>Recommended Warranty Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Record_Usage__c</fullName>
+        <description>Designed to show other systems that use the information in this record and for the purpose of preventing record deletion.</description>
+        <externalId>false</externalId>
+        <label>Record Usage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DW</fullName>
+                    <default>false</default>
+                    <label>DW</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Rep_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.Rep_PO_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep PO Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResetSuccessful__c</fullName>
+        <description>Status field that gets set for a GWotGo Reset operation. 
+None - Initialized state 
+True - Reset operation was successful 
+False - Reset Operation failed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status field that gets set for a GWotGo Reset operation. 
+None - Initialized state 
+True - Reset operation was successful 
+False - Reset Operation failed</inlineHelpText>
+        <label>ResetSuccessful</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                    <label>True</label>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                    <label>False</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RootAssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SIM_Card_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to determine if the SIM card is active or not.</description>
+        <externalId>false</externalId>
+        <label>SIM Card Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SIM_Card_ICCID__c</fullName>
+        <description>Only applicable for IE Assets. This is for the IE hardware on the asset.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only applicable for IE Assets. This is for the IE hardware on the asset.</inlineHelpText>
+        <label>SIM Card ICCID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SO_Line_Number__c</fullName>
+        <description>Used to indicate the Sales Order Line number associated to the Asset</description>
+        <externalId>false</externalId>
+        <label>SO Line Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SO_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.SO_Number__c</formula>
+        <label>SO Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salesperson__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order__r.Salesperson__r.FirstName &amp; &quot; &quot; &amp; Order__r.Salesperson__r.LastName</formula>
+        <label>Salesperson</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selling_Rep_Office__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Selling Rep Office</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Assets (Selling Rep Office)</relationshipLabel>
+        <relationshipName>Assets_SellingRep</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Rep_Office_temp__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporary placeholder for src_dw_fact_shipment.DCW_Sales_Office_Number so we can generate a lookup relationship to the Selling Rep Office Account once the DCW data is loaded.</inlineHelpText>
+        <label>Selling Rep Office (temp)</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SerialNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Serial_Number_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Serial Number ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Servicer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Current servicing company for the asset.</inlineHelpText>
+        <label>Servicer Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Assets (Servicer)</relationshipLabel>
+        <relationshipName>Assets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ship_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Line 1</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Line_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Line 2</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Line_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Line 3</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Line_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Line 4</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To City</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_County__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To County</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Postal Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To State/Province</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Startup_Date__c</fullName>
+        <description>Startup Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Startup Date</inlineHelpText>
+        <label>Startup Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+    </fields>
+    <fields>
+        <fullName>Supplier_PO_Number__c</fullName>
+        <description>Vendor/Supplier PO #</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vendor/Supplier PO #</inlineHelpText>
+        <label>Supplier PO #</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product2.Vendor_Supplier__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Supplier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tag__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Description entered by Sales Rep when selecting the product in Daikin Tools.</inlineHelpText>
+        <label>Order Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UsageEndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Warehouse_ID__c</fullName>
+        <description>src_dw_fact_shipment.dw_Shipments_Key</description>
+        <externalId>true</externalId>
+        <inlineHelpText>src_dw_fact_shipment.dw_Shipments_Key</inlineHelpText>
+        <label>Warehouse ID</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warehouse_Product_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>DW_FACT_SHIPMENTS.FS_PRODUCT_KEY</inlineHelpText>
+        <label>Warehouse Product ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Expiration_Date__c</fullName>
+        <description>Warranty Expiration Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Warranty Expiration Date</inlineHelpText>
+        <label>Warranty Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Items</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <listViews>
+        <fullName>AllAssets</fullName>
+        <columns>ASSET.NAME</columns>
+        <columns>ASSET.SERIAL_NUMBER</columns>
+        <columns>ASSET.INSTALL_DATE</columns>
+        <columns>ASSET.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.NAME</columns>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Assets</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>DWAssets</fullName>
+        <columns>ASSET.NAME</columns>
+        <columns>ASSET.SERIAL_NUMBER</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Ship_Date__c</columns>
+        <columns>Order__c</columns>
+        <columns>SO_Line_Number__c</columns>
+        <columns>GO_Line_Number__c</columns>
+        <columns>Asset_Address__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>FUTURE ASSET OWNER ACCOUNT</value>
+        </filters>
+        <filters>
+            <field>Order__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>DW Asset Import</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>DWAssets_TEST</fullName>
+        <columns>ASSET.NAME</columns>
+        <columns>ASSET.SERIAL_NUMBER</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Ship_Date__c</columns>
+        <columns>Order__c</columns>
+        <columns>SO_Line_Number__c</columns>
+        <columns>GO_Line_Number__c</columns>
+        <columns>Asset_Address__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>FUTURE ASSET OWNER ACCOUNT</value>
+        </filters>
+        <filters>
+            <field>Tag__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>DW Asset Import TEST</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>IE_Assets</fullName>
+        <columns>Job_Name__c</columns>
+        <columns>ASSET.NAME</columns>
+        <columns>ASSET.SERIAL_NUMBER</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Ship_Date__c</columns>
+        <columns>Order__c</columns>
+        <columns>SO_Number__c</columns>
+        <columns>SO_Line_Number__c</columns>
+        <columns>IE_Asset__c</columns>
+        <columns>IE_ID__c</columns>
+        <columns>IE_Retrofit__c</columns>
+        <columns>IE_Sync_Status__c</columns>
+        <columns>IE_Updated_Date__c</columns>
+        <columns>ASSET.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IE_Asset__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>IE Assets</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.INSTALL_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SO_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GO_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Active_Tag__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Tag__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ship_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Owner_Name__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Ship_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SO_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GO_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Owner_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchFilterFields>
+        <searchFilterFields>SO_Number__c</searchFilterFields>
+        <searchFilterFields>GO_Number__c</searchFilterFields>
+        <searchFilterFields>Tag__c</searchFilterFields>
+        <searchFilterFields>Active_Tag__c</searchFilterFields>
+        <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.SERIAL_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.QUANTITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Job_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ship_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Startup_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SO_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GO_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Owner_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Install_Date_Validation_Rule</fullName>
+        <active>true</active>
+        <description>Ensures that an Install Date is specified for items listed as Installed.</description>
+        <errorConditionFormula>ISPICKVAL(Status, &quot;Installed&quot;) &amp;&amp;  TEXT(InstallDate) = &quot;&quot;</errorConditionFormula>
+        <errorMessage>Please specify an Install Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Install_Location_Validation</fullName>
+        <active>true</active>
+        <description>Ensures that an Install Location is specified for Installed items.</description>
+        <errorConditionFormula>ISPICKVAL(Status,&quot;Installed&quot;) &amp;&amp; TEXT(Install_Country__c) = &quot;&quot;</errorConditionFormula>
+        <errorMessage>Please specify installation location details.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Purchase_Date_Validation</fullName>
+        <active>true</active>
+        <description>Ensures that a Purchase Date is specified for items listed as Shipped.</description>
+        <errorConditionFormula>ISPICKVAL(Status, &quot;Purchased&quot;) &amp;&amp;  TEXT(PurchaseDate) = &quot;&quot;</errorConditionFormula>
+        <errorMessage>Please specify a Purchase Date.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Manage_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Manage Address</masterLabel>
+        <openType>sidebar</openType>
+        <page>AssetAddressDetail</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

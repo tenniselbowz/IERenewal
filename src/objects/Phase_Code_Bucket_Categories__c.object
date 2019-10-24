@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Phase Code Bucket Categories</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Cost__c</fullName>
+        <description>Actual Cost
+from Oracle</description>
+        <externalId>false</externalId>
+        <label>Actual Cost</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Project__r.Contract_Sum_to_Date__c - Actual_Cost__c )/Project__r.Contract_Sum_to_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>C_O__c</fullName>
+        <externalId>false</externalId>
+        <label>C.O</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Original_Budget__c</fullName>
+        <description>Original Budget -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Original Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Collected__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Collected</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Phase_Code__c</fullName>
+        <description>Phase Code Bucket Categories
+updated from Oracle</description>
+        <externalId>false</externalId>
+        <label>Phase Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Subcontract: Controls</fullName>
+                    <default>false</default>
+                    <label>Subcontract: Controls</label>
+                </value>
+                <value>
+                    <fullName>Subcontract: Electrical</fullName>
+                    <default>false</default>
+                    <label>Subcontract: Electrical</label>
+                </value>
+                <value>
+                    <fullName>Subcontract: Mechanical</fullName>
+                    <default>false</default>
+                    <label>Subcontract: Mechanical</label>
+                </value>
+                <value>
+                    <fullName>Subcontract: Structural &amp; Insulation</fullName>
+                    <default>false</default>
+                    <label>Subcontract: Structural &amp; Insulation</label>
+                </value>
+                <value>
+                    <fullName>Tech &amp; Mgmt Svcs: McQuay Other</fullName>
+                    <default>false</default>
+                    <label>Tech &amp; Mgmt Svcs: McQuay Other</label>
+                </value>
+                <value>
+                    <fullName>Equipment</fullName>
+                    <default>false</default>
+                    <label>Equipment</label>
+                </value>
+                <value>
+                    <fullName>Material</fullName>
+                    <default>false</default>
+                    <label>Material</label>
+                </value>
+                <value>
+                    <fullName>Bonds, Insurance, Legal &amp; Permits</fullName>
+                    <default>false</default>
+                    <label>Bonds, Insurance, Legal &amp; Permits</label>
+                </value>
+                <value>
+                    <fullName>Tech &amp; Mgmt Svcs: McQuay Travel &amp; Expenses</fullName>
+                    <default>false</default>
+                    <label>Tech &amp; Mgmt Svcs: McQuay Travel &amp; Expenses</label>
+                </value>
+                <value>
+                    <fullName>Tech &amp; Mgmt Svcs: McQuay Service</fullName>
+                    <default>false</default>
+                    <label>Tech &amp; Mgmt Svcs: McQuay Service</label>
+                </value>
+                <value>
+                    <fullName>Tech &amp; Mgmt Svcs: McQuay Misc Expenses</fullName>
+                    <default>false</default>
+                    <label>Tech &amp; Mgmt Svcs: McQuay Misc Expenses</label>
+                </value>
+                <value>
+                    <fullName>Site, Safety, Demo, Rentals &amp; Other</fullName>
+                    <default>false</default>
+                    <label>Site, Safety, Demo, Rentals &amp; Other</label>
+                </value>
+                <value>
+                    <fullName>Tech &amp; Mgmt Svcs: McQuay Solutions</fullName>
+                    <default>false</default>
+                    <label>Tech &amp; Mgmt Svcs: McQuay Solutions</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Ext_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Project Ext Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Phase Code Bucket Categories</relationshipLabel>
+        <relationshipName>Phase_Code_Bucket_Categories</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Projected_Budget__c</fullName>
+        <description>Projected Budget -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Projected Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Cost__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Projected Cost
+from Oracle</description>
+        <externalId>false</externalId>
+        <label>Actual Cost</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Over_Under__c</fullName>
+        <description>Projected Over/Under -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Projected Over/Under</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Under_Over__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Projected Under/Over -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Projected Over/Under</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Re_estimate__c</fullName>
+        <externalId>false</externalId>
+        <label>Re-estimate</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Revised_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>Revised Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Unique_Ext_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Unique Ext Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Phase Code Bucket Categories</label>
+    <nameField>
+        <label>Phase Code Bucket Categories Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Phase Code Bucket Categories</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Original_Budget__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Projected_Budget__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Actual_Cost__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Projected_Over_Under__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Original_Budget__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Projected_Budget__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Actual_Cost__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Projected_Over_Under__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Original_Budget__c</searchFilterFields>
+        <searchFilterFields>Projected_Budget__c</searchFilterFields>
+        <searchFilterFields>Actual_Cost__c</searchFilterFields>
+        <searchFilterFields>Projected_Over_Under__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddQuoteLine</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllQuoteLine</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Custom_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>10000</length>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount_Percent__c</fullName>
+        <description>Equipment + Freight Discount %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment + Freight Discount %</inlineHelpText>
+        <label>Equipment + Freight Discount %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <description>Equipment + Freight Discount $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment + Freight Discount $</inlineHelpText>
+        <label>Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Gross_Margin__c</fullName>
+        <description>Equipment Gross Margin %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment Gross Margin %</inlineHelpText>
+        <label>Equipment Gross Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Price_FOB__c</fullName>
+        <description>Unit Equipment Cost $
+(Item Price * Multiplier (PAR) ) + Commission Add On + Start-up Add On + Service Add On + Misc. Add On One $ + Misc. Add On Two $ + Misc. Add On Three $ + Misc. Add On Four $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Equipment Cost $
+(Item Price * Multiplier (PAR) ) + Commission Add On + Start-up Add On + Service Add On + Misc. Add On One $ + Misc. Add On Two $ + Misc. Add On Three $ + Misc. Add On Four $</inlineHelpText>
+        <label>Unit Equipment Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_With_F_L__c</fullName>
+        <description>Total Equipment + Freight Cost $
+(Unit Equipment Cost $  +  Unit Freight Cost $) * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Equipment + Freight Cost $
+(Unit Equipment Cost $  +  Unit Freight Cost $) * Quantity</inlineHelpText>
+        <label>Total Equipment + Freight Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <description>Exchange rate from USD to Opportunity&apos;s Local Currency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exchange rate from USD to Opportunity&apos;s Local Currency.</inlineHelpText>
+        <label>Exchange Rate</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Freight_Gross_Margin__c</fullName>
+        <description>Freight Gross Margin %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Freight Gross Margin %</inlineHelpText>
+        <label>Freight Gross Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Freight_Percent__c</fullName>
+        <description>Domestic Freight %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Domestic Freight %</inlineHelpText>
+        <label>Domestic Freight %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Freight__c</fullName>
+        <description>Domestic Freight $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Domestic Freight $</inlineHelpText>
+        <label>Domestic Freight $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Item_Description_Spanish__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>10000</length>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Item_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>10000</length>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Item_Number__c</fullName>
+        <description>Item #</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item #</inlineHelpText>
+        <label>Item #</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>LocalSelling_Unitary_Equipment_Price_FOB__c</fullName>
+        <description>Local Unit Equipment Selling Price
+Local Unit Equipment Cost / (1- Equipment Gross Margin %)</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Local_Equipment_Price_FOB__c  / (1 - Equipment_Gross_Margin__c),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Equipment Selling Price
+Local Unit Equipment Cost / (1- Equipment Gross Margin %)</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Currency__c</fullName>
+        <description>Local Currency of Opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Local Currency of Opportunity.</inlineHelpText>
+        <label>Local Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Discount__c</fullName>
+        <description>Local Equipment + Freight Discount
+[Equipment + Freight Discount $] * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Discount__c *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Equipment + Freight Discount
+[Equipment + Freight Discount $] * Exchange Rate</inlineHelpText>
+        <label>Local Equipment + Freight Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Equipment_Price_FOB__c</fullName>
+        <description>Local Unit Equipment Cost
+(Local Item Price * Multiplier (PAR) ) + Local Commission Add On + Local Start-up Add On + Local Service Add On + Local Misc. Add On One + Local Misc. Add On Two + Local Misc. Add On Three + Local Misc. Add On Four</description>
+        <externalId>false</externalId>
+        <formula>ROUND((Local_Sales_Price__c * Multiplier_PAR__c),2) + Local_Service_Add_On__c + Local_Start_up_Add_On__c + Local_Outsource_Add_On__c + Local_Misc_Add_On_One_Amount__c + Local_Misc_Add_On_Two_Amount__c + Local_Misc_Add_On_Three_Amount__c + Local_Misc_Add_On_Four_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Equipment Cost
+(Local Item Price * Multiplier (PAR) ) + Local Commission Add On + Local Start-up Add On + Local Service Add On + Local Misc. Add On One + Local Misc. Add On Two + Local Misc. Add On Three + Local Misc. Add On Four</inlineHelpText>
+        <label>Local Unit Equipment Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Equipment_With_F_L__c</fullName>
+        <description>Local Total Equipment + Freight Cost
+(Local Unit Equipment Cost  +  Local Unit Freight Cost) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>(Local_Equipment_Price_FOB__c +  Local_Total_Freight_Logistic__c) *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Equipment + Freight Cost
+(Local Unit Equipment Cost  +  Local Unit Freight Cost) * Quantity</inlineHelpText>
+        <label>Local Total Equipment + Freight Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Freight__c</fullName>
+        <description>Local Domestic Freight
+Domestic Freight $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Freight__c *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Domestic Freight
+Domestic Freight $ * Exchange Rate</inlineHelpText>
+        <label>Local Domestic Freight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Logistics_Add_On__c</fullName>
+        <description>Local Export Freight Add On
+Export Freight Add On $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Logistics_Add_On__c *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Export Freight Add On
+Export Freight Add On $ * Exchange Rate</inlineHelpText>
+        <label>Local Export Freight Add On</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Misc_Add_On_Four_Amount__c</fullName>
+        <description>Local Misc. Add On Four
+Misc. Add On Four $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Misc_Add_On_Four_Amount__c * Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Misc. Add On Four
+Misc. Add On Four $ * Exchange Rate</inlineHelpText>
+        <label>Local Misc. Add On Four</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Misc_Add_On_One_Amount__c</fullName>
+        <description>Local Misc. Add On One
+Misc. Add On One $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Misc_Add_On_One_Amount__c * Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Misc. Add On One
+Misc. Add On One $ * Exchange Rate</inlineHelpText>
+        <label>Local Misc. Add On One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Misc_Add_On_Three_Amount__c</fullName>
+        <description>Local Misc. Add On Three
+Misc. Add On Three $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Misc_Add_On_Three_Amount__c * Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Misc. Add On Three
+Misc. Add On Three $ * Exchange Rate</inlineHelpText>
+        <label>Local Misc. Add On Three</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Misc_Add_On_Two_Amount__c</fullName>
+        <description>Local Misc. Add On Two
+Misc. Add On Two $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Misc_Add_On_Two_Amount__c * Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Misc. Add On Two
+Misc. Add On Two $ * Exchange Rate</inlineHelpText>
+        <label>Local Misc. Add On Two</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Outsource_Add_On__c</fullName>
+        <description>Local Commission Add On
+Commission Add On $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Outsource_Add_On__c *   Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Commission Add On
+Commission Add On $ * Exchange Rate</inlineHelpText>
+        <label>Local Commission Add On</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Sales_Price__c</fullName>
+        <description>Local Item Price
+Item Price * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND( Item_Price__c  *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Item Price
+Item Price * Exchange Rate</inlineHelpText>
+        <label>Local Item Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Selling_Total_Equip_Price_FOB__c</fullName>
+        <description>Local Total Equipment Selling Price
+Local Unit Equipment Selling Price * Quantity</description>
+        <externalId>false</externalId>
+        <formula>LocalSelling_Unitary_Equipment_Price_FOB__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Equipment Selling Price
+Local Unit Equipment Selling Price * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Selling_Total_F_L__c</fullName>
+        <description>Local Total Freight Selling Price
+Local Unit Freight Selling Price * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Local_Selling_Unitary_Freight_Logistic__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Freight Selling Price
+Local Unit Freight Selling Price * Quantity</inlineHelpText>
+        <label>Local Total Freight Selling Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Selling_Unitary_Freight_Logistic__c</fullName>
+        <description>Local Unit Freight Selling Price
+Local Unit Freight Cost / (1 - Freight Gross Margin %)</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Local_Total_Freight_Logistic__c / (1 - Freight_Gross_Margin__c),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Freight Selling Price
+Local Unit Freight Cost / (1 - Freight Gross Margin %)</inlineHelpText>
+        <label>Freight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Service_Add_On__c</fullName>
+        <description>Local Service Add On
+Service Add On $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Service_Add_On__c *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Service Add On
+Service Add On $ * Exchange Rate</inlineHelpText>
+        <label>Local Service Add On</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Start_up_Add_On__c</fullName>
+        <description>Local Start-up Add On
+Start-up Add On $ * Exchange Rate</description>
+        <externalId>false</externalId>
+        <formula>ROUND(Start_up_Add_On__c *  Exchange_Rate__c,2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Start-up Add On
+Start-up Add On $ * Exchange Rate</inlineHelpText>
+        <label>Local Start-up Add On</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Total_Freight_Logistic__c</fullName>
+        <description>Local Unit Freight Cost
+(Local Unit Equipment Cost * Domestic Freight %) + Local Domestic Freight + Local Export Freight Add On</description>
+        <externalId>false</externalId>
+        <formula>ROUND((Local_Equipment_Price_FOB__c  * Freight_Percent__c),2) + Local_Freight__c + Local_Logistics_Add_On__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Freight Cost
+(Local Unit Equipment Cost * Domestic Freight %) + Local Domestic Freight + Local Export Freight Add On</inlineHelpText>
+        <label>Local Unit Freight Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Total_Selling_Discount__c</fullName>
+        <description>Local Total Equipment + Freight Discount
+[Local Unit Equipment + Freight Discount] * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Local_Unitary_Selling_Discount__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Equipment + Freight Discount
+[Local Unit Equipment + Freight Discount] * Quantity</inlineHelpText>
+        <label>Local Total Equipment + Freight Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Total_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Local Total Equip+Freight Selling Price w Disc
+[Local Unit Equip +Freight Selling Price w Disc] * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Local_Unitary_Selling_Price_w_Log_Disc__c *  Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Equip+Freight Selling Price w Disc
+[Local Unit Equip +Freight Selling Price w Disc] * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Total_Selling_Price_w_Logistics__c</fullName>
+        <description>Local Total Equip +Freight Selling Price
+(Local Unit Equipment Selling Price + Local Unit Freight Selling Price) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Local_Unitary_Selling_Price_w_Logistics__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Total Equip +Freight Selling Price
+(Local Unit Equipment Selling Price + Local Unit Freight Selling Price) * Quantity</inlineHelpText>
+        <label>Local Total Equip +Freight Selling Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Unitary_Selling_Discount__c</fullName>
+        <description>Local Unit Equipment + Freight Discount
+([Local Unit Equip + Freight Selling Price] * [Equipment + Freight Discount %]) + [Local Equipment + Freight Discount]</description>
+        <externalId>false</externalId>
+        <formula>ROUND(ROUND((Local_Unitary_Selling_Price_w_Logistics__c * Discount_Percent__c),2) + Local_Discount__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Equipment + Freight Discount
+([Local Unit Equip + Freight Selling Price] * [Equipment + Freight Discount %]) + [Local Equipment + Freight Discount]</inlineHelpText>
+        <label>Local Unit Equipment + Freight Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Unitary_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Local Unit Equipment + Freight Selling Price w Disc
+(Local Unit Equipment Selling Price + Local Unit Freight Selling Price) - [Local Unit Equipment + Freight Discount]</description>
+        <externalId>false</externalId>
+        <formula>Local_Unitary_Selling_Price_w_Logistics__c - Local_Unitary_Selling_Discount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Equipment + Freight Selling Price w Disc
+(Local Unit Equipment Selling Price + Local Unit Freight Selling Price) - [Local Unit Equipment + Freight Discount]</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Unitary_Selling_Price_w_Logistics__c</fullName>
+        <description>Local Unit Equip + Freight Selling Price
+Local Unit Equipment Selling Price + Local Unit Freight Selling Price</description>
+        <externalId>false</externalId>
+        <formula>(Local_Selling_Unitary_Freight_Logistic__c + LocalSelling_Unitary_Equipment_Price_FOB__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Local Unit Equip + Freight Selling Price
+Local Unit Equipment Selling Price + Local Unit Freight Selling Price</inlineHelpText>
+        <label>Local Unit Equip + Freight Selling Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Logistics_Add_On__c</fullName>
+        <description>Export Freight Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Export Freight Add On $</inlineHelpText>
+        <label>Export Freight Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_COP_Reserve__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;CO-OP Marketing Reserve&quot;, Misc_Add_On_One_Amount__c, 0) 
++ 
+IF(Misc_Add_On_Two_Type__c = &quot;CO-OP Marketing Reserve&quot;, Misc_Add_On_Two_Amount__c, 0) 
++ 
+IF(Misc_Add_On_Three_Type__c = &quot;CO-OP Marketing Reserve&quot;, Misc_Add_On_Three_Amount__c, 0) 
++ 
+IF(Misc_Add_On_Four_Type__c = &quot;CO-OP Marketing Reserve&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total CO-OP Marketing Reserve</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Contingency__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Contingency&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Contingency&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Contingency&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Contingency&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Contingency $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Contractor_Markup__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Contractor Markup&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Contractor Markup&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Contractor Markup&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Contractor Markup&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Contractor Markup $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Extended_Warranty__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Extended Warranty&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Extended Warranty&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Extended Warranty&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Extended Warranty&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Extended Warranty $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Inspection__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Inspection&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Inspection&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Inspection&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Inspection&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Inspection $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Labor_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Labor Hours&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Labor Hours&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Labor Hours&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Labor Hours&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Labor Hours $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Maintenance_Visits__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Maintenance Visits&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Maintenance Visits&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Maintenance Visits&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Maintenance Visits&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Maintenance Visits $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Marketing__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Marketing&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Marketing&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Marketing&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Marketing&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Marketing $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Standard_Warranty__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Standard Warranty&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Standard Warranty&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Standard Warranty&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Standard Warranty&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Standard Warranty $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Training_Factory__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Training Factory&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Training Factory&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Training Factory&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Training Factory&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Training Factory $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Training_On_Site__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Training On Site&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Training On Site&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Training On Site&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Training On Site&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Training On Site $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Travel_Expenses__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Travel Expenses&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Travel Expenses&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Travel Expenses&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Travel Expenses&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Travel Expenses $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Warranty_Reserve__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Warranty Reserve&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Warranty Reserve&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Warranty Reserve&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Warranty Reserve&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Warranty Reserve $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Witness_Test__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity * (IF(Misc_Add_On_One_Type__c = &quot;Witness Test&quot;, Misc_Add_On_One_Amount__c, 0)
++
+ IF(Misc_Add_On_Two_Type__c = &quot;Witness Test&quot;, Misc_Add_On_Two_Amount__c, 0)
++
+ IF(Misc_Add_On_Three_Type__c = &quot;Witness Test&quot;, Misc_Add_On_Three_Amount__c, 0)
++
+ IF(Misc_Add_On_Four_Type__c = &quot;Witness Test&quot;, Misc_Add_On_Four_Amount__c, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Witness Test $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Four_Amount__c</fullName>
+        <description>Specifies amount of fourth miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of fourth miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Four $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Four_Type__c</fullName>
+        <description>Specifies type of fourth miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of fourth miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Four Type</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_One_Amount__c</fullName>
+        <description>Specifies amount of first miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of first miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On One $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_One_Type__c</fullName>
+        <description>Specifies type of first miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of first miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On One Type</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Three_Amount__c</fullName>
+        <description>Specifies amount of third miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of third miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Three $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Three_Type__c</fullName>
+        <description>Specifies type of third miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of third miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Three Type</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Two_Amount__c</fullName>
+        <description>Specifies amount of second miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies amount of second miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Two $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Misc_Add_On_Two_Type__c</fullName>
+        <description>Specifies type of second miscellaneous cost add on.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type of second miscellaneous cost add on.</inlineHelpText>
+        <label>Misc. Add On Two Type</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Multiplier_PAR__c</fullName>
+        <description>Multiplier (PAR)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multiplier (PAR)</inlineHelpText>
+        <label>Multiplier (PAR)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outsource_Add_On__c</fullName>
+        <description>Commission Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Commission Add On $</inlineHelpText>
+        <label>Commission Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Product_Category__c</fullName>
+        <description>This formula is created to show the Product Category in the report area &quot;Opportunities with Quotes and Quote line Items&quot;</description>
+        <externalId>false</externalId>
+        <formula>Product2.Product_Category__c</formula>
+        <label>Product_Product Category</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Product_Family__c</fullName>
+        <description>This formula is created to use in report area &quot;Opportunities with Quotes and Quote line Items&quot;</description>
+        <externalId>false</externalId>
+        <formula>Product2.Product_Family__c</formula>
+        <label>Product_Product Family</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Product_Group__c</fullName>
+        <description>This formula is created to use in report area &quot;Opportunities with Quotes and Quote line Items&quot; report area</description>
+        <externalId>false</externalId>
+        <formula>Product2.Product_Group__c</formula>
+        <label>Product_Product Group</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>QuoteId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Total_Equip_Price_FOB__c</fullName>
+        <description>Total Equipment Selling Price $
+Unit Equipment Selling Price $ * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Equipment Selling Price $
+Unit Equipment Selling Price $ * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Total_F_L__c</fullName>
+        <description>Total Freight Selling Price $
+Unit Freight Selling Price $ * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Freight Selling Price $
+Unit Freight Selling Price $ * Quantity</inlineHelpText>
+        <label>Total Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Unitary_Equipment_Price_FOB__c</fullName>
+        <description>Unit Equipment Selling Price $
+Unit Equipment Cost $ / (1- Equipment Gross Margin %)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Equipment Selling Price $
+Unit Equipment Cost $ / (1- Equipment Gross Margin %)</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Unitary_Freight_Logistic__c</fullName>
+        <description>Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</inlineHelpText>
+        <label>Freight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Service_Add_On__c</fullName>
+        <description>Service Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Add On $</inlineHelpText>
+        <label>Service Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Start_up_Add_On__c</fullName>
+        <description>Start-up Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Start-up Add On $</inlineHelpText>
+        <label>Start-up Add On $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TAG__c</fullName>
+        <description>TAG</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TAG</inlineHelpText>
+        <label>TAG</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Total_Base_Equipment_Cost__c</fullName>
+        <description>Total Base Equipment Cost $
+ROUND((Item Price * Multiplier (PAR)),2) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>ROUND((UnitPrice * Multiplier_PAR__c),2) * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Base Equipment Cost $
+ROUND((Item Price * Multiplier (PAR)),2) * Quantity</inlineHelpText>
+        <label>Total Base Equipment Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Domestic_Freight_Amt__c</fullName>
+        <description>Total Domestic Freight Add $
+Domestic Freight $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Freight__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Domestic Freight Add $
+Domestic Freight $ * Quantity</inlineHelpText>
+        <label>Total Domestic Freight Add $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Domestic_Freight_Pct_Amt__c</fullName>
+        <description>Total Domestic Freight % $
+ROUND((Unit Equipment Cost $ * Domestic Freight %),2) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>ROUND((Equipment_Price_FOB__c * Freight_Percent__c),2) * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Domestic Freight % $
+ROUND((Unit Equipment Cost $ * Domestic Freight %),2) * Quantity</inlineHelpText>
+        <label>Total Domestic Freight % $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Domestic_Freight__c</fullName>
+        <description>Total Domestic Freight $
+(ROUND((Unit Equipment Cost $ * Domestic Freight %),2) + Domestic Freight $) * Quantity</description>
+        <externalId>false</externalId>
+        <formula>(ROUND((Equipment_Price_FOB__c * Freight_Percent__c),2) + Freight__c) * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Domestic Freight $
+(ROUND((Unit Equipment Cost $ * Domestic Freight %),2) + Domestic Freight $) * Quantity</inlineHelpText>
+        <label>Total Domestic Freight $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Equipment_Price_FOB__c</fullName>
+        <description>Total Equipment Cost $
+Unit Equipment Cost $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Equipment_Price_FOB__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Equipment Cost $
+Unit Equipment Cost $ * Quantity</inlineHelpText>
+        <label>Total Equipment Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Freight_Logistic__c</fullName>
+        <description>Unit Freight Cost $
+(Unit Equipment Cost $ * Domestic Freight %) + Domestic Freight $ + Export Freight Add On $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Freight Cost $
+(Unit Equipment Cost $ * Domestic Freight %) + Domestic Freight $ + Export Freight Add On $</inlineHelpText>
+        <label>Unit Freight Cost $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Logistics_Add_On__c</fullName>
+        <description>Total Export Freight $
+Export Freight Add On $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Logistics_Add_On__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Export Freight $
+Export Freight Add On $ * Quantity</inlineHelpText>
+        <label>Total Export Freight $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Outsource_Add_On__c</fullName>
+        <description>Total Commission $
+Commission Add On $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Outsource_Add_On__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Commission $
+Commission Add On $ * Quantity</inlineHelpText>
+        <label>Total Commission $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Discount__c</fullName>
+        <description>Total Equipment + Freight Discount $
+[Unit Equipment + Freight Discount $] * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Equipment + Freight Discount $
+[Unit Equipment + Freight Discount $] * Quantity</inlineHelpText>
+        <label>Total Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Price_w_Logistics_Disc__c</fullName>
+        <description>Multi-Currency Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi-Currency Total Equip+Freight Selling Price w Disc
+[Unit Equip +Freight Selling Price w Disc] * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Selling_Price_w_Logistics__c</fullName>
+        <description>Total Equip + Freight Selling Price $
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Equip + Freight Selling Price $
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) * Quantity</inlineHelpText>
+        <label>Total Equip + Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Service_Add_On__c</fullName>
+        <description>Total Service $
+Service Add On $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Service_Add_On__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Service $
+Service Add On $ * Quantity</inlineHelpText>
+        <label>Total Service $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Start_up_Add_On__c</fullName>
+        <description>Total Start-up $
+Start-up Add On $ * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Start_up_Add_On__c * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Start-up $
+Start-up Add On $ * Quantity</inlineHelpText>
+        <label>Total Start-up $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Discount__c</fullName>
+        <description>Unit Equipment + Freight Discount $
+([Unit Equipment + Freight Selling Price $] * [Equipment + Freight Discount %]) + [Equipment + Freight Discount $]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Equipment + Freight Discount $
+([Unit Equipment + Freight Selling Price $] * [Equipment + Freight Discount %]) + [Equipment + Freight Discount $]</inlineHelpText>
+        <label>Unit Equipment + Freight Discount $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Price_w_Log_Disc__c</fullName>
+        <description>Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) - [Unit Equipment + Freight Discount $]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price $ + Unit Freight Selling Price $) - [Unit Equipment + Freight Discount $]</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Price_w_Logistics_Disc__c</fullName>
+        <description>Multi-Currency Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price + Unit Freight Selling Price) - [Unit Equipment + Freight Discount]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi-Currency Unit Equipment + Freight Selling Price w Disc
+(Unit Equipment Selling Price + Unit Freight Selling Price) - [Unit Equipment + Freight Discount]</inlineHelpText>
+        <label>Unit Price</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unitary_Selling_Price_w_Logistics__c</fullName>
+        <description>Unit Equipment + Freight Selling Price $
+Unit Equipment Selling Price $ + Unit Freight Selling Price $</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit Equipment + Freight Selling Price $
+Unit Equipment Selling Price $ + Unit Freight Selling Price $</inlineHelpText>
+        <label>Unit Equipment + Freight Selling Price $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Supplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.Vendor_Supplier__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor/Supplier</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>m_Selling_Total_Equip_Price_FOB__c</fullName>
+        <description>Multi-Currency Total Equipment Selling Price
+Unit Equipment Selling Price * Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi-Currency Total Equipment Selling Price
+Unit Equipment Selling Price * Quantity</inlineHelpText>
+        <label>Total Price</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>m_Selling_Unitary_Equipment_Price_FOB__c</fullName>
+        <description>Multi-Currency Unit Equipment Selling Price
+Unit Equipment Cost / (1- Equipment Gross Margin %)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi-Currency Unit Equipment Selling Price
+Unit Equipment Cost / (1- Equipment Gross Margin %)</inlineHelpText>
+        <label>Unit Price</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>m_Selling_Unitary_Freight_Logistic__c</fullName>
+        <description>Multi-Currency Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi-Currency Unit Freight Selling Price $
+Unit Freight Cost $ / (1 - Freight Gross Margin %)</inlineHelpText>
+        <label>Freight</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

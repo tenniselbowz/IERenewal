@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>InDevelopment</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Accumulated_Hours__c</fullName>
+        <description>Total Hours to date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Hours to date</inlineHelpText>
+        <label>Accumulated Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Accumulated_Time_Logs__c</fullName>
+        <externalId>false</externalId>
+        <label>Accumulated Time Logs</label>
+        <summarizedField>Project_Task__c.Accumulated_Time_Logs__c</summarizedField>
+        <summaryForeignKey>Project_Task__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Margin__c</fullName>
+        <description>Actual Margin is the Contract Sum to Date minus Orginal Budget/Cost divided by Contract Sum to Date.</description>
+        <externalId>false</externalId>
+        <formula>(( Contract_Sum_to_Date__c  -  cost__c)  /  Contract_Sum_to_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Task_Start_Date__c</fullName>
+        <description>When did the first task on this project start?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When did the first task on this project start?</inlineHelpText>
+        <label>Actual Task Start Date</label>
+        <summarizedField>Project_Task__c.Start_Date__c</summarizedField>
+        <summaryForeignKey>Project_Task__c.Project__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Task_Stop_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Task Stop Date</label>
+        <summarizedField>Project_Task__c.Due_Date__c</summarizedField>
+        <summaryForeignKey>Project_Task__c.Project__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Allocated_Budget__c</fullName>
+        <description>Budget dollars allocated for project</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Budget dollars allocated for project</inlineHelpText>
+        <label>Allocated Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Allocated_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Allocated Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allocated_Hours__c</fullName>
+        <description>Hours Allocated to This  Project</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hours Allocated to This  Project</inlineHelpText>
+        <label>Allocated Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allocated_Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Use only for Staff Augmentation Projects.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use only for Staff Augmentation Projects.</inlineHelpText>
+        <label>Allocated Resource</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Remaining__c</fullName>
+        <description>Amount Remaing -from Oracle
+Field Label changed to Backlog , Field Name Amount_Remaining</description>
+        <externalId>false</externalId>
+        <label>Backlog</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Billable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Billed_To_Date__c</fullName>
+        <description>Billed To Date -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Billed To Date</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bi-Weekly</fullName>
+                    <default>true</default>
+                    <label>Bi-Weekly</label>
+                </value>
+                <value>
+                    <fullName>One Time</fullName>
+                    <default>false</default>
+                    <label>One Time</label>
+                </value>
+                <value>
+                    <fullName>Weekly</fullName>
+                    <default>false</default>
+                    <label>Weekly</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Semi Monthly</fullName>
+                    <default>false</default>
+                    <label>Semi Monthly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BudgetDifference__c</fullName>
+        <externalId>false</externalId>
+        <formula>Allocated_Budget__c  -  Current_Expenditure__c</formula>
+        <label>BudgetDifference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Remaining__c</fullName>
+        <externalId>false</externalId>
+        <formula>Allocated_Budget__c - Current_Expenditure__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Budget Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Objectives__c</fullName>
+        <description>The Link between Project &amp; the Business
+Customer&apos;s Objective was Business Objectives</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Link between Project &amp; the Business</inlineHelpText>
+        <label>Customer&apos;s Objective</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Change_Order_Add__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Order Additions</label>
+        <summarizedField>Change_Order__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Change_Order__c.Amount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Change_Order__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Change_Order_Additions__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Change Order Additions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Change_Order_Deletions__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Change Order Deletions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Change_Orders_Deduct__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Orders Deductions</label>
+        <summarizedField>Change_Order__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Change_Order__c.Amount__c</field>
+            <operation>lessThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Change_Order__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Chillers_Shipped__c</fullName>
+        <description>Chillers Shipped Date</description>
+        <externalId>false</externalId>
+        <label>Chillers Shipped</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Chillers_Witness_Tested__c</fullName>
+        <externalId>false</externalId>
+        <label>Chillers Witness Tested</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contract_Amount__c</fullName>
+        <description>Contract Amount from Oracle</description>
+        <externalId>false</externalId>
+        <label>Contract Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Signed__c</fullName>
+        <description>Contract Signed</description>
+        <externalId>false</externalId>
+        <label>Contract Signed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Sum_to_Date__c</fullName>
+        <description>Contract Sum to Date is the same as SOV Contract Sum to Date -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Contract Sum to Date</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Current_Budget_Risk__c</fullName>
+        <description>Maintaining Project Budget</description>
+        <externalId>false</externalId>
+        <label>Current Budget Risk</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Over</fullName>
+                    <default>false</default>
+                    <label>Over</label>
+                </value>
+                <value>
+                    <fullName>At</fullName>
+                    <default>false</default>
+                    <label>At</label>
+                </value>
+                <value>
+                    <fullName>Under</fullName>
+                    <default>false</default>
+                    <label>Under</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_Customer_Satisfaction__c</fullName>
+        <description>Current Customer Satisfaction</description>
+        <externalId>false</externalId>
+        <label>Current Customer Satisfaction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5- High</fullName>
+                    <default>false</default>
+                    <label>5- High</label>
+                </value>
+                <value>
+                    <fullName>3- Meduim</fullName>
+                    <default>false</default>
+                    <label>3- Meduim</label>
+                </value>
+                <value>
+                    <fullName>1- Low</fullName>
+                    <default>false</default>
+                    <label>1- Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_Expenditure__c</fullName>
+        <description>Dollars expended to date on the project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Dollars expended to date on the project.</inlineHelpText>
+        <label>Current Expenditure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Current_Margin__c</fullName>
+        <description>Current Margin -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Current Margin</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>3200</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Estimated_Margin__c</fullName>
+        <description>Estimated Margin -from Oracle</description>
+        <externalId>false</externalId>
+        <label>Estimated Margin</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Start_Date__c</fullName>
+        <description>Estimated start date</description>
+        <externalId>false</externalId>
+        <label>Estimated Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Shows if the Project&apos;s Expenses are billable to End-client</description>
+        <externalId>false</externalId>
+        <label>Expense Billable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expenses_are_billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Expenses are billable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId__c</fullName>
+        <externalId>false</externalId>
+        <label>ExternalId</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GUID__c</fullName>
+        <externalId>true</externalId>
+        <label>GUID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Internal_Project__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Internal Project</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Job_Info_Complete_Credit_Reviewed__c</fullName>
+        <description>Job Info Complete &amp; Credit Reviewed</description>
+        <externalId>false</externalId>
+        <label>Job Info Complete &amp; Credit Reviewed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Review__c</fullName>
+        <description>Legal Review</description>
+        <externalId>false</externalId>
+        <label>Legal Review</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MCP_Invoiced__c</fullName>
+        <description>MCP Invoiced Date</description>
+        <externalId>false</externalId>
+        <label>MCP Invoiced</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MCP_Shipped__c</fullName>
+        <description>MCP Shipped Date</description>
+        <externalId>false</externalId>
+        <label>MCP Shipped</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MCP_Startup__c</fullName>
+        <description>MCP Startup Date</description>
+        <externalId>false</externalId>
+        <label>MCP Startup</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MCP_ordered__c</fullName>
+        <description>MCP ordered Date</description>
+        <externalId>false</externalId>
+        <label>MCP ordered</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MCP_perf_testing__c</fullName>
+        <description>MCP perf testing Date</description>
+        <externalId>false</externalId>
+        <label>MCP perf testing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NDA_Signed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>NDA Signed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Net_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Net (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Bill_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Bill Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity City</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <description>Opportunity Name</description>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Name</formula>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity State/Province</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Order_Submitted_into_MST__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Submitted into MST?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Original_Sale_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original Sale Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Owner_End_Clients_Name__c</fullName>
+        <description>Upon creation of a project the Owner/End-Client’s Name field will be updated with the value from the Opportunity Owner/End-Client’s Name (API Name: End_Customer__c)</description>
+        <externalId>false</externalId>
+        <label>Owner/End-Client’s Name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAR__c</fullName>
+        <description>PAR</description>
+        <externalId>false</externalId>
+        <label>PAR</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PO__c</fullName>
+        <description>PO Date</description>
+        <externalId>false</externalId>
+        <label>PO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Paid_To_Date__c</fullName>
+        <description>Original Field Name was Paid To Date -this field will be updated from Oracle</description>
+        <externalId>false</externalId>
+        <label>Recognized Revenue</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Sub Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Collected__c</fullName>
+        <description>Payment Collected is the money received but not recognized as revenue. This field will be updated from Oracle.</description>
+        <externalId>false</externalId>
+        <label>Customer Payment Collected</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Percent_Complete__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Percent Complete</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Production_Delays__c</fullName>
+        <description>Production Delays text</description>
+        <externalId>false</externalId>
+        <label>Production Delays?</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Ext_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Project Ext Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Number__c</fullName>
+        <description>Opportunity Project Number</description>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <label>Project Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Objectives__c</fullName>
+        <description>Project Objectives is a text field associated with the Project Charter information
+The Project Objectives are the major project milestones.
+MQ Objectives was  Project Objectives</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MQ Objectives - Project Objectives are the major project milestones.</inlineHelpText>
+        <label>MQ Objectives</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Sol_Job_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>Project Sol Job Number</label>
+        <length>26</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Status_Log__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Status Log</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Projected_Actuals__c</fullName>
+        <description>Projected Actuals Amount
+Read Only Field - Oracle Feed</description>
+        <externalId>false</externalId>
+        <label>Projected Actuals</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Budget__c</fullName>
+        <description>Projected Budget Amount
+Read Only Field - Oracle Feed</description>
+        <externalId>false</externalId>
+        <label>Projected Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Under_Over__c</fullName>
+        <description>Projected Under / Over Amount
+Read Only Field - Oracle Feed</description>
+        <externalId>false</externalId>
+        <label>Projected Under / Over</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Reviewed__c</fullName>
+        <description>Proposal Reviewed Date</description>
+        <externalId>false</externalId>
+        <label>Proposal Reviewed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RFQ__c</fullName>
+        <description>Request For Quote  is a manual entry field.</description>
+        <externalId>false</externalId>
+        <label>RFQ</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recreate_Check_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Remove existing Check Lists and recreates them from Templates. If no Check Lists are found, creates new Check Lists from Templates.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Remove existing Check Lists and refresh them from Templates. If no Check Lists are found, creates new Check Lists from Templates.</inlineHelpText>
+        <label>Refresh Checklist</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Risk_Level__c</fullName>
+        <description>Current Schedule Risk, are we track on meeting completion date.</description>
+        <externalId>false</externalId>
+        <label>Current Schedule Risk</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ahead</fullName>
+                    <default>false</default>
+                    <label>Ahead</label>
+                </value>
+                <value>
+                    <fullName>On</fullName>
+                    <default>false</default>
+                    <label>On</label>
+                </value>
+                <value>
+                    <fullName>Behind</fullName>
+                    <default>false</default>
+                    <label>Behind</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SO__c</fullName>
+        <description>The SO Number will be provided by Oracle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment Sales Order Number</inlineHelpText>
+        <label>SO #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SR_Number__c</fullName>
+        <description>SR # will be provided by Oracle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Solutions Service Request Nmber</inlineHelpText>
+        <label>SR #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selection_in_MST__c</fullName>
+        <description>Selection in MST</description>
+        <externalId>false</externalId>
+        <label>Selection in MST</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Solutions_Job_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Solutions Job Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Project Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DEVELOP-Pre-Contract</fullName>
+                    <default>false</default>
+                    <label>DEVELOP-Pre-Contract</label>
+                </value>
+                <value>
+                    <fullName>INITIATE-Turnover</fullName>
+                    <default>false</default>
+                    <label>INITIATE-Turnover</label>
+                </value>
+                <value>
+                    <fullName>PLAN-Pre-Construction</fullName>
+                    <default>false</default>
+                    <label>PLAN-Pre-Construction</label>
+                </value>
+                <value>
+                    <fullName>CONTROL-Delivery</fullName>
+                    <default>false</default>
+                    <label>CONTROL-Delivery</label>
+                </value>
+                <value>
+                    <fullName>CONTROL-Installation</fullName>
+                    <default>false</default>
+                    <label>CONTROL-Installation</label>
+                </value>
+                <value>
+                    <fullName>CONTROL-Commissioning</fullName>
+                    <default>false</default>
+                    <label>CONTROL-Commissioning</label>
+                </value>
+                <value>
+                    <fullName>CONTROL-Punchlist</fullName>
+                    <default>false</default>
+                    <label>CONTROL-Punchlist</label>
+                </value>
+                <value>
+                    <fullName>CLOSE-Closeout</fullName>
+                    <default>false</default>
+                    <label>CLOSE-Closeout</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Date Project Starts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Project Starts</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pipeline</fullName>
+                    <default>true</default>
+                    <label>Pipeline</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Complete-Warranty</fullName>
+                    <default>false</default>
+                    <label>Complete-Warranty</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>LOST</fullName>
+                    <default>false</default>
+                    <label>LOST</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staunton_Order_Processing_Started__c</fullName>
+        <description>Staunton Order Processing  Started Date</description>
+        <externalId>false</externalId>
+        <label>Staunton Order Processing  Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Stop_Date__c</fullName>
+        <description>Project Stop (End Date) - Field Label renamed Completion Date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Stop (End Date)</inlineHelpText>
+        <label>Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Submittals_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Submittals Approved?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sum_of_Change_Orders__c</fullName>
+        <description>Sum of change orders is the SOV Net change by chnage orders. Same vaule from Oracle.</description>
+        <externalId>false</externalId>
+        <label>Sum of Change Orders</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Accumulated_Hours_for_Sub_Projects__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Accumulated Hrs for Sub-Projecs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Allocated_hours_for_sub_projects__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Allocated hours for sub projects</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Contract_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Original_Sale_Amount__c + Change_Order_Additions__c + Change_Order_Deletions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Contract Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Current_Expenditure_for_SubProject__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Current Expenditure for SubProject</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_allocated_Budget_from_Sub_Projects__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total allocated Budget from Sub-Projects</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>cost__c</fullName>
+        <description>Project cost</description>
+        <externalId>false</externalId>
+        <label>Original Budget/Cost</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>est_chillers_shipped_date__c</fullName>
+        <description>est chillers shipped date
+Read Only Field -Oracle Feed</description>
+        <externalId>false</externalId>
+        <label>est chillers shipped date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Project</label>
+    <nameField>
+        <label>Project Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Milestone_Billing</fullName>
+        <active>true</active>
+        <label>Milestone Billing</label>
+        <picklistValues>
+            <picklist>Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Chillers_Witness_Tested__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Budget_Risk__c</picklist>
+            <values>
+                <fullName>At</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Customer_Satisfaction__c</picklist>
+            <values>
+                <fullName>1- Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3- Meduim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5- High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Order_Submitted_into_MST__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Level__c</picklist>
+            <values>
+                <fullName>Ahead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>CLOSE-Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Commissioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Punchlist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEVELOP-Pre-Contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INITIATE-Turnover</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLAN-Pre-Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete-Warranty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Submittals_Approved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>POC_SOV</fullName>
+        <active>true</active>
+        <label>POC / SOV</label>
+        <picklistValues>
+            <picklist>Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Chillers_Witness_Tested__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Budget_Risk__c</picklist>
+            <values>
+                <fullName>At</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Customer_Satisfaction__c</picklist>
+            <values>
+                <fullName>1- Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3- Meduim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5- High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Order_Submitted_into_MST__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Level__c</picklist>
+            <values>
+                <fullName>Ahead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>CLOSE-Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Commissioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Punchlist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEVELOP-Pre-Contract</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>INITIATE-Turnover</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLAN-Pre-Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete-Warranty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Submittals_Approved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Services_Hourly</fullName>
+        <active>true</active>
+        <description>Use this to create simple staff augmentation projects.</description>
+        <label>Hourly Recurring</label>
+        <picklistValues>
+            <picklist>Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Chillers_Witness_Tested__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Budget_Risk__c</picklist>
+            <values>
+                <fullName>At</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Customer_Satisfaction__c</picklist>
+            <values>
+                <fullName>1- Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3- Meduim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5- High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Order_Submitted_into_MST__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Level__c</picklist>
+            <values>
+                <fullName>Ahead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>CLOSE-Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Commissioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Punchlist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEVELOP-Pre-Contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INITIATE-Turnover</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLAN-Pre-Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete-Warranty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Submittals_Approved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staff_Augmentation_Fixed_Price</fullName>
+        <active>true</active>
+        <description>Use this type to create fixed bid projects.</description>
+        <label>Fixed Price</label>
+        <picklistValues>
+            <picklist>Billing_Frequency__c</picklist>
+            <values>
+                <fullName>Bi-Weekly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Chillers_Witness_Tested__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Budget_Risk__c</picklist>
+            <values>
+                <fullName>At</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Customer_Satisfaction__c</picklist>
+            <values>
+                <fullName>1- Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3- Meduim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5- High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Order_Submitted_into_MST__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Level__c</picklist>
+            <values>
+                <fullName>Ahead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>CLOSE-Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Commissioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL-Punchlist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEVELOP-Pre-Contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INITIATE-Turnover</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLAN-Pre-Construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete-Warranty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Submittals_Approved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Project_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Next_Bill_Date__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Description__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Next_Bill_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Description__c</searchFilterFields>
+        <searchFilterFields>Next_Bill_Date__c</searchFilterFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Next_Bill_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

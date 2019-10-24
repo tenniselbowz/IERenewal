@@ -1,0 +1,28 @@
+{
+  "CodeMapPerProject": {
+    "collapsedPanels": [
+      "IE_UnitResetCompletedService",
+      "Batch_IE_ProcObsGWAssets",
+      "Batch_IE_DeactPrevMonthExpSubAndStartups",
+      "TRC_Dashboard_Data_Test",
+      "TestRetrieveContactService",
+      "TestContactTrigger",
+      "ContactTriggerHandler",
+      "IE_IndividualService",
+      "IERenewal_ATTJasperAPIServiceAccess",
+      "IERenewal_ATTJasperAPIServiceAccessTest",
+      "IE_UnitService",
+      "Batch_IE_DeactivateExpiredSubscriptions",
+      "DaikinOracleEBSWarrantyServiceAccessTest",
+      "DaikinOracleEBSWarrantyServiceAccess",
+      "OrderTriggerHandler"
+    ]
+  },
+  "SObjectEditorProject": {
+    "collapsedEditors": [],
+    "expandedEditors": [],
+    "collapsedGlobalEditors": [],
+    "expandedGlobalEditors": []
+  },
+  "SettingsVersion": 1
+}

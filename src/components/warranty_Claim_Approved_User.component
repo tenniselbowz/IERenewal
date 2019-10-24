@@ -1,0 +1,26 @@
+<apex:component Controller="ChillerWarrantyAuthorizationVFClass" access="global" >
+    <apex:attribute name="CaseIds" type="String" description="Id of tde account" assignTo="{!CaseIdvalue}" access="global"/>
+    <apex:attribute name="tenKnotification" type="String" description="to send warranty10K notification" assignTo="{!isTenKwarrantyNotification}" default="true" access="global"/>
+    <table border="1">
+        <tr >
+            <th><b>Serial Number</b></th>
+            <th><b>Asset PCL</b></th>
+            <th><b>Model</b></th>
+            <th><b>Responsibility</b></th>
+            <!--<th style="border: 1px solid black;"><b>Service Code Details</b></th>-->
+        </tr>
+            <apex:repeat value="{!warrantyChildcasess}" var="match">
+                <tr >
+                    <td>{!match.Serial_Number__c}</td>
+                    <td>{!match.asset.Product2.DW_Product_Class__c}</td>
+                    <td>{!match.asset.Product2.ProductCode}</td>
+                    <td> 
+                        <!--table border="1" style="width:100%;border:1px solid;" -->
+                    <apex:repeat value="{!getservicecodes[match]}" var="a" >           
+                        {!a.Responsibility__r.name} <br/>
+                    </apex:repeat>
+                        </td>
+                </tr>   
+        </apex:repeat>
+    </table>
+</apex:component>

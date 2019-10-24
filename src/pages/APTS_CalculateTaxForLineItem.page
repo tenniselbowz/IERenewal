@@ -1,0 +1,8 @@
+<apex:page showHeader="true" sidebar="true" Controller="APTS_CalculateTaxOnLineItem" action="{!computeTax}">
+    <apex:pageMessages id="errorMessage"></apex:pageMessages>
+        <apex:form >
+            <apex:pageBlock >
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:pageBlock>
+         </apex:form>
+</apex:page>

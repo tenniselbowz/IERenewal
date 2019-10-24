@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Identifies permitted fields for updating via the SFDC Field Update web service.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Field_List__c</fullName>
+        <description>comma separated list of fields allowed for each object (object in the Name field)</description>
+        <externalId>false</externalId>
+        <label>Field List</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>IE_Integration_Field_Set</label>
+    <visibility>Public</visibility>
+</CustomObject>

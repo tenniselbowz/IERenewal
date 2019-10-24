@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>Apttus_Config2__ProductDetailFields</fullName>
+        <availableFields>
+            <field>Apttus_Config2__Customizable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__IconId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Icon__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Version__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Set of display fields for the Detail page in Admin Console</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Family</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__Uom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__EffectiveDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__ExpirationDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__ConfigurationType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__HasOptions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__HasAttributes__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsActive</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Detail Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Apttus_Config2__ProductListFields</fullName>
+        <availableFields>
+            <field>Apttus_Config2__Customizable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__EffectiveDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__ExpirationDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__IconId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Icon__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Version__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Set of display fields for the List page in Admin Console</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Family</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__ConfigurationType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__Uom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__HasOptions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Apttus_Config2__HasAttributes__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsActive</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product List Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Apttus_Config2__QuickSearchFilterFields</fullName>
+        <availableFields>
+            <field>Apttus_Config2__ConfigurationType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Family</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Uom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>QuickAdd</description>
+        <label>Quick Search Filter Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Apttus_Config2__QuickSearchResultFields</fullName>
+        <availableFields>
+            <field>Apttus_Config2__ConfigurationType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__EffectiveDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__ExpirationDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Family</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__HasAttributes__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__HasOptions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Apttus_Config2__Uom__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>QuickAdd</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Quick Search Result Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>APTS_ApplyOptionPrice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag specifies whether option price of line Item needs to be rollup on bundle</description>
+        <externalId>false</externalId>
+        <label>ApplyOptionPrice</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_Daikin_Pricing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Custom Pricing Callback</description>
+        <externalId>false</externalId>
+        <label>Daikin Pricing</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_Ext_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>APTS Ext ID</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_WRC_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>WRC Percentage</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_WRC_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>WRC Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Risk</fullName>
+                    <default>false</default>
+                    <label>Risk</label>
+                </value>
+                <value>
+                    <fullName>Contingency</fullName>
+                    <default>false</default>
+                    <label>Contingency</label>
+                </value>
+                <value>
+                    <fullName>Warranty (Equipment)</fullName>
+                    <default>false</default>
+                    <label>Warranty (Equipment)</label>
+                </value>
+                <value>
+                    <fullName>Warranty (Parts &amp; Material)</fullName>
+                    <default>false</default>
+                    <label>Warranty (Parts &amp; Material)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Tax_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Avalara Tax Code for product level taxabiltiy rules.</inlineHelpText>
+        <label>Tax Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__UPC__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the UPC Code for product level taxabiltiy rules.</inlineHelpText>
+        <label>UPC</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__BundleInvoiceLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The invoice level associated with the bundle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The invoice level associated with the bundle</inlineHelpText>
+        <label>Bundle Invoice Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Detail</fullName>
+                    <default>false</default>
+                    <label>Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__ConfigurationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product configuration type</description>
+        <externalId>false</externalId>
+        <label>Configuration Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>true</default>
+                    <label>Standalone</label>
+                </value>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Option</fullName>
+                    <default>false</default>
+                    <label>Option</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__Customizable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product must be configured during selection.</description>
+        <externalId>false</externalId>
+        <label>Must Configure</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__DiscontinuedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when the product is pulled out and rendered unavailable for sale on the store</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the product is pulled out and rendered unavailable for sale on the store</inlineHelpText>
+        <label>Discontinued Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__EffectiveDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product effective date. The product becomes available for selection on this date and time.</description>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__EffectiveStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The start date of the product in a store</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The start date of the product in a store</inlineHelpText>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__ExcludeFromSitemap__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product is listed for indexing by search engines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether the product is listed for indexing by search engines.</inlineHelpText>
+        <label>Exclude From Sitemap</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__ExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product expiration date. The product is unavailable for selection after this date and time.</description>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__HasAttributes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has attributes.</description>
+        <externalId>false</externalId>
+        <label>Has Attributes</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__HasDefaults__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has default rules</description>
+        <externalId>false</externalId>
+        <label>Has Defaults</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__HasOptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has options.</description>
+        <externalId>false</externalId>
+        <label>Has Options</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__HasSearchAttributes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When set to true the product can be considered as base product for searching related products</description>
+        <externalId>false</externalId>
+        <label>Has Search Attributes</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__IconId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The attachment object ID of the uploaded icon image file.</description>
+        <externalId>false</externalId>
+        <label>Icon Image</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__IconSize__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The actual size of the icon.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The actual size of the icon.</inlineHelpText>
+        <label>Actual Icon Size</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the icon uploaded using the icon button.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/apex/Apttus_Config2__IconUploader?productId=&quot;+Id, IF(ISBLANK(Apttus_Config2__IconId__c) , IMAGE(&quot;/resource/Apttus_Config2__Image_UploadIcon&quot;, &quot;Upload Icon&quot;, 50, 50), IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot;+Apttus_Config2__IconId__c , &quot;Icon&quot;, 50, 50)) , &quot;_top&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Product Icon for display in application. Click on the icon to add/change the image.</inlineHelpText>
+        <label>Icon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__LaunchDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when the product is launched for selling.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the product is launched for selling.</inlineHelpText>
+        <label>Launch Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__Uom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The default unit of measure for the product</description>
+        <externalId>false</externalId>
+        <label>Uom</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Each</fullName>
+                    <default>true</default>
+                    <label>Each</label>
+                </value>
+                <value>
+                    <fullName>Hour</fullName>
+                    <default>false</default>
+                    <label>Hour</label>
+                </value>
+                <value>
+                    <fullName>Day</fullName>
+                    <default>false</default>
+                    <label>Day</label>
+                </value>
+                <value>
+                    <fullName>Month</fullName>
+                    <default>false</default>
+                    <label>Month</label>
+                </value>
+                <value>
+                    <fullName>Year</fullName>
+                    <default>false</default>
+                    <label>Year</label>
+                </value>
+                <value>
+                    <fullName>Quarter</fullName>
+                    <default>false</default>
+                    <label>Quarter</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Gallon</fullName>
+                    <default>false</default>
+                    <label>Gallon</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apttus_Config2__Version__c</fullName>
+        <defaultValue>1.00</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apttus_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Apttus Product</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apttus_Searchable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>By clicking this box it makes the product searchable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the product should be searchable in the Apttus shopping cart.</inlineHelpText>
+        <label>Apttus Searchable</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Create_Multiple_Assets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if multiple asset records should be created when a quantity &gt; 1 is selected for this product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if multiple asset records should be created when a quantity &gt; 1 is selected for this product.</inlineHelpText>
+        <label>Create Multiple Assets</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DMAPP__AM_Solution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>AM Solution</label>
+        <referenceTo>DMAPP__AM_Solution__c</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DW_Active_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Active Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DW_Inactive_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Inactive Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DW_PCL_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>DW PCL Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DW_Product_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Product Business Unit</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DW_Product_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Product Class</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DW_Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DW_Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>DW Product Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DisplayUrl</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalDataSourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>French_Product_Name__c</fullName>
+        <description>Needed so Tasks can be output on documentation in French.</description>
+        <externalId>false</externalId>
+        <label>French Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Must check if Intelligent Equipment Gateway and Energy Management Model products so that resulting Assets are set as Record Usage = IE which prevents the Asset from being deleted. ADMIN ONLY field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Must check if Intelligent Equipment Gateway or Energy Management Model product so that resulting Gateway and EMM Assets are set as Record Usage = IE which prevents the Asset from being deleted.</inlineHelpText>
+        <label>IE</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Key_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Key Product</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LA_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If Checked then it is only LA product else the product is used both in LA and NA</description>
+        <externalId>false</externalId>
+        <label>LA Product</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Model_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Model Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CAT 1</fullName>
+                    <default>false</default>
+                    <label>CAT 1</label>
+                </value>
+                <value>
+                    <fullName>CAT 2</fullName>
+                    <default>false</default>
+                    <label>CAT 2</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <description>Product Category</description>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub-Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Production_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Production ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SF_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SF ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Spanish_Product_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Spanish Product Description</label>
+        <length>4000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Spanish_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Spanish Product Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Startup_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Specifies if Startup is required for this product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies if Startup is required for this product.</inlineHelpText>
+        <label>Startup Required</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TRC_Group__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies which TRC group is responsible for handling Cases associated with this product. Web cases are assigned based on this field.</inlineHelpText>
+        <label>TRC Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TRC - AAH</fullName>
+                    <default>false</default>
+                    <label>TRC - AAH</label>
+                </value>
+                <value>
+                    <fullName>TRC - ATS</fullName>
+                    <default>false</default>
+                    <label>TRC - ATS</label>
+                </value>
+                <value>
+                    <fullName>TRC - Chillers</fullName>
+                    <default>false</default>
+                    <label>TRC - Chillers</label>
+                </value>
+                <value>
+                    <fullName>TRC - Controls</fullName>
+                    <default>false</default>
+                    <label>TRC - Controls</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Use_Model_Materials_for_Tax__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Use Model Materials for Tax</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Use_Tax_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Use Tax Applicable</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_And_Model_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vendor_Supplier__c &amp; &apos;-&apos;  &amp;  ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor And Model Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Supplier_Long__c</fullName>
+        <description>Full name of Vendor/Supplier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full name of Vendor/Supplier.</inlineHelpText>
+        <label>Vendor/Supplier Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Supplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor/Supplier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warehouse_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID. DW_McQuayDataWarehouse.dbo.DW_DIM_EQUIPMENT_PRODUCT.DEP_EQUIPMENT_PRODUCT_KEY</inlineHelpText>
+        <label>Warehouse ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Active_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>Product_Group__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Product_Sub_Category__c</columns>
+        <columns>Product_Category__c</columns>
+        <columns>Vendor_Supplier__c</columns>
+        <columns>Create_Multiple_Assets__c</columns>
+        <columns>Key_Product__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Products</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>Product_Group__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Product_Sub_Category__c</columns>
+        <columns>Product_Category__c</columns>
+        <columns>Vendor_Supplier__c</columns>
+        <columns>Create_Multiple_Assets__c</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>Key_Product__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive Products</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>No_TRC_Group</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TRC_Group__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>No TRC Group</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TRC_AAH</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TRC_Group__c</field>
+            <operation>equals</operation>
+            <value>TRC - AAH</value>
+        </filters>
+        <label>TRC - AAH</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TRC_ATS</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TRC_Group__c</field>
+            <operation>equals</operation>
+            <value>TRC - ATS</value>
+        </filters>
+        <label>TRC - ATS</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TRC_Chillers</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TRC_Group__c</field>
+            <operation>equals</operation>
+            <value>TRC - Chillers</value>
+        </filters>
+        <label>TRC - Chillers</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TRC_Controls</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>TRC_Group__c</columns>
+        <columns>DW_Product_Business_Unit__c</columns>
+        <columns>DW_Product_Family__c</columns>
+        <columns>DW_Product_Line__c</columns>
+        <columns>DW_Product_Class__c</columns>
+        <columns>DW_Active_Date__c</columns>
+        <columns>Startup_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TRC_Group__c</field>
+            <operation>equals</operation>
+            <value>TRC - Controls</value>
+        </filters>
+        <label>TRC - Controls</label>
+        <language>en_US</language>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Latin_America</fullName>
+        <active>true</active>
+        <label>Products</label>
+        <picklistValues>
+            <picklist>APTS_WRC_Product__c</picklist>
+            <values>
+                <fullName>Contingency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty %28Equipment%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty %28Parts %26 Material%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Apttus_Config2__ConfigurationType__c</picklist>
+            <values>
+                <fullName>Bundle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Option</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standalone</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Family</picklist>
+            <values>
+                <fullName>Water-Cooled Chillers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Model_Type__c</picklist>
+            <values>
+                <fullName>CAT 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TRC_Group__c</picklist>
+            <values>
+                <fullName>TRC - AAH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRC - ATS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRC - Chillers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRC - Controls</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vendor_Supplier__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.ACTIVE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Warehouse_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Group__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Apttus_Config2__Options</fullName>
+        <availability>online</availability>
+        <description>Create or manage options for the product</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Options</masterLabel>
+        <openType>sidebar</openType>
+        <page>Apttus_Config2__ProductOptions</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Apttus_Config2__ProductConsole</fullName>
+        <availability>online</availability>
+        <description>Navigates to the product console</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Product Console</masterLabel>
+        <openType>sidebar</openType>
+        <page>Apttus_Config2__ProductConsole</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

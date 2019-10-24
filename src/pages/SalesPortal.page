@@ -1,0 +1,12 @@
+<apex:page >
+<script>
+var strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes";
+
+//URL Goes Here
+var URL = "https://sso.daikinapplied.com/account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dkentico_prd%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520email%2520offline_access%26redirect_uri%3Dhttps%253A%252F%252Fsales.daikinapplied.com%252FDaikinAppliedPortal%252Fhandlers%252FSsoCallback.ashx%26state%3Da2b209c5b372133e7b43a8fddfa8fb7971f60db9ef0a4f6dcd985dec92fac8fc%26nonce%3D97bd17ebcb047b0c42f8082a58fc2de1606841e69f967053f946a96bd30957a7%26response_mode%3Dform_post%26code_challenge_method%3DS256";
+
+//Call Function
+var win = window.open(URL, "_parent", strWindowFeatures);
+
+</script>
+</apex:page>

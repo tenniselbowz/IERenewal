@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <content>CaseServiceCodeEdit2</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>CaseServiceCodeEdit2</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>CaseServiceCodeEdit2</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>In_Line_Edit</fullName>
+        <description>In Line Edit Service Code Page</description>
+        <displayedFields>
+            <field>Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Hours_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Labor_Amount_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Daikin_Parts_Amount_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>X3rd_Party_Parts_Amount_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Additional_Materials_Amount_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Hours_Approved__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Labor_Amount_Approved__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Daikin_Parts_Amount_Approved__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>X3rd_Party_Parts_Amount_Approved__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Additional_Materials_Amount_Approved__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>In Line Edit</label>
+    </fieldSets>
+    <fields>
+        <fullName>Additional_Materials_Amount_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Materials Amount Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Materials_Amount_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Materials Amount Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Model__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Asset.Product2.ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Model</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_PCL__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Asset.Product_Class__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset PCL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Asset.SerialNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Serial Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Ship_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Asset.Ship_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Ship Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Startup_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Asset.Startup_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Startup Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit_Calc__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Business_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Case Service Codes</relationshipLabel>
+        <relationshipName>Case_Service_Codes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Currency_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CurrencyIsoCode)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daikin_Parts_Amount_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Daikin Parts Amount Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daikin_Parts_Amount_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Daikin Parts Amount Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Hours Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Hours Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Labor_Amount_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Labor Amount Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Labor_Amount_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Labor Amount Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MajorCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>MajorCode__r.Name + &apos; &apos;+ MajorCode__r.Label__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Major</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MajorCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Major</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Major)</relationshipLabel>
+        <relationshipName>Case_Service_Codes4</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ModeCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>ModeCode__r.Name + &apos; &apos;+ ModeCode__r.Label__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ModeCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Mode</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Mode)</relationshipLabel>
+        <relationshipName>Case_Service_Codes2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Case__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.ParentId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Case</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResponsibilityCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>Responsibility__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ResponsibilityCalc</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Responsibility__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Responsibility</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Responsibility)</relationshipLabel>
+        <relationshipName>Case_Service_Codes6</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Special_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Special Type</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Special Type)</relationshipLabel>
+        <relationshipName>Case_Service_Codes7</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SpecificCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>SpecificCode__r.Name + &apos; &apos;+ SpecificCode__r.Label__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Specific</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SpecificCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Specific</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Specific)</relationshipLabel>
+        <relationshipName>Case_Service_Codes5</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Approved__c</fullName>
+        <externalId>false</externalId>
+        <formula>Labor_Amount_Approved__c + Additional_Materials_Amount_Approved__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TypeCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>TypeCode__r.Name + &apos; &apos;+ TypeCode__r.Label__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TypeCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Type)</relationshipLabel>
+        <relationshipName>Case_Service_Codes3</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UnitCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitCode__r.Name + &apos; &apos;+ UnitCode__r.Label__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnitCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Unit)</relationshipLabel>
+        <relationshipName>Case_Service_Codes1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WarrantyClassCalc__c</fullName>
+        <externalId>false</externalId>
+        <formula>WarrantyClassCode__r.Name + &apos; &apos;+ WarrantyClassCode__r.Label__c</formula>
+        <label>Warranty Class</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WarrantyClassCode__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Warranty Class</label>
+        <referenceTo>Service_Code__c</referenceTo>
+        <relationshipLabel>Case Service Codes (Warranty Class)</relationshipLabel>
+        <relationshipName>Case_Service_Codes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Party_Parts_Amount_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd-Party Parts Amount Approved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Party_Parts_Amount_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd-Party Parts Amount Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Case Service Code</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Parent_Case__c</columns>
+        <columns>NAME</columns>
+        <columns>Case__c</columns>
+        <columns>Business_Unit_Calc__c</columns>
+        <columns>WarrantyClassCalc__c</columns>
+        <columns>UnitCalc__c</columns>
+        <columns>UnitCode__c</columns>
+        <columns>ModeCalc__c</columns>
+        <columns>ModeCode__c</columns>
+        <columns>TypeCalc__c</columns>
+        <columns>MajorCode__c</columns>
+        <columns>SpecificCalc__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Case Service Code Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Service Codes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Apply_to_All_Cases</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Apply to All Cases</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/42.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/42.0/apex.js&apos;)} 
+try{ 
+var cId = &apos;{!Case_Service_Code__c.Id}&apos;; 
+var count = sforce.apex.execute(&apos;WarrantyHelper&apos;, &apos;associateCaseServiceCodes&apos;, {cscId:cId, evenly:false}); 
+alert(&apos;Added to &apos;+count+&apos; child case(s).&apos;); 
+} 
+catch(err) { 
+alert(err.description); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Apply_to_All_Cases_Evenly</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Apply to All Cases Evenly</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/42.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/42.0/apex.js&apos;)} 
+try{ 
+var cId = &apos;{!Case_Service_Code__c.Id}&apos;; 
+var count = sforce.apex.execute(&apos;WarrantyHelper&apos;, &apos;associateCaseServiceCodes&apos;, {cscId:cId, evenly:true}); 
+alert(&apos;Added to &apos;+count+&apos; child case(s).&apos;); 
+} 
+catch(err) { 
+alert(err.description); 
+}
+document.location.reload(true);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Parent_Case1</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Warranty Header</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/{!Case_Service_Code__c.Parent_Case__c}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,10 @@
+SELECT
+	IE_Asset__c,
+	IE_ID__c,
+	IE_Sync_Status__c,
+	Id,
+	Job_Name__c,
+	Name,
+	SerialNumber
+FROM Asset
+where IE_Asset__c = true

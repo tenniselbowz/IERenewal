@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created for MA Tasking List.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Attribute_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Attribute Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Tasking_French_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Tasking French Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>MA_Tasking_Item_Sequence__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Tasking Item Sequence</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Tasking_Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Tasking Line Number</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Tasking_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Tasking Name</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Name_or_Description__c</fullName>
+        <description>Name or Description depending if name contains &apos;Annual Task&apos; or &apos;Operational Task&apos;.</description>
+        <externalId>false</externalId>
+        <label>Name or Description</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Option_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Option Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Option_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Option Group</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ADDITION(S) AND/OR EXCEPTION(S):</fullName>
+                    <default>false</default>
+                    <label>ADDITION(S) AND/OR EXCEPTION(S):</label>
+                </value>
+                <value>
+                    <fullName>Annual Inspection &amp; Re-Certification:</fullName>
+                    <default>false</default>
+                    <label>Annual Inspection &amp; Re-Certification:</label>
+                </value>
+                <value>
+                    <fullName>Annual Inspection:</fullName>
+                    <default>false</default>
+                    <label>Annual Inspection:</label>
+                </value>
+                <value>
+                    <fullName>Burners and Combustions / Boilers</fullName>
+                    <default>false</default>
+                    <label>Burners and Combustions / Boilers</label>
+                </value>
+                <value>
+                    <fullName>Coils Services</fullName>
+                    <default>false</default>
+                    <label>Coils Services</label>
+                </value>
+                <value>
+                    <fullName>Electric type *</fullName>
+                    <default>false</default>
+                    <label>Electric type *</label>
+                </value>
+                <value>
+                    <fullName>Filters and Belts</fullName>
+                    <default>false</default>
+                    <label>Filters and Belts</label>
+                </value>
+                <value>
+                    <fullName>Generic Tasks</fullName>
+                    <default>false</default>
+                    <label>Generic Tasks</label>
+                </value>
+                <value>
+                    <fullName>High efficiency purge *</fullName>
+                    <default>false</default>
+                    <label>High efficiency purge *</label>
+                </value>
+                <value>
+                    <fullName>Indoor Unit - Annual Inspection</fullName>
+                    <default>false</default>
+                    <label>Indoor Unit - Annual Inspection</label>
+                </value>
+                <value>
+                    <fullName>Indoor Unit - Operation Inspection</fullName>
+                    <default>false</default>
+                    <label>Indoor Unit - Operation Inspection</label>
+                </value>
+                <value>
+                    <fullName>Note</fullName>
+                    <default>false</default>
+                    <label>Note</label>
+                </value>
+                <value>
+                    <fullName>Oil type *</fullName>
+                    <default>false</default>
+                    <label>Oil type *</label>
+                </value>
+                <value>
+                    <fullName>Oil type boilers *</fullName>
+                    <default>false</default>
+                    <label>Oil type boilers *</label>
+                </value>
+                <value>
+                    <fullName>Operational Inspection:</fullName>
+                    <default>false</default>
+                    <label>Operational Inspection:</label>
+                </value>
+                <value>
+                    <fullName>Outdoor unit - Annual Inspection</fullName>
+                    <default>false</default>
+                    <label>Outdoor unit - Annual Inspection</label>
+                </value>
+                <value>
+                    <fullName>Outdoor Unit - Operation Inspection</fullName>
+                    <default>false</default>
+                    <label>Outdoor Unit - Operation Inspection</label>
+                </value>
+                <value>
+                    <fullName>PRE-COOLING INSPECTION (Spring)- Seasonal Inspection</fullName>
+                    <default>false</default>
+                    <label>PRE-COOLING INSPECTION (Spring)- Seasonal Inspection</label>
+                </value>
+                <value>
+                    <fullName>Predictive Maintenance</fullName>
+                    <default>false</default>
+                    <label>Predictive Maintenance</label>
+                </value>
+                <value>
+                    <fullName>PRE-HEATING INSPECTION (Fall)- Seasonal Inspection</fullName>
+                    <default>false</default>
+                    <label>PRE-HEATING INSPECTION (Fall)- Seasonal Inspection</label>
+                </value>
+                <value>
+                    <fullName>Preventative Maintenance</fullName>
+                    <default>false</default>
+                    <label>Preventative Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Propane &amp; natural gas type *</fullName>
+                    <default>false</default>
+                    <label>Propane &amp; natural gas type *</label>
+                </value>
+                <value>
+                    <fullName>Purge System*</fullName>
+                    <default>false</default>
+                    <label>Purge System*</label>
+                </value>
+                <value>
+                    <fullName>Seasonal Start-up</fullName>
+                    <default>false</default>
+                    <label>Seasonal Start-up</label>
+                </value>
+                <value>
+                    <fullName>Starter Type*</fullName>
+                    <default>false</default>
+                    <label>Starter Type*</label>
+                </value>
+                <value>
+                    <fullName>Steam type *</fullName>
+                    <default>false</default>
+                    <label>Steam type *</label>
+                </value>
+                <value>
+                    <fullName>Steam type boilers *</fullName>
+                    <default>false</default>
+                    <label>Steam type boilers *</label>
+                </value>
+                <value>
+                    <fullName>Tube Services - (Condenser/Evaporator)</fullName>
+                    <default>false</default>
+                    <label>Tube Services - (Condenser/Evaporator)</label>
+                </value>
+                <value>
+                    <fullName>Variable frequency drive(s) *</fullName>
+                    <default>false</default>
+                    <label>Variable frequency drive(s) *</label>
+                </value>
+                <value>
+                    <fullName>Water cooled purge *</fullName>
+                    <default>false</default>
+                    <label>Water cooled purge *</label>
+                </value>
+                <value>
+                    <fullName>The Annual Inspection</fullName>
+                    <default>false</default>
+                    <label>The Annual Inspection</label>
+                </value>
+                <value>
+                    <fullName>The Operational Inspection</fullName>
+                    <default>false</default>
+                    <label>The Operational Inspection</label>
+                </value>
+                <value>
+                    <fullName>300 Point Inspection</fullName>
+                    <default>false</default>
+                    <label>300 Point Inspection</label>
+                </value>
+                <value>
+                    <fullName>Intelligent Solution Options</fullName>
+                    <default>false</default>
+                    <label>Intelligent Solution Options</label>
+                </value>
+                <value>
+                    <fullName>Propane &amp; natural gas type boilers *</fullName>
+                    <default>false</default>
+                    <label>Propane &amp; natural gas type boilers *</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proposal_MA_Bundle__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal MA Bundle</label>
+        <referenceTo>Proposal_MA_Bundle__c</referenceTo>
+        <relationshipLabel>Proposal MA Tasking</relationshipLabel>
+        <relationshipName>Proposal_MA_Tasking</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Random_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Random Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label># of Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Visits__c</fullName>
+        <externalId>false</externalId>
+        <label># of Visits</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Proposal MA Tasking</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>MA_Tasking_Name__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Attribute_Description__c</columns>
+        <columns>Proposal_MA_Bundle__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>MATask-{000000000}</displayFormat>
+        <label>Proposal MA Tasking Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Proposal MA Tasking</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

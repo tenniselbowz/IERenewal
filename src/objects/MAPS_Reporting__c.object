@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object designed to capture a daily snapshot of sales data for the Service Sales team. Use cases are data trending and visualforce page showing dynamic summary tables.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Closed_Won_MTD__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM (Opportunity.Amount)</inlineHelpText>
+        <label>Closed Won (MTD)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_YTD__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Amount)</inlineHelpText>
+        <label>Closed Won (YTD)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_v_Quota_MTD__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.FY_Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.FY_Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</inlineHelpText>
+        <label>Closed Won v. Quota (MTD)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_v_Quota_YTD__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</inlineHelpText>
+        <label>Closed Won v. Quota (YTD)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Date_Ending__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date for which this records data was captured and summarized.</inlineHelpText>
+        <label>Date Ending</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_Current_FY__c</fullName>
+        <externalId>false</externalId>
+        <label>Factored Pipeline (Current FY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_Rolling_12_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Factored_Amount__c)</inlineHelpText>
+        <label>Factored Pipeline (Rolling 12 Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_Rolling_90_Days__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Factored_Amount__c)</inlineHelpText>
+        <label>Factored Pipeline (Rolling 90 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_v_Quota_Current_FY__c</fullName>
+        <externalId>false</externalId>
+        <label>Factored Pipeline v. Quota (Current FY)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_v_Quota_Rolling_12M__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Factored_Amount__c) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Factored_Amount__c) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</inlineHelpText>
+        <label>Factored Pipeline v. Quota (Rolling 12M)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Factored_Pipeline_v_Quota_Rolling_90D__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Factored_Amount__c) / SUM (Sales_Rep_Quota__c.Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Factored_Amount__c) / SUM (Sales_Rep_Quota__c.Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</inlineHelpText>
+        <label>Factored Pipeline v. Quota (Rolling 90D)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Major_Projects_Current_FY__c</fullName>
+        <externalId>false</externalId>
+        <label>Major Projects (Current FY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Major_Projects_Rolling_12_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Amount)</inlineHelpText>
+        <label>Major Projects (Rolling 12 Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Major_Projects_Rolling_90_Days__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Amount)</inlineHelpText>
+        <label>Major Projects (Rolling 90 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Month_Ending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Month Ending</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Current_FY__c</fullName>
+        <externalId>false</externalId>
+        <label>Pipeline (Current FY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Rolling_12_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Amount)</inlineHelpText>
+        <label>Pipeline (Rolling 12 Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Rolling_90_Days__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Opportunity.Amount)</inlineHelpText>
+        <label>Pipeline (Rolling 90 Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_v_Quota_Current_FY__c</fullName>
+        <externalId>false</externalId>
+        <label>Pipeline v. Quota (Current FY)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_v_Quota_Rolling_12_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)) * 100</inlineHelpText>
+        <label>Pipeline v. Quota (Rolling 12 Months)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_v_Quota_Rolling_90_Days__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(SUM(Opportunity.Amount) / SUM (Sales_Rep_Quota__c.Q?_M?_&lt;LOB&gt;_Quota__c)) * 100</inlineHelpText>
+        <label>Pipeline v. Quota (Rolling 90 Days)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Processing_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique ID from SFDC Batch process assigned to this record</inlineHelpText>
+        <label>Processing ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Quarter_Ending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Quarter Ending</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Quota_Current_FY__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>SUM(Sales_Rep_Quota__c.Total_Annual_Quota_&lt;LOB&gt;__c)</inlineHelpText>
+        <label>Quota (Current FY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Accounts_Current_Number__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Strategic Accounts (Current Number)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Level__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total, MA - New, MA - Renewal, SR - Quoted, SR - T&amp;M, TK, Equipment Only, Rental Chillers, MCP, Other (Parts Only, Start-up)</inlineHelpText>
+        <label>Summary Level</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Service (National), &lt;region&gt;, &lt;district&gt;, &lt;user&gt;</inlineHelpText>
+        <label>Summary Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Parent_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>&lt;Service Role ID&gt;, &lt;region Role ID&gt;, &lt;district Role ID&gt;</inlineHelpText>
+        <label>Summary Parent Id</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Parent_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Service (National), &lt;region&gt;, &lt;district&gt;</inlineHelpText>
+        <label>Summary Parent Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Type_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Role Id or User Id representing the named Summary Type.</inlineHelpText>
+        <label>Summary Type Id</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ((LEFT(Summary_Type_Id__c, 3) = &quot;00E&quot;) &amp;&amp; (CONTAINS(Summary_Name__c,&quot;District&quot;)), &quot;District&quot;, 
+IF ((LEFT(Summary_Type_Id__c, 3) = &quot;00E&quot;) &amp;&amp; (CONTAINS(Summary_Name__c,&quot;Region&quot;)), &quot;Regional&quot;, 
+IF (Summary_Type_Id__c = &quot;00E80000000lTBfEAM&quot;, &quot;National&quot;, &quot;User&quot;)))</formula>
+        <label>Summary Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Ending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Week Ending</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Year_Ending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Year Ending</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>MAPS Reporting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Major_Projects_Rolling_90_Days__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Chicago_PaulG</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>Paul Glassman</value>
+        </filters>
+        <label>Chicago - Paul Glassman</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Indianapolis_Robert_Preston</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Pipeline_v_Quota_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_v_Quota_Rolling_90D__c</columns>
+        <columns>Pipeline_v_Quota_Rolling_12_Months__c</columns>
+        <columns>Factored_Pipeline_v_Quota_Rolling_12M__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>Robert Preston</value>
+        </filters>
+        <label>Indianapolis - Robert Preston</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Minneapolis_Districts</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Pipeline_Rolling_12_Months__c</columns>
+        <columns>Pipeline_v_Quota_Rolling_12_Months__c</columns>
+        <columns>Factored_Pipeline_Rolling_12_Months__c</columns>
+        <columns>Factored_Pipeline_v_Quota_Rolling_12M__c</columns>
+        <columns>Strategic_Accounts_Current_Number__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>Minneapolis District</value>
+        </filters>
+        <label>Minneapolis District</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>North_Central_Region</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Pipeline_v_Quota_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_v_Quota_Rolling_90D__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>North Central Region</value>
+        </filters>
+        <label>North Central Region</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>North_Central_Region_Districts</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>Minneapolis District,Chicago District,Lincoln District</value>
+        </filters>
+        <label>North Central Region Districts</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>North_Central_Region_Users</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Parent_Name__c</field>
+            <operation>equals</operation>
+            <value>Minneapolis District,Chicago District,Lincoln District</value>
+        </filters>
+        <label>North Central Region Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Service_ALL</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Date_Ending__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_12_Months__c</columns>
+        <columns>Major_Projects_Rolling_12_Months__c</columns>
+        <columns>Major_Projects_Rolling_90_Days__c</columns>
+        <columns>Strategic_Accounts_Current_Number__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Name__c</field>
+            <operation>equals</operation>
+            <value>Service</value>
+        </filters>
+        <label>Service ALL</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>SummaryType</fullName>
+        <columns>NAME</columns>
+        <columns>Summary_Type__c</columns>
+        <columns>Summary_Name__c</columns>
+        <columns>Summary_Parent_Name__c</columns>
+        <columns>Summary_Type_Id__c</columns>
+        <columns>Summary_Parent_Id__c</columns>
+        <columns>Summary_Level__c</columns>
+        <columns>Closed_Won_MTD__c</columns>
+        <columns>Closed_Won_v_Quota_MTD__c</columns>
+        <columns>Closed_Won_YTD__c</columns>
+        <columns>Closed_Won_v_Quota_YTD__c</columns>
+        <columns>Pipeline_Rolling_90_Days__c</columns>
+        <columns>Factored_Pipeline_Rolling_90_Days__c</columns>
+        <columns>Major_Projects_Rolling_90_Days__c</columns>
+        <columns>Quota_Current_FY__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Summary_Type_Id__c</field>
+            <operation>startsWith</operation>
+            <value>00E</value>
+        </filters>
+        <label>Summary Type</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>MAPS{000000000}</displayFormat>
+        <label>MAPS Reporting ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MAPS Reporting</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,108 @@
+<apex:page standardController="Case" extensions="WarrantyAuthorizationRelatedChildCases">
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 4px;
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    background-color: #C0BE72;
+    color: white;
+}
+</style>
+      <table>
+        <tr >
+            <th><b>Case #</b></th>
+            <th><b>Serial Number</b></th>
+            <th><b>Model</b></th>
+            <th><b>Case Service Code Details</b></th>
+            <th width="10%"><b>Hours Approved</b></th>
+            <th width="10%"><b>Labor Amount Approved</b></th>
+            <th width="10%"><b>Daikin Parts Amount Approved</b></th>
+            <th width="10%"><b>3rdParty Parts Amount Approved</b></th>
+            <th width="10%"><B>Additional Materials Amount Approved</B></th>
+            <th width="10%"><B>Total Amount Approved</B></th>
+            <!---<th><b>Child Case service code details</b></th>
+            <th><b>Hours Approved</b></th>
+            <th><b>Labor Amount Approved</b></th>
+            <th><b>Daikin Parts Amount Approved</b></th>
+            <th><b>3rdParty Parts Amount Approved</b></th>
+            <th><B>Additional Materials Amount Approved</B></th> -->
+            <!--<th style="border: 1px solid black;"><b>Service Code Details</b></th>-->
+        </tr>
+            <apex:repeat value="{!casess}" var="match">
+                <tr >
+                    <td><apex:outputlink value="#" onclick="window.open('/{!match.Id}','_parent');"> {!match.CaseNumber}</apex:outputlink></td>
+                    <td>{!match.Serial_Number__c}</td>
+                    <td>{!match.Model__c}</td>
+                    
+           
+                    <td style="padding-top: 0px; padding-bottom: 0px; padding: 0px;"> 
+                        <table>
+                        
+                            <tr>
+                                <th>Product Class</th>
+                                <!--<th>Case Service Code</th>-->
+                                <th>Business Unit</th>
+                                <th><b>Mode</b></th>
+                                <th><b>Type</b></th>
+                                <th><b>Major</b></th>
+                                <th><b>Specific</b></th>
+                                <th><b>Warranty Class</b></th>
+                                <th>Responsibility</th>
+                                
+                               <!--- <th width="10%"><b>Hours Approved</b></th>
+                                <th width="10%"><b>Labor Amount Approved</b></th>
+                                <th width="10%"><b>Daikin Parts Amount Approved</b></th>
+                                <th width="10%"><b>3rdParty Parts Amount Approved</b></th>
+                                <th width="10%"><B>Additional Materials Amount Approved</B></th>
+                                <th width="10%"><B>Total Amount Approved</B></th>-->
+                            </tr> 
+                            
+                    <apex:repeat value="{!getservicecodes[match]}" var="a">
+                        <tr>
+                            <td> {!a.Asset_PCL__c}</td>
+                            <!--<td> {!a.Name}</td>-->
+                            <td>{!a.Case__r.Business_Unit__c}</td>
+                            <td>{!a.ModeCode__r.Name}&nbsp;{!a.ModeCode__r.Label__c}</td>
+                            <td>{!a.TypeCode__r.Name}&nbsp;{!a.TypeCode__r.Label__c}</td>
+                            <td>{!a.MajorCode__r.Name}&nbsp;{!a.MajorCode__r.Label__c}</td>
+                            <td>{!a.SpecificCode__r.Name}&nbsp;{!a.SpecificCode__r.Label__c}</td>
+                            <td> {!a.WarrantyClassCode__r.Name}&nbsp;{!a.WarrantyClassCode__r.Label__c} </td>
+                            <td> {!a.Responsibility__r.Name} </td>
+                           <!--- <td>{!a.Hours_Approved__c}</td>
+                            <td>{!a.Labor_Amount_Approved__c }</td>
+                            <td>{!a.Daikin_Parts_Amount_Approved__c}</td>
+                            <td>{!a.X3rd_Party_Parts_Amount_Approved__c}</td>
+                            <td>{!a.Additional_Materials_Amount_Approved__c}</td>
+                            <td>{!a.Total_Amount_Approved__c}</td>-->
+                            
+                        </tr> 
+                    </apex:repeat>
+                           
+                   </table>
+                        </td>
+                    <!--<td>{!match.Hours_Approved__c}</td> -->
+                    <td><apex:outputText value="{0, number, ###,###,###,##0.00}">
+                        <apex:param value="{!ABS(match.Hours_Approved__c)}" />
+                        </apex:outputText></td>
+                    <td>{!match.Labor_Amount_Approved__c }</td>
+                    <td>{!match.Daikin_Parts_Amount_Approved__c}</td>
+                    <td>{!match.X3rd_Party_Parts_Amount_Approved__c}</td>
+                    <td>{!match.Additional_Materials_Amount_Approved__c}</td>
+                    <td>{!match.Total_Summed_Amount_Approved__c}</td>
+                </tr>
+                
+        </apex:repeat>
+    </table>
+</apex:page>

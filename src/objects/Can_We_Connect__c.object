@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Relationship Intelligence Rating using 1 to 5 values.  1 Never 5 Always.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Articulates_long_term_Bus_Relat__c</fullName>
+        <description>&quot;This contact can articulate my personal or company&apos;s long-term strategy for building a relationship with their company
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact can articulate my personal or company&apos;s long-term strategy for building a relationship with their company
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Articulates long-term Bus Relat</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Can_we_Connect_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Articulates_long_term_Bus_Relat__c + Cost_Justification__c + Future_Opportunities__c + Introduces_Account_Influencers__c + Make_D_MQ_Preferred_Supplier__c + Non_traditional_Value_Resource__c + Openly_Shares_company_plans__c + Priveleged_Bus_Insights_Plans__c + Takes_Initiative_to_Help__c + Transcendal_Replationship__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Can we Connect Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Can We Connect?</relationshipLabel>
+        <relationshipName>Can_We_Connect</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Justification__c</fullName>
+        <description>&quot;This contact makes an extra effort to assist me in cost-justifying the value that we can contribute.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact makes an extra effort to assist me in cost-justifying the value that we can contribute.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Cost Justification</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Future_Opportunities__c</fullName>
+        <description>&quot;My discussions with this Contact touc upon potential opportunities beyond the current business opportunity.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;My discussions with this Contact touc upon potential opportunities beyond the current business opportunity.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Future Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Introduces_Account_Influencers__c</fullName>
+        <description>This contact introduces or references me to influential persons in the account.
+1 Never 5 Always</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This contact introduces or references me to influential persons in the account.
+1 Never 5 Always</inlineHelpText>
+        <label>Introduces Account Influencers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Make_D_MQ_Preferred_Supplier__c</fullName>
+        <description>&quot;This contact has a clear strategy for establishing us as the preferred supplier.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact has a clear strategy for establishing us as the preferred supplier.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Make D-MQ Preferred Supplier</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_traditional_Value_Resource__c</fullName>
+        <description>&quot;This contact utilizes me or my company as a nontraditional resource through which value can be derived.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact utilizes me or my company as a nontraditional resource through which value can be derived.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Non-traditional Value Resource</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Openly_Shares_company_plans__c</fullName>
+        <description>&quot;This contact openly shares their company plans, projects, and personnel with me.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact openly shares their company plans, projects, and personnel with me.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Openly Shares company plans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priveleged_Bus_Insights_Plans__c</fullName>
+        <description>&quot;This contact utilizes internal contacts to provide me with business insights and information of a privileged nature. The contact openly disucsses their company&apos;s plans, projects, and personnel with me.
+1 Never 10 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact utilizes internal contacts to provide me with business insights and information of a privileged nature. The contact openly disucsses their company&apos;s plans, projects, and personnel with me.
+1 Never 10 Always&quot;</inlineHelpText>
+        <label>Priveleged Bus Insights &amp; Plans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Takes_Initiative_to_Help__c</fullName>
+        <description>&quot;This contact takes the initiative in helping me in the current opportunity.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;This contact takes the initiative in helping me in the current opportunity.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Takes Initiative to Help</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracker__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracker</label>
+        <referenceTo>Tracker__c</referenceTo>
+        <relationshipLabel>Can We Connect?</relationshipLabel>
+        <relationshipName>Can_We_Connect</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Transcendal_Replationship__c</fullName>
+        <description>&quot;I feel my relationship with this contact transcends the business development opportunity at hand.
+1 Never 5 Always&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;I feel my relationship with this contact transcends the business development opportunity at hand.
+1 Never 5 Always&quot;</inlineHelpText>
+        <label>Transcendal Replationship</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Can We Connect</label>
+    <nameField>
+        <displayFormat>A-{0000}</displayFormat>
+        <label>Can We Connect Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Can We Connect?</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>New</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New2</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New2</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>New2</url>
+    </webLinks>
+</CustomObject>

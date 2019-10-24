@@ -1,0 +1,1 @@
+SELECT CreatedDate,Direction__c,Error_Description__c,Integration_Object_Id__c,Integration_Object__c,Integration_Point__c,Request_Data__c FROM Integration_Error__c where CreatedDate > 2017-03-31T00:00:15.000Z order by CreatedDate desc

@@ -1,0 +1,39 @@
+string model='AGZ999';
+Boolean supported = false;
+		string prefix = null;
+		string letter = '';
+
+		if (String.isNotEmpty(model) && (model.length() >= 3))
+		{
+			prefix = model.substring(0, 3);
+
+			//For AGZ and AWS models look at the 7th character in the string to get the corresponding letter for verification (D or E for AGZ and C for AWS).
+			//We will only see a 3 digit tonnage in the model, e.g., AGZ055D…, or AGZ190E…, or AWS120C…
+			if (model.length() >= 7)
+				letter = model.substring(6, 7);
+
+			if (prefix.trim().equalsIgnoreCase('DPS')) {
+				// Rebel
+				supported = true;
+			}
+			else if (prefix.trim().equalsIgnoreCase('MPS')) {
+				// Mav-II
+				supported = true;
+			}
+			else if (prefix.trim().equalsIgnoreCase('RAH') || prefix.trim().equalsIgnoreCase('RDS') ||
+					prefix.trim().equalsIgnoreCase('RDT') || prefix.trim().equalsIgnoreCase('RFS') ||
+					prefix.trim().equalsIgnoreCase('RPR') || prefix.trim().equalsIgnoreCase('RPS')) {
+				// Roofpak
+				supported = true;
+			}
+			else if (prefix.trim().equalsIgnoreCase('AGZ') && (letter.equalsIgnoreCase('D') || letter.equalsIgnoreCase('E'))) {
+				// Trailblazer
+				supported = true;
+			}
+			else if ((prefix.trim().equalsIgnoreCase('AWV') || prefix.trim().equalsIgnoreCase('AWS')) && letter.equalsIgnoreCase('C')) {
+				// Pathfinder
+				supported = true;
+			}
+		}
+
+        System.debug(logginglevel.error, 'Model = ' + model + ' prefix = ' + prefix + ' letter = ' + letter + ' IE supported model = ' + supported);

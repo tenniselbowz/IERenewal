@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveAndClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Closed_Won_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Closed Won Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Opportunity_Splits_for_Template__r.Opportunity__r.Probability  * Opportunity_Splits_for_Template__r.Opportunity__r.Amount ) *  SplitPercentage</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Opportunity Probability * Split Amount</inlineHelpText>
+        <label>Forecast Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Probability__c</fullName>
+        <description>Probability from the Opportunity is stamped onto the Opportunity Split</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Probability from the Opportunity is stamped onto the Opportunity Split</inlineHelpText>
+        <label>Opportunity Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Splits_for_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Splits for Template</label>
+        <referenceTo>Opportunity_Splits_for_Templates__c</referenceTo>
+        <relationshipLabel>Opportunity Splits</relationshipLabel>
+        <relationshipName>Opportunity_Splits</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Pipeline Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Probability__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Probability__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>QuoteProposal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Quote/Proposal</label>
+        <referenceTo>Apttus_Proposal__Proposal__c</referenceTo>
+        <relationshipLabel>Opportunity Splits</relationshipLabel>
+        <relationshipName>Opportunity_Splits</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SplitAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitNote</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitOwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SplitPercentage</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

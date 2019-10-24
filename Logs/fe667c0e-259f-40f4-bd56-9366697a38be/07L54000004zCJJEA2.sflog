@@ -1,0 +1,1194 @@
+24.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:52:51.1 (1048452)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-05:00
+17:52:51.1 (1115745)|EXECUTION_STARTED
+17:52:51.1 (1122167)|CODE_UNIT_STARTED|[EXTERNAL]|01pC0000000hfVg|TestContactTrigger.unitTest1
+17:52:51.1 (2460022)|DML_BEGIN|[32]|Op:Insert|Type:AVA_SFCORE__TaxNowSetting__c|Rows:1
+17:52:51.25 (25381825)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:51.25 (29440967)|SOQL_EXECUTE_END|[58]|Rows:0
+17:52:51.29 (29679146)|CUMULATIVE_LIMIT_USAGE
+17:52:51.29 (29679146)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.29 (29679146)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.29 (29679146)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (68385744)|DML_END|[32]
+17:52:51.1 (68715307)|DML_BEGIN|[49]|Op:Insert|Type:Address__c|Rows:1
+17:52:51.1 (87361116)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeInsert
+17:52:51.1 (92019230)|SYSTEM_MODE_ENTER|false
+17:52:51.1 (92054529)|SYSTEM_MODE_EXIT|false
+17:52:51.96 (96311963)|CUMULATIVE_LIMIT_USAGE
+17:52:51.96 (96311963)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.96 (96311963)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.96 (96311963)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (97654266)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeInsert
+17:52:51.1 (103345326)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Address:new
+17:52:51.1 (103358107)|VALIDATION_RULE|03dC0000000FEVu|Partial_Address_Validation
+17:52:51.1 (108897733)|VALIDATION_FORMULA|$Profile.Id != "00eC0000001GSlm" &&  $Profile.Id != "00eC0000001GSlh"
+
+&&
+if( ISBLANK( Address_Line_1__c ) && ISBLANK( City__c ) && ISBLANK( TEXT(Country__c) ) &&  
+(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of", TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,
+
+if( !ISBLANK( Address_Line_1__c ) && !ISBLANK( City__c ) && !ISBLANK( TEXT(Country__c) ) &&  
+!(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of",  TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,TRUE))|Country__c=United States , $Profile.Id=00e80000000p6lF , Address_Line_1__c=Test Address Line 1 , City__c=Minneapolis , State_Province__c=Minnesota
+17:52:51.1 (108928734)|VALIDATION_PASS
+17:52:51.1 (109050984)|CODE_UNIT_FINISHED|Validation:Address:new
+17:52:51.1 (136278241)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u1Qd
+17:52:51.1 (147467894)|WF_RULE_EVAL_BEGIN|Workflow
+17:52:51.1 (147498582)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for Country selected_1|01QC0000000ImN6|ON_ALL_CHANGES|0
+17:52:51.1 (149879841)|WF_RULE_FILTER|[Address : Country starts with A, B, C, D, E, F, G, H, I, J, K, L, M, N, O] AND
+ [Address : Country not equal to ]
+17:52:51.1 (150413557)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (150423591)|WF_CRITERIA_END|false
+17:52:51.1 (150438912)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for Country selected_2|01QC0000000ImNV|ON_ALL_CHANGES|0
+17:52:51.1 (150496332)|WF_RULE_FILTER|[Address : Country starts with P, Q, R, S, T, U, V, W, X, Y, Z] 
+AND [Address : Country not equal to ]
+17:52:51.1 (150521586)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (150529116)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (150533758)|WF_CRITERIA_END|true
+17:52:51.1 (151621691)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for State/Province _4|01QC0000000IqfJ|ON_ALL_CHANGES|0
+17:52:51.1 (151677542)|WF_RULE_FILTER|[Address : Country equals Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras]
+17:52:51.1 (151704698)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (151709604)|WF_CRITERIA_END|false
+17:52:51.1 (151720847)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for State/Province _3|01QC0000000Iqea|ON_ALL_CHANGES|0
+17:52:51.1 (151760110)|WF_RULE_FILTER|[Address : Country equals Peru, Antigua and Barbuda, Argentina, Bahamas, Barbados, Belize, Bolivia, Plurinational State of, Bonaire, Sint Eustatius and Saba]
+17:52:51.1 (151783713)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (151788121)|WF_CRITERIA_END|false
+17:52:51.1 (151798339)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for State/Province _5|01QC0000000IqgR|ON_ALL_CHANGES|0
+17:52:51.1 (151836515)|WF_RULE_FILTER|[Address : Country equals Jamaica, Nicaragua, Paraguay, Uruguay, Venezuela, Bolivarian Republic of, Saint Kitts and Nevis, Suriname, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago]
+17:52:51.1 (151862460)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (151866923)|WF_CRITERIA_END|false
+17:52:51.1 (151877081)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for State/Province|01QC0000000ImRc|ON_ALL_CHANGES|0
+17:52:51.1 (151919236)|WF_RULE_FILTER|[Address : Country equals United States, Australia, Brazil, Canada, Ireland]
+17:52:51.1 (151937883)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (151942405)|WF_CRITERIA_END|true
+17:52:51.1 (151956195)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|ISO Code for State/Province _2|01QC0000000ImS6|ON_ALL_CHANGES|0
+17:52:51.1 (151992792)|WF_RULE_FILTER|[Address : Country equals China, India, Mexico, Colombia, Chile, Costa Rica, Panama]
+17:52:51.1 (152014311)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (152019486)|WF_CRITERIA_END|false
+17:52:51.1 (152029802)|WF_CRITERIA_BEGIN|[Address: 1485065 a0254000001V9pe]|NA set Address StateCode to blank when State is blank|01QC0000000IuN9|ON_CREATE_OR_TRIGGERING_UPDATE|0
+17:52:51.1 (152067515)|WF_RULE_FILTER|[Address : State/Province equals ] 
+AND [Address : State/Province ISO Code not equal to ]
+17:52:51.1 (155322576)|WF_RULE_EVAL_VALUE|100
+17:52:51.1 (155332755)|WF_CRITERIA_END|false
+17:52:51.1 (155349211)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:52:51.1 (161751675)|WF_FIELD_UPDATE|[Address: 1485065 a0254000001V9pe]|Field:Address: Country ISO Code|Value:USA|Id=04YC0000000H8oq|CurrentRule:ISO Code for Country selected_2 (Id=01QC0000000ImNV)
+17:52:51.1 (161845778)|WF_FIELD_UPDATE|[Address: 1485065 a0254000001V9pe]|Field:Address: State/Province ISO Code|Value:MN|Id=04YC0000000H8uF|CurrentRule:ISO Code for State/Province (Id=01QC0000000ImRc)
+17:52:51.1 (161871621)|WF_ACTION| Field Update: 2;
+17:52:51.1 (161877431)|WF_RULE_EVAL_END
+17:52:51.1 (164078019)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeUpdate
+17:52:51.1 (165699115)|SOQL_EXECUTE_BEGIN|[242]|Aggregations:0|SELECT Address__c FROM Account_Address__c 
+17:52:51.1 (168455694)|SOQL_EXECUTE_END|[242]|Rows:0
+17:52:51.1 (171972184)|SOQL_EXECUTE_BEGIN|[256]|Aggregations:0|SELECT Asset_Address__c FROM Asset 
+17:52:51.1 (174442011)|SOQL_EXECUTE_END|[256]|Rows:0
+17:52:51.1 (175574562)|SOQL_EXECUTE_BEGIN|[270]|Aggregations:0|SELECT Address__c FROM Contact_Address__c 
+17:52:51.1 (177745196)|SOQL_EXECUTE_END|[270]|Rows:0
+17:52:51.1 (187470154)|SOQL_EXECUTE_BEGIN|[196]|Aggregations:0|SELECT Contact__r.IE_Sync_Status__c FROM Contact_Address__c 
+17:52:51.1 (193761572)|SOQL_EXECUTE_END|[196]|Rows:0
+17:52:51.1 (194380389)|SOQL_EXECUTE_BEGIN|[206]|Aggregations:0|SELECT Account__r.IE_Sync_Status__c FROM Account_Address__c 
+17:52:51.1 (199665783)|SOQL_EXECUTE_END|[206]|Rows:0
+17:52:51.1 (200912143)|SOQL_EXECUTE_BEGIN|[216]|Aggregations:0|SELECT Asset__r.IE_Sync_Status__c FROM Asset_Address__c 
+17:52:51.1 (206731535)|SOQL_EXECUTE_END|[216]|Rows:0
+17:52:51.206 (206943443)|CUMULATIVE_LIMIT_USAGE
+17:52:51.206 (206943443)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.206 (206943443)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.206 (206943443)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (208379791)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeUpdate
+17:52:51.1 (227696822)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event AfterUpdate
+17:52:51.1 (229819194)|SOQL_EXECUTE_BEGIN|[77]|Aggregations:2|SELECT (SELECT Primary_Ship_To__c, Physical__c, Account__r.BillingStreet, Account__r.BillingCountry, Account__r.BillingCity, Account__r.BillingPostalCode, Account__r.BillingState, Account__r.ShippingStreet, Account__r.ShippingCountry, Account__r.ShippingCity, Account__r.ShippingPostalCode, Account__r.ShippingState FROM Account_Addresses__r), (SELECT Primary_Mail_To__c, Physical__c, Contact__r.MailingStreet, Contact__r.MailingCountry, Contact__r.MailingCity, Contact__r.MailingPostalCode, Contact__r.MailingState, Contact__r.OtherStreet, Contact__r.OtherCountry, Contact__r.OtherCity, Contact__r.OtherPostalCode, Contact__r.OtherState FROM Contact_Addresses__r) FROM Address__c 
+17:52:51.1 (232064533)|SOQL_EXECUTE_END|[77]|Rows:0
+17:52:51.232 (232382184)|CUMULATIVE_LIMIT_USAGE
+17:52:51.232 (232382184)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.232 (232382184)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.232 (232382184)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (233640159)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event AfterUpdate
+17:52:51.1 (235453464)|WF_ACTIONS_END| Field Update: 2;
+17:52:51.1 (235465881)|CODE_UNIT_FINISHED|Workflow:01IC0000000u1Qd
+17:52:51.1 (235586376)|DML_END|[49]
+17:52:51.1 (235918676)|DML_BEGIN|[56]|Op:Insert|Type:Account|Rows:1
+17:52:51.267 (267696251)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:51.267 (273550933)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:51.274 (274228557)|CUMULATIVE_LIMIT_USAGE
+17:52:51.274 (274228557)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.274 (274228557)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.274 (274228557)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (277932616)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event BeforeInsert
+17:52:51.283 (283022181)|CUMULATIVE_LIMIT_USAGE
+17:52:51.283 (283022181)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.283 (283022181)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.283 (283022181)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (284250291)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeInsert
+17:52:51.1 (303409244)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+17:52:51.1 (303422416)|VALIDATION_RULE|03dC0000000LIXL|Future_Asset_Owner_Account_Validation
+17:52:51.1 (303885009)|VALIDATION_FORMULA|$Profile.Id <> "00e80000000p6lF" && 
+$Profile.Id <> "00eC0000001GSlm" && 
+$Profile.Id <> "00eC0000001GSlh" &&
+Id = "001C0000019yujW"
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|From_Lead_Conversion__c=0 , $Profile.Name=System Administrator , Bypass__c=0 , $Profile.Id=00e80000000p6lF , CreatedDate=null , Id=null
+17:52:51.1 (303907799)|VALIDATION_PASS
+17:52:51.1 (304028623)|CODE_UNIT_FINISHED|Validation:Account:new
+17:52:51.1 (399359336)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event AfterInsert
+17:52:51.1 (399963801)|USER_DEBUG|[77]|DEBUG|:::::createAccountAddress :::::::
+17:52:51.1 (400285492)|USER_DEBUG|[103]|DEBUG|:::::billingAddressMap :::::::{}
+17:52:51.1 (400646394)|USER_DEBUG|[126]|DEBUG|:::::accountAddresses :::::::()
+17:52:51.400 (400672789)|CUMULATIVE_LIMIT_USAGE
+17:52:51.400 (400672789)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.400 (400672789)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.400 (400672789)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (402026556)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterInsert
+17:52:51.1 (404276769)|DML_END|[56]
+17:52:51.1 (404631441)|DML_BEGIN|[63]|Op:Insert|Type:Account_Address__c|Rows:1
+17:52:51.1 (414557938)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7v|Account_Address_Trigger on Account_Address trigger event BeforeInsert
+17:52:51.1 (419651336)|SOQL_EXECUTE_BEGIN|[331]|Aggregations:0|SELECT Id, Account__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Primary_Mail_To__c FROM Account_Address__c 
+17:52:51.1 (422319807)|SOQL_EXECUTE_END|[331]|Rows:0
+17:52:51.422 (422926300)|CUMULATIVE_LIMIT_USAGE
+17:52:51.422 (422926300)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.422 (422926300)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.422 (422926300)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (424230217)|CODE_UNIT_FINISHED|Account_Address_Trigger on Account_Address trigger event BeforeInsert
+17:52:51.1 (453645366)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7v|Account_Address_Trigger on Account_Address trigger event AfterInsert
+17:52:51.1 (454756500)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Account__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Primary_Mail_To__c FROM Account_Address__c 
+17:52:51.1 (459704250)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:51.1 (461568797)|SOQL_EXECUTE_BEGIN|[109]|Aggregations:1|SELECT Id, Primary_Billing_Address__c, Primary_Mailing_Address__c, Primary_Shipping_Address__c, Physical_Address__c, IE_Account__c, IE_Sync_Status__c, (SELECT Address__c, Primary_Mail_To__c, Primary_Ship_To__c, Primary_Bill_To__c, Physical__c, Address__r.Address_Line_1__c, Address__r.Address_Line_2__c, Address__r.Address_Line_3__c, Address__r.Address_Line_4__c, Address__r.City__c, Address__r.Country__c, Address__r.Country_ISO_Code__c, Address__r.State_Province__c, Address__r.State_Province_ISO_Code__c, Address__r.Postal_Code__c FROM Account_Addresses__r WHERE (Active__c = TRUE AND (Primary_Mail_To__c = TRUE OR Primary_Ship_To__c = TRUE OR Primary_Bill_To__c = TRUE OR Physical__c = TRUE))) FROM Account 
+17:52:51.1 (473304630)|SOQL_EXECUTE_END|[109]|Rows:1
+17:52:51.1 (475127890)|DML_BEGIN|[142]|Op:Update|Type:Account|Rows:1
+17:52:51.484 (484433584)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:51.484 (491043939)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:51.484 (492762864)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT ObjectId__c FROM UDL__c
+17:52:51.484 (495121449)|SOQL_EXECUTE_END|[23]|Rows:0
+17:52:51.496 (496800351)|CUMULATIVE_LIMIT_USAGE
+17:52:51.496 (496800351)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.496 (496800351)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.496 (496800351)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (499250370)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7u|AccountTrigger on Account trigger event BeforeUpdate
+17:52:51.499 (499348942)|CUMULATIVE_LIMIT_USAGE
+17:52:51.499 (499348942)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.499 (499348942)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.499 (499348942)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (500468446)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeUpdate
+17:52:51.1 (504226835)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:0015400000DB9z6
+17:52:51.1 (504239915)|VALIDATION_RULE|03dC0000000LIXL|Future_Asset_Owner_Account_Validation
+17:52:51.1 (504705579)|VALIDATION_FORMULA|$Profile.Id <> "00e80000000p6lF" && 
+$Profile.Id <> "00eC0000001GSlm" && 
+$Profile.Id <> "00eC0000001GSlh" &&
+Id = "001C0000019yujW"
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|From_Lead_Conversion__c=0 , $Profile.Name=System Administrator , Bypass__c=0 , $Profile.Id=00e80000000p6lF , CreatedDate=2018-04-18 22:52:52 , Id=0015400000DB9z6
+17:52:51.1 (504728731)|VALIDATION_PASS
+17:52:51.1 (504868993)|CODE_UNIT_FINISHED|Validation:Account:0015400000DB9z6
+17:52:51.1 (531315453)|DML_END|[142]
+17:52:51.531 (531416452)|CUMULATIVE_LIMIT_USAGE
+17:52:51.531 (531416452)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.531 (531416452)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.531 (531416452)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (532737506)|CODE_UNIT_FINISHED|Account_Address_Trigger on Account_Address trigger event AfterInsert
+17:52:51.1 (534418724)|DML_END|[63]
+17:52:51.1 (534707306)|SOQL_EXECUTE_BEGIN|[65]|Aggregations:0|SELECT Id FROM RecordType WHERE (Name = 'Daikin Applied' AND SObjectType = 'Contact')
+17:52:51.1 (561205990)|SOQL_EXECUTE_END|[65]|Rows:1
+17:52:51.1 (561978619)|DML_BEGIN|[94]|Op:Insert|Type:Address__c|Rows:1
+17:52:51.1 (565403735)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeInsert
+17:52:51.565 (565609016)|CUMULATIVE_LIMIT_USAGE
+17:52:51.565 (565609016)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 11 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.565 (565609016)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.565 (565609016)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (567259066)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeInsert
+17:52:51.1 (568942063)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Address:new
+17:52:51.1 (568954428)|VALIDATION_RULE|03dC0000000FEVu|Partial_Address_Validation
+17:52:51.1 (569697341)|VALIDATION_FORMULA|$Profile.Id != "00eC0000001GSlm" &&  $Profile.Id != "00eC0000001GSlh"
+
+&&
+if( ISBLANK( Address_Line_1__c ) && ISBLANK( City__c ) && ISBLANK( TEXT(Country__c) ) &&  
+(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of", TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,
+
+if( !ISBLANK( Address_Line_1__c ) && !ISBLANK( City__c ) && !ISBLANK( TEXT(Country__c) ) &&  
+!(CONTAINS("United States:Antigua and Barbuda:Argentina:Australia:Barbados:Bolivia',' Plurinational State of:Bonaire',' Sint Eustatius and Saba:Brazil:Bahamas:Belize:Canada:Chile:China: Colombia:Costa Rica:Dominica:Dominican Republic:Ecuador:Grenada:Guatemala:Guyana:Honduras:Haiti:Ireland:India:Jamaica:Saint Kitts and Nevis:Saint Lucia:Mexico:Nicaragua :Panama:Peru:Paraguay:Suriname:El Salvador:Trinidad and Tobago:Uruguay:Saint Vincent and the Grenadines:Venezuela',' Bolivarian Republic of",  TEXT(Country__c) ) &&ISPICKVAL(State_Province__c, "")) , FALSE,TRUE))|Country__c=United States , $Profile.Id=00e80000000p6lF , Address_Line_1__c=Test Address Line 1 , City__c=Minneapolis , State_Province__c=Minnesota
+17:52:51.1 (569739586)|VALIDATION_PASS
+17:52:51.1 (569854082)|CODE_UNIT_FINISHED|Validation:Address:new
+17:52:51.1 (588447138)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u1Qd
+17:52:51.1 (594919939)|WF_RULE_EVAL_BEGIN|Workflow
+17:52:51.1 (594945738)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for Country selected_1|01QC0000000ImN6|ON_ALL_CHANGES|0
+17:52:51.1 (595047910)|WF_RULE_FILTER|[Address : Country starts with A, B, C, D, E, F, G, H, I, J, K, L, M, N, O] AND
+ [Address : Country not equal to ]
+17:52:51.1 (595118215)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595126616)|WF_CRITERIA_END|false
+17:52:51.1 (595140884)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for Country selected_2|01QC0000000ImNV|ON_ALL_CHANGES|0
+17:52:51.1 (595184614)|WF_RULE_FILTER|[Address : Country starts with P, Q, R, S, T, U, V, W, X, Y, Z] 
+AND [Address : Country not equal to ]
+17:52:51.1 (595209021)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595216247)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595220883)|WF_CRITERIA_END|true
+17:52:51.1 (595239392)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for State/Province _4|01QC0000000IqfJ|ON_ALL_CHANGES|0
+17:52:51.1 (595266893)|WF_RULE_FILTER|[Address : Country equals Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras]
+17:52:51.1 (595289613)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595294152)|WF_CRITERIA_END|false
+17:52:51.1 (595304533)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for State/Province _3|01QC0000000Iqea|ON_ALL_CHANGES|0
+17:52:51.1 (595330674)|WF_RULE_FILTER|[Address : Country equals Peru, Antigua and Barbuda, Argentina, Bahamas, Barbados, Belize, Bolivia, Plurinational State of, Bonaire, Sint Eustatius and Saba]
+17:52:51.1 (595352185)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595356610)|WF_CRITERIA_END|false
+17:52:51.1 (595367185)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for State/Province _5|01QC0000000IqgR|ON_ALL_CHANGES|0
+17:52:51.1 (595397441)|WF_RULE_FILTER|[Address : Country equals Jamaica, Nicaragua, Paraguay, Uruguay, Venezuela, Bolivarian Republic of, Saint Kitts and Nevis, Suriname, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago]
+17:52:51.1 (595422378)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595427019)|WF_CRITERIA_END|false
+17:52:51.1 (595437291)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for State/Province|01QC0000000ImRc|ON_ALL_CHANGES|0
+17:52:51.1 (595462802)|WF_RULE_FILTER|[Address : Country equals United States, Australia, Brazil, Canada, Ireland]
+17:52:51.1 (595483030)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595491206)|WF_CRITERIA_END|true
+17:52:51.1 (595513862)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|ISO Code for State/Province _2|01QC0000000ImS6|ON_ALL_CHANGES|0
+17:52:51.1 (595561694)|WF_RULE_FILTER|[Address : Country equals China, India, Mexico, Colombia, Chile, Costa Rica, Panama]
+17:52:51.1 (595590144)|WF_RULE_EVAL_VALUE|122
+17:52:51.1 (595595518)|WF_CRITERIA_END|false
+17:52:51.1 (595607798)|WF_CRITERIA_BEGIN|[Address: 1485066 a0254000001V9pf]|NA set Address StateCode to blank when State is blank|01QC0000000IuN9|ON_CREATE_OR_TRIGGERING_UPDATE|0
+17:52:51.1 (595652691)|WF_RULE_FILTER|[Address : State/Province equals ] 
+AND [Address : State/Province ISO Code not equal to ]
+17:52:51.1 (595667548)|WF_RULE_EVAL_VALUE|100
+17:52:51.1 (595672252)|WF_CRITERIA_END|false
+17:52:51.1 (595686591)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:52:51.1 (595869708)|WF_FIELD_UPDATE|[Address: 1485066 a0254000001V9pf]|Field:Address: Country ISO Code|Value:USA|Id=04YC0000000H8oq|CurrentRule:ISO Code for Country selected_2 (Id=01QC0000000ImNV)
+17:52:51.1 (595989701)|WF_FIELD_UPDATE|[Address: 1485066 a0254000001V9pf]|Field:Address: State/Province ISO Code|Value:MN|Id=04YC0000000H8uF|CurrentRule:ISO Code for State/Province (Id=01QC0000000ImRc)
+17:52:51.1 (596015795)|WF_ACTION| Field Update: 2;
+17:52:51.1 (596022435)|WF_RULE_EVAL_END
+17:52:51.1 (598109450)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event BeforeUpdate
+17:52:51.1 (599048572)|SOQL_EXECUTE_BEGIN|[242]|Aggregations:0|SELECT Address__c FROM Account_Address__c 
+17:52:51.1 (603925537)|SOQL_EXECUTE_END|[242]|Rows:0
+17:52:51.1 (604440164)|SOQL_EXECUTE_BEGIN|[256]|Aggregations:0|SELECT Asset_Address__c FROM Asset 
+17:52:51.1 (606484345)|SOQL_EXECUTE_END|[256]|Rows:0
+17:52:51.1 (606918518)|SOQL_EXECUTE_BEGIN|[270]|Aggregations:0|SELECT Address__c FROM Contact_Address__c 
+17:52:51.1 (608828501)|SOQL_EXECUTE_END|[270]|Rows:0
+17:52:51.1 (610103986)|SOQL_EXECUTE_BEGIN|[196]|Aggregations:0|SELECT Contact__r.IE_Sync_Status__c FROM Contact_Address__c 
+17:52:51.1 (612519278)|SOQL_EXECUTE_END|[196]|Rows:0
+17:52:51.1 (613030780)|SOQL_EXECUTE_BEGIN|[206]|Aggregations:0|SELECT Account__r.IE_Sync_Status__c FROM Account_Address__c 
+17:52:51.1 (615732264)|SOQL_EXECUTE_END|[206]|Rows:0
+17:52:51.1 (616235467)|SOQL_EXECUTE_BEGIN|[216]|Aggregations:0|SELECT Asset__r.IE_Sync_Status__c FROM Asset_Address__c 
+17:52:51.1 (618783485)|SOQL_EXECUTE_END|[216]|Rows:0
+17:52:51.618 (618946971)|CUMULATIVE_LIMIT_USAGE
+17:52:51.618 (618946971)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 17 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.618 (618946971)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.618 (618946971)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (620224500)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event BeforeUpdate
+17:52:51.1 (636214432)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7w|AddressTrigger on Address trigger event AfterUpdate
+17:52:51.1 (638044262)|SOQL_EXECUTE_BEGIN|[77]|Aggregations:2|SELECT (SELECT Primary_Ship_To__c, Physical__c, Account__r.BillingStreet, Account__r.BillingCountry, Account__r.BillingCity, Account__r.BillingPostalCode, Account__r.BillingState, Account__r.ShippingStreet, Account__r.ShippingCountry, Account__r.ShippingCity, Account__r.ShippingPostalCode, Account__r.ShippingState FROM Account_Addresses__r), (SELECT Primary_Mail_To__c, Physical__c, Contact__r.MailingStreet, Contact__r.MailingCountry, Contact__r.MailingCity, Contact__r.MailingPostalCode, Contact__r.MailingState, Contact__r.OtherStreet, Contact__r.OtherCountry, Contact__r.OtherCity, Contact__r.OtherPostalCode, Contact__r.OtherState FROM Contact_Addresses__r) FROM Address__c 
+17:52:51.1 (640054118)|SOQL_EXECUTE_END|[77]|Rows:0
+17:52:51.640 (640248785)|CUMULATIVE_LIMIT_USAGE
+17:52:51.640 (640248785)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 18 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.640 (640248785)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.640 (640248785)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (641489676)|CODE_UNIT_FINISHED|AddressTrigger on Address trigger event AfterUpdate
+17:52:51.1 (642232147)|WF_ACTIONS_END| Field Update: 2;
+17:52:51.1 (642244305)|CODE_UNIT_FINISHED|Workflow:01IC0000000u1Qd
+17:52:51.1 (642360857)|DML_END|[94]
+17:52:51.1 (642573244)|DML_BEGIN|[100]|Op:Insert|Type:Contact|Rows:1
+17:52:51.671 (671772904)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:51.671 (676701403)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:51.677 (677342946)|CUMULATIVE_LIMIT_USAGE
+17:52:51.677 (677342946)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 18 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of DML rows: 7 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.677 (677342946)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.677 (677342946)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (681705405)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event BeforeInsert
+17:52:51.686 (686854950)|CUMULATIVE_LIMIT_USAGE
+17:52:51.686 (686854950)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 18 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of DML rows: 7 out of 10000
+  Maximum CPU time: 81 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.686 (686854950)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.686 (686854950)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (689650872)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeInsert
+17:52:51.1 (704945029)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Contact:new
+17:52:51.1 (704957611)|VALIDATION_RULE|03d80000000L3xx|Validate_SSN
+17:52:51.1 (705364549)|VALIDATION_FORMULA|NOT(
+OR(
+ISBLANK(Social_Security_Number__c),
+REGEX( Social_Security_Number__c , "[0-9]{3}-[0-9]{2}-[0-9]{4}")
+)
+)
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|$Profile.Name=System Administrator , Social_Security_Number__c=null , CreatedDate=null , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (705386799)|VALIDATION_PASS
+17:52:51.1 (705389867)|VALIDATION_RULE|03dC0000000LX9J|Complete_Mailing_Address
+17:52:51.1 (705842531)|VALIDATION_FORMULA|AND(!ISBLANK( Primary_Mailing_Address__c  ),
+      OR(ISBLANK(MailingStreet),
+         ISBLANK(MailingCountry),
+         ISBLANK(MailingCity))
+     )
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|Primary_Mailing_Address__c=a0254000001V9pf , $Profile.Name=System Administrator , MailingCountry=United States , CreatedDate=null , MailingCity=Minneapolis , MailingStreet=Test Address Line 1 , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (705863953)|VALIDATION_PASS
+17:52:51.1 (705866203)|VALIDATION_RULE|03dC0000000LEi5|Contact_Information_Validation
+17:52:51.1 (706255958)|VALIDATION_FORMULA|((ISBLANK( Phone ) &&ISBLANK(  MobilePhone ) &&  ISBLANK( Email )) &#124;&#124; (ISBLANK(Email) && BEGINS($Profile.Name, "Latin")))
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" && $Profile.Name != "System Administrator Interface" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|Email=kent.roessler@daikinapplied.com , $Profile.Name=System Administrator , Phone=null , CreatedDate=null , MobilePhone=null , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (706277898)|VALIDATION_PASS
+17:52:51.1 (706398508)|CODE_UNIT_FINISHED|Validation:Contact:new
+17:52:51.1 (778914831)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event AfterInsert
+17:52:51.1 (780313707)|SOQL_EXECUTE_BEGIN|[60]|Aggregations:0|SELECT MailingStreet, MailingCity, MailingCountry, MailingState, MailingPostalCode, Account.Physical_Address__c, Account.Physical_Address__r.Address_Line_1__c, Account.Physical_Address__r.Address_Line_2__c, Account.Physical_Address__r.Address_Line_3__c, Account.Physical_Address__r.Address_Line_4__c, Account.Physical_Address__r.City__c, Account.Physical_Address__r.Country__c, Account.Physical_Address__r.State_Province__c, Account.Physical_Address__r.Postal_Code__c FROM Contact 
+17:52:51.1 (791076636)|SOQL_EXECUTE_END|[60]|Rows:1
+17:52:51.1 (791604158)|USER_DEBUG|[77]|ERROR|Test Address Line 1
+17:52:51.1 (791665874)|USER_DEBUG|[78]|ERROR|Minneapolis
+17:52:51.1 (791714002)|USER_DEBUG|[79]|ERROR|United States
+17:52:51.1 (792139771)|USER_DEBUG|[82]|ERROR|Address__c:{Address_Line_1__c=Test Address Line 1, Address_Line_2__c=null, Address_Line_3__c=null, Address_Line_4__c=null, City__c=Minneapolis, Country__c=United States, State_Province__c=Minnesota, Postal_Code__c=55421}
+17:52:51.1 (792954603)|DML_BEGIN|[151]|Op:Insert|Type:Contact_Address__c|Rows:1
+17:52:51.1 (898651169)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ80|Contact_Address_Trigger on Contact_Address trigger event BeforeInsert
+17:52:51.1 (903745941)|SOQL_EXECUTE_BEGIN|[243]|Aggregations:0|SELECT Contact__c, Primary_Mail_To__c, Physical__c, Active__c FROM Contact_Address__c 
+17:52:51.1 (907854767)|SOQL_EXECUTE_END|[243]|Rows:0
+17:52:51.908 (908280552)|CUMULATIVE_LIMIT_USAGE
+17:52:51.908 (908280552)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 20 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of DML rows: 8 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.908 (908280552)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.908 (908280552)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (909876276)|CODE_UNIT_FINISHED|Contact_Address_Trigger on Contact_Address trigger event BeforeInsert
+17:52:51.1 (936072269)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ80|Contact_Address_Trigger on Contact_Address trigger event AfterInsert
+17:52:51.1 (937191613)|SOQL_EXECUTE_BEGIN|[44]|Aggregations:0|SELECT Id, Primary_Mail_To__c, Physical__c FROM Contact_Address__c 
+17:52:51.1 (939598978)|SOQL_EXECUTE_END|[44]|Rows:0
+17:52:51.1 (940939359)|SOQL_EXECUTE_BEGIN|[85]|Aggregations:1|SELECT Id, Primary_Mailing_Address__c, Physical_Address__c, IE_Contact__c, IE_Sync_Status__c, (SELECT Address__c, Primary_Mail_To__c, Physical__c, Address__r.Address_Line_1__c, Address__r.Address_Line_2__c, Address__r.Address_Line_3__c, Address__r.Address_Line_4__c, Address__r.City__c, Address__r.Country__c, Address__r.Country_ISO_Code__c, Address__r.State_Province__c, Address__r.State_Province_ISO_Code__c, Address__r.Postal_Code__c FROM Contact_Addresses__r WHERE (Active__c = TRUE AND ((Primary_Mail_To__c = TRUE AND Mail_To__c = TRUE) OR Physical__c = TRUE))) FROM Contact 
+17:52:51.1 (953003807)|SOQL_EXECUTE_END|[85]|Rows:1
+17:52:51.1 (954396601)|DML_BEGIN|[116]|Op:Update|Type:Contact|Rows:1
+17:52:51.964 (964202970)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:51.964 (968919396)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:51.964 (969342643)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT ObjectId__c FROM UDL__c
+17:52:51.964 (972033328)|SOQL_EXECUTE_END|[25]|Rows:0
+17:52:51.974 (974034004)|CUMULATIVE_LIMIT_USAGE
+17:52:51.974 (974034004)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.974 (974034004)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.974 (974034004)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (977062855)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event BeforeUpdate
+17:52:51.977 (977168033)|CUMULATIVE_LIMIT_USAGE
+17:52:51.977 (977168033)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.977 (977168033)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:51.977 (977168033)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:51.1 (978393975)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeUpdate
+17:52:51.1 (992336589)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Contact:0035400000BqQ12
+17:52:51.1 (992350043)|VALIDATION_RULE|03d80000000L3xx|Validate_SSN
+17:52:51.1 (992776166)|VALIDATION_FORMULA|NOT(
+OR(
+ISBLANK(Social_Security_Number__c),
+REGEX( Social_Security_Number__c , "[0-9]{3}-[0-9]{2}-[0-9]{4}")
+)
+)
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|$Profile.Name=System Administrator , Social_Security_Number__c=null , CreatedDate=2018-04-18 22:52:52 , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (992798249)|VALIDATION_PASS
+17:52:51.1 (992800871)|VALIDATION_RULE|03dC0000000LX9J|Complete_Mailing_Address
+17:52:51.1 (993248770)|VALIDATION_FORMULA|AND(!ISBLANK( Primary_Mailing_Address__c  ),
+      OR(ISBLANK(MailingStreet),
+         ISBLANK(MailingCountry),
+         ISBLANK(MailingCity))
+     )
+
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|Primary_Mailing_Address__c=a0254000001V9pe , $Profile.Name=System Administrator , MailingCountry=United States , CreatedDate=2018-04-18 22:52:52 , MailingCity=Minneapolis , MailingStreet=Test Address Line 1 , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (993271291)|VALIDATION_PASS
+17:52:51.1 (993273867)|VALIDATION_RULE|03dC0000000LEi5|Contact_Information_Validation
+17:52:51.1 (993680107)|VALIDATION_FORMULA|((ISBLANK( Phone ) &&ISBLANK(  MobilePhone ) &&  ISBLANK( Email )) &#124;&#124; (ISBLANK(Email) && BEGINS($Profile.Name, "Latin")))
+
+&& 
+
+NOT ((From_Lead_Conversion__c && IsNew()) &#124;&#124; 
+(From_Lead_Conversion__c && (Now()-CreatedDate <0.000694444)))
+&& 
+(($Profile.Name != "System Administrator" && $Profile.Name != "System Administrator Interface" ) &#124;&#124; ($Profile.Name = "System Administrator"&& PRIORVALUE(Bypass__c)=false && (Bypass__c != true)))|Email=kent.roessler@daikinapplied.com , $Profile.Name=System Administrator , Phone=null , CreatedDate=2018-04-18 22:52:52 , MobilePhone=null , Bypass__c=0 , From_Lead_Conversion__c=0
+17:52:51.1 (993701397)|VALIDATION_PASS
+17:52:51.1 (993861090)|CODE_UNIT_FINISHED|Validation:Contact:0035400000BqQ12
+17:52:52.22 (1022271364)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event AfterUpdate
+17:52:52.22 (1022510523)|CUMULATIVE_LIMIT_USAGE
+17:52:52.22 (1022510523)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.22 (1022510523)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.22 (1022510523)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1023851463)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event AfterUpdate
+17:52:52.22 (1025232258)|DML_END|[116]
+17:52:52.25 (1025347718)|CUMULATIVE_LIMIT_USAGE
+17:52:52.25 (1025347718)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.25 (1025347718)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.25 (1025347718)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1027029421)|CODE_UNIT_FINISHED|Contact_Address_Trigger on Contact_Address trigger event AfterInsert
+17:52:52.22 (1028093823)|DML_END|[151]
+17:52:52.28 (1028142270)|CUMULATIVE_LIMIT_USAGE
+17:52:52.28 (1028142270)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.28 (1028142270)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.28 (1028142270)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1029321287)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event AfterInsert
+17:52:52.22 (1029870930)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Contact
+17:52:52.22 (1042430757)|WF_RULE_EVAL_BEGIN|Workflow
+17:52:52.22 (1042504373)|WF_CRITERIA_BEGIN|[Contact: Kent1 Roessler1 0035400000BqQ12]|Update Username from IE Contact|01QC0000000Ir2w|ON_ALL_CHANGES|0
+17:52:52.22 (1046525845)|WF_RULE_FILTER|[Contact : IE Contact equals true] 
+AND [Contact : Email not equal to null]
+17:52:52.22 (1046546135)|WF_RULE_EVAL_VALUE|1
+17:52:52.22 (1046558223)|WF_RULE_EVAL_VALUE|kent.roessler@daikinapplied.com
+17:52:52.22 (1046564492)|WF_CRITERIA_END|true
+17:52:52.22 (1047555986)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:52:52.22 (1047976062)|WF_FIELD_UPDATE|[Contact: Kent1 Roessler1 0035400000BqQ12]|Field:Contact: IE Username|Value:kent.roessler@daikinapplied.com|Id=04YC0000000HF72|CurrentRule:Update Username from IE Contact (Id=01QC0000000Ir2w)
+17:52:52.22 (1048003544)|WF_ACTION| Field Update: 1;
+17:52:52.22 (1048009975)|WF_RULE_EVAL_END
+17:52:52.52 (1052008399)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Name, Active_Setting__c, Return_results_in_upper_case__c, Service_URL__c, Account_Number__c, License_Key__c, Origin_County__c, Enable_UPC_Code_as_ItemCode__c, Shipping_Codes__c, Enable_Tax_Code_Mapping__c, Account_ID__c, LicenseKey__c, Enable_Entity_Use_Code__c, Company_Code__c, Origin_Street__c, Origin_City__c, Allow_Tax_Override__c, Origin_State__c, Origin_Postal_Code__c, Origin_Country__c, Enable_Commits__c, Enable_Tax_Calculation__c, Enable_Address_Validation__c, Automatic_Tax_Calculation__c, Save_UnCommitted_Quotes__c, Use_BillingAddress__c, Commit_On_Status__c, Verify_Validated_Addresses__c, Use_Acct_Name_for_Avalara_Cust_Num__c, TriggerLimit__c FROM TaxNowSetting__c WHERE Active_Setting__c = TRUE
+17:52:52.52 (1057425252)|SOQL_EXECUTE_END|[58]|Rows:1
+17:52:52.52 (1057902348)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT ObjectId__c FROM UDL__c
+17:52:52.52 (1060416064)|SOQL_EXECUTE_END|[25]|Rows:0
+17:52:52.62 (1062048952)|CUMULATIVE_LIMIT_USAGE
+17:52:52.62 (1062048952)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 22 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 218 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.62 (1062048952)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.62 (1062048952)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1065979629)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event BeforeUpdate
+17:52:52.22 (1068715350)|SOQL_EXECUTE_BEGIN|[278]|Aggregations:0|SELECT MailingStreet, MailingCity, MailingCountry, MailingState, MailingPostalCode, Account.Physical_Address__c, Account.Physical_Address__r.Address_Line_1__c, Account.Physical_Address__r.Address_Line_2__c, Account.Physical_Address__r.Address_Line_3__c, Account.Physical_Address__r.Address_Line_4__c, Account.Physical_Address__r.City__c, Account.Physical_Address__r.Country__c, Account.Physical_Address__r.State_Province__c, Account.Physical_Address__r.Postal_Code__c, Account.Physical_Address__r.Country_ISO_Code__c FROM Contact 
+17:52:52.22 (1079420997)|SOQL_EXECUTE_END|[278]|Rows:1
+17:52:52.22 (1084781867)|SOQL_EXECUTE_BEGIN|[376]|Aggregations:0|SELECT Id, Address__c FROM Contact_Address__c 
+17:52:52.22 (1102344816)|SOQL_EXECUTE_END|[376]|Rows:1
+17:52:52.22 (1103038798)|SOQL_EXECUTE_BEGIN|[384]|Aggregations:0|SELECT Address_Line_1__c, Address_Line_2__c, Address_Line_3__c, Address_Line_4__c, City__c, Country__c, State_Province__c, Postal_Code__c, Id, DCW_ID__c, Warehouse_Id__c FROM Address__c 
+17:52:52.22 (1105162824)|SOQL_EXECUTE_END|[384]|Rows:0
+17:52:52.105 (1105395536)|CUMULATIVE_LIMIT_USAGE
+17:52:52.105 (1105395536)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 25 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 218 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.105 (1105395536)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.105 (1105395536)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1107462754)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeUpdate
+17:52:52.22 (1125125536)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7z|ContactTrigger on Contact trigger event AfterUpdate
+17:52:52.125 (1125356271)|CUMULATIVE_LIMIT_USAGE
+17:52:52.125 (1125356271)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 25 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 218 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.125 (1125356271)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.125 (1125356271)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1126644509)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event AfterUpdate
+17:52:52.22 (1127482094)|WF_ACTIONS_END| Field Update: 1;
+17:52:52.22 (1127493931)|CODE_UNIT_FINISHED|Workflow:Contact
+17:52:52.22 (1127805874)|DML_END|[100]
+17:52:52.22 (1128081773)|SOQL_EXECUTE_BEGIN|[101]|Aggregations:0|SELECT Id, MailingStreet, MailingCountry FROM Contact WHERE Id = :tmpVar1
+17:52:52.22 (1140430401)|SOQL_EXECUTE_END|[101]|Rows:1
+17:52:52.22 (1140587445)|USER_DEBUG|[102]|ERROR|Contact:{Id=0035400000BqQ12AAF, MailingStreet=Test Address Line 1, MailingCountry=United States}
+17:52:52.140 (1140606905)|CUMULATIVE_LIMIT_USAGE
+17:52:52.140 (1140606905)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 26 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 218 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.140 (1140606905)|LIMIT_USAGE_FOR_NS|AVA_SFCORE|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:52:52.140 (1140606905)|CUMULATIVE_LIMIT_USAGE_END
+
+17:52:52.22 (1140644389)|CODE_UNIT_FINISHED|TestContactTrigger.unitTest1
+17:52:52.22 (1141843132)|EXECUTION_FINISHED

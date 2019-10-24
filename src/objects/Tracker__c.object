@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is a Sales Tracker for Solutions Sales opportuinites</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <description>Opportunity Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity Amount</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Articulated_Value_Proposition__c</fullName>
+        <description>From the Prospect&apos;s Perspective, what are the Deal Motivators?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From the Prospect&apos;s Perspective, what are the Deal Motivators?</inlineHelpText>
+        <label>Articulated Value Proposition</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>As_a_result_of_our_solution__c</fullName>
+        <description>Value Proposition Factor - What is the Solutions you are proposing?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value Proposition Factor - What is the Solutions you are proposing?</inlineHelpText>
+        <label>As a result of our solution</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Beginning_On__c</fullName>
+        <description>Value Proposition Factor - Starting when?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value Proposition Factor - Starting when?</inlineHelpText>
+        <label>Beginning On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Business_History_with_Prospect__c</fullName>
+        <description>Key Decider&apos;s Focus</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Focus</inlineHelpText>
+        <label>Business History with Prospect</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Impact__c</fullName>
+        <description>&quot;Considerations: Quantifiable, Key business issues defined, Customer&apos;s needs, Customer&apos;s industry and market position, Customer&apos;s competitive standing
++3 Dramatic
+0 Notable
+-3 Insignificant&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Quantifiable, Key business issues defined, Customer&apos;s needs, Customer&apos;s industry and market position, Customer&apos;s competitive standing
++3 Dramatic
+0 Notable
+-3 Insignificant&quot;</inlineHelpText>
+        <label>Business Impact  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Values__c</fullName>
+        <description>Keay Decider&apos;s Overall Pain, Needs &amp; Wants  as it relates to Business Values</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Keay Decider&apos;s Overall Pain, Needs &amp; Wants  as it relates to Business Values</inlineHelpText>
+        <label>Business Values</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Can_We_Beat_Suggested_Probability__c</fullName>
+        <description>Your Probability of Success + Can We Beat the competition Total x Suggested Probability</description>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c + ( Can_we_beat_the_Competition_TOTAL__c /27) * IF( Can_we_beat_the_Competition_TOTAL__c &gt; 0, 0.95 - Your_Probability_of_Success__c ,   Your_Probability_of_Success__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Your Probability of Success + Can We Beat the competition Total x Suggested Probability</inlineHelpText>
+        <label>Can We Beat Suggested Probability?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Can_We_Connect_Average__c</fullName>
+        <description>Average of Can We Connect Score for each contact</description>
+        <externalId>false</externalId>
+        <formula>IF( Count_of_Can_We_Connect_Contacts__c &gt;0,Can_We_Connect_Group_Total__c / Count_of_Can_We_Connect_Contacts__c,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average of Can We Connect Score for each contact</inlineHelpText>
+        <label>Can We Connect Average</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Can_We_Connect_Group_Total__c</fullName>
+        <description>Relationship Intelligence Total Score 40 to 50 = Ally, 30 to 39 = Supporter, 10 to 29 = Non-supporters, 0 to 9 = Opponent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relationship Intelligence Total Score 40 to 50 = Ally, 30 to 39 = Supporter, 10 to 29 = Non-supporters, 0 to 9 = Opponent</inlineHelpText>
+        <label>Can We Connect Group Total</label>
+        <summarizedField>Can_We_Connect__c.Can_we_Connect_Total__c</summarizedField>
+        <summaryForeignKey>Can_We_Connect__c.Tracker__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Can_We_Connect_Suggested_Probability__c</fullName>
+        <description>Can We Connect suggested Probability calulated by taking the average and dividing by 50</description>
+        <externalId>false</externalId>
+        <formula>IF( Count_of_Can_We_Connect_Contacts__c  &gt; 0,  Your_Probability_of_Success__c + ((Can_We_Connect_Average__c / 50) * (0.95- Your_Probability_of_Success__c)  ),  Your_Probability_of_Success__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Can We Connect suggested Probability calulated by taking the average and dividing by 50</inlineHelpText>
+        <label>Can We Connect Suggested Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Can_we_beat_the_Competition_TOTAL__c</fullName>
+        <description>Scores:  -25 to -1 = Poor, 0 to 14 = Sufficient, 15 to 25 Excellent</description>
+        <externalId>false</externalId>
+        <formula>Comparitive_Starting_Position__c + Comparitive_Infiltration__c + Competitor_s_Products_Pricing__c + Compare_Price_Performance_Strength__c + Track_Record_vs_Competitor__c + Track_Record_with_Customer__c + Track_Record_Similar_Solutions__c + Offense_McQuay_Strength_vs_Competitive__c + Defense_Competitive_Strength_vs_McQuay__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Scores:  -25 to -1 = Poor, 0 to 14 = Sufficient, 15 to 25 Excellent</inlineHelpText>
+        <label>Can we beat the Competition TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Can_we_win_Suggested_Probability__c</fullName>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c  + (  Can_we_win_the_business_TOTAL__c /25)*(0.95 -  Your_Probability_of_Success__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Can we win Suggested Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Can_we_win_the_business_TOTAL__c</fullName>
+        <description>Total score of Can we win the Business?  -25 to 1 = Poor,  0 to 14 = Sufficent, 15 to 25 = Excellent</description>
+        <externalId>false</externalId>
+        <formula>Solutions_Compatibility__c + Driving_Mechanism__c + Business_Impact__c +  Executive_Sponsorship__c + Establish_Momentum__c + Decision_Leverage__c + Strategic_Linkages__c + Ease_of_value_Measurement__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total score of Can we win the Business?  -25 to 1 = Poor,  0 to 14 = Sufficent, 15 to 25 = Excellent</inlineHelpText>
+        <label>Can we win the business TOTAL?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Close_Date__c</fullName>
+        <description>This is the same as the close date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the same as the close date</inlineHelpText>
+        <label>Close Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Compare_Price_Performance_Strength__c</fullName>
+        <description>&quot;Considerations: Independent benchmarks, Customer reaction, Historical value
++4 We are much stronger
+0 Equivalent
+-4 They are much stronger&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Independent benchmarks, Customer reaction, Historical value
++4 We are much stronger
+0 Equivalent
+-4 They are much stronger&quot;</inlineHelpText>
+        <label>Compare Price/Perf. Strength  (4 to -4)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comparitive_Infiltration__c</fullName>
+        <description>&quot;Considerations: Established relationship strength, How high and wide, Credibility
++3 We are much better connected
+0 Parity
+-3 They are much better connected&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Established relationship strength, How high and wide, Credibility
++3 We are much better connected
+0 Parity
+-3 They are much better connected&quot;</inlineHelpText>
+        <label>Comparitive Infiltration  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comparitive_Starting_Position__c</fullName>
+        <description>&quot;Considerations: Incumbent, Newcomer, Early/late, Reputation, Current activities
++2 We are incumbent/preferred
+0 Parity
+-2 They are incumbant/preferred&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Incumbent, Newcomer, Early/late, Reputation, Current activities
++2 We are incumbent/preferred
+0 Parity
+-2 They are incumbant/preferred&quot;</inlineHelpText>
+        <label>Comparitive Starting Position  (2 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor 1</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Trackers</relationshipLabel>
+        <relationshipName>Trackers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor 2</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Trackers (Competitor 2)</relationshipLabel>
+        <relationshipName>Trackers1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor 3</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Trackers (Competitor 3)</relationshipLabel>
+        <relationshipName>Trackers2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Competitor__c</fullName>
+        <description>Who are your Competitors?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Who are your Competitors?</inlineHelpText>
+        <label>Competitor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Trane</fullName>
+                    <default>false</default>
+                    <label>Trane</label>
+                </value>
+                <value>
+                    <fullName>JCI</fullName>
+                    <default>false</default>
+                    <label>JCI</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Don&apos;t Know</fullName>
+                    <default>false</default>
+                    <label>Don&apos;t Know</label>
+                </value>
+                <value>
+                    <fullName>Honeywell</fullName>
+                    <default>false</default>
+                    <label>Honeywell</label>
+                </value>
+                <value>
+                    <fullName>Siemens</fullName>
+                    <default>false</default>
+                    <label>Siemens</label>
+                </value>
+                <value>
+                    <fullName>Schneider Electric</fullName>
+                    <default>false</default>
+                    <label>Schneider Electric</label>
+                </value>
+                <value>
+                    <fullName>Ameresco</fullName>
+                    <default>false</default>
+                    <label>Ameresco</label>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                    <label>Carrier</label>
+                </value>
+                <value>
+                    <fullName>Chevron</fullName>
+                    <default>false</default>
+                    <label>Chevron</label>
+                </value>
+                <value>
+                    <fullName>Con Edison</fullName>
+                    <default>false</default>
+                    <label>Con Edison</label>
+                </value>
+                <value>
+                    <fullName>McKinstry</fullName>
+                    <default>false</default>
+                    <label>McKinstry</label>
+                </value>
+                <value>
+                    <fullName>TD Industries</fullName>
+                    <default>false</default>
+                    <label>TD Industries</label>
+                </value>
+                <value>
+                    <fullName>Sabesta Bloomberg</fullName>
+                    <default>false</default>
+                    <label>Sabesta Bloomberg</label>
+                </value>
+                <value>
+                    <fullName>Burns &amp; McDonnel</fullName>
+                    <default>false</default>
+                    <label>Burns &amp; McDonnel</label>
+                </value>
+                <value>
+                    <fullName>Other Direct Competitor</fullName>
+                    <default>false</default>
+                    <label>Other Direct Competitor</label>
+                </value>
+                <value>
+                    <fullName>Indirect Competitor</fullName>
+                    <default>false</default>
+                    <label>Indirect Competitor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Competitor_s_Products_Pricing__c</fullName>
+        <description>&quot;Considerations:  Our knowledge of competitors product lines, features, functions, pricing, typical packages, Typical terms and conditions, Marketplace reaction
++4 We are much stronger
+0 Equivalent
+-4 They are much strongermuch stronger &quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations:  Our knowledge of competitors product lines, features, functions, pricing, typical packages, Typical terms and conditions, Marketplace reaction
++4 We are much stronger
+0 Equivalent
+-4 They are much strongermuch stronger &quot;</inlineHelpText>
+        <label>Competitor&apos;s Products/Pricing  (4 to -4)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_Can_We_Connect_Contacts__c</fullName>
+        <description>Count of Can We Connect Contacts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Can We Connect Contacts</inlineHelpText>
+        <label>Count of Can We Connect Contacts</label>
+        <summaryForeignKey>Can_We_Connect__c.Tracker__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Critical_Deadlines_Corporate_Calendar__c</fullName>
+        <description>What are the Ciricital Deadlines?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the Ciricital Deadlines?</inlineHelpText>
+        <label>Critical Deadlines/Corporate Calendar</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_Competence__c</fullName>
+        <description>&quot;Considerations: Project management expertise, Mangement expertise, Adequate time to educate, Need for cross-functional teaming, Training funded, Staff expertise, Current knowledge base
+3 Supports Success
+0 Neutral
+-3 Inhibits Success0 Neutral -3 Inhibits Success &quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Proj mgmt expertise, Mgmt expertise, Adequate time to educate, Need for cross-functional teaming, Training funded, Staff expertise, Current knowledge
+3 Supports Success
+0 Neutral
+-3 Inhibits Success0 Neutral -3 Inhibits Success &quot;</inlineHelpText>
+        <label>Customer Competence  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_s_Financial_Health__c</fullName>
+        <description>&quot;Considerations: Financial Reports, Credit worthiness, Industry trends, Fiscal health, Health of their competitors, Health of their customers
+3 Positive
+0 Neutral
+-3 Negative&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Financial Reports, Credit worthiness, Industry trends, Fiscal health, Health of their competitors, Health of their customers
+3 Positive
+0 Neutral
+-3 Negative&quot;</inlineHelpText>
+        <label>Customer&apos;s Financial Health   (3 to -3)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daikin_McQuay_Objective__c</fullName>
+        <description>What is Daikin McQuay&apos;s Objective?  What do we want to accomplish?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is Daikin McQuay&apos;s Objective?  What do we want to accomplish?</inlineHelpText>
+        <label>Daikin McQuay Objective</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Daikin_McQuay_Strategy__c</fullName>
+        <description>What is Daikin McQuay&apos;s Strategy to win this deal?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is Daikin McQuay&apos;s Strategy to win this deal?</inlineHelpText>
+        <label>Daikin McQuay Strategy</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deal_Motivators_Key_Business_Issues__c</fullName>
+        <description>From the Prospect&apos;s Perspective, what are the Deal Motivators?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From the Prospect&apos;s Perspective, what are the Deal Motivators?</inlineHelpText>
+        <label>Deal Motivators/Key Business Issues</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Decision_Leverage__c</fullName>
+        <description>&quot;Considerations: Access to decision makers, Can we Influence criteria?, Similar past decisions, Users, technical recommenders, Financial recommenders
++3 Strong
+0 Adequate
+-3 Weak&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Access to decision makers, Can we Influence criteria?, Similar past decisions, Users, technical recommenders, Financial recommenders
++3 Strong
+0 Adequate
+-3 Weak&quot;</inlineHelpText>
+        <label>Decision Leverage  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Decision_Process__c</fullName>
+        <description>Considerations: Decision makers, Sufficient input, Committees, Beuget approvals, formal and infomral processes, Do they outsource?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Considerations: Decision makers, Sufficient input, Committees, Beuget approvals, formal and infomral processes, Do they outsource?</inlineHelpText>
+        <label>Decision Process  (2 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defense_Competitive_Strength_vs_McQuay__c</fullName>
+        <description>&quot;Considerations: Our predictability, Our cost/quality, Missing features, Inadequacies, Awkward questions we might face, Our nonsupporters and opponents, Contingency plans
++3 We are invulnerable
+0 No advantage
+-3 We are highly vulnerable&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Our predictability, Our cost/quality, Missing features, Inadequacies, Awkward questions we might face, Our nonsupporters and opponents, Contingency plans
++3 We are invulnerable
+0 No advantage
+-3 We are highly vulnerable&quot;</inlineHelpText>
+        <label>Defense Compet Strength v MQ  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivered_value_will_be_documented_by__c</fullName>
+        <description>Results tracking system/strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Results tracking system/strategy</inlineHelpText>
+        <label>Delivered value will be documented by</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Driving_Mechanism__c</fullName>
+        <description>&quot;Considerations:  Turbulance in customer environment, Motivation to change, Consequences of inaction
++3 Compelling
+0 Adequate
+-3 Unclear&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations:  Turbulance in customer environment, Motivation to change, Consequences of inaction
++3 Compelling
+0 Adequate
+-3 Unclear&quot;</inlineHelpText>
+        <label>Driving Mechanism  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ease_of_value_Measurement__c</fullName>
+        <description>&quot;Considerations: Willingness and ability to document impact, Accessibility of needed information, &quot;&quot;Hard success measures, &quot;&quot;Soft success measures, Interested in creative measurement
++2 No problem
+0 Workable
+-2 Problem&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Willingness and ability to document impact, Accessibility of needed information, &quot;&quot;Hard success measures, &quot;&quot;Soft success measures, Interested in creative measurement
++2 No problem
+0 Workable
+-2 Problem&quot;</inlineHelpText>
+        <label>Ease of value Measurement  (2 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Environmental_Values__c</fullName>
+        <description>Key Decider&apos;s Overall Pain, Needs &amp; Wants as it relates to Environmental Values</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Overall Pain, Needs &amp; Wants as it relates to Environmental Values</inlineHelpText>
+        <label>Environmental Values</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Establish_Momentum__c</fullName>
+        <description>&quot;Considerations: Emotional hot buttons, &quot;&quot;Winning team&quot;&quot; band-wagon, Our popularity, Careerenhancement for our supports
++3 Unstoppable
+0 Moving
+-3 Deadlocked&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Emotional hot buttons, &quot;&quot;Winning team&quot;&quot; band-wagon, Our popularity, Careerenhancement for our supports
++3 Unstoppable
+0 Moving
+-3 Deadlocked&quot;</inlineHelpText>
+        <label>Establish Momentum  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Executive_Sponsorship__c</fullName>
+        <description>&quot;Considerations: Executive commitment and active support, Middle management support, Promotes our recognition, Plays ongoing role in communication success, Open door to executive discussion
++4 Strong support
+0 Potential support
+-4 No support&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Executive commitment and active support, Middle management support, Promotes our recognition, Plays ongoing role in communication success, Open door to executive discussion
++4 Strong support
+0 Potential support
+-4 No support&quot;</inlineHelpText>
+        <label>Executive Sponsorship  (4 to -4)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Financial_Values__c</fullName>
+        <description>Key Decider&apos;s Overall Pain, Needs &amp; Wants as it relates to Financial Values</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Overall Pain, Needs &amp; Wants as it relates to Financial Values</inlineHelpText>
+        <label>Financial Values</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>For_a_total_investment_cost__c</fullName>
+        <description>Value Proposition - Total cost</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value Proposition - Total cost</inlineHelpText>
+        <label>For a total investment cost</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Funding_availability__c</fullName>
+        <description>&quot;Considerations: Budgeted, Allocations, Restraints, One-time or staged, Funding priorities, Commitment to this type of investment
+3 Strong
+0 Adequate
+-3 Weak&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Budgeted, Allocations, Restraints, One-time or staged, Funding priorities, Commitment to this type of investment
+3 Strong
+0 Adequate
+-3 Weak&quot;</inlineHelpText>
+        <label>Funding availability  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Future_potential__c</fullName>
+        <description>&quot;Considerations: Predicatble revenue stream, Near-term and long-term, Customer growth, Add-ons, Cross-selling, Applicable to other divisions or companies
+3 Obvious
+0 Developable
+-3 Not Apparent&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Predicatble revenue stream, Near-term and long-term, Customer growth, Add-ons, Cross-selling, Applicable to other divisions or companies
+3 Obvious
+0 Developable
+-3 Not Apparent&quot;</inlineHelpText>
+        <label>Future potential  (3 to -3)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GO_NO_GO_TOTAL__c</fullName>
+        <description>Raw value sum of GO-NO-GO Criteria -25 to -1 = Poor, 0 to 14 = Sufficient, 15 to 25 = Excellent</description>
+        <externalId>false</externalId>
+        <formula>Customer_s_Financial_Health__c + Future_potential__c + Customer_Competence__c + Risk_Assessment__c + Serviceability__c + Strategic_Value__c + Likely_profitability__c + Funding_availability__c + Timeframe__c + Decision_Process__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Raw value sum of GO-NO-GO Criteria -25 to -1 = Poor, 0 to 14 = Sufficient, 15 to 25 = Excellent</inlineHelpText>
+        <label>GO-NO-GO TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Go_NoGo_Suggested_probability__c</fullName>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c  + (ROUND( GO_NO_GO_TOTAL__c /27,2)) *  IF( GO_NO_GO_TOTAL__c &gt;0,  0.95-Your_Probability_of_Success__c  ,   (Your_Probability_of_Success__c  - 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Go/NoGo Suggested probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>How_will_you_leverage_it__c</fullName>
+        <description>Will there be follow on work?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will there be follow on work?</inlineHelpText>
+        <label>How will you leverage it?</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Internet_Research__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Have you done Internet Research on the Prospect &amp; their Competitors?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Have you done Internet Research on the Prospect &amp; their Competitors?</inlineHelpText>
+        <label>Internet Research</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Likely_profitability__c</fullName>
+        <description>&quot;Considerations: Adequate margin, Acknowledge value measures, Accept value-based pricing, Tough negotiators
+3 Good
+0 Acceptable
+-3 Not Acceptable&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Adequate margin, Acknowledge value measures, Accept value-based pricing, Tough negotiators
+3 Good
+0 Acceptable
+-3 Not Acceptable&quot;</inlineHelpText>
+        <label>Likely profitability  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offense_McQuay_Strength_vs_Competitive__c</fullName>
+        <description>&quot;Considerations: Their predictability, their cost/quality, Missing features, Inadequacies, Awkward questions we might face, Our nonsupporters and opponents, Contingency plans
++3 They are highly vulnerable
+0 No advantage
+-3 They are invulnerable&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Their predictability, their cost/quality, Missing features, Inadequacies, Awkward questions we might face, Our nonsupporters and opponents, Contingency plans
++3 They are highly vulnerable
+0 No advantage
+-3 They are invulnerable&quot;</inlineHelpText>
+        <label>Offense MQ Strength v Compet   (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner__c</fullName>
+        <description>Owner of this Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Owner of this Opportunity</inlineHelpText>
+        <label>Opportunity Owner</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Trackers</relationshipLabel>
+        <relationshipName>Trackers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Org_Chart__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Do you have the customer&apos;s org chart?</description>
+        <externalId>false</externalId>
+        <label>Org Chart?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_End_Client_Name__c</fullName>
+        <description>This is the name of the end client where the unit will be installed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the name of the end client where the unit will be installed.</inlineHelpText>
+        <label>Owner/End Client Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Personal_Values__c</fullName>
+        <description>Key Decider&apos;s Overall Pain Needs &amp; Wants as it related to Personal Values</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Overall Pain Needs &amp; Wants as it related to Personal Values</inlineHelpText>
+        <label>Personal Values</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Resulting_In_Quantifiable_Bus_Improv__c</fullName>
+        <description>Quanitifiable business improvement - valuable proposition</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quanitifiable business improvement - valuable proposition</inlineHelpText>
+        <label>Resulting In  [Quantifiable Bus Improv]</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Risk_Assessment__c</fullName>
+        <description>&quot;Considerations: Competitive, Legal, Financial, Resource, Operational, Technical, Manageable, Adequate safeguards
+1 Low Risk
+0 Manageable
+-3 High Risk&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Competitive, Legal, Financial, Resource, Operational, Technical, Manageable, Adequate safeguards
+1 Low Risk
+0 Manageable
+-3 High Risk&quot;</inlineHelpText>
+        <label>Risk Assessment (1 to -1)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serviceability__c</fullName>
+        <description>&quot;Considerations: Geographic credibility, Service Coverage, Local Resources available (internal &amp; external), Logistics, Decision maker location, Travel requirements, Centralized/decentralized
+3 No problem
+0 Workable
+-2 Problem&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Geographic credibility, Service Coverage, Local Resources available (internal &amp; external), Logistics, Decision maker location, Travel requirements, Centralized/decentralized
+3 No problem
+0 Workable
+-2 Problem&quot;</inlineHelpText>
+        <label>Serviceability  (3 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solutions_Compatibility__c</fullName>
+        <description>&quot;Considerations: Solution fits business problem, Agrees with customer&apos;s view, Key Criteria met, Differentiates us
+4 Excellent fit
+0 Reasonable fit
+-4 Poor fit&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Solution fits business problem, Agrees with customer&apos;s view, Key Criteria met, Differentiates us
+4 Excellent fit
+0 Reasonable fit
+-4 Poor fit&quot;</inlineHelpText>
+        <label>Solutions Compatibility  (4 to -4)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solutions_Job_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Solutions Job Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Strategic_Linkages__c</fullName>
+        <description>&quot;Considerations: Turbulence linked to solution, Long-term value, Assists industry or market standing, Creates new business opportunities for customer, Partnership potential
++3 Strategic impact
+0 Business impact
+-3 Operations focused&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Turbulence linked to solution, Long-term value, Assists industry or market standing, Creates new business opportunities for customer, Partnership potential
++3 Strategic impact
+0 Business impact
+-3 Operations focused&quot;</inlineHelpText>
+        <label>Strategic Linkages  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Strategic_Value__c</fullName>
+        <description>&quot;Considerations: Their reputation, Executive relationships, Fit with your company strategy, Impact on your marketplace, Impact of losing
+4 Asset
+1 Emerging
+-2 Unreferenceable&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Their reputation, Executive relationships, Fit with your company strategy, Impact on your marketplace, Impact of losing
+4 Asset
+1 Emerging
+-2 Unreferenceable&quot;</inlineHelpText>
+        <label>Strategic Value  (4 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Strategy_Goals__c</fullName>
+        <description>Key Decider&apos;s Focus</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Focus</inlineHelpText>
+        <label>Strategy Goals</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tactic1__c</fullName>
+        <description>Tactic #1 to accomplish the Objective and Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tactic #1 to accomplish the Objective and Strategy</inlineHelpText>
+        <label>Tactic1</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tactic2__c</fullName>
+        <description>Tactic #2 to accomplish the Objective and Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tactic #2 to accomplish the Objective and Strategy</inlineHelpText>
+        <label>Tactic2</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tactic_3__c</fullName>
+        <description>Tactic #3 to accomplish the Objective and Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tactic #3 to accomplish the Objective and Strategy</inlineHelpText>
+        <label>Tactic 3</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tactic_4__c</fullName>
+        <description>Tactic #4 to accomplish the Objective and Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tactic #4 to accomplish the Objective and Strategy</inlineHelpText>
+        <label>Tactic 4</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tactic_5__c</fullName>
+        <description>Tactic #5 to accomplish the Objective and Strategy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tactic #5 to accomplish the Objective and Strategy</inlineHelpText>
+        <label>Tactic 5</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Technical_Values__c</fullName>
+        <description>Key Decider&apos;s Overal Pain, Needs &amp; Wants as it relates to Technical Values</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Decider&apos;s Overal Pain, Needs &amp; Wants as it relates to Technical Values</inlineHelpText>
+        <label>Technical Values</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>The_customer_will_be_able_to__c</fullName>
+        <description>Value Proposition Factor - What are the customer goals?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value Proposition Factor - What are the customer goals?</inlineHelpText>
+        <label>The customer will be able to</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Timeframe__c</fullName>
+        <description>&quot;Considerations: Deadline pressure, Where it buying process, Pilot or trial, Order placement date, Implementation/installation plan, Are your resources available in time frame?
+2 Optimal
+0 Doable
+2 Unreasonable&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Deadline pressure, Where it buying process, Pilot or trial, Order placement date, Implementation/installation plan, Are your resources available in time frame?
+2 Optimal
+0 Doable
+2 Unreasonable&quot;</inlineHelpText>
+        <label>Timeframe  (2 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Track_Record_Similar_Solutions__c</fullName>
+        <description>&quot;Considerations: Prior experience with similar Solutions, Strengths/weaknesses/quality of prior solutions, Referenceability of prior solutions, Industry leader or follower
++3 We have much more success
+0 Parity
+-3 They have much more success&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Prior experience with similar Solutions, Strengths/weaknesses/quality of prior solutions, Referenceability of prior solutions, Industry leader or follower
++3 We have much more success
+0 Parity
+-3 They have much more success&quot;</inlineHelpText>
+        <label>Track Record Similar Solutions  (3 to -3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Track_Record_vs_Competitor__c</fullName>
+        <description>&quot;Considerations: Quality, Resources, Determination, Expertise, Met this comptitor before, Know competitor&apos;s &amp; people approach
++2 We usually win
+0 Toss-up
+-2 They usually win&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Quality, Resources, Determination, Expertise, Met this comptitor before, Know competitor&apos;s &amp; people approach
++2 We usually win
+0 Toss-up
+-2 They usually win&quot;</inlineHelpText>
+        <label>Track Record vs. Competitor  (2 to -2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Track_Record_with_Customer__c</fullName>
+        <description>&quot;Considerations: Business share, Current agreements, Value of prior solutions, Past successes, Past problems
++3 We usually win
+0 Toss-up
+-3 They usually win&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Considerations: Business share, Current agreements, Value of prior solutions, Past successes, Past problems
++3 We usually win
+0 Toss-up
+-3 They usually win&quot;</inlineHelpText>
+        <label>Track Record with Customer  (3 to -3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Weighted_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c *  Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weighted Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>What_are_you_selling1__c</fullName>
+        <description>What are you selling? 1)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What are you selling? 1)</inlineHelpText>
+        <label>What are you selling1</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_are_you_selling2__c</fullName>
+        <description>What are you selling? 2)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What are you selling? 2)</inlineHelpText>
+        <label>What are you selling2</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_are_you_selling3__c</fullName>
+        <description>What are you selling? 3)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What are you selling? 3)</inlineHelpText>
+        <label>What are you selling3</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>With_economic_payback_achieved_by__c</fullName>
+        <description>Timeframe</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timeframe</inlineHelpText>
+        <label>With economic payback achieved by</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Your_Critical_Deadlines__c</fullName>
+        <description>From YOUR Perspective, what are the ciritcal deadlines?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From YOUR Perspective, what are the ciritcal deadlines?</inlineHelpText>
+        <label>Your Critical Deadlines</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Your_Deal_Motivators_Key_Business_Issues__c</fullName>
+        <description>From Your Perspective, what are the Deal Motivators?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Your Perspective, what are the Deal Motivators?</inlineHelpText>
+        <label>Your Deal Motivators/Key Business Issues</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Your_Probability_of_Success_Beat__c</fullName>
+        <description>What do you consider to be your probability of success?</description>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>What do you consider to be your probability of success?</inlineHelpText>
+        <label>Your Probability of Success</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Your_Probability_of_Success_Connect__c</fullName>
+        <description>What do you consider to be your probability of success?</description>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>What do you consider to be your probability of success?</inlineHelpText>
+        <label>Your Probability of Success</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Your_Probability_of_Success_GoNoGo__c</fullName>
+        <description>What do you consider to be your probability of success?</description>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>What do you consider to be your probability of success?</inlineHelpText>
+        <label>Your Probability of Success</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Your_Probability_of_Success_Win__c</fullName>
+        <description>What do you consider to be your probability of success?</description>
+        <externalId>false</externalId>
+        <formula>Your_Probability_of_Success__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>What do you consider to be your probability of success?</inlineHelpText>
+        <label>Your Probability of Success</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Your_Probability_of_Success__c</fullName>
+        <description>What do you consider to be your probability of success?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What do you consider to be your probability of success?</inlineHelpText>
+        <label>Your Probability of Success</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Your_Value_Proposition__c</fullName>
+        <description>From Your Perspective, What is your Value Proposition?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Your Perspective, What is your Value Proposition?</inlineHelpText>
+        <label>Your Value Proposition</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Tracker</label>
+    <nameField>
+        <label>Tracker Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Trackers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Opportunity_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

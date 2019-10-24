@@ -1,0 +1,91 @@
+table.panel 
+{
+	height: auto;	
+	font-family:tahoma,verdana,helvetica;
+	font-size:11px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;		
+	height:100%;
+}
+
+table.panel tr.header 
+{
+	height: 23px;	
+}
+
+table.panel tr.header td.left 
+{
+	width: 3px;
+	background-repeat: no-repeat;
+	background-image: url(./images/panelBorderTopLeft.gif);
+}
+
+table.panel tr.header td.center 
+{
+	width: auto;
+	background-repeat: repeat-x;
+	background-image: url(./images/panelBorderTop.gif);
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+table.panel tr.header td.right 
+{
+	width: 5px;
+	background-repeat: no-repeat;
+	background-image: url(./images/panelBorderTopRight.gif);
+}
+
+table.panel tr.content td.left 
+{
+	width: 3px;
+	background-repeat: repeat-y;
+	background-image: url(./images/panelBorderLeft.gif);
+}
+
+table.panel tr.content td.center 
+{
+	background-color: #F1F1F1;
+	width: auto;
+        height: 100%;
+}
+
+table.panel tr.content td.right 
+{
+	width: 5px;
+	background-repeat: repeat-y;
+	background-image: url(./images/panelBorderRight.gif);
+}
+
+table.panel tr.footer 
+{
+	height: 14px;
+}
+
+table.panel tr.footer td.left 
+{
+	width: 3px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(./images/panelBorderBottomLeft.gif);
+}
+
+table.panel tr.footer td.center 
+{
+	width: auto;
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-image: url(./images/panelBorderBottom.gif);
+}
+
+table.panel tr.footer td.right 
+{
+	width: 5px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(./images/panelBorderBottomRight.gif);
+}

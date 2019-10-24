@@ -1,0 +1,3916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores information on user change requests.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Completion_Date__c</fullName>
+        <description>This date may be different from the scheduled completion date if assigned party was not able to complete it by this date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date this change request was actually completed.</inlineHelpText>
+        <label>Actual Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Hours__c</fullName>
+        <description>Actual number of Hours to complete the change request.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual number of Hours to complete the change request.</inlineHelpText>
+        <label>Actual Hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Priority_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Priority Level</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Urgent</fullName>
+                    <default>false</default>
+                    <label>Urgent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Actual_Start_Date__c</fullName>
+        <description>This field captures the Date when actually Salesforce Admin/Developer started working on the change request.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Start Date when Salesforce Team started working on this Change Request</inlineHelpText>
+        <label>Actual Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Admin_Estimated_Hours__c</fullName>
+        <description>Please Specify Admin Estimated Hours.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please Specify Admin Estimated Hours.</inlineHelpText>
+        <label>Admin Estimated Hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>SF Administrator or Developer given responsibility for completing this request.</inlineHelpText>
+        <label>Assigned To</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>User does not match filter criteria.</errorMessage>
+            <filterItems>
+                <field>User.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>User.Profile.Id</field>
+                <operation>equals</operation>
+                <value>00e80000000p6lF, 00eC0000001G9g4</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Change_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BA_Estimated_Hours__c</fullName>
+        <description>Please specify BA Estimated Hours.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify BA Estimated Hours.</inlineHelpText>
+        <label>BA Estimated Hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Change_Summary__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please summarize your change request in a brief description.</inlineHelpText>
+        <label>Change Summary</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Division__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the company division requesting this change.</inlineHelpText>
+        <label>Company Division</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Consulting Sales</fullName>
+                    <default>false</default>
+                    <label>Consulting Sales</label>
+                </value>
+                <value>
+                    <fullName>Controls</fullName>
+                    <default>false</default>
+                    <label>Controls</label>
+                </value>
+                <value>
+                    <fullName>Direct Sales Office</fullName>
+                    <default>false</default>
+                    <label>Direct Sales Office</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>MCP</fullName>
+                    <default>false</default>
+                    <label>MCP</label>
+                </value>
+                <value>
+                    <fullName>National Accounts</fullName>
+                    <default>false</default>
+                    <label>National Accounts</label>
+                </value>
+                <value>
+                    <fullName>Owner Sales</fullName>
+                    <default>false</default>
+                    <label>Owner Sales</label>
+                </value>
+                <value>
+                    <fullName>TRC</fullName>
+                    <default>false</default>
+                    <label>TRC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Desired_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the desired date of completion for this change request.</inlineHelpText>
+        <label>Desired Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Detailed_Change_Description__c</fullName>
+        <description>Description of the requested change.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please describe the requested change in detail.</inlineHelpText>
+        <label>Detailed Change Description</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Developer_Estimated_hours__c</fullName>
+        <description>Please specify Developer Estimated hours.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify Developer Estimated hours.</inlineHelpText>
+        <label>Developer Estimated hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Hours__c</fullName>
+        <description>Estimated Number of working Hours to complete the requested new functionality/changes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated Number of working Hours to complete the requested new functionality/changes.</inlineHelpText>
+        <label>Total Estimated Hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Capitalized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Capitalized</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <description>This field captures Product Model number of the newly requested product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter Product Model number</inlineHelpText>
+        <label>Model</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Activities__c</fullName>
+        <externalId>false</externalId>
+        <formula>Number_of_Open_Activities__c  +  Number_of_Closed_Activities__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Closed_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Closed Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Open_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Open Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority_Sequence__c</fullName>
+        <description>Priority Sequence</description>
+        <externalId>false</externalId>
+        <label>Priority Sequence</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AAF Filter</fullName>
+                    <default>false</default>
+                    <label>AAF Filter</label>
+                </value>
+                <value>
+                    <fullName>Aftermarket</fullName>
+                    <default>false</default>
+                    <label>Aftermarket</label>
+                </value>
+                <value>
+                    <fullName>Applied</fullName>
+                    <default>false</default>
+                    <label>Applied</label>
+                </value>
+                <value>
+                    <fullName>Applied Non-US</fullName>
+                    <default>false</default>
+                    <label>Applied Non-US</label>
+                </value>
+                <value>
+                    <fullName>Daikin</fullName>
+                    <default>false</default>
+                    <label>Daikin</label>
+                </value>
+                <value>
+                    <fullName>Parts</fullName>
+                    <default>false</default>
+                    <label>Parts</label>
+                </value>
+                <value>
+                    <fullName>Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>Service - Misc.</fullName>
+                    <default>false</default>
+                    <label>Service - Misc.</label>
+                </value>
+                <value>
+                    <fullName>Unitary</fullName>
+                    <default>false</default>
+                    <label>Unitary</label>
+                </value>
+                <value>
+                    <fullName>VRV</fullName>
+                    <default>false</default>
+                    <label>VRV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Description__c</fullName>
+        <description>This field captures newly requested product description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter product description</inlineHelpText>
+        <label>Product Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>AHU</fullName>
+                    <default>false</default>
+                    <label>AHU</label>
+                </value>
+                <value>
+                    <fullName>AIR PURIFIER</fullName>
+                    <default>false</default>
+                    <label>AIR PURIFIER</label>
+                </value>
+                <value>
+                    <fullName>Applied Non-US - User Defined</fullName>
+                    <default>false</default>
+                    <label>Applied Non-US - User Defined</label>
+                </value>
+                <value>
+                    <fullName>Applied - User Defined</fullName>
+                    <default>false</default>
+                    <label>Applied - User Defined</label>
+                </value>
+                <value>
+                    <fullName>C/O CONDENSING UNIT</fullName>
+                    <default>false</default>
+                    <label>C/O CONDENSING UNIT</label>
+                </value>
+                <value>
+                    <fullName>CASSETTE CORNER</fullName>
+                    <default>false</default>
+                    <label>CASSETTE CORNER</label>
+                </value>
+                <value>
+                    <fullName>CASSETTE DF</fullName>
+                    <default>false</default>
+                    <label>CASSETTE DF</label>
+                </value>
+                <value>
+                    <fullName>CASSETTE RF</fullName>
+                    <default>false</default>
+                    <label>CASSETTE RF</label>
+                </value>
+                <value>
+                    <fullName>CEILING MOUNTED</fullName>
+                    <default>false</default>
+                    <label>CEILING MOUNTED</label>
+                </value>
+                <value>
+                    <fullName>CEILING SUSPENDED</fullName>
+                    <default>false</default>
+                    <label>CEILING SUSPENDED</label>
+                </value>
+                <value>
+                    <fullName>CEILING SUSPENDED CASSETTE</fullName>
+                    <default>false</default>
+                    <label>CEILING SUSPENDED CASSETTE</label>
+                </value>
+                <value>
+                    <fullName>Chilled Water Fan Coil</fullName>
+                    <default>false</default>
+                    <label>Chilled Water Fan Coil</label>
+                </value>
+                <value>
+                    <fullName>Chilled Water Fan Coil Unit</fullName>
+                    <default>false</default>
+                    <label>Chilled Water Fan Coil Unit</label>
+                </value>
+                <value>
+                    <fullName>Chiller AC - Screw</fullName>
+                    <default>false</default>
+                    <label>Chiller AC - Screw</label>
+                </value>
+                <value>
+                    <fullName>Chiller AC - Scroll</fullName>
+                    <default>false</default>
+                    <label>Chiller AC - Scroll</label>
+                </value>
+                <value>
+                    <fullName>Chiller WC - Cent</fullName>
+                    <default>false</default>
+                    <label>Chiller WC - Cent</label>
+                </value>
+                <value>
+                    <fullName>Chiller WC - Screw</fullName>
+                    <default>false</default>
+                    <label>Chiller WC - Screw</label>
+                </value>
+                <value>
+                    <fullName>Chiller WC - Scroll</fullName>
+                    <default>false</default>
+                    <label>Chiller WC - Scroll</label>
+                </value>
+                <value>
+                    <fullName>Coating Anti-Corrosive</fullName>
+                    <default>false</default>
+                    <label>Coating Anti-Corrosive</label>
+                </value>
+                <value>
+                    <fullName>Coil</fullName>
+                    <default>false</default>
+                    <label>Coil</label>
+                </value>
+                <value>
+                    <fullName>Condensing Unit</fullName>
+                    <default>false</default>
+                    <label>Condensing Unit</label>
+                </value>
+                <value>
+                    <fullName>CONTROLS</fullName>
+                    <default>false</default>
+                    <label>CONTROLS</label>
+                </value>
+                <value>
+                    <fullName>DUCT MOUNTED</fullName>
+                    <default>false</default>
+                    <label>DUCT MOUNTED</label>
+                </value>
+                <value>
+                    <fullName>DUCT MOUNTED SLIM</fullName>
+                    <default>false</default>
+                    <label>DUCT MOUNTED SLIM</label>
+                </value>
+                <value>
+                    <fullName>EVAPORATOR ACCESSORY</fullName>
+                    <default>false</default>
+                    <label>EVAPORATOR ACCESSORY</label>
+                </value>
+                <value>
+                    <fullName>FCU</fullName>
+                    <default>false</default>
+                    <label>FCU</label>
+                </value>
+                <value>
+                    <fullName>FCU DX</fullName>
+                    <default>false</default>
+                    <label>FCU DX</label>
+                </value>
+                <value>
+                    <fullName>Filter</fullName>
+                    <default>false</default>
+                    <label>Filter</label>
+                </value>
+                <value>
+                    <fullName>Flete / Freight</fullName>
+                    <default>false</default>
+                    <label>Flete / Freight</label>
+                </value>
+                <value>
+                    <fullName>FLOOR STANDING</fullName>
+                    <default>false</default>
+                    <label>FLOOR STANDING</label>
+                </value>
+                <value>
+                    <fullName>FLOOR STANDING CONCEALED</fullName>
+                    <default>false</default>
+                    <label>FLOOR STANDING CONCEALED</label>
+                </value>
+                <value>
+                    <fullName>Furnace</fullName>
+                    <default>false</default>
+                    <label>Furnace</label>
+                </value>
+                <value>
+                    <fullName>GENERAL ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>GENERAL ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>H/P CONDENSING UNIT</fullName>
+                    <default>false</default>
+                    <label>H/P CONDENSING UNIT</label>
+                </value>
+                <value>
+                    <fullName>H/R CONDENSING UNIT</fullName>
+                    <default>false</default>
+                    <label>H/R CONDENSING UNIT</label>
+                </value>
+                <value>
+                    <fullName>IndoorAHU</fullName>
+                    <default>false</default>
+                    <label>IndoorAHU</label>
+                </value>
+                <value>
+                    <fullName>MDS</fullName>
+                    <default>false</default>
+                    <label>MDS</label>
+                </value>
+                <value>
+                    <fullName>MDS ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>MDS ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>MDSI</fullName>
+                    <default>false</default>
+                    <label>MDSI</label>
+                </value>
+                <value>
+                    <fullName>Mini-Split</fullName>
+                    <default>false</default>
+                    <label>Mini-Split</label>
+                </value>
+                <value>
+                    <fullName>Mini Split - CO</fullName>
+                    <default>false</default>
+                    <label>Mini Split - CO</label>
+                </value>
+                <value>
+                    <fullName>Mini Split - CO - IU</fullName>
+                    <default>false</default>
+                    <label>Mini Split - CO - IU</label>
+                </value>
+                <value>
+                    <fullName>Mini Split - CO - OU</fullName>
+                    <default>false</default>
+                    <label>Mini Split - CO - OU</label>
+                </value>
+                <value>
+                    <fullName>Mini Split - HP</fullName>
+                    <default>false</default>
+                    <label>Mini Split - HP</label>
+                </value>
+                <value>
+                    <fullName>Mini Split - HP - IU</fullName>
+                    <default>false</default>
+                    <label>Mini Split - HP - IU</label>
+                </value>
+                <value>
+                    <fullName>Multi Split - CO</fullName>
+                    <default>false</default>
+                    <label>Multi Split - CO</label>
+                </value>
+                <value>
+                    <fullName>Multi Split - CO - IU</fullName>
+                    <default>false</default>
+                    <label>Multi Split - CO - IU</label>
+                </value>
+                <value>
+                    <fullName>Multi Split - HP</fullName>
+                    <default>false</default>
+                    <label>Multi Split - HP</label>
+                </value>
+                <value>
+                    <fullName>Multi Split - HP - IU</fullName>
+                    <default>false</default>
+                    <label>Multi Split - HP - IU</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>OUTDOOR AIR PROCESSING UNIT</fullName>
+                    <default>false</default>
+                    <label>OUTDOOR AIR PROCESSING UNIT</label>
+                </value>
+                <value>
+                    <fullName>PA - CO</fullName>
+                    <default>false</default>
+                    <label>PA - CO</label>
+                </value>
+                <value>
+                    <fullName>PA - DUAL FUEL</fullName>
+                    <default>false</default>
+                    <label>PA - DUAL FUEL</label>
+                </value>
+                <value>
+                    <fullName>PA - GAS/ELEC</fullName>
+                    <default>false</default>
+                    <label>PA - GAS/ELEC</label>
+                </value>
+                <value>
+                    <fullName>PA - HP</fullName>
+                    <default>false</default>
+                    <label>PA - HP</label>
+                </value>
+                <value>
+                    <fullName>Parts</fullName>
+                    <default>false</default>
+                    <label>Parts</label>
+                </value>
+                <value>
+                    <fullName>Parts - User Defined</fullName>
+                    <default>false</default>
+                    <label>Parts - User Defined</label>
+                </value>
+                <value>
+                    <fullName>PTAC</fullName>
+                    <default>false</default>
+                    <label>PTAC</label>
+                </value>
+                <value>
+                    <fullName>Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>RTU</fullName>
+                    <default>false</default>
+                    <label>RTU</label>
+                </value>
+                <value>
+                    <fullName>Self Contained</fullName>
+                    <default>false</default>
+                    <label>Self Contained</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Service - Misc.</fullName>
+                    <default>false</default>
+                    <label>Service - Misc.</label>
+                </value>
+                <value>
+                    <fullName>Split System - CO</fullName>
+                    <default>false</default>
+                    <label>Split System - CO</label>
+                </value>
+                <value>
+                    <fullName>Split System - CO - IU</fullName>
+                    <default>false</default>
+                    <label>Split System - CO - IU</label>
+                </value>
+                <value>
+                    <fullName>Split System - HP</fullName>
+                    <default>false</default>
+                    <label>Split System - HP</label>
+                </value>
+                <value>
+                    <fullName>Split System - HP - IU</fullName>
+                    <default>false</default>
+                    <label>Split System - HP - IU</label>
+                </value>
+                <value>
+                    <fullName>Templifier WH - Cent</fullName>
+                    <default>false</default>
+                    <label>Templifier WH - Cent</label>
+                </value>
+                <value>
+                    <fullName>Templifier WH - Scroll</fullName>
+                    <default>false</default>
+                    <label>Templifier WH - Scroll</label>
+                </value>
+                <value>
+                    <fullName>Unitary - User Defined</fullName>
+                    <default>false</default>
+                    <label>Unitary - User Defined</label>
+                </value>
+                <value>
+                    <fullName>Unit Ventilators</fullName>
+                    <default>false</default>
+                    <label>Unit Ventilators</label>
+                </value>
+                <value>
+                    <fullName>VERTICAL AIR HANDLER</fullName>
+                    <default>false</default>
+                    <label>VERTICAL AIR HANDLER</label>
+                </value>
+                <value>
+                    <fullName>VRI</fullName>
+                    <default>false</default>
+                    <label>VRI</label>
+                </value>
+                <value>
+                    <fullName>VRV-CO</fullName>
+                    <default>false</default>
+                    <label>VRV-CO</label>
+                </value>
+                <value>
+                    <fullName>VRV-HP</fullName>
+                    <default>false</default>
+                    <label>VRV-HP</label>
+                </value>
+                <value>
+                    <fullName>VRV-HR</fullName>
+                    <default>false</default>
+                    <label>VRV-HR</label>
+                </value>
+                <value>
+                    <fullName>VRV-Q</fullName>
+                    <default>false</default>
+                    <label>VRV-Q</label>
+                </value>
+                <value>
+                    <fullName>VRV-S</fullName>
+                    <default>false</default>
+                    <label>VRV-S</label>
+                </value>
+                <value>
+                    <fullName>VRV-WC</fullName>
+                    <default>false</default>
+                    <label>VRV-WC</label>
+                </value>
+                <value>
+                    <fullName>VupQ CONDENSOR</fullName>
+                    <default>false</default>
+                    <label>VupQ CONDENSOR</label>
+                </value>
+                <value>
+                    <fullName>WALL MOUNTED</fullName>
+                    <default>false</default>
+                    <label>WALL MOUNTED</label>
+                </value>
+                <value>
+                    <fullName>W CONDENSING UNIT</fullName>
+                    <default>false</default>
+                    <label>W CONDENSING UNIT</label>
+                </value>
+                <value>
+                    <fullName>Witness Test</fullName>
+                    <default>false</default>
+                    <label>Witness Test</label>
+                </value>
+                <value>
+                    <fullName>WSHP</fullName>
+                    <default>false</default>
+                    <label>WSHP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <description>Please enter Product Name.(This field is used to capture newly requested product name)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter Product Name.</inlineHelpText>
+        <label>Product Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Applied non-US</fullName>
+                    <default>false</default>
+                    <label>Applied non-US</label>
+                </value>
+                <value>
+                    <fullName>Room Air</fullName>
+                    <default>false</default>
+                    <label>Room Air</label>
+                </value>
+                <value>
+                    <fullName>Light Commercial</fullName>
+                    <default>false</default>
+                    <label>Light Commercial</label>
+                </value>
+                <value>
+                    <fullName>Applied</fullName>
+                    <default>false</default>
+                    <label>Applied</label>
+                </value>
+                <value>
+                    <fullName>Parts</fullName>
+                    <default>false</default>
+                    <label>Parts</label>
+                </value>
+                <value>
+                    <fullName>VRV</fullName>
+                    <default>false</default>
+                    <label>VRV</label>
+                </value>
+                <value>
+                    <fullName>Parts - User Defined</fullName>
+                    <default>false</default>
+                    <label>Parts - User Defined</label>
+                </value>
+                <value>
+                    <fullName>Flete / Freight</fullName>
+                    <default>false</default>
+                    <label>Flete / Freight</label>
+                </value>
+                <value>
+                    <fullName>Service - Misc.</fullName>
+                    <default>false</default>
+                    <label>Service - Misc.</label>
+                </value>
+                <value>
+                    <fullName>Coating Anti-Corrosive</fullName>
+                    <default>false</default>
+                    <label>Coating Anti-Corrosive</label>
+                </value>
+                <value>
+                    <fullName>Refrigeration</fullName>
+                    <default>false</default>
+                    <label>Refrigeration</label>
+                </value>
+                <value>
+                    <fullName>AAF Filter</fullName>
+                    <default>false</default>
+                    <label>AAF Filter</label>
+                </value>
+                <value>
+                    <fullName>Aftermarket</fullName>
+                    <default>false</default>
+                    <label>Aftermarket</label>
+                </value>
+                <value>
+                    <fullName>Unitary - User Defined</fullName>
+                    <default>false</default>
+                    <label>Unitary - User Defined</label>
+                </value>
+                <value>
+                    <fullName>Applied Non-US - User Defined</fullName>
+                    <default>false</default>
+                    <label>Applied Non-US - User Defined</label>
+                </value>
+                <value>
+                    <fullName>Applied - User Defined</fullName>
+                    <default>false</default>
+                    <label>Applied - User Defined</label>
+                </value>
+                <value>
+                    <fullName>VRC</fullName>
+                    <default>false</default>
+                    <label>VRC</label>
+                </value>
+                <value>
+                    <fullName>VFO</fullName>
+                    <default>false</default>
+                    <label>VFO</label>
+                </value>
+                <value>
+                    <fullName>VRA</fullName>
+                    <default>false</default>
+                    <label>VRA</label>
+                </value>
+                <value>
+                    <fullName>VSO</fullName>
+                    <default>false</default>
+                    <label>VSO</label>
+                </value>
+                <value>
+                    <fullName>VTO</fullName>
+                    <default>false</default>
+                    <label>VTO</label>
+                </value>
+                <value>
+                    <fullName>VRI</fullName>
+                    <default>false</default>
+                    <label>VRI</label>
+                </value>
+                <value>
+                    <fullName>GNA</fullName>
+                    <default>false</default>
+                    <label>GNA</label>
+                </value>
+                <value>
+                    <fullName>VWO</fullName>
+                    <default>false</default>
+                    <label>VWO</label>
+                </value>
+                <value>
+                    <fullName>FCU</fullName>
+                    <default>false</default>
+                    <label>FCU</label>
+                </value>
+                <value>
+                    <fullName>MDS</fullName>
+                    <default>false</default>
+                    <label>MDS</label>
+                </value>
+                <value>
+                    <fullName>Mini-Split</fullName>
+                    <default>false</default>
+                    <label>Mini-Split</label>
+                </value>
+                <value>
+                    <fullName>AHU</fullName>
+                    <default>false</default>
+                    <label>AHU</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Category__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the category of this change request.</inlineHelpText>
+        <label>Request Category</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Accounts</fullName>
+                    <default>false</default>
+                    <label>Accounts</label>
+                </value>
+                <value>
+                    <fullName>Addresses</fullName>
+                    <default>false</default>
+                    <label>Addresses</label>
+                </value>
+                <value>
+                    <fullName>Approvals</fullName>
+                    <default>false</default>
+                    <label>Approvals</label>
+                </value>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                    <label>Assets</label>
+                </value>
+                <value>
+                    <fullName>Campaigns</fullName>
+                    <default>false</default>
+                    <label>Campaigns</label>
+                </value>
+                <value>
+                    <fullName>Cases</fullName>
+                    <default>false</default>
+                    <label>Cases</label>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                    <label>Chatter</label>
+                </value>
+                <value>
+                    <fullName>Contacts</fullName>
+                    <default>false</default>
+                    <label>Contacts</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>Dashboards</fullName>
+                    <default>false</default>
+                    <label>Dashboards</label>
+                </value>
+                <value>
+                    <fullName>Documents</fullName>
+                    <default>false</default>
+                    <label>Documents</label>
+                </value>
+                <value>
+                    <fullName>Integration</fullName>
+                    <default>false</default>
+                    <label>Integration</label>
+                </value>
+                <value>
+                    <fullName>Leads</fullName>
+                    <default>false</default>
+                    <label>Leads</label>
+                </value>
+                <value>
+                    <fullName>Opportunities</fullName>
+                    <default>false</default>
+                    <label>Opportunities</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Products</fullName>
+                    <default>false</default>
+                    <label>Products</label>
+                </value>
+                <value>
+                    <fullName>Quotas</fullName>
+                    <default>false</default>
+                    <label>Quotas</label>
+                </value>
+                <value>
+                    <fullName>Quotes</fullName>
+                    <default>false</default>
+                    <label>Quotes</label>
+                </value>
+                <value>
+                    <fullName>Reports</fullName>
+                    <default>false</default>
+                    <label>Reports</label>
+                </value>
+                <value>
+                    <fullName>Solutions</fullName>
+                    <default>false</default>
+                    <label>Solutions</label>
+                </value>
+                <value>
+                    <fullName>Users</fullName>
+                    <default>false</default>
+                    <label>Users</label>
+                </value>
+                <value>
+                    <fullName>Web Service</fullName>
+                    <default>false</default>
+                    <label>Web Service</label>
+                </value>
+                <value>
+                    <fullName>Workflow</fullName>
+                    <default>false</default>
+                    <label>Workflow</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Priority_Level__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the priority level of this change request.</inlineHelpText>
+        <label>Request Priority Level</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Urgent</fullName>
+                    <default>false</default>
+                    <label>Urgent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The current status of this change request. Available options include:
+
+Requested
+Under Review
+Approved
+Denied
+Scheduled For Development
+In Development
+Completed
+Cancelled</inlineHelpText>
+        <label>Request Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>true</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>Effort Estimation</fullName>
+                    <default>false</default>
+                    <label>Effort Estimation</label>
+                </value>
+                <value>
+                    <fullName>Business Prioritization/ Scheduling</fullName>
+                    <default>false</default>
+                    <label>Business Prioritization/ Scheduling</label>
+                </value>
+                <value>
+                    <fullName>Scheduled For Development</fullName>
+                    <default>false</default>
+                    <label>Scheduled For Development</label>
+                </value>
+                <value>
+                    <fullName>In Development</fullName>
+                    <default>false</default>
+                    <label>In Development</label>
+                </value>
+                <value>
+                    <fullName>UAT</fullName>
+                    <default>false</default>
+                    <label>UAT</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the type of this change request.</inlineHelpText>
+        <label>Request Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Functionality</fullName>
+                    <default>false</default>
+                    <label>New Functionality</label>
+                </value>
+                <value>
+                    <fullName>Change To Existing Functionality/Behavior</fullName>
+                    <default>false</default>
+                    <label>Change To Existing Functionality/Behavior</label>
+                </value>
+                <value>
+                    <fullName>Business Analysis</fullName>
+                    <default>false</default>
+                    <label>Business Analysis</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Scheduled_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date this change request is scheduled to be completed.</inlineHelpText>
+        <label>Scheduled Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Scheduled_Start_Date__c</fullName>
+        <description>Scheduled start date to work on Change Request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scheduled start date to work on Change Request</inlineHelpText>
+        <label>Scheduled Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional information regarding the current status.</inlineHelpText>
+        <label>Status Comments</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Change Request</label>
+    <listViews>
+        <fullName>AP_Change_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>AP</label>
+        <queue>AP</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Change_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Company_Division__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Request_Category__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Desired_Completion_Date__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>Assigned_To__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Change Requests</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Change_Requests_Completed</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Company_Division__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Request_Category__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Desired_Completion_Date__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Is_Capitalized__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>notEqual</operation>
+            <value>Latin America</value>
+        </filters>
+        <label>Change Requests - Completed</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Change_Requests_Controls</fullName>
+        <columns>NAME</columns>
+        <columns>Company_Division__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Assigned_To__c</columns>
+        <columns>Change_Summary__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>equals</operation>
+            <value>Controls</value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <label>Change Requests - Controls</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Controls_IE_Management</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Change_Requests_Denied_Cancelled</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Company_Division__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Request_Category__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Desired_Completion_Date__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Denied,Cancelled</value>
+        </filters>
+        <label>Change Requests - Denied/Cancelled</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Change_Requests_Open</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Company_Division__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Request_Category__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Desired_Completion_Date__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <label>Change Requests - Open</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Latin_America_Open_CR</fullName>
+        <columns>NAME</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Priority_Sequence__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Status_Comments__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Change_Request__c.Latin_America</value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <label>Latin America Open CR</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+            <role>Latin_America</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>North_America_CRs_Open</fullName>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Actual_Priority_Level__c</columns>
+        <columns>Priority_Sequence__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Status_Comments__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>notEqual</operation>
+            <value>Latin America</value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <label>North America CRs - Open</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+            <roleAndSubordinates>North_America</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>North_America_CRs_Open_ALL</fullName>
+        <columns>Priority_Sequence__c</columns>
+        <columns>Company_Division__c</columns>
+        <columns>NAME</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Assigned_To__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>notEqual</operation>
+            <value>Latin America</value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Denied,Cancelled</value>
+        </filters>
+        <label>North America CRs - Open (ALL)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>North_America_CRs_Open_IT</fullName>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Actual_Priority_Level__c</columns>
+        <columns>Priority_Sequence__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Status_Comments__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>notEqual</operation>
+            <value>Latin America</value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Business Analysis</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>notEqual</operation>
+            <value>Change_Request__c.Business</value>
+        </filters>
+        <label>North America CRs - Open IT</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+            <roleAndSubordinates>North_America</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>North_America_CRs_TRC_Open</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Company_Division__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Request_Category__c</columns>
+        <columns>Request_Priority_Level__c</columns>
+        <columns>Change_Summary__c</columns>
+        <columns>Desired_Completion_Date__c</columns>
+        <columns>Request_Status__c</columns>
+        <columns>Scheduled_Completion_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Completed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Company_Division__c</field>
+            <operation>equals</operation>
+            <value>TRC</value>
+        </filters>
+        <label>North America CRs - TRC - Open</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Daikin_Applied</role>
+            <role>North_America</role>
+            <roleAndSubordinates>TRC_North_America</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>CR-{00000}</displayFormat>
+        <label>Change Request Number</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Change Requests</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Business</fullName>
+        <active>true</active>
+        <description>Used for the Business Analyst</description>
+        <label>Business</label>
+        <picklistValues>
+            <picklist>Actual_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Division__c</picklist>
+            <values>
+                <fullName>Consulting Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Latin America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Family__c</picklist>
+            <values>
+                <fullName>ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIR PURIFIER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%2FO CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE CORNER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE DF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE RF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED CASSETTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Condensing Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED SLIM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVAPORATOR ACCESSORY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU DX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING CONCEALED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERAL ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FP CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FR CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IndoorAHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - OU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDOOR AIR PROCESSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - DUAL FUEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - GAS%2FELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PTAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RTU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Contained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Ventilators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VERTICAL AIR HANDLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-Q</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-S</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-WC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VupQ CONDENSOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WALL MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Witness Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Sub_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GNA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Air</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VWO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Category__c</picklist>
+            <values>
+                <fullName>Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Addresses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approvals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Users</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workflow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Prioritization%2F Scheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Effort Estimation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled For Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Business Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change To Existing Functionality%2FBehavior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Functionality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Latin_America</fullName>
+        <active>false</active>
+        <description>Latin America Change Request Record Type</description>
+        <label>Latin America</label>
+        <picklistValues>
+            <picklist>Actual_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Division__c</picklist>
+            <values>
+                <fullName>Latin America</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Family__c</picklist>
+            <values>
+                <fullName>ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIR PURIFIER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%2FO CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE CORNER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE DF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE RF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED CASSETTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Condensing Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED SLIM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVAPORATOR ACCESSORY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU DX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING CONCEALED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERAL ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FP CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FR CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IndoorAHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - OU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDOOR AIR PROCESSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - DUAL FUEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - GAS%2FELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PTAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RTU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Contained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Ventilators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VERTICAL AIR HANDLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-Q</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-S</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-WC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VupQ CONDENSOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WALL MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Witness Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Sub_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GNA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Air</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VWO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Category__c</picklist>
+            <values>
+                <fullName>Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Addresses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approvals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Users</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workflow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Prioritization%2F Scheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Effort Estimation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled For Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Review</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Change To Existing Functionality%2FBehavior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Functionality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>North_America</fullName>
+        <active>true</active>
+        <description>North America Change Request Record Type</description>
+        <label>North America</label>
+        <picklistValues>
+            <picklist>Actual_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Division__c</picklist>
+            <values>
+                <fullName>Consulting Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daikin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Family__c</picklist>
+            <values>
+                <fullName>ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIR PURIFIER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%2FO CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE CORNER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE DF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASSETTE RF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEILING SUSPENDED CASSETTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilled Water Fan Coil Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller AC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Screw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiller WC - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Condensing Unit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUCT MOUNTED SLIM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVAPORATOR ACCESSORY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU DX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLOOR STANDING CONCEALED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERAL ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FP CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H%2FR CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IndoorAHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - CO - OU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi Split - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDOOR AIR PROCESSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - DUAL FUEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - GAS%2FELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PTAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RTU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Contained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - CO - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Split System - HP - IU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Cent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templifier WH - Scroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Ventilators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VERTICAL AIR HANDLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-Q</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-S</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV-WC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VupQ CONDENSOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W CONDENSING UNIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WALL MOUNTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Witness Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Sub_Category__c</picklist>
+            <values>
+                <fullName>AAF Filter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AHU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied Non-US - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Applied non-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating Anti-Corrosive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flete %2F Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GNA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mini-Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Air</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service - Misc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unitary - User Defined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VRV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VSO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VWO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Category__c</picklist>
+            <values>
+                <fullName>Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Addresses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approvals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Users</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workflow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Priority_Level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Prioritization%2F Scheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Effort Estimation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled For Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Review</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Business Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change To Existing Functionality%2FBehavior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Functionality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CREATEDBY_USER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Company_Division__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Request_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Request_Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Request_Priority_Level__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Change_Summary__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Desired_Completion_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Request_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Scheduled_Completion_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Company_Division__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Request_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Request_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Request_Priority_Level__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Change_Summary__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Desired_Completion_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Request_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Scheduled_Completion_Date__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATEDBY_USER.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Company_Division__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Request_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Request_Category__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Request_Priority_Level__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Change_Summary__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Desired_Completion_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Request_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Scheduled_Completion_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Company_Division__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Request_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Request_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Request_Priority_Level__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Change_Summary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Desired_Completion_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Request_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Scheduled_Completion_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>CR_Estimated_Hours_validation_rule</fullName>
+        <active>true</active>
+        <description>If any one of the following fields:
+Admin Estimated Hours
+Developer Estimated Hours
+BA Estimated hours 
+is not blank then populate then populate the other two fields.</description>
+        <errorConditionFormula>If(ISBLANK( Admin_Estimated_Hours__c ) &amp;&amp;  ISBLANK( Developer_Estimated_hours__c ),FALSE, 
+If(NOT(ISBLANK( Admin_Estimated_Hours__c )) &amp;&amp;  NOT(ISBLANK( Developer_Estimated_hours__c )),FALSE, TRUE))</errorConditionFormula>
+        <errorMessage>If any one of the following fields:
+Admin Estimated Hours
+Developer Estimated Hours
+BA Estimated hours 
+is not blank then populate then populate the other two fields</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

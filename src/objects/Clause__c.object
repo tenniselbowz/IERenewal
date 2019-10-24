@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>About_Daikin__c</fullName>
+        <externalId>false</externalId>
+        <label>About Daikin</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appendix_Services_and_Tasking__c</fullName>
+        <externalId>false</externalId>
+        <label>Appendix – Services and Tasking</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appendix__c</fullName>
+        <externalId>false</externalId>
+        <label>Appendix</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Change_Orders__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Orders</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clarifications_Exceptions_Exclusions__c</fullName>
+        <externalId>false</externalId>
+        <label>Clarifications, Exceptions, Exclusions</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clause__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote/Proposal</label>
+        <referenceTo>Apttus_Proposal__Proposal__c</referenceTo>
+        <relationshipLabel>Clauses</relationshipLabel>
+        <relationshipName>Clauses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Confidentiality__c</fullName>
+        <externalId>false</externalId>
+        <label>Confidentiality</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contractor_Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Contractor Agreement</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cover_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>Cover Page</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Drawings_Plans__c</fullName>
+        <externalId>false</externalId>
+        <label>Drawings &amp; Plans</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Energy_Survey_Analysis__c</fullName>
+        <externalId>false</externalId>
+        <label>Energy Survey/Analysis</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Warranty__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Warranty</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Executive_Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>Executive Summary</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Agreements_Terms_Condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Agreements Terms &amp; Condition</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Major_Equipment_Data__c</fullName>
+        <externalId>false</externalId>
+        <label>Major Equipment Data</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Attachment_in_Appendix_for_Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Attachment in Appendix for Project</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pricing__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pricing_and_Acceptance__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing and Acceptance</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Background_Info_General_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Background Info &amp; General Info</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Communication__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Communication</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Documentation__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Documentation</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Management_Approach__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Management Approach</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Schedule</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Team_Diagram__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Team Diagram</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Warranty__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Warranty</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recommended_Owner_s_Contingency__c</fullName>
+        <externalId>false</externalId>
+        <label>Recommended Owner’s Contingency</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Schedule_Values_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Schedule Values Detail</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scope_of_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Scope of Services</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Capabilities__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Capabilities</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_and_Repair_Terms_and_Conditions__c</fullName>
+        <externalId>false</externalId>
+        <label>Service and Repair Terms and Conditions</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Table_of_Contents__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please keep the value of this field &quot;2&quot; if you expect the output document to exceed 10 pages in length.</inlineHelpText>
+        <label>Table of Contents</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Use_Conditional_Clauses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Use Conditional Clauses</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Warranty__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Clause</label>
+    <nameField>
+        <label>Clause Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Clauses</pluralLabel>
+    <recordTypes>
+        <fullName>Maintenance_Agreement</fullName>
+        <active>true</active>
+        <label>Maintenance Agreement</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Service_Repair</fullName>
+        <active>true</active>
+        <label>Service &amp; Repair</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Turnkey</fullName>
+        <active>true</active>
+        <label>Turnkey</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>About_Daikin_2_or_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name = &quot;Service &amp; Repair&quot; ,AND( About_Daikin__c &lt;&gt; &quot;2&quot;,  About_Daikin__c &lt;&gt; &quot;0&quot;),  Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>About_Daikin__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>About_Daikin_MA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(
+AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;2&quot;, AND( About_Daikin__c &lt;&gt; &quot;3&quot;,  About_Daikin__c &lt;&gt; &quot;0&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;, AND( About_Daikin__c &lt;&gt; &quot;2&quot;,  About_Daikin__c &lt;&gt; &quot;0&quot;))
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>About_Daikin__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>About_Daikin_TK</fullName>
+        <active>true</active>
+        <description>About Daikin can be before or After Executive Summary in numerical order. Neither can be excluded or equal to &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</description>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR(
+AND(Table_of_Contents__c=&quot;2&quot; , Executive_Summary__c =&quot;4&quot;, About_Daikin__c &lt;&gt; &quot;3&quot;),
+AND(Table_of_Contents__c=&quot;2&quot; , Executive_Summary__c =&quot;3&quot;, About_Daikin__c &lt;&gt; &quot;4&quot;),
+AND(Table_of_Contents__c=&quot;0&quot; , Executive_Summary__c =&quot;3&quot;, About_Daikin__c &lt;&gt; &quot;2&quot;),
+AND(Table_of_Contents__c=&quot;0&quot; , Executive_Summary__c =&quot;2&quot;, About_Daikin__c &lt;&gt; &quot;3&quot;)),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>About_Daikin__c</errorDisplayField>
+        <errorMessage>About Daikin can be before or After Executive Summary in numerical order. Neither can be excluded or equal to &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Appendix_TK_2</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;12&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;14&quot;, Appendix__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;14&quot;, Appendix__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;13&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;13&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;15&quot;, Appendix__c &lt;&gt; &quot;17&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;15&quot;, Appendix__c &lt;&gt; &quot;17&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;14&quot;, Appendix__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;14&quot;, Appendix__c &lt;&gt; &quot;16&quot;) 
+
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Appendix__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Appendix_tk</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;11&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;11&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;,  Appendix__c &lt;&gt; &quot;11&quot;), 
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;10&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;11&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;10&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;12&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;12&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;11&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;11&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;13&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;13&quot;, Appendix__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;0&quot;, Appendix__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;12&quot;, Appendix__c &lt;&gt; &quot;14&quot;) 
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Appendix__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Bottom_4_MA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR( 
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;4&quot;, Service_Capabilities__c = &quot;5&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;6&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;7&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;8&quot;,  Appendix__c &lt;&gt; &quot;9&quot;)), 
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;2&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;3&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;4&quot;,  Appendix__c &lt;&gt; &quot;5&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;4&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;5&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;6&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;7&quot;,  Appendix__c &lt;&gt; &quot;8&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;4&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;5&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;6&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;7&quot;,  Appendix__c &lt;&gt; &quot;8&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;4&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;5&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;6&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;7&quot;,  Appendix__c &lt;&gt; &quot;8&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;4&quot;, Service_Capabilities__c = &quot;0&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;5&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;6&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;7&quot;,  Appendix__c &lt;&gt; &quot;8&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, Service_Capabilities__c = &quot;3&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;3&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;0&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;0&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;3&quot;,OR( Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Maintenance_Agreements_Terms_Condition__c  &lt;&gt; &quot;6&quot;,  Appendix__c &lt;&gt; &quot;7&quot;)),
+
+OR(Scope_of_Services__c = &quot;0&quot;, Pricing_and_Acceptance__c = &quot;0&quot;, Service_and_Repair_Terms_and_Conditions__c = &quot;0&quot;, Appendix__c = &quot;0&quot;) 
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorMessage>Scope of Services, Pricing and Acceptance, Maintenance Agreement Terms and Conditions, and Appendix can not equal 0. They also must all be in the above order numerically.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Bottom_4_MA_Cont</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(  
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;, Maintenance_Agreements_Terms_Condition__c &lt;&gt; &quot;5&quot;, Appendix__c &lt;&gt; &quot;6&quot;)), 
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;, Maintenance_Agreements_Terms_Condition__c &lt;&gt; &quot;5&quot;, Appendix__c &lt;&gt; &quot;6&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;, Maintenance_Agreements_Terms_Condition__c &lt;&gt; &quot;5&quot;, Appendix__c &lt;&gt; &quot;6&quot;)),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;2&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;, Maintenance_Agreements_Terms_Condition__c &lt;&gt; &quot;5&quot;, Appendix__c &lt;&gt; &quot;6&quot;))
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorMessage>Scope of Services, Pricing and Acceptance, Maintenance Agreement Terms and Conditions, and Appendix can not equal 0. They also must all be in the above order numerically.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Bottom_three_SR</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR( 
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;4&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;5&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;6&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;7&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;2&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;3&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;4&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;5&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;5&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;2&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;3&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;4&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;5&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;, Service_Capabilities__c = &quot;0&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;6&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, Service_Capabilities__c = &quot;3&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;6&quot;)),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, Service_Capabilities__c = &quot;3&quot;, OR(Scope_of_Services__c &lt;&gt; &quot;4&quot;, Pricing_and_Acceptance__c &lt;&gt; &quot;5&quot;,  Service_and_Repair_Terms_and_Conditions__c &lt;&gt; &quot;6&quot;)),
+OR(Scope_of_Services__c = &quot;0&quot;, Pricing_and_Acceptance__c = &quot;0&quot;, Service_and_Repair_Terms_and_Conditions__c = &quot;0&quot;)
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorMessage>Scope of Services, Pricing and Acceptance, and Service and Repair Terms and Conditions can not equal 0 and must be in that numerical order.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Orders_TK</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c = &quot;8&quot;, Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,AND( Change_Orders__c  &lt;&gt; &quot;11&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;9&quot;, Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,AND( Change_Orders__c  &lt;&gt; &quot;11&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;9&quot;, Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;10&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;8&quot;, Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;10&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;9&quot;, Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,AND( Change_Orders__c  &lt;&gt; &quot;12&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,AND( Change_Orders__c  &lt;&gt; &quot;12&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;9&quot;, Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;11&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;11&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,AND( Change_Orders__c  &lt;&gt; &quot;13&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,AND( Change_Orders__c  &lt;&gt; &quot;13&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;12&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;12&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,AND( Change_Orders__c  &lt;&gt; &quot;14&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,AND( Change_Orders__c  &lt;&gt; &quot;14&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;13&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;13&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,AND( Change_Orders__c  &lt;&gt; &quot;15&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;13&quot;, Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,AND( Change_Orders__c  &lt;&gt; &quot;15&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;14&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;13&quot;, Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,AND( Change_Orders__c  &lt;&gt; &quot;14&quot;, Change_Orders__c &lt;&gt; &quot;0&quot;))
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Change_Orders__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Clarifications_Exceptions_etc_tk</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, Use_Conditional_Clauses__c = TRUE, 
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;8&quot;,Project_Documentation__c = &quot;9&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;11&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;7&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;6&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;6&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;7&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;7&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;6&quot;,Project_Documentation__c = &quot;7&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;8&quot;,Project_Documentation__c = &quot;0&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;10&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;8&quot;, Clarifications_Exceptions_Exclusions__c &lt;&gt; &quot;10&quot;)
+))</errorConditionFormula>
+        <errorDisplayField>Clarifications_Exceptions_Exclusions__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Confidentiality_TK</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, Use_Conditional_Clauses__c = TRUE ,
+OR( 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;11&quot;,  Pricing__c = &quot;13&quot; ,  Confidentiality__c &lt;&gt; &quot;12&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;11&quot;,  Pricing__c = &quot;12&quot; ,  Confidentiality__c &lt;&gt; &quot;13&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;10&quot;,  Pricing__c = &quot;12&quot; ,  Confidentiality__c &lt;&gt; &quot;11&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;10&quot;,  Pricing__c = &quot;11&quot; ,  Confidentiality__c &lt;&gt; &quot;12&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;9&quot;,  Pricing__c = &quot;11&quot; ,  Confidentiality__c &lt;&gt; &quot;10&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;9&quot;,  Pricing__c = &quot;11&quot; ,  Confidentiality__c &lt;&gt; &quot;10&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;8&quot;,  Pricing__c = &quot;10&quot; ,  Confidentiality__c &lt;&gt; &quot;9&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;8&quot;,  Pricing__c = &quot;9&quot; ,  Confidentiality__c &lt;&gt; &quot;10&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;7&quot;,  Pricing__c = &quot;9&quot; ,  Confidentiality__c &lt;&gt; &quot;8&quot;),
+AND( Clarifications_Exceptions_Exclusions__c = &quot;7&quot;,  Pricing__c = &quot;8&quot; ,  Confidentiality__c &lt;&gt; &quot;9&quot;)
+))</errorConditionFormula>
+        <errorDisplayField>Confidentiality__c</errorDisplayField>
+        <errorMessage>Confidentiality can be before or after Pricing in Numerical Order. Neither can be excluded or equal &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contractor_Agreement_tk</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;11&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;11&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;10&quot;),
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+AND(Confidentiality__c =&quot;8&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;10&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;10&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;10&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;8&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;10&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;12&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;12&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;11&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;9&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;11&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;11&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;9&quot;,Recommended_Owner_s_Contingency__c = &quot;11&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;13&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;),
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;13&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;),
+AND(Confidentiality__c =&quot;10&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;12&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;)
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Contractor_Agreement__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contractor_Agreement_tk_2</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;12&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;12&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;10&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;12&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;), 
+
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;14&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;14&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;11&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;13&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;),
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;13&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;13&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;11&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;13&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;),
+
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;15&quot;, Contractor_Agreement__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;15&quot;, Contractor_Agreement__c &lt;&gt; &quot;16&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;12&quot;,Pricing__c = &quot;13&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;14&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;14&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;14&quot;,Change_Orders__c = &quot;0&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;), 
+AND(Confidentiality__c =&quot;13&quot;,Pricing__c = &quot;12&quot;,Recommended_Owner_s_Contingency__c = &quot;0&quot;,Change_Orders__c = &quot;14&quot;, Contractor_Agreement__c &lt;&gt; &quot;15&quot;)
+
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Contractor_Agreement__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cover_Page_Must_be_1</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Cover_Page__c &lt;&gt; &quot;1&quot;,Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Cover_Page__c</errorDisplayField>
+        <errorMessage>Cover Page must have a value of 1</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Executive_Summary_MA</fullName>
+        <active>true</active>
+        <description>Executive summary is required and will always be &apos;3&apos; if Opportunity.Amount &gt; 150K, else can be 4 or 0</description>
+        <errorConditionFormula>AND(OR(AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;2&quot;,  About_Daikin__c = &quot;3&quot;, IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;4&quot;, AND(Executive_Summary__c &lt;&gt; &quot;4&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;))),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;,  About_Daikin__c = &quot;0&quot;, IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;2&quot;, AND(Executive_Summary__c &lt;&gt; &quot;2&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;))),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;2&quot;,  About_Daikin__c = &quot;0&quot;, IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;3&quot;, AND(Executive_Summary__c &lt;&gt; &quot;3&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;))),
+AND( RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;,  About_Daikin__c = &quot;2&quot;, IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;3&quot;, AND(Executive_Summary__c &lt;&gt; &quot;3&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;)))
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Executive_Summary__c</errorDisplayField>
+        <errorMessage>Executive summary is required if the Opportunity Amount &gt; 150K, else it needs to be in order with the other clauses.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Executive_Summary_S_R</fullName>
+        <active>true</active>
+        <description>Executive summary is required and will always be &apos;3&apos; if Opportunity.Amount &gt; 150K, else can be 3 or 0</description>
+        <errorConditionFormula>AND(OR(AND( RecordType.Name = &quot;Service &amp; Repair&quot;, About_Daikin__c = &quot;2&quot; ,IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;3&quot;, AND(Executive_Summary__c &lt;&gt; &quot;3&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;))),
+AND( RecordType.Name = &quot;Service &amp; Repair&quot;, About_Daikin__c = &quot;0&quot; ,IF( Clause__r.Apttus_Proposal__Opportunity__r.Amount &gt;= 150000, Executive_Summary__c &lt;&gt; &quot;2&quot;, AND(Executive_Summary__c &lt;&gt; &quot;2&quot;, Executive_Summary__c &lt;&gt; &quot;0&quot;)))
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Executive_Summary__c</errorDisplayField>
+        <errorMessage>Executive summary is required if the Opportunity Amount &gt; 150K, else it needs to be in order with the other clauses.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Executive_Summary_TK</fullName>
+        <active>true</active>
+        <description>Executive Summary can be before or after About Daikin in numerical order. Neither can be excluded or equal to &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</description>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Table_of_Contents__c=&quot;2&quot; , Executive_Summary__c &lt;&gt;&quot;4&quot;, About_Daikin__c = &quot;3&quot;), 
+AND(Table_of_Contents__c=&quot;2&quot; , Executive_Summary__c &lt;&gt;&quot;3&quot;, About_Daikin__c = &quot;4&quot;), 
+AND(Table_of_Contents__c=&quot;0&quot; , Executive_Summary__c &lt;&gt;&quot;3&quot;, About_Daikin__c = &quot;2&quot;), 
+AND(Table_of_Contents__c=&quot;0&quot; , Executive_Summary__c &lt;&gt;&quot;2&quot;, About_Daikin__c = &quot;3&quot;)),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Executive_Summary__c</errorDisplayField>
+        <errorMessage>Executive Summary can be before or after About Daikin in numerical order. Neither can be excluded or equal to &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Pricing_TK</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, Use_Conditional_Clauses__c = TRUE , 
+OR( 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;11&quot;, Pricing__c &lt;&gt; &quot;13&quot; , Confidentiality__c = &quot;12&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;11&quot;, Pricing__c &lt;&gt; &quot;12&quot; , Confidentiality__c = &quot;13&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;10&quot;, Pricing__c &lt;&gt; &quot;12&quot; , Confidentiality__c = &quot;11&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;10&quot;, Pricing__c &lt;&gt; &quot;11&quot; , Confidentiality__c = &quot;12&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;9&quot;, Pricing__c &lt;&gt; &quot;11&quot; , Confidentiality__c = &quot;10&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;9&quot;, Pricing__c &lt;&gt; &quot;11&quot; , Confidentiality__c = &quot;10&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;8&quot;, Pricing__c &lt;&gt; &quot;10&quot; , Confidentiality__c = &quot;9&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;8&quot;, Pricing__c &lt;&gt; &quot;9&quot; , Confidentiality__c = &quot;10&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;7&quot;, Pricing__c &lt;&gt; &quot;9&quot; , Confidentiality__c = &quot;8&quot;), 
+AND( Clarifications_Exceptions_Exclusions__c = &quot;7&quot;, Pricing__c &lt;&gt; &quot;8&quot; , Confidentiality__c = &quot;9&quot;) 
+))</errorConditionFormula>
+        <errorDisplayField>Pricing__c</errorDisplayField>
+        <errorMessage>Confidentiality can be before or after Pricing in Numerical Order. Neither can be excluded or equal &quot;0.&quot; All Fields must be in Numerical Order given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_Background_Information_TK</fullName>
+        <active>true</active>
+        <description>Project Background and General Info must be included and must be 5th or 4th dependent on whether or not Table of Contents is included.</description>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;,OR(
+AND( Table_of_Contents__c = &quot;2&quot;,About_Daikin__c =&quot;3&quot;, Executive_Summary__c=&quot;4&quot;,  Project_Background_Info_General_Info__c &lt;&gt; &quot;5&quot;),
+AND( Table_of_Contents__c = &quot;2&quot;,About_Daikin__c =&quot;4&quot;, Executive_Summary__c=&quot;3&quot;,  Project_Background_Info_General_Info__c &lt;&gt; &quot;5&quot;),
+AND( Table_of_Contents__c = &quot;0&quot;,About_Daikin__c =&quot;2&quot;, Executive_Summary__c=&quot;3&quot;,  Project_Background_Info_General_Info__c &lt;&gt; &quot;4&quot;),
+AND( Table_of_Contents__c = &quot;0&quot;,About_Daikin__c =&quot;3&quot;, Executive_Summary__c=&quot;2&quot;,  Project_Background_Info_General_Info__c &lt;&gt; &quot;4&quot;)),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Project_Background_Info_General_Info__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_Communication_TK</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;, AND(Project_Communication__c &lt;&gt; &quot;8&quot;, Project_Communication__c &lt;&gt;&quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;, AND(Project_Communication__c &lt;&gt; &quot;6&quot;, Project_Communication__c &lt;&gt;&quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;, AND(Project_Communication__c &lt;&gt; &quot;7&quot;, Project_Communication__c &lt;&gt;&quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;, AND(Project_Communication__c &lt;&gt; &quot;7&quot;, Project_Communication__c &lt;&gt;&quot;0&quot;))
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Project_Communication__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_Documentation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, Use_Conditional_Clauses__c = TRUE,
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;8&quot;,AND( Project_Documentation__c &lt;&gt; &quot;9&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,AND( Project_Documentation__c &lt;&gt; &quot;6&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,AND( Project_Documentation__c &lt;&gt; &quot;7&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;0&quot;,AND( Project_Documentation__c &lt;&gt; &quot;7&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;6&quot;,AND( Project_Documentation__c &lt;&gt; &quot;7&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;0&quot;,AND( Project_Documentation__c &lt;&gt; &quot;8&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;)),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;7&quot;,AND( Project_Documentation__c &lt;&gt; &quot;8&quot;,  Project_Documentation__c &lt;&gt; &quot;0&quot;))
+))</errorConditionFormula>
+        <errorDisplayField>Project_Documentation__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_Management_Approach</fullName>
+        <active>true</active>
+        <description>Project Management Approach is optional and must be in numerical order with prior fields.</description>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;,AND( Project_Management_Approach__c &lt;&gt; &quot;7&quot;, Project_Management_Approach__c &lt;&gt; &quot;0&quot;)) , 
+AND(Project_Background_Info_General_Info__c = &quot;4&quot;, Project_Team_Diagram__c =&quot;5&quot; ,AND( Project_Management_Approach__c &lt;&gt; &quot;6&quot;, Project_Management_Approach__c &lt;&gt; &quot;0&quot;)),
+AND( Project_Background_Info_General_Info__c = &quot;4&quot;, Project_Team_Diagram__c =&quot;0&quot; ,AND( Project_Management_Approach__c &lt;&gt; &quot;5&quot;, Project_Management_Approach__c &lt;&gt; &quot;0&quot;))),
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Project_Management_Approach__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_Team_Diagram</fullName>
+        <active>true</active>
+        <description>Project Team diagram is optional but must be after the project background information clause if included.</description>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;,
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;,AND( Project_Team_Diagram__c &lt;&gt;&quot;6&quot;, Project_Team_Diagram__c &lt;&gt; &quot;0&quot;)), 
+AND(Project_Background_Info_General_Info__c = &quot;4&quot;,AND( Project_Team_Diagram__c &lt;&gt;&quot;5&quot;, Project_Team_Diagram__c &lt;&gt; &quot;0&quot;))
+),
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Project_Background_Info_General_Info__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Recommended_Owners_Contingency_tk</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, 
+OR( 
+AND(Confidentiality__c = &quot;9&quot;,Pricing__c = &quot;8&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;10&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;8&quot;, Pricing__c = &quot;9&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;10&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;9&quot;, Pricing__c = &quot;10&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;11&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;9&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;11&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;10&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;12&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;10&quot;, Pricing__c = &quot;11&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;12&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;11&quot;, Pricing__c = &quot;12&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;13&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;11&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;13&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;12&quot;, Pricing__c = &quot;13&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;14&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;)),
+AND(Confidentiality__c = &quot;13&quot;, Pricing__c = &quot;12&quot;,AND(Recommended_Owner_s_Contingency__c &lt;&gt; &quot;14&quot;, Recommended_Owner_s_Contingency__c &lt;&gt; &quot;0&quot;))
+), 
+Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Recommended_Owner_s_Contingency__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Scope_of_services_tk</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Turnkey&quot;, Use_Conditional_Clauses__c = TRUE, 
+OR( 
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;8&quot;,Project_Documentation__c = &quot;9&quot;, Scope_of_Services__c &lt;&gt; &quot;10&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;6&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;7&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;7&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;6&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;7&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;6&quot;, Scope_of_Services__c &lt;&gt; &quot;7&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;7&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;0&quot;,Project_Documentation__c = &quot;7&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;0&quot;,Project_Communication__c = &quot;6&quot;,Project_Documentation__c = &quot;7&quot;, Scope_of_Services__c &lt;&gt; &quot;8&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;6&quot;, Project_Management_Approach__c = &quot;7&quot;,Project_Communication__c = &quot;8&quot;,Project_Documentation__c = &quot;0&quot;, Scope_of_Services__c &lt;&gt; &quot;9&quot;),
+AND(Project_Background_Info_General_Info__c = &quot;5&quot;, Project_Team_Diagram__c = &quot;0&quot;, Project_Management_Approach__c = &quot;6&quot;,Project_Communication__c = &quot;7&quot;,Project_Documentation__c = &quot;8&quot;, Scope_of_Services__c &lt;&gt; &quot;9&quot;)
+))</errorConditionFormula>
+        <errorDisplayField>Scope_of_Services__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Service_Capabilities_MA</fullName>
+        <active>true</active>
+        <description>Service Capabilities must be 5 or 0 unless Table of Contents, About Daikin, and Executive summary are all 0 in which case Service Capabilities can be 2 or 0. Can also be 3 or 4 contingent on values of prior values.</description>
+        <errorConditionFormula>AND(OR(
+AND(RecordType.Name = &quot;Maintenance Agreement&quot; , Table_of_Contents__c = &quot;2&quot; ,About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;4&quot;,AND(  Service_Capabilities__c  &lt;&gt; &quot;5&quot;,  Service_Capabilities__c  &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot; , About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;2&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)), 
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;,Table_of_Contents__c = &quot;2&quot;, About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;3&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;, About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;3&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;, About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;3&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;2&quot;, About_Daikin__c = &quot;3&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;4&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;2&quot;, About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;3&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;4&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)),
+AND(RecordType.Name = &quot;Maintenance Agreement&quot;, Table_of_Contents__c = &quot;0&quot;, About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;4&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;))
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Service_Capabilities__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Service_Capabilities_SR</fullName>
+        <active>true</active>
+        <description>Service Capabilities must be 4 or 0, unless About Daikin or Executive Summary are 0 then it must be 3 or 0, or if both About Daikin and Executive Summary are 0 it must be 2 or 0</description>
+        <errorConditionFormula>AND(OR( 
+AND( RecordType.Name = &quot;Service &amp; Repair&quot; , About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;3&quot;,AND( Service_Capabilities__c &lt;&gt; &quot;4&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)), 
+AND(RecordType.Name = &quot;Service &amp; Repair&quot;, About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;2&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)), 
+AND(RecordType.Name = &quot;Service &amp; Repair&quot;, About_Daikin__c = &quot;2&quot;, Executive_Summary__c = &quot;0&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;3&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)), 
+AND(RecordType.Name = &quot;Service &amp; Repair&quot;, About_Daikin__c = &quot;0&quot;, Executive_Summary__c = &quot;2&quot;, AND( Service_Capabilities__c &lt;&gt; &quot;3&quot;, Service_Capabilities__c &lt;&gt; &quot;0&quot;)) 
+),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Service_Capabilities__c</errorDisplayField>
+        <errorMessage>Fields must be in numerical order from top to bottom given that a value of &quot;0&quot; does not count.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Table_of_Contents_MA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name = &quot;Maintenance Agreement&quot;,  AND(Table_of_Contents__c &lt;&gt; &quot;2&quot;, Table_of_Contents__c &lt;&gt; &quot;0&quot;),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Table_of_Contents__c</errorDisplayField>
+        <errorMessage>Table of Contents must equal 2 or 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Table_of_Contents_TK</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name = &quot;Turnkey&quot;,  AND(Table_of_Contents__c &lt;&gt; &quot;2&quot;, Table_of_Contents__c &lt;&gt; &quot;0&quot;),Use_Conditional_Clauses__c = TRUE)</errorConditionFormula>
+        <errorDisplayField>Table_of_Contents__c</errorDisplayField>
+        <errorMessage>Table of Contents must equal 2 or 0</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

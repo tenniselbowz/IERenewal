@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores commission data for opportunities.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Commission_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The account record receiving the commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The account record receiving the commission.</inlineHelpText>
+        <label>Commission Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Commissions</relationshipLabel>
+        <relationshipName>Account_Commission</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Amount__c</fullName>
+        <description>Amount of the commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount of the commission.</inlineHelpText>
+        <label>Commission Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity the commission is for.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity the commission is for.</inlineHelpText>
+        <label>Commission Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Commissions</relationshipLabel>
+        <relationshipName>Opportunity_Commission</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the percentage of the commission. For example, 20% should be entered as 0.2</inlineHelpText>
+        <label>Commission Percentage</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Type__c</fullName>
+        <description>Type of commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of commission.</inlineHelpText>
+        <label>Commission Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Check</fullName>
+                    <default>true</default>
+                    <label>Check</label>
+                </value>
+                <value>
+                    <fullName>Credit</fullName>
+                    <default>false</default>
+                    <label>Credit</label>
+                </value>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commission_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user record receiving the commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user record receiving the commission.</inlineHelpText>
+        <label>Commission User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Commission_User</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Commission</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Commission Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Commissions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Commission_Percentage_Range_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>Text(Commission_Percentage__c) != &quot;&quot; &amp;&amp; (Commission_Percentage__c &lt; 0 || Commission_Percentage__c &gt; 1)</errorConditionFormula>
+        <errorMessage>Please enter a Commission Percentage value between 0 and 1. For example, 20% should be entered as 0.2</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Commission_Percentage_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(ISPICKVAL(Commission_Type__c, &quot;Percentage&quot;) &amp;&amp; TEXT(Commission_Percentage__c) = &quot;&quot;, True, False)</errorConditionFormula>
+        <errorMessage>You must specify a Commission Percentage value when Commission Type is &quot;Percentage&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Commission_Recipient_Validation</fullName>
+        <active>true</active>
+        <description>Ensures that either a Commission Account or Commission User is specified (but not both).</description>
+        <errorConditionFormula>(ISBLANK(Commission_Account__c) &amp;&amp;  ISBLANK(Commission_User__c))
+||
+(NOT(ISBLANK(Commission_Account__c)) &amp;&amp;  NOT(ISBLANK(Commission_User__c)))</errorConditionFormula>
+        <errorMessage>You must specify a Commission Account or a Commission User (but not both).</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,233 @@
+29.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:36:48.0 (319896)|USER_INFO|[EXTERNAL]|005C000000615ih|kent.roessler@daikinapplied.com.ierenewal|Central Standard Time|GMT-05:00
+17:36:48.0 (354390)|EXECUTION_STARTED
+17:36:48.0 (359578)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+17:36:48.0 (395791)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (32232580)|USER_DEBUG|[70]|DEBUG|:::::::setIeSyncStatus newList:::::: (Asset:{Id=02i0R000002omuEQAQ, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 20:57:13, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:34:03, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:34:03, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-008, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722976, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00700c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617639, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00700CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-008, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false})
+17:36:48.0 (34591502)|USER_DEBUG|[71]|DEBUG|:::::::setIeSyncStatus oldMap:::::: {02i0R000002omuEQAQ=Asset:{Id=02i0R000002omuEQAQ, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 20:57:13, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:34:03, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:34:03, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-008, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722976, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00700c82ce5f, Parent_Asset__c=null, SIM_Card_ICCID__c=89011704252305617639, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00700CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-008, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (35204458)|SOQL_EXECUTE_BEGIN|[85]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+17:36:48.0 (37845823)|SOQL_EXECUTE_END|[85]|Rows:1
+17:36:48.0 (51116839)|USER_DEBUG|[95]|DEBUG|:::::::setIeSyncStatus asset:::::: Asset:{Id=02i0R000002omuEQAQ, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 20:57:13, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:34:03, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:34:03, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-008, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722976, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00700c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617639, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00700CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-008, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}
+17:36:48.51 (51209384)|CUMULATIVE_LIMIT_USAGE
+17:36:48.51 (51209384)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:36:48.51 (51209384)|CUMULATIVE_LIMIT_USAGE_END
+
+17:36:48.0 (52464602)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (57256616)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Asset:02i0R000002omuE
+17:36:48.0 (57271807)|VALIDATION_RULE|03dC0000000LEi2|Install_Date_Validation_Rule
+17:36:48.0 (57492153)|VALIDATION_FORMULA|ISPICKVAL(Status, "Installed") &&  TEXT(InstallDate) = ""|Status=null , InstallDate=null
+17:36:48.0 (57501540)|VALIDATION_PASS
+17:36:48.0 (57503615)|VALIDATION_RULE|03dC0000000LEi3|Install_Location_Validation
+17:36:48.0 (57683014)|VALIDATION_FORMULA|ISPICKVAL(Status,"Installed") && TEXT(Install_Country__c) = ""|Status=null , Install_Country__c=null
+17:36:48.0 (57692377)|VALIDATION_PASS
+17:36:48.0 (57694005)|VALIDATION_RULE|03dC0000000LEi4|Purchase_Date_Validation
+17:36:48.0 (57837252)|VALIDATION_FORMULA|ISPICKVAL(Status, "Purchased") &&  TEXT(PurchaseDate) = ""|Status=null , PurchaseDate=null
+17:36:48.0 (57845298)|VALIDATION_PASS
+17:36:48.0 (57850360)|CODE_UNIT_FINISHED|Validation:Asset:02i0R000002omuE
+17:36:48.0 (87732165)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (90585250)|USER_DEBUG|[127]|DEBUG|:::::::processGatewayAsset newMap:::::: {02i0R000002omuEQAQ=Asset:{Id=02i0R000002omuEQAQ, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 20:57:13, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:36:48, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:36:48, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-008, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722976, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00700c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617639, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00700CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-008, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (92808364)|USER_DEBUG|[128]|DEBUG|:::::::processGatewayAsset oldMap:::::: {02i0R000002omuEQAQ=Asset:{Id=02i0R000002omuEQAQ, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 20:57:13, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:34:03, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:34:03, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-008, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722976, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00700c82ce5f, Parent_Asset__c=null, SIM_Card_ICCID__c=89011704252305617639, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00700CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-008, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (93056401)|USER_DEBUG|[142]|DEBUG|:::::::processGatewayAsset newIdSet :::::: {02i0R000002omuEQAQ}
+17:36:48.0 (93099820)|USER_DEBUG|[143]|DEBUG|:::::::processGatewayAsset newObsGWIdSet :::::: {}
+17:36:48.0 (93476458)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (96899065)|SOQL_EXECUTE_END|[148]|Rows:0
+17:36:48.0 (97495204)|SOQL_EXECUTE_BEGIN|[164]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (104192134)|SOQL_EXECUTE_END|[164]|Rows:1
+17:36:48.0 (105055953)|SOQL_EXECUTE_BEGIN|[179]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (109851324)|SOQL_EXECUTE_END|[179]|Rows:1
+17:36:48.0 (110185974)|USER_DEBUG|[191]|DEBUG|processGatewayAsset: Setting obsolete GW, Id=02i0R000002omsmQAA, Parent Asset Id=02i0R000002omshQAA
+17:36:48.0 (110552088)|SOQL_EXECUTE_BEGIN|[198]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (114095295)|SOQL_EXECUTE_END|[198]|Rows:0
+17:36:48.0 (114288713)|USER_DEBUG|[224]|DEBUG|:::::::processGatewayAsset parentAssetIds :::::: {02i0R000002omshQAA}
+17:36:48.0 (114600124)|SOQL_EXECUTE_BEGIN|[230]|Aggregations:0|SELECT Id FROM Asset 
+17:36:48.0 (118053310)|SOQL_EXECUTE_END|[230]|Rows:0
+17:36:48.0 (118479649)|SOQL_EXECUTE_BEGIN|[272]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (120822563)|SOQL_EXECUTE_END|[272]|Rows:0
+17:36:48.0 (120996846)|USER_DEBUG|[306]|DEBUG|:::::::processGatewayAsset parentAssetIdsForReplacedGW :::::: {02i0R000002omshQAA}
+17:36:48.0 (121573995)|SOQL_EXECUTE_BEGIN|[332]|Aggregations:0|SELECT Id, TriggerInvokedByAPI__c FROM Subscription__c 
+17:36:48.0 (123991848)|SOQL_EXECUTE_END|[332]|Rows:1
+17:36:48.0 (124321553)|DML_BEGIN|[342]|Op:Update|Type:Subscription__c|Rows:1
+17:36:48.0 (133728442)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ82|SubscriptionTrigger on Subscription trigger event BeforeUpdate|__sfdc_trigger/SubscriptionTrigger
+17:36:48.135 (135330366)|CUMULATIVE_LIMIT_USAGE
+17:36:48.135 (135330366)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:36:48.135 (135330366)|CUMULATIVE_LIMIT_USAGE_END
+
+17:36:48.0 (137380606)|CODE_UNIT_FINISHED|SubscriptionTrigger on Subscription trigger event BeforeUpdate|__sfdc_trigger/SubscriptionTrigger
+17:36:48.0 (159445054)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01IC0000000u590
+17:36:48.0 (167744307)|WF_RULE_EVAL_BEGIN|Workflow
+17:36:48.0 (167769194)|WF_CRITERIA_BEGIN|[Subscription: S-000002880 a0F0R0000037lBi]|Contact_IE_Subscription_Active3010y000000Prm9|01Q0y000000RoZB|ON_ALL_CHANGES|0
+17:36:48.0 (167920635)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+17:36:48.0 (167929101)|WF_CRITERIA_END|true
+17:36:48.0 (168383730)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:36:48.0 (168409095)|WF_ACTION| Flow Trigger: 1;
+17:36:48.0 (168412764)|WF_RULE_EVAL_END
+17:36:48.170 (170102914)|FLOW_CREATE_INTERVIEW_BEGIN|00D0R00000011DY|3000y000000PI9h|3010y000000Prm9
+17:36:48.170 (170149288)|FLOW_CREATE_INTERVIEW_END|5679c93566b28766741047a995d016da82d8200-5b43|Contact IE Subscription Active
+17:36:48.0 (170182708)|WF_FLOW_ACTION_BEGIN|09L0y0000004Jvb
+17:36:48.170 (170615205)|FLOW_START_INTERVIEWS_BEGIN|1
+17:36:48.170 (170637986)|FLOW_START_INTERVIEW_BEGIN|5679c93566b28766741047a995d016da82d8200-5b43|Contact IE Subscription Active
+17:36:48.170 (177708015)|FLOW_START_INTERVIEW_END|5679c93566b28766741047a995d016da82d8200-5b43|Contact IE Subscription Active
+17:36:48.170 (177726739)|FLOW_START_INTERVIEWS_END|1
+17:36:48.170 (177767396)|FLOW_INTERVIEW_FINISHED|5679c93566b28766741047a995d016da82d8200-5b43|Contact IE Subscription Active
+17:36:48.0 (181803194)|WF_FLOW_ACTION_END|09L0y0000004Jvb
+17:36:48.0 (181898848)|WF_ACTIONS_END| Flow Trigger: 1;
+17:36:48.0 (181909589)|CODE_UNIT_FINISHED|Workflow:01IC0000000u590
+17:36:48.0 (185693652)|DML_END|[342]
+17:36:48.0 (185932524)|USER_DEBUG|[311]|DEBUG|:::::::processGatewayAsset obsoleteAssets :::::: (Asset:{Id=02i0R000002omsmQAA, Parent_Asset__c=02i0R000002omshQAA, Product2Id=01t1A000004laKUQAY, Status=Obsolete})
+17:36:48.0 (186011955)|DML_BEGIN|[313]|Op:Update|Type:Asset|Rows:1
+17:36:48.0 (198843810)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event BeforeUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (201846619)|USER_DEBUG|[70]|DEBUG|:::::::setIeSyncStatus newList:::::: (Asset:{Id=02i0R000002omsmQAA, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 19:29:01, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:33:14, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:33:14, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-007, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=Obsolete, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722975, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00600c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617638, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00600CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-007, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false})
+17:36:48.0 (204165340)|USER_DEBUG|[71]|DEBUG|:::::::setIeSyncStatus oldMap:::::: {02i0R000002omsmQAA=Asset:{Id=02i0R000002omsmQAA, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 19:29:01, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:33:14, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:33:14, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-007, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722975, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00600c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617638, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00600CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-007, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (204549626)|SOQL_EXECUTE_BEGIN|[85]|Aggregations:0|SELECT Id, IE__c FROM Product2 
+17:36:48.0 (206830406)|SOQL_EXECUTE_END|[85]|Rows:1
+17:36:48.0 (208751079)|USER_DEBUG|[95]|DEBUG|:::::::setIeSyncStatus asset:::::: Asset:{Id=02i0R000002omsmQAA, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 19:29:01, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:33:14, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:33:14, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-007, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=Obsolete, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722975, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00600c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617638, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00600CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-007, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}
+17:36:48.208 (208825159)|CUMULATIVE_LIMIT_USAGE
+17:36:48.208 (208825159)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:36:48.208 (208825159)|CUMULATIVE_LIMIT_USAGE_END
+
+17:36:48.0 (210627537)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event BeforeUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (211589447)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Asset:02i0R000002omsm
+17:36:48.0 (211604459)|VALIDATION_RULE|03dC0000000LEi2|Install_Date_Validation_Rule
+17:36:48.0 (211745508)|VALIDATION_FORMULA|ISPICKVAL(Status, "Installed") &&  TEXT(InstallDate) = ""|Status=Obsolete , InstallDate=null
+17:36:48.0 (211755023)|VALIDATION_PASS
+17:36:48.0 (211757012)|VALIDATION_RULE|03dC0000000LEi3|Install_Location_Validation
+17:36:48.0 (212019323)|VALIDATION_FORMULA|ISPICKVAL(Status,"Installed") && TEXT(Install_Country__c) = ""|Status=Obsolete , Install_Country__c=null
+17:36:48.0 (212029128)|VALIDATION_PASS
+17:36:48.0 (212030875)|VALIDATION_RULE|03dC0000000LEi4|Purchase_Date_Validation
+17:36:48.0 (212145917)|VALIDATION_FORMULA|ISPICKVAL(Status, "Purchased") &&  TEXT(PurchaseDate) = ""|Status=Obsolete , PurchaseDate=null
+17:36:48.0 (212153675)|VALIDATION_PASS
+17:36:48.0 (212159033)|CODE_UNIT_FINISHED|Validation:Asset:02i0R000002omsm
+17:36:48.0 (224588339)|CODE_UNIT_STARTED|[EXTERNAL]|01qC0000000LQ7x|AssetTrigger on Asset trigger event AfterUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (227213295)|USER_DEBUG|[127]|DEBUG|:::::::processGatewayAsset newMap:::::: {02i0R000002omsmQAA=Asset:{Id=02i0R000002omsmQAA, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 19:29:01, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:36:48, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:36:48, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-007, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=Obsolete, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722975, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00600c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617638, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00600CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-007, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (229255197)|USER_DEBUG|[128]|DEBUG|:::::::processGatewayAsset oldMap:::::: {02i0R000002omsmQAA=Asset:{Id=02i0R000002omsmQAA, ContactId=null, AccountId=0010R00000Z1LBFQA3, Product2Id=01t1A000004laKUQAY, IsCompetitorProduct=false, CreatedDate=2019-10-07 19:29:01, CreatedById=005C000000615ihIAA, LastModifiedDate=2019-10-07 22:33:14, LastModifiedById=005C000000615ihIAA, SystemModstamp=2019-10-07 22:33:14, IsDeleted=false, CurrencyIsoCode=USD, Name=Intelligent Equipment Gateway, SerialNumber=PO112711-3-007, InstallDate=null, PurchaseDate=null, UsageEndDate=null, Status=null, Price=null, Quantity=1.00, Description=null, LastViewedDate=null, LastReferencedDate=null, Asset_Number__c=06722975, Install_City__c=null, Install_Country__c=null, Install_State__c=null, Install_Street__c=null, Install_ZIP_Postal_Code__c=null, Opportunity_Number__c=null, Opportunity__c=null, Startup_Date__c=null, Supplier_PO_Number__c=null, Supplier__c=Unknown, Warranty_Expiration_Date__c=null, Code_String_Breakdown__c=null, Format_Number__c=null, GO_Line_Number__c=null, Product_Class__c=null, Commissioned__c=false, SO_Line_Number__c=null, Ship_Date__c=null, Code_String__c=null, Order__c=null, Asset_Address__c=null, Installer_Account__c=null, Servicer_Account__c=null, Selling_Rep_Office_temp__c=null, Warehouse_ID__c=null, Tag__c=null, Asset_Address_Line_1__c=null, Asset_Address_Line_2__c=null, Asset_City__c=null, Asset_State_Province__c=null, Asset_Postal_Code__c=null, Asset_Country__c=null, Owner_Name__c=Kent Roessler, General_Contractor_Name__c=null, Selling_Rep_Office__c=null, Ship_To_Name__c=null, Ship_To_Address_Line_1__c=null, Ship_To_Address_Line_2__c=null, Ship_To_Address_Line_3__c=null, Ship_To_Address_Line_4__c=null, Ship_To_City__c=null, Ship_To_State_Province__c=null, Ship_To_Postal_Code__c=null, Ship_To_County__c=null, Ship_To_Country__c=null, Model_temp__c=null, SO_Number__c=null, GO_Number__c=null, Warehouse_Product_ID__c=null, Active_Tag__c=null, Salesperson__c= , Competitor_Model__c=null, Job_Name__c=null, IE_Asset__c=false, IE_ID__c=null, IE_Retrofit__c=false, IE_Sync_Status__c=null, IE_Updated_Date__c=null, MAC_Address__c=00600c82ce5f, Parent_Asset__c=02i0R000002omshQAA, SIM_Card_ICCID__c=89011704252305617638, Current_Code_String_Breakdown__c=null, Device_ID__c=00000000-00000000-00600CFF-FF82CE5F, Record_Usage__c=null, Serial_Number_ID__c=PO112711-3-007, Asset_Country_ISO_Code__c=null, Asset_State_ISO_Code__c=null, Address_Line_3__c=null, Address_Line_4__c=null, Gateway_Commissioned_Date__c=null, Rep_PO_Number__c=null, Customer_PO_Number__c=null, Full_Address__c= ,   , Intel_ID__c=null, Intel_Operator__c=Daikin, DW_Product_Line__c=null, Equipment_Description__c=null, Product_Description__c=IE Gateway, SIM_Card_Active__c=true, Bypass__c=false, Has_Maintenance_Agreement__c=false, GWotGo__c=false, ResetSuccessful__c=None, Actual_Warranty_End_Date__c=null, Actual_Warranty_Start_Date__c=null, Recommended_Warranty_End_Date__c=null, Recommended_Warranty_Start_Date__c=null, Warranty_Items__c=null, Model_Type__c=null, GW_Asset__c=false}}
+17:36:48.0 (229541327)|USER_DEBUG|[142]|DEBUG|:::::::processGatewayAsset newIdSet :::::: {}
+17:36:48.0 (229573786)|USER_DEBUG|[143]|DEBUG|:::::::processGatewayAsset newObsGWIdSet :::::: {02i0R000002omsmQAA}
+17:36:48.0 (229855434)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (232751904)|SOQL_EXECUTE_END|[148]|Rows:1
+17:36:48.0 (233385690)|SOQL_EXECUTE_BEGIN|[164]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (234828416)|SOQL_EXECUTE_END|[164]|Rows:0
+17:36:48.0 (235240239)|SOQL_EXECUTE_BEGIN|[198]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (236499817)|SOQL_EXECUTE_END|[198]|Rows:0
+17:36:48.0 (236645484)|USER_DEBUG|[224]|DEBUG|:::::::processGatewayAsset parentAssetIds :::::: {}
+17:36:48.0 (237245651)|SOQL_EXECUTE_BEGIN|[250]|Aggregations:1|SELECT Id, IE_Asset__c, IE_ID__c, (SELECT Id, Name, SerialNumber, SIM_Card_Active__c, Product2.Name, SIM_Card_ICCID__c, Device_ID__c, MAC_Address__c, GWotGo__c FROM Assets__r WHERE (Product2.Product_Group__c = 'IE Gateway' AND Status != 'Obsolete' AND (NOT Id = :tmpVar1))) FROM Asset 
+17:36:48.0 (248318834)|SOQL_EXECUTE_END|[250]|Rows:1
+17:36:48.0 (249106574)|SOQL_EXECUTE_BEGIN|[272]|Aggregations:0|SELECT Id, Parent_Asset__c FROM Asset 
+17:36:48.0 (250565951)|SOQL_EXECUTE_END|[272]|Rows:0
+17:36:48.0 (250727583)|USER_DEBUG|[306]|DEBUG|:::::::processGatewayAsset parentAssetIdsForReplacedGW :::::: {}
+17:36:48.0 (250761876)|USER_DEBUG|[311]|DEBUG|:::::::processGatewayAsset obsoleteAssets :::::: ()
+17:36:48.0 (250809707)|USER_DEBUG|[316]|DEBUG|:::::::processGatewayAsset parentAssets :::::: ()
+17:36:48.0 (250856478)|USER_DEBUG|[321]|DEBUG|:::::::processGatewayAsset parentAssetsForGWotGo :::::: ()
+17:36:48.254 (254566631)|CUMULATIVE_LIMIT_USAGE
+17:36:48.254 (254566631)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 14 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:36:48.254 (254566631)|CUMULATIVE_LIMIT_USAGE_END
+
+17:36:48.0 (258923042)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (259008364)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Asset
+17:36:48.0 (270367874)|WF_RULE_EVAL_BEGIN|Workflow
+17:36:48.0 (270404224)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i0R000002omsm]|Asset Serial Number ID Update|01QC0000000InsP|ON_ALL_CHANGES|0
+17:36:48.0 (279218053)|WF_RULE_FILTER|[Asset : Serial Number not equal to ] AND
+ [Asset : Serial Number not equal to Unknown, UNKNOWN]
+17:36:48.0 (279252447)|WF_RULE_EVAL_VALUE|PO112711-3-007
+17:36:48.0 (279260901)|WF_RULE_EVAL_VALUE|PO112711-3-007
+17:36:48.0 (279265788)|WF_CRITERIA_END|true
+17:36:48.0 (279547299)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i0R000002omsm]|Gateway Commissioned|01QC0000000Is0N|ON_CREATE_OR_TRIGGERING_UPDATE|0
+17:36:48.0 (279614195)|WF_RULE_FILTER|[Asset : Gateway Commissioned equals true]
+17:36:48.0 (279624807)|WF_RULE_EVAL_VALUE|false
+17:36:48.0 (279628832)|WF_CRITERIA_END|false
+17:36:48.0 (279640190)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:36:48.0 (280003635)|WF_ACTION| Field Update: 1;
+17:36:48.0 (280011093)|WF_RULE_EVAL_END
+17:36:48.0 (280080892)|WF_ACTIONS_END| Field Update: 1;
+17:36:48.0 (280090929)|CODE_UNIT_FINISHED|Workflow:Asset
+17:36:48.0 (280332657)|DML_END|[313]
+17:36:48.0 (280425820)|USER_DEBUG|[316]|DEBUG|:::::::processGatewayAsset parentAssets :::::: ()
+17:36:48.0 (280469205)|USER_DEBUG|[321]|DEBUG|:::::::processGatewayAsset parentAssetsForGWotGo :::::: ()
+17:36:48.280 (280635166)|CUMULATIVE_LIMIT_USAGE
+17:36:48.280 (280635166)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 14 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:36:48.280 (280635166)|CUMULATIVE_LIMIT_USAGE_END
+
+17:36:48.0 (282452090)|CODE_UNIT_FINISHED|AssetTrigger on Asset trigger event AfterUpdate|__sfdc_trigger/AssetTrigger
+17:36:48.0 (283518342)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Asset
+17:36:48.0 (300058438)|WF_RULE_EVAL_BEGIN|Workflow
+17:36:48.0 (300094220)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i0R000002omuE]|Asset Serial Number ID Update|01QC0000000InsP|ON_ALL_CHANGES|0
+17:36:48.0 (300143872)|WF_RULE_FILTER|[Asset : Serial Number not equal to ] AND
+ [Asset : Serial Number not equal to Unknown, UNKNOWN]
+17:36:48.0 (300164949)|WF_RULE_EVAL_VALUE|PO112711-3-008
+17:36:48.0 (300174780)|WF_RULE_EVAL_VALUE|PO112711-3-008
+17:36:48.0 (300178225)|WF_CRITERIA_END|true
+17:36:48.0 (300194081)|WF_CRITERIA_BEGIN|[Asset: Intelligent Equipment Gateway 02i0R000002omuE]|Gateway Commissioned|01QC0000000Is0N|ON_CREATE_OR_TRIGGERING_UPDATE|0
+17:36:48.0 (300226391)|WF_RULE_FILTER|[Asset : Gateway Commissioned equals true]
+17:36:48.0 (300233819)|WF_RULE_EVAL_VALUE|false
+17:36:48.0 (300237214)|WF_CRITERIA_END|false
+17:36:48.0 (300245277)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:36:48.0 (300368454)|WF_ACTION| Field Update: 1;
+17:36:48.0 (300374165)|WF_RULE_EVAL_END
+17:36:48.0 (300446898)|WF_ACTIONS_END| Field Update: 1;
+17:36:48.0 (300457018)|CODE_UNIT_FINISHED|Workflow:Asset
+17:36:48.0 (350630670)|CODE_UNIT_FINISHED|TRIGGERS
+17:36:48.0 (350647820)|EXECUTION_FINISHED
